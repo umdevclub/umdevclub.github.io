@@ -1,0 +1,2 @@
+# Auto-collapse the changes to these files when showing changes in pull requests, branch diffs, etc.
+package-lock.json linguist-generated
