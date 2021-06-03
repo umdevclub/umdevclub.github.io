@@ -1,3 +1,5 @@
+### Node-specific gitignore files ###
+
 # Logs
 logs
 *.log
