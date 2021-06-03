@@ -24,7 +24,8 @@ jobs:
       with:
         deploy_key: ${{ secrets.ACTIONS_DEPLOY_SECRET }}
         publish_dir: ./build
-    - uses: sarisia/actions-status-discord@v1
+    - name: Notify on Discord
+      uses: sarisia/actions-status-discord@v1
       if: "always()"
       with:
         webhook: ${{ secrets.DISCORD_WEBHOOK }}
