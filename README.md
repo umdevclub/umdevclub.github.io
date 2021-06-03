@@ -1,3 +1,7 @@
+# .devClub Website
+
+[![Deployment](https://github.com/umdevclub/umdevclub.github.io/actions/workflows/deploy.yml/badge.svg)](https://github.com/umdevclub/umdevclub.github.io/actions/workflows/deploy.yml)
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
