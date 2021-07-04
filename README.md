@@ -1,4 +1,4 @@
-# .devClub Website
+# .devClub's Website
 
 [![Deployment](https://github.com/umdevclub/umdevclub.github.io/actions/workflows/deploy.yml/badge.svg)](https://github.com/umdevclub/umdevclub.github.io/actions/workflows/deploy.yml)
 
