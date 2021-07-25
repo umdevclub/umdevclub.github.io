@@ -1,13 +1,13 @@
-.App {
+.coming-soon-container {
   text-align: center;
 }
 
-.App-logo {
+.devclub-logo {
   height: 40vmin;
   pointer-events: none;
 }
 
-.App-header {
+.coming-soon-content {
   background-color: white;
   min-height: 100vh;
   display: flex;
