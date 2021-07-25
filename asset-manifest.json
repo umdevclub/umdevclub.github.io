@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/static/css/main.da465ade.chunk.css",
-    "main.js": "/static/js/main.e21a60a3.chunk.js",
-    "main.js.map": "/static/js/main.e21a60a3.chunk.js.map",
+    "main.css": "/static/css/main.2c4abeab.chunk.css",
+    "main.js": "/static/js/main.495daf66.chunk.js",
+    "main.js.map": "/static/js/main.495daf66.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.c586c8a0.js",
     "runtime-main.js.map": "/static/js/runtime-main.c586c8a0.js.map",
     "static/js/2.853fff0b.chunk.js": "/static/js/2.853fff0b.chunk.js",
     "static/js/2.853fff0b.chunk.js.map": "/static/js/2.853fff0b.chunk.js.map",
     "index.html": "/index.html",
-    "static/css/main.da465ade.chunk.css.map": "/static/css/main.da465ade.chunk.css.map",
+    "static/css/main.2c4abeab.chunk.css.map": "/static/css/main.2c4abeab.chunk.css.map",
     "static/js/2.853fff0b.chunk.js.LICENSE.txt": "/static/js/2.853fff0b.chunk.js.LICENSE.txt",
     "static/media/devchamps-bg.288b713c.jpg": "/static/media/devchamps-bg.288b713c.jpg",
     "static/media/devchamps-heading.6fb618f6.png": "/static/media/devchamps-heading.6fb618f6.png",
@@ -17,7 +17,7 @@
   "entrypoints": [
     "static/js/runtime-main.c586c8a0.js",
     "static/js/2.853fff0b.chunk.js",
-    "static/css/main.da465ade.chunk.css",
-    "static/js/main.e21a60a3.chunk.js"
+    "static/css/main.2c4abeab.chunk.css",
+    "static/js/main.495daf66.chunk.js"
   ]
 }
