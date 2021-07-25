@@ -16,8 +16,29 @@
 }
 
 .devchamps-container > .devchamps-heading {
-    width: 90vw;
+    width: 95vw;
     max-width: 900px;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    left: 50%;
+    position: relative;
+    transform: translateX(-50%);
+}
+
+.devchamps-container > .devchamps-heading > .devchamps-title {
+    min-width: 0;
+    min-height: 0;
+    height: 100%;
+}
+
+.devchamps-container > .devchamps-heading > .devchamps-ashu {
+    min-width: 0;
+    min-height: 0;
+    height: 100%;
+    transform: scale(0.85);
 }
 
 .devchamps-container > .faq-container {

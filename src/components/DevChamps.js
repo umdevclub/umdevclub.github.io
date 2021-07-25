@@ -1,6 +1,7 @@
 import "@/styles/DevChamps.css"
-import devchampsHeading from '@/resources/images/devchamps/devchamps-heading.png';
-import devchampsBackground from '@/resources/images/devchamps/devchamps-bg.jpg';
+import devchampsHeading from "@/resources/images/devchamps/devchamps-heading.png";
+import devchampsBackground from "@/resources/images/devchamps/devchamps-bg.jpg";
+import ashu from "@/resources/images/devchamps/ashu-cool.gif";
 
 import Faq from "react-faq-component";
 
@@ -72,7 +73,10 @@ function DevChamps() {
     return <>
         <div className="devchamps-background" style={{ backgroundImage: `url(${devchampsBackground})` }}></div>
         <div className="devchamps-container">
-            <img src={devchampsHeading} className="devchamps-heading" alt=".devChamps header"/>
+            <div className="devchamps-heading">
+                <img src={ashu} className="devchamps-ashu" alt="Ashu hamster" />
+                <img src={devchampsHeading} className="devchamps-title" alt=".devChamps header" />
+            </div>
             <div className="faq-container">
                 <Faq
                     
