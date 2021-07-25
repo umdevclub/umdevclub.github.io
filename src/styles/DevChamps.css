@@ -1,0 +1,59 @@
+.devchamps-background {
+    background-size: cover;
+    position: fixed;
+    left: -5vw;
+    top: -5vh;
+    height: 110vh;
+    width: 110vw;
+    z-index: -1;
+
+    object-fit: cover;
+}
+
+.devchamps-container {
+    text-align: center;
+}
+
+.devchamps-container > .devchamps-heading {
+    width: 90vw;
+    max-width: 900px;
+}
+
+.devchamps-container > .faq-container {
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 800px;
+    max-width: 95vw;
+    font-family: 'Montserrat';
+    margin-bottom: 50px;
+}
+
+.devchamps-container > .faq-container .row-title-text {
+    margin: 5px;
+    margin-left: 20px;
+    font-weight: 900;
+    color: #5F394B !important;
+}
+
+    .devchamps-container > .faq-container .row-title-text:active {
+        color: #DB8263 !important;
+    }
+
+.devchamps-container > .faq-container .row-content-text {
+    margin-left: 15px;
+    margin-right: 15px;
+    line-height: 1.5rem;
+    text-align: left;
+}
+
+.devchamps-container > .faq-container .row-content-text em {
+    font-weight: 800;
+}
+
+.devchamps-container > .hof-coming-soon {
+    font-family: 'Bebas Neue';
+    color: #EFE7D8;
+    font-size: 4rem;
+    text-align: center;
+}
