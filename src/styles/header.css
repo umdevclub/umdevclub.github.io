@@ -127,20 +127,24 @@ html, body{
   }
 
   .toggledstrip{
+    margin-top: 1vh;
     display: flex;
     width: 60vw;
+    height: 100%;
     flex-direction: column;
     align-items: flex-start;
   }
 
   .head-item{
-    font-size: x-large;
+    font-size: medium;
     width: 100%;
+    margin-top: 1vh;
   }
 
   .badge:hover{
     cursor: pointer;
-    animation: radiate 3.5s linear;
+    animation: radiate 4s linear;
+    animation-iteration-count: infinite;
   }
 
   .toggledbadge{
