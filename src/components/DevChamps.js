@@ -1,4 +1,5 @@
 import "@/styles/DevChamps.css"
+import Header from './Header';
 import devchampsHeading from "@/resources/images/devchamps/devchamps-heading.png";
 import devchampsBackground from "@/resources/images/devchamps/devchamps-bg.jpg";
 import ashu from "@/resources/images/devchamps/ashu-cool.gif";
@@ -70,33 +71,36 @@ const config = {
 };
 
 function DevChamps() {
-    return <>
-        <div className="devchamps-background" style={{ backgroundImage: `url(${devchampsBackground})` }}>
-            <div className="devchamps-container">
-                <div className="devchamps-heading">
-                    {/* <img src={ashu} className="devchamps-ashu" alt="Ashu hamster" />
-                    <img src={devchampsHeading} className="devchamps-title" alt=".devChamps header" /> */}
-                    <div className="ashu" style={{ backgroundImage: `url(${ashu})` }}></div>
-                    <div className="title-grid">
-                        <div className="title" style={{ backgroundImage: `url(${devchampsHeading})` }}></div>
-                        <div className="faq"> FAQ </div>
+    return (
+        <div>
+            <Header />
+            <div className="devchamps-background" style={{ backgroundImage: `url(${devchampsBackground})` }}>
+                <div className="devchamps-container">
+                    <div className="devchamps-heading">
+                        {/* <img src={ashu} className="devchamps-ashu" alt="Ashu hamster" />
+                        <img src={devchampsHeading} className="devchamps-title" alt=".devChamps header" /> */}
+                        <div className="ashu" style={{ backgroundImage: `url(${ashu})` }}></div>
+                        <div className="title-grid">
+                            <div className="title" style={{ backgroundImage: `url(${devchampsHeading})` }}></div>
+                            <div className="faq"> FAQ </div>
+                        </div>
                     </div>
-                </div>
-                <div className="faq-container">
-                    <div className="accordions">
-                        <Faq
-                            data={data}
-                            styles={styles}
-                            config={config}
-                        />
+                    <div className="faq-container">
+                        <div className="accordions">
+                            <Faq
+                                data={data}
+                                styles={styles}
+                                config={config}
+                            />
+                        </div>
                     </div>
-                </div>
-                <div className="bottom">
-                    <p className="hof-coming-soon">Hall of Fame Coming Soon</p>
+                    <div className="bottom">
+                        <p className="hof-coming-soon">Hall of Fame Coming Soon</p>
+                    </div>
                 </div>
             </div>
         </div>
-    </>;
+    );
 }
 
 export default DevChamps;
