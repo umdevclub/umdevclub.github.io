@@ -1,5 +1,6 @@
 import "@/styles/header.css"
 import devclub from '@/resources/images/devClub_Logo.svg';
+import { NavLink } from "react-router-dom";
 
 function Header() {
     let toggled = false;
@@ -24,10 +25,21 @@ function Header() {
     return (
         <div className="header">
             <div className="strip">
-                <div className="head-item active"> ABOUT </div>
-                <div className="head-item"> EVENTS </div>
-                <div className="head-item"> DEVCHAMPS </div>
-                <div className="head-item"> CONTACT </div>
+                <NavLink to="/about" activeClassName="active">
+                    <div className="head-item"> ABOUT </div>
+                </NavLink>
+
+                <NavLink to="/events" activeClassName="active">
+                    <div className="head-item"> EVENTS </div>
+                </NavLink>
+                
+                <NavLink to="/devchamps" activeClassName="active">
+                    <div className="head-item"> DEVCHAMPS </div>
+                </NavLink>
+                
+                <NavLink to="/contact" activeClassName="active">
+                    <div className="head-item"> CONTACT </div>
+                </NavLink>
             </div>
             <div className="badge" onClick={toggleNav}>
                 <img src={devclub} alt=".devClub logo" />

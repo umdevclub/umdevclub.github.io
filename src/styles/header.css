@@ -1,28 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;600;700&display=swap');
 
-html, body{
-  margin: 0;
-  padding: 0;
-  height: 100vh;
-  width: 100vw;
-  background-color: gainsboro;
-  position: absolute;
-}
-
 .header{
+  background-color: white;
   height: 16vh;
   min-height: 5em;
   width: 100%;
-  position: fixed;
+  position: relative;
   display: flex;
-  align-items: flex-start;
+  align-items: flex-end;
 }
 
 .strip{
   position: relative;
   z-index: 4;
   background-color: #382F2A;
-  color: white;
   height: 55%;
   width: 100%;
   display: flex;
@@ -34,6 +25,8 @@ html, body{
 
 .head-item{
   padding: 1.5em;
+  color: white;
+  text-decoration: none;
   font-family: 'Montserrat', sans-serif;
   font-weight: medium;
   font-size: x-large;
@@ -46,12 +39,12 @@ html, body{
 }
 
 .active:hover{
-  background-color: gainsboro;
+  background-color: #c49d82;
   color: #564C45;
 }
 
 .active{
-  background-color: gainsboro;
+  background-color: #c49d82;
   color: #564C45;
 }
 
@@ -59,7 +52,7 @@ html, body{
   position: absolute;
   height: 100%;
   width: 16%;
-  background-color: #595959;
+  background-color: rgba(0,0,0,0.6);
   clip-path: polygon(0% 0%, 40% 0%, 40% 100%, 0% 100%);
   z-index: 3;
 }
@@ -71,8 +64,8 @@ html, body{
   width: 16vh;
   min-width: 5em;
   background-color: white;
-  left: 1.5vw;
-  top: 3vh;
+  left: 1vw;
+  top: 2.5vh;
   border-radius: 100%;
   border-style: double;
   border-width: 1vh;
@@ -97,6 +90,10 @@ html, body{
 }
 
 @media screen and (max-width: 600px) {
+  .header{
+    position: fixed;
+  }
+
   .tri{
     display: none;
   }
@@ -112,8 +109,8 @@ html, body{
 
   .badge{
     height: fit-content;
-    top: 1.5vh;
-    left: 3vw;
+    top: 1vh;
+    left: 2.5vw;
   }
   
   .strip{
@@ -137,7 +134,6 @@ html, body{
   .head-item{
     font-size: large;
     width: 100%;
-    margin-top: 0.5vh;
   }
 
   .badge:hover{
