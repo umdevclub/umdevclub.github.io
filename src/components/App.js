@@ -3,36 +3,38 @@ import "@/styles/index.css";
 import { BrowserRouter, Route, Redirect, Switch } from "react-router-dom";
 import redirectMappings from "@/resources/redirect-mappings.js";
 
-import PageNotFound from "@/components/PageNotFound.js";
-import ComingSoon from "@/components/ComingSoon.js";
-import DevChamp from "@/components/DevChamps.js";
 import Header from "@/components/Header.js";
+
+import Home from "@/components/Home.js";
+import Events from "@/components/Events.js";
+import DevChamp from "@/components/DevChamps.js";
+import Contact from "@/components/Contact.js";
+
+import PageNotFound from "@/components/PageNotFound.js";
 
 function App() {
   return (
     <BrowserRouter>
-      <Header />
-      <Switch>
-        {Object.entries(redirectMappings).map(([fromPath, toPath]) => (
-          <Redirect from={fromPath} to={toPath}></Redirect>
-        ))}
+      <Route exact path="*" component={Header} />
+      <div className="app-body">
+        <Switch>
+          {Object.entries(redirectMappings).map(
+            ([fromPath, toPath], redirectEntryInd) => (
+              <Redirect
+                key={redirectEntryInd}
+                from={fromPath}
+                to={toPath}
+              ></Redirect>
+            )
+          )}
 
-        <Route exact path="/">
-          <ComingSoon />
-        </Route>
-
-        <Route path="/about">
-          <ComingSoon />
-        </Route>
-
-        <Route path="/devchamps">
-          <DevChamp />
-        </Route>
-
-        <Route path="*">
-          <PageNotFound />
-        </Route>
-      </Switch>
+          <Route exact path="/" component={Home} />
+          <Route path="/events" component={Events} />
+          <Route path="/devchamps" component={DevChamp} />
+          <Route path="/contact" component={Contact} />
+          <Route path="*" component={PageNotFound} />
+        </Switch>
+      </div>
     </BrowserRouter>
   );
 }
