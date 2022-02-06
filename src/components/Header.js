@@ -1,4 +1,4 @@
-import "@/styles/Header.css";
+import "@/styles/Header.scss";
 import devclubLogo from "@/resources/images/devclub-logo.svg";
 import devclubLogoHorizontal from "@/resources/images/devclub-logo-horizontal.svg";
 

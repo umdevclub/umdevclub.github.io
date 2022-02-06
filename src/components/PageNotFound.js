@@ -1,4 +1,4 @@
-import "@/styles/PageNotFound.css";
+import "@/styles/PageNotFound.scss";
 
 import { Link } from "react-router-dom";
 

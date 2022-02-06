@@ -1,4 +1,4 @@
-import "@/styles/DevChamps.css";
+import "@/styles/DevChamps.scss";
 import devchampsHeading from "@/resources/images/devchamps/devchamps-heading.png";
 import devchampsBackground from "@/resources/images/devchamps/devchamps-bg.jpg";
 import ashu from "@/resources/images/devchamps/ashu-cool.gif";

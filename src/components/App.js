@@ -1,4 +1,4 @@
-import "@/styles/index.css";
+import "@/styles/App.scss";
 
 import { BrowserRouter, Route, Redirect, Switch } from "react-router-dom";
 import redirectMappings from "@/resources/redirect-mappings.js";

@@ -1,4 +1,4 @@
-import "@/styles/Events.css";
+import "@/styles/Events.scss";
 
 import React from "react";
 

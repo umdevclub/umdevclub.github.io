@@ -1,0 +1,48 @@
+// Source: https://stackoverflow.com/a/51124666/4986857
+
+// media aliases and breakpoints
+$screen-mobile-max: 768px;
+$screen-tablet-max: 1200px;
+
+// media devices
+@mixin mobile {
+  @media screen and (max-width: #{$screen-mobile-max}) {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media screen and (min-width: #{$screen-mobile-max}) and (max-width: #{$screen-tablet-max}) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media screen and (min-width: #{$screen-tablet-max}) {
+    @content;
+  }
+}
+
+@mixin mobile-or-tablet {
+  @media screen and (max-width: #{$screen-tablet-max}) {
+    @content;
+  }
+}
+
+@mixin tablet-or-desktop {
+  @media screen and (min-width: #{$screen-mobile-max}) {
+    @content;
+  }
+}
+
+@mixin not-desktop {
+  @include mobile-or-tablet {
+    @content;
+  }
+}
+
+@mixin not-mobile {
+  @include tablet-or-desktop {
+    @content;
+  }
+}

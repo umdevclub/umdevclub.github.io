@@ -1,0 +1,135 @@
+@import "media-queries.scss";
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;600;700&display=swap");
+
+.header {
+  height: auto;
+  min-height: 5em;
+  width: 100%;
+  position: sticky;
+  top: 0px;
+  display: flex;
+  align-items: flex-start;
+  z-index: 1;
+
+  @include mobile {
+    height: 80px;
+  }
+}
+
+.strip {
+  position: relative;
+  background-color: rgba(56, 47, 41, 0.95);
+  border-bottom: solid 1px rgba(56, 47, 41, 0.95);
+  backdrop-filter: blur(5px);
+  height: 100%;
+  width: 100%;
+  display: flex;
+  padding-left: 12vw;
+  justify-content: flex-end;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.8);
+
+  @include tablet {
+    padding-left: 18vw;
+    justify-content: space-between;
+  }
+}
+
+.badge {
+  position: absolute;
+  z-index: 5;
+  height: 120%;
+  width: auto;
+  background-color: white;
+  left: 15px;
+  top: 15px;
+  border-radius: 100%;
+  border: 8px double #382f29;
+  box-shadow: rgba(56, 47, 41, 0.8) 0 0 0 6px, rgba(0, 0, 0, 0.8) 0px 6px 5px;
+  contain: content;
+
+  @include mobile {
+    background: none;
+    border: none;
+    box-shadow: none;
+    border-radius: 0;
+    left: 20px;
+    top: 0px;
+    width: auto;
+    height: 80px;
+    display: flex;
+    align-items: center;
+  }
+
+  /* The image inside the badge/logo */
+
+  @include not-mobile {
+    img.vertical {
+      height: 100%;
+      width: auto;
+      transform: translateY(-5%);
+    }
+
+    img.horizontal {
+      display: none;
+    }
+  }
+
+  @include mobile {
+    img.horizontal {
+      display: block;
+      height: 50%;
+      width: auto;
+      transform: none;
+    }
+
+    img.vertical {
+      display: none;
+    }
+  }
+}
+
+.menu-items-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  max-width: 1024px;
+
+  @include tablet {
+    justify-content: flex-end;
+  }
+
+  @include mobile {
+    border: none;
+  }
+
+  .menu-item {
+    font-size: x-large;
+    font-family: "Montserrat", sans-serif;
+    font-weight: medium;
+    color: rgba(255, 255, 255, 0.6);
+    transition: ease-in-out 0.2s;
+    height: 100px;
+
+    @include tablet {
+      font-size: large;
+      padding-right: 32px;
+      padding-left: 32px;
+    }
+
+    @include mobile {
+      display: none;
+    }
+  }
+}
+
+.menu-button {
+  display: none;
+  transition: ease-in-out 0.2s;
+  transform: rotate(0deg);
+
+  @include mobile {
+    display: block;
+  }
+}
