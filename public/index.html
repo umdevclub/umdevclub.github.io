@@ -9,11 +9,17 @@
       <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
     -->
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#ffffff" />
     <meta
-      name="description"
-      content="University of Manitoba's .devClub"
+      name="theme-color"
+      media="(prefers-color-scheme: light)"
+      content="white"
     />
+    <meta
+      name="theme-color"
+      media="(prefers-color-scheme: dark)"
+      content="#382f29"
+    />
+    <meta name="description" content="University of Manitoba's .devClub" />
     <title>UofM's .devClub</title>
 
     <!-- https://github.com/rafgraph/spa-github-pages/blob/gh-pages/index.html#L21-L42 -->
@@ -28,16 +34,22 @@
       // When the single page app is loaded further down in this file,
       // the correct url will be waiting in the browser's history for
       // the single page app to route accordingly.
-      (function(l) {
-        if (l.search[1] === '/' ) {
-          var decoded = l.search.slice(1).split('&').map(function(s) { 
-            return s.replace(/~and~/g, '&')
-          }).join('?');
-          window.history.replaceState(null, null,
-              l.pathname.slice(0, -1) + decoded + l.hash
+      (function (l) {
+        if (l.search[1] === "/") {
+          var decoded = l.search
+            .slice(1)
+            .split("&")
+            .map(function (s) {
+              return s.replace(/~and~/g, "&");
+            })
+            .join("?");
+          window.history.replaceState(
+            null,
+            null,
+            l.pathname.slice(0, -1) + decoded + l.hash
           );
         }
-      }(window.location))
+      })(window.location);
     </script>
   </head>
   <body>
