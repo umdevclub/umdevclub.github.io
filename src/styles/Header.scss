@@ -12,7 +12,7 @@ $desktop-navbar-height: 100px;
   top: 0px;
   display: flex;
   align-items: flex-start;
-  z-index: 1;
+  z-index: 2;
 
   @include mobile {
     height: $mobile-navbar-height;

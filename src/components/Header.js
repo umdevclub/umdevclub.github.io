@@ -4,7 +4,7 @@ import devclubLogoHorizontal from "@/resources/images/devclub-logo-horizontal.sv
 
 import React from "react";
 
-import { NavLink } from "react-router-dom";
+import { withRouter, NavLink } from "react-router-dom";
 import useToggle from "@/hooks/useToggle";
 
 import Box from "@mui/material/Box";
@@ -167,4 +167,4 @@ function MobileDrawerButton() {
   );
 }
 
-export default Header;
+export default withRouter(Header);
