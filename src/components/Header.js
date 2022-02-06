@@ -76,29 +76,22 @@ function Header(props) {
             />
           </div>
           <div className="menu-items-container">
-            {
-              <Box
-                sx={{ borderBottom: 1, borderColor: "divider", height: 100 }}
-              >
-                <Tabs value={activeMenuItemInd} sx={{ height: 100 }}>
-                  {menuItems.map((menuItem) => (
-                    <Tab
-                      className="menu-item"
-                      label={menuItem.title}
-                      component={NavLink}
-                      to={menuItem.path}
-                      sx={{
-                        height: 100,
-                        color: "rgba(255, 255, 255, 0.6)",
-                        paddingLeft: 8,
-                        paddingRight: 8,
-                        fontSize: "large",
-                      }}
-                    />
-                  ))}
-                </Tabs>
-              </Box>
-            }
+            <Tabs value={activeMenuItemInd}>
+              {menuItems.map((menuItem) => (
+                <Tab
+                  className="menu-item"
+                  label={menuItem.title}
+                  component={NavLink}
+                  to={menuItem.path}
+                  sx={{
+                    color: "rgba(255, 255, 255, 0.6)",
+                    paddingLeft: 8,
+                    paddingRight: 8,
+                    fontSize: "large",
+                  }}
+                />
+              ))}
+            </Tabs>
           </div>
           <MobileDrawerButton />
         </div>
@@ -115,9 +108,8 @@ function MobileDrawerButton() {
       event &&
       event.type === "keydown" &&
       (event.key === "Tab" || event.key === "Shift")
-    ) {
+    )
       return;
-    }
 
     toggleOpenDrawer();
   };
@@ -152,7 +144,11 @@ function MobileDrawerButton() {
 
   return (
     <>
-      <IconButton className="menu-button" onClick={toggleDrawer(true)}>
+      <IconButton
+        className="menu-button"
+        onClick={toggleDrawer(true)}
+        sx={{ transform: openDrawer ? "rotate(-90deg)" : "rotate(0deg)" }}
+      >
         <MenuIcon
           color="primary"
           sx={{ fontSize: 50 }}

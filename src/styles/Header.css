@@ -14,7 +14,6 @@
 
 .strip {
   position: relative;
-  z-index: 6;
   background-color: #382f29;
   height: 100%;
   width: 100%;
@@ -33,14 +32,17 @@
   width: 100%;
   height: 100%;
   max-width: 1024px;
+  border-bottom: solid 1px;
 }
 
 .menu-item {
-  color: rgba(255, 255, 255, 0.6);
+  font-size: x-large !important;
   font-family: "Montserrat", sans-serif;
   font-weight: medium;
-  font-size: x-large;
+  color: rgba(255, 255, 255, 0.6);
   transition: ease-in-out 0.2s;
+  height: 100px;
+  padding-left: 8px;
 }
 
 .badge {
@@ -52,9 +54,7 @@
   left: 15px;
   top: 15px;
   border-radius: 100%;
-  border-style: double;
-  border-width: 8px;
-  border-color: #382f29;
+  border: 8px double #382f29;
   box-shadow: #382f29 0 0 0 6px;
   contain: content;
 }
@@ -69,6 +69,12 @@
   display: none;
 }
 
+.menu-button {
+  display: none !important;
+  transition: ease-in-out 0.2s !important;
+  transform: rotate(0deg);
+}
+
 @media screen and (max-width: 1200px) {
   .strip {
     padding-left: 18vw;
@@ -76,6 +82,7 @@
   }
 
   .menu-item {
+    font-size: large !important;
     padding-right: 32px !important;
     padding-left: 32px !important;
   }
@@ -83,10 +90,6 @@
   .menu-items-container {
     justify-content: flex-end;
   }
-}
-
-.menu-button {
-  display: none !important;
 }
 
 @media screen and (max-width: 768px) {
@@ -124,5 +127,9 @@
 
   .menu-item {
     display: none !important;
+  }
+
+  .menu-items-container {
+    border: none;
   }
 }
