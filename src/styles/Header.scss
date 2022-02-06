@@ -1,9 +1,12 @@
 @import "media-queries.scss";
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;600;700&display=swap");
 
+$mobile-navbar-height: 80px;
+$tablet-navbar-height: 90px;
+$desktop-navbar-height: 100px;
+
 .header {
   height: auto;
-  min-height: 5em;
   width: 100%;
   position: sticky;
   top: 0px;
@@ -12,7 +15,7 @@
   z-index: 1;
 
   @include mobile {
-    height: 80px;
+    height: $mobile-navbar-height;
   }
 }
 
@@ -60,7 +63,7 @@
     align-items: center;
   }
 
-  /* The image inside the badge/logo */
+  /* The image inside the badge/logo container */
 
   @include not-mobile {
     img.vertical {
@@ -95,9 +98,11 @@
   width: 100%;
   height: 100%;
   max-width: 1024px;
+  transition: ease-in-out 0.2s;
 
   @include tablet {
     justify-content: flex-end;
+    height: tablet-navbar-height;
   }
 
   @include mobile {
@@ -108,14 +113,14 @@
     font-size: x-large;
     font-family: "Montserrat", sans-serif;
     font-weight: medium;
-    color: rgba(255, 255, 255, 0.6);
     transition: ease-in-out 0.2s;
-    height: 100px;
+    height: $desktop-navbar-height;
 
     @include tablet {
       font-size: large;
       padding-right: 32px;
       padding-left: 32px;
+      height: $tablet-navbar-height;
     }
 
     @include mobile {
