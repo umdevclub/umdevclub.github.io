@@ -1,5 +1,4 @@
 import "@/styles/App.scss";
-import "react-tiger-transition/styles/main.min.css";
 
 import { BrowserRouter, Route, Redirect, Switch } from "react-router-dom";
 import redirectMappings from "@/resources/redirect-mappings.js";
@@ -12,7 +11,6 @@ import DevChamp from "@/components/DevChamps.js";
 import Contact from "@/components/Contact.js";
 
 import PageNotFound from "@/components/PageNotFound.js";
-
 function App() {
   return (
     <BrowserRouter>
