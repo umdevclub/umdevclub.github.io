@@ -147,7 +147,7 @@ function MobileDrawerButton() {
       <IconButton
         className="menu-button"
         onClick={toggleDrawer(true)}
-        sx={{ transform: openDrawer ? "rotate(-90deg)" : "rotate(0deg)" }}
+        sx={{ transform: openDrawer ? "rotate(90deg)" : "rotate(0deg)" }}
       >
         <MenuIcon
           color="primary"

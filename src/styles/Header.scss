@@ -131,10 +131,9 @@ $desktop-navbar-height: 100px;
 
 .menu-button {
   display: none;
-  transition: ease-in-out 0.2s;
-  transform: rotate(0deg);
 
   @include mobile {
     display: block;
+    transition: ease-in-out 0.2s;
   }
 }
