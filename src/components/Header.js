@@ -9,7 +9,6 @@ import useToggle from "@/hooks/useToggle";
 
 import Box from "@mui/material/Box";
 import SwipeableDrawer from "@mui/material/SwipeableDrawer";
-import Button from "@mui/material/Button";
 import IconButton from "@mui/material/IconButton";
 import List from "@mui/material/List";
 import Divider from "@mui/material/Divider";
@@ -22,10 +21,8 @@ import EventIcon from "@mui/icons-material/Event";
 import EmojiEventsIcon from "@mui/icons-material/EmojiEvents";
 import ContactSupportIcon from "@mui/icons-material/ContactSupport";
 
-import PropTypes from "prop-types";
 import Tabs from "@mui/material/Tabs";
 import Tab from "@mui/material/Tab";
-import Typography from "@mui/material/Typography";
 
 import { createTheme, ThemeProvider } from "@mui/material/styles";
 
@@ -84,7 +81,7 @@ function Header(props) {
                 sx={{ borderBottom: 1, borderColor: "divider", height: 100 }}
               >
                 <Tabs value={activeMenuItemInd} sx={{ height: 100 }}>
-                  {menuItems.map((menuItem, menuItemInd) => (
+                  {menuItems.map((menuItem) => (
                     <Tab
                       className="menu-item"
                       label={menuItem.title}
