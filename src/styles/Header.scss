@@ -41,7 +41,7 @@ $desktop-navbar-height: 100px;
   position: absolute;
   z-index: 5;
   height: 120%;
-  width: auto;
+  width: 120px;
   background-color: white;
   left: 15px;
   top: 15px;
@@ -49,6 +49,10 @@ $desktop-navbar-height: 100px;
   border: 8px double #382f29;
   box-shadow: rgba(56, 47, 41, 0.8) 0 0 0 6px, rgba(0, 0, 0, 0.8) 0px 6px 5px;
   contain: content;
+
+  @include tablet {
+    width: 108px;
+  }
 
   @include mobile {
     background: none;
