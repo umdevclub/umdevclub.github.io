@@ -1,9 +1,10 @@
+@import "_theme.scss";
 @import "media-queries.scss";
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;600;700&display=swap");
 
 $mobile-navbar-height: 80px;
-$tablet-navbar-height: 90px;
-$desktop-navbar-height: 100px;
+$tablet-navbar-height: 70px;
+$desktop-navbar-height: 70px;
 
 .header {
   height: auto;
@@ -21,8 +22,8 @@ $desktop-navbar-height: 100px;
 
 .strip {
   position: relative;
-  background-color: rgba(56, 47, 41, 0.95);
-  border-bottom: solid 1px rgba(56, 47, 41, 0.95);
+  background-color: $theme-primary;
+  border-bottom: solid 1px $theme-primary;
   backdrop-filter: blur(5px);
   height: 100%;
   width: 100%;
@@ -40,18 +41,20 @@ $desktop-navbar-height: 100px;
 .badge {
   position: absolute;
   z-index: 5;
-  height: 120%;
-  width: 120px;
+  height: 90px;
+  width: 90px;
   background-color: white;
-  left: 15px;
+  left: 40px;
   top: 15px;
   border-radius: 100%;
-  border: 8px double #382f29;
-  box-shadow: rgba(56, 47, 41, 0.8) 0 0 0 6px, rgba(0, 0, 0, 0.8) 0px 6px 5px;
+  border: 8px double $theme-primary;
+  box-shadow: rgba($theme-primary, 0.8) 0 0 0 6px,
+    rgba(0, 0, 0, 0.8) 0px 6px 5px;
   contain: content;
 
   @include tablet {
-    width: 108px;
+    width: 70px;
+    height: 70px;
   }
 
   @include mobile {
@@ -97,15 +100,13 @@ $desktop-navbar-height: 100px;
 
 .menu-items-container {
   display: flex;
-  justify-content: space-around;
-  align-items: center;
+  justify-content: flex-end;
+  align-items: flex-end;
   width: 100%;
   height: 100%;
-  max-width: 1024px;
   transition: ease-in-out 0.2s;
 
   @include tablet {
-    justify-content: flex-end;
     height: tablet-navbar-height;
   }
 
@@ -114,16 +115,17 @@ $desktop-navbar-height: 100px;
   }
 
   .menu-item {
-    font-size: x-large;
-    font-family: "Montserrat", sans-serif;
+    font-size: large;
+    font-family: "Inter", sans-serif;
     font-weight: medium;
+    text-transform: none;
     transition: ease-in-out 0.2s;
     height: $desktop-navbar-height;
 
     @include tablet {
-      font-size: large;
-      padding-right: 32px;
-      padding-left: 32px;
+      font-size: small;
+      padding-right: 25px;
+      padding-left: 25px;
       height: $tablet-navbar-height;
     }
 
@@ -139,5 +141,21 @@ $desktop-navbar-height: 100px;
   @include mobile {
     display: block;
     transition: ease-in-out 0.2s;
+  }
+}
+
+.social-media {
+  display: block;
+}
+.mobile-drawer-social-media {
+  display: none;
+}
+
+@include mobile {
+  .social-media {
+    display: none;
+  }
+  .mobile-drawer-social-media {
+    display: block;
   }
 }
