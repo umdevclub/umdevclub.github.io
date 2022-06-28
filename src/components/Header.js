@@ -15,11 +15,18 @@ import Divider from "@mui/material/Divider";
 import ListItem from "@mui/material/ListItem";
 import ListItemIcon from "@mui/material/ListItemIcon";
 import ListItemText from "@mui/material/ListItemText";
+import Stack from "@mui/material/Stack";
+import Link from "@mui/material/Link";
+
 import MenuIcon from "@mui/icons-material/Menu";
 import HomeIcon from "@mui/icons-material/Home";
 import EventIcon from "@mui/icons-material/Event";
 import EmojiEventsIcon from "@mui/icons-material/EmojiEvents";
 import ContactSupportIcon from "@mui/icons-material/ContactSupport";
+
+import InstagramIcon from "@mui/icons-material/Instagram";
+import LinkedInIcon from "@mui/icons-material/LinkedIn";
+import GitHubIcon from "@mui/icons-material/GitHub";
 
 import Tabs from "@mui/material/Tabs";
 import Tab from "@mui/material/Tab";
@@ -57,6 +64,21 @@ const menuItems = [
   },
 ];
 
+const socialIcons = [
+  {
+    icon: InstagramIcon,
+    url: "https://instagram.com/umdevclub/",
+  },
+  {
+    icon: LinkedInIcon,
+    url: "https://www.linkedin.com/company/umdevclub/about/",
+  },
+  {
+    icon: GitHubIcon,
+    url: "https://github.com/umdevclub/umdevclub.github.io/",
+  },
+];
+
 function Header(props) {
   const activeMenuItemInd = React.useMemo(() => {
     const menuPaths = menuItems.map((menuItem) => menuItem.path);
@@ -77,7 +99,7 @@ function Header(props) {
           </div>
           <div className="menu-items-container">
             <Tabs value={activeMenuItemInd}>
-              {menuItems.map((menuItem) => (
+              {menuItems.map((menuItem, menuItemInd) => (
                 <Tab
                   className="menu-item"
                   label={menuItem.title}
@@ -85,13 +107,30 @@ function Header(props) {
                   to={menuItem.path}
                   sx={{
                     color: "rgba(255, 255, 255, 0.6)",
-                    paddingLeft: 8,
-                    paddingRight: 8,
+                    paddingLeft: 5,
+                    paddingRight: 5,
                     fontSize: "large",
                   }}
+                  key={menuItemInd}
                 />
               ))}
             </Tabs>
+            <Stack
+              spacing={5}
+              direction="row"
+              sx={{ marginRight: 4, marginLeft: 5, alignSelf: "center" }}
+              className="social-media"
+            >
+              {socialIcons.map((socialIcon, socialIconInd) => (
+                <Link
+                  href={socialIcon.url}
+                  sx={{ padding: 0.5 }}
+                  key={socialIconInd}
+                >
+                  {<socialIcon.icon />}
+                </Link>
+              ))}
+            </Stack>
           </div>
           <MobileDrawerButton />
         </div>
@@ -114,7 +153,7 @@ function MobileDrawerButton() {
     toggleOpenDrawer();
   };
 
-  const DrawerContent = (
+  const MobileDrawerContent = (
     <Box
       sx={{ width: 250 }}
       role="presentation"
@@ -124,6 +163,27 @@ function MobileDrawerButton() {
       <div style={{ width: "100%", display: "flex", justifyContent: "center" }}>
         <img src={devclubLogo} alt=".devClub logo" style={{ width: "50%" }} />
       </div>
+      <div
+        style={{
+          width: "100%",
+          display: "flex",
+          justifyContent: "center",
+          marginBottom: 10,
+        }}
+      >
+        <Stack
+          spacing={5}
+          direction="row"
+          className="mobile-drawer-social-media"
+        >
+          {socialIcons.map((socialIcon, socialIconInd) => (
+            <Link href={socialIcon.url} key={socialIconInd}>
+              {<socialIcon.icon style={{ color: "black" }} />}
+            </Link>
+          ))}
+        </Stack>
+      </div>
+
       <Divider />
       <List>
         {menuItems.map((menuItem, index) => (
@@ -161,7 +221,7 @@ function MobileDrawerButton() {
         onClose={toggleDrawer(false)}
         onOpen={toggleDrawer(true)}
       >
-        {DrawerContent}
+        {MobileDrawerContent}
       </SwipeableDrawer>
     </>
   );
