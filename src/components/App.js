@@ -17,7 +17,7 @@ function App() {
   // The animation transitions out the current page first and then transitions into the new page
   // So we can have the pages be positioned as relative and not have to worry about making the
   // new page absolute (i.e. make the pages absolute).
-  const routerTransitionDuration = 100;
+  const routerTransitionDuration = 300;
   const location = useLocation();
   return (
     <>

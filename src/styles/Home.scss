@@ -1,3 +1,6 @@
+@import "_theme.scss";
+@import "media-queries.scss";
+
 .home-container {
   text-align: center;
 }
@@ -10,10 +13,113 @@
   object-fit: cover;
 }
 
-h1 {
-  margin-top: 15%;
+.welcome-text {
+  position: absolute;
   font-size: 2.5rem;
-  font-weight: bold;
+  font-weight: 700;
+  line-height: 58px;
   color: #fff;
-  text-shadow: 0 0 10px #000;
+  text-shadow: 0px 5px 4px rgb(90, 90, 90);
+  letter-spacing: 9px;
+
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.arrow-homepage {
+  position: absolute;
+
+  // center vertically
+  top: 90%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.white-background {
+  position: relative;
+  width: 100%;
+  height: 1400px;
+  background-color: #fff;
+  margin-top: 720px;
+}
+
+.about-us {
+  position: absolute;
+  top: 250px;
+  left: 160px;
+
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 58px;
+  color: rgb(0, 0, 0);
+  text-transform: uppercase;
+  letter-spacing: 0.5em;
+
+  @include mobile {
+    top: 162px;
+    left: 52px;
+    font-size: 13px;
+  }
+
+  @include tablet {
+    top: 185px;
+    left: 146px;
+    font-size: 16px;
+  }
+}
+
+.team-text {
+  position: absolute;
+  left: 160px;
+
+  top: 264px;
+  bottom: -23.11%;
+  width: 456px;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 48px;
+  line-height: 58px;
+  text-transform: uppercase;
+  text-align: left;
+
+  color: #000000;
+
+  @include mobile {
+    top: 185px;
+    left: 52px;
+    font-size: 35px;
+    line-height: 42px;
+  }
+
+  @include tablet {
+    top: 208px;
+    left: 141px;
+    font-size: 48px;
+  }
+}
+
+.lines-homepage {
+  position: absolute;
+  width: 100%;
+  top: 110px;
+  left: 0px;
+
+  @include tablet {
+    top: 180px;
+  }
+  @include mobile {
+    top: 220px;
+  }
+}
+
+.description-home {
+  position: absolute;
+  font-weight: 200;
+  font-size: 20px;
+  top: 360px;
+  left: 946px;
+  width: 440px;
 }
