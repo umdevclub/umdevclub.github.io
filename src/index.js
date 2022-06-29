@@ -9,10 +9,10 @@ import { StyledEngineProvider } from "@mui/material/styles";
 const theme = createTheme({
   palette: {
     primary: {
-      main: "#0052cc",
+      main: "#272729",
     },
     secondary: {
-      main: "#0052cc",
+      main: "#ffffff",
     },
   },
 });

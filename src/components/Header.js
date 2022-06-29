@@ -48,11 +48,6 @@ const menuItems = [
     icon: <HomeIcon />,
   },
   {
-    title: "Events",
-    path: "/events",
-    icon: <EventIcon />,
-  },
-  {
     title: "DevChamps",
     path: "/devchamps",
     icon: <EmojiEventsIcon />,
@@ -75,7 +70,7 @@ const socialIcons = [
   },
   {
     icon: GitHubIcon,
-    url: "https://github.com/umdevclub/umdevclub.github.io/",
+    url: "https://github.com/umdevclub/",
   },
 ];
 

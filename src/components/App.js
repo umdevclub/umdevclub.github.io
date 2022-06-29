@@ -7,7 +7,6 @@ import redirectMappings from "@/resources/redirect-mappings.js";
 import Header from "@/components/Header.js";
 
 import Home from "@/components/Home.js";
-import Events from "@/components/Events.js";
 import DevChamp from "@/components/DevChamps.js";
 import Contact from "@/components/Contact.js";
 
@@ -45,7 +44,6 @@ function App() {
               )}
 
               <Route exact path="/" component={Home} />
-              <Route path="/events" component={Events} />
               <Route path="/devchamps" component={DevChamp} />
               <Route path="/contact" component={Contact} />
               <Route path="*" component={PageNotFound} />
