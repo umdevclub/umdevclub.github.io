@@ -3,7 +3,7 @@
 
 $mobile-navbar-height: 80px;
 $tablet-navbar-height: 70px;
-$desktop-navbar-height: 70px;
+$desktop-navbar-height: 50px;
 
 .header {
   height: auto;
@@ -40,8 +40,8 @@ $desktop-navbar-height: 70px;
 .badge {
   position: absolute;
   z-index: 5;
-  height: 90px;
-  width: 90px;
+  height: 50px;
+  width: 50px;
   background-color: white;
   left: 40px;
   top: 15px;
@@ -114,7 +114,7 @@ $desktop-navbar-height: 70px;
   }
 
   .menu-item {
-    font-size: large;
+    font-size: small;
     font-family: "Inter", sans-serif;
     font-weight: medium;
     text-transform: none;
