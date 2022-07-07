@@ -1,24 +1,26 @@
 {
   "files": {
-    "main.css": "/static/css/main.74302481.chunk.css",
-    "main.js": "/static/js/main.64ed9192.chunk.js",
-    "main.js.map": "/static/js/main.64ed9192.chunk.js.map",
+    "main.css": "/static/css/main.309ac19a.chunk.css",
+    "main.js": "/static/js/main.33d00145.chunk.js",
+    "main.js.map": "/static/js/main.33d00145.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.7959de96.js",
     "runtime-main.js.map": "/static/js/runtime-main.7959de96.js.map",
     "static/js/2.b7a897a7.chunk.js": "/static/js/2.b7a897a7.chunk.js",
     "static/js/2.b7a897a7.chunk.js.map": "/static/js/2.b7a897a7.chunk.js.map",
     "index.html": "/index.html",
-    "static/css/main.74302481.chunk.css.map": "/static/css/main.74302481.chunk.css.map",
+    "static/css/main.309ac19a.chunk.css.map": "/static/css/main.309ac19a.chunk.css.map",
     "static/js/2.b7a897a7.chunk.js.LICENSE.txt": "/static/js/2.b7a897a7.chunk.js.LICENSE.txt",
+    "static/media/arrow.6d75ef80.svg": "/static/media/arrow.6d75ef80.svg",
     "static/media/DevChamps.scss": "/static/media/devchamps-heading.6fb618f6.png",
     "static/media/devclub-logo-horizontal.f59db500.svg": "/static/media/devclub-logo-horizontal.f59db500.svg",
     "static/media/devclub-logo.e7c74582.svg": "/static/media/devclub-logo.e7c74582.svg",
+    "static/media/lines.631c805e.svg": "/static/media/lines.631c805e.svg",
     "static/media/wavy_video_background.9d01c8b0.mp4": "/static/media/wavy_video_background.9d01c8b0.mp4"
   },
   "entrypoints": [
     "static/js/runtime-main.7959de96.js",
     "static/js/2.b7a897a7.chunk.js",
-    "static/css/main.74302481.chunk.css",
-    "static/js/main.64ed9192.chunk.js"
+    "static/css/main.309ac19a.chunk.css",
+    "static/js/main.33d00145.chunk.js"
   ]
 }
