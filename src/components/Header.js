@@ -20,7 +20,6 @@ import Link from "@mui/material/Link";
 
 import MenuIcon from "@mui/icons-material/Menu";
 import HomeIcon from "@mui/icons-material/Home";
-import EventIcon from "@mui/icons-material/Event";
 import EmojiEventsIcon from "@mui/icons-material/EmojiEvents";
 import ContactSupportIcon from "@mui/icons-material/ContactSupport";
 
@@ -48,11 +47,6 @@ const menuItems = [
     icon: <HomeIcon />,
   },
   {
-    title: "Events",
-    path: "/events",
-    icon: <EventIcon />,
-  },
-  {
     title: "DevChamps",
     path: "/devchamps",
     icon: <EmojiEventsIcon />,
@@ -75,7 +69,7 @@ const socialIcons = [
   },
   {
     icon: GitHubIcon,
-    url: "https://github.com/umdevclub/umdevclub.github.io/",
+    url: "https://github.com/umdevclub/",
   },
 ];
 
