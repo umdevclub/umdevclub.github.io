@@ -22,9 +22,23 @@ function Form() {
     }
   };
 
-  const submitFrom = (nameInput, emailInput, messageInput) => {
-    // TODO: Submit form1
-    alert(`TODO: Submit form: ${nameInput}, ${emailInput}, ${messageInput}`);
+  const submitFrom = (name, email, message) => {
+    const submitText = `Name: ${name}; Message: ${message};`;
+
+    const formData = new URLSearchParams();
+    formData.append("email", emailInput);
+    formData.append("text", submitText);
+
+    fetch(
+      "https://send.pageclip.co/lPzFMSl9X7IOxQqDP4s7iv3Ow6GalMYv/contact-form",
+      {
+        headers: {
+          "Content-Type": "application/x-www-form-urlencoded",
+        },
+        body: formData,
+        method: "post",
+      }
+    );
   };
 
   const validateName = () => {
@@ -118,20 +132,23 @@ function Form() {
 
 function Contact() {
   return (
-    <div className="contact-container">
-      <h1>Welcome to the Contact Page!</h1>
-      <p>This is the contact page.</p>
-      <video
-        className="home-video"
-        width="100%"
-        height="100%"
-        autoPlay
-        loop
-        muted
-      >
-        <source type="video/mp4" src={backgroundVideo} />
-      </video>
-    </div>
+    <>
+      <div className="contact-page-container">
+        <Form />
+      </div>
+      <div>
+        <video
+          className="home-video"
+          width="100%"
+          height="100%"
+          autoPlay
+          loop
+          muted
+        >
+          <source type="video/mp4" src={backgroundVideo} />
+        </video>
+      </div>
+    </>
   );
 }
 

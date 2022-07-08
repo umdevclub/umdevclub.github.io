@@ -1,5 +1,4 @@
-.contact-container {
-  text-align: center;
+.contact-page-container {
   width: 100%;
 }
 
@@ -16,9 +15,11 @@
 
   background-color: white;
   width: 500px;
-  right: 100px;
 
-  top: 125px;
+  left: 50%;
+  position: relative;
+  transform: translate(-50%);
+  top: 25px;
 
   background: #ffffff;
   border: 1px solid #9c9c9c;
@@ -64,4 +65,13 @@
   letter-spacing: 0.15em;
   text-align: left;
   text-transform: uppercase;
+}
+
+.contact-form > button {
+  border-radius: 15px;
+  height: 50px;
+  text-align: center;
+  width: 250px;
+  left: 50%;
+  transform: translate(-50%);
 }
