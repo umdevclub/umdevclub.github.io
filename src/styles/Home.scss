@@ -115,7 +115,7 @@
 
 .lines-homepage {
   position: absolute;
-  opacity: 70%;
+  opacity: 60%;
   height: 30%;
   top: 7em;
   width: 100%;
@@ -132,9 +132,6 @@
   @include mobile {
     margin-top: 2em;
   }
-}
-
-.title-container {
 }
 
 .title-content {
