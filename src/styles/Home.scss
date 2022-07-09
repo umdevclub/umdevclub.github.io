@@ -81,6 +81,10 @@
   }
 }
 
+.aboutAndText {
+  z-index: 5;
+}
+
 .team-text {
   margin: 0;
   left: 160px;
@@ -117,7 +121,7 @@
   position: absolute;
   opacity: 60%;
   height: 30%;
-  top: 7em;
+  top: 4em;
   width: 100%;
   left: 0px;
 }
@@ -128,6 +132,7 @@
   top: 360px;
   left: 946px;
   width: 440px;
+  z-index: 5;
 
   @include mobile {
     margin-top: 2em;

@@ -88,3 +88,36 @@
   flex-direction: column;
   margin-bottom: 0;
 }
+
+.question {
+  font-weight: 700;
+  font-size: 26px;
+  letter-spacing: 0.15em;
+  color: #fb2e2e;
+}
+
+.answer {
+  font-weight: 500;
+  font-size: 18px;
+  letter-spacing: 0.15em;
+  text-transform: lowercase;
+  line-height: 29px;
+}
+
+.questions {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 0;
+  margin-left: 3em;
+  margin-right: 3em;
+  margin-top: 5em;
+}
+
+.question-1,
+.question-2,
+.question-3,
+.question-4 {
+  margin-bottom: 2em;
+}

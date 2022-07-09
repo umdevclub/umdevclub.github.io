@@ -135,6 +135,8 @@ function Home() {
           </h1>
         </div>
 
+        <img className="lines-homepage" src={lines} alt="" />
+
         <br />
         <br />
         <br />
@@ -147,8 +149,6 @@ function Home() {
         <div className="title-container">
           <h1 className="title-content">OUR TEAM</h1>
         </div>
-
-        <img className="lines-homepage" src={lines} alt="" />
 
         <div className="team-members-grid">
           {teamMembers.map((teamMember) => (
