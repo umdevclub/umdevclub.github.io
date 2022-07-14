@@ -139,6 +139,9 @@
   }
 }
 
+.title-container {
+}
+
 .title-content {
   position: relative;
   margin-top: 5em;
@@ -146,6 +149,90 @@
   font-size: 25px;
   letter-spacing: 0.3em;
 }
+
+/* What we do / Missions */
+.missions-container {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+
+.mission-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 80px;
+}
+
+.mission-text-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 350px;
+  text-align: left;
+}
+
+.mission-heading {
+  text-align: left;
+  width: 100%;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 18px;
+  letter-spacing: 0.305em;
+  text-transform: uppercase;
+
+  color: #000000;
+}
+
+.mission-content {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 200;
+  font-size: 20px;
+  line-height: 125%;
+  /* or 29px */
+
+  letter-spacing: 0.1em;
+
+  color: #000000;
+}
+
+.mission-images-container {
+}
+
+.mission-images-container img {
+  transition: all 0.5s ease;
+}
+
+.mission-images-container img:hover {
+  filter: brightness(0.8);
+}
+
+@include mobile-or-tablet {
+  .missions-container {
+    align-items: center;
+    gap: 80px;
+  }
+
+  .mission-container {
+    flex-direction: column;
+    gap: 0px;
+  }
+
+  .mission-heading {
+    text-align: center;
+  }
+
+  .mission-content {
+    text-align: center;
+  }
+}
+
+/* Team members */
 
 .team-members-grid {
   position: relative;
