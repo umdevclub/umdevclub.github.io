@@ -6,68 +6,18 @@ import lines from "@/resources/images/lines.svg";
 import Box from "@mui/material/Box";
 import CardContent from "@mui/material/CardContent";
 import Typography from "@mui/material/Typography";
+import ImageList from "@mui/material/ImageList";
+import ImageListItem from "@mui/material/ImageListItem";
 
 import React from "react";
 
-import ahmed from "@/resources/images/team-members/ahmed.png";
-import graham from "@/resources/images/team-members/graham.png";
-import max from "@/resources/images/team-members/max.png";
-import minh from "@/resources/images/team-members/minh.png";
-import mohsen from "@/resources/images/team-members/mohsen.png";
-import sarah from "@/resources/images/team-members/sarah.png";
-import tano from "@/resources/images/team-members/tano.png";
-import tonmoy from "@/resources/images/team-members/tonmoy.png";
+import teamMembers from "@/resources/data/team-members.js";
 
-const teamMembers = [
-  {
-    name: "Mohsen Yousefian",
-    role: "President",
-    image: mohsen,
-    bio: "Very good person, I like this person, they do cool stuff and it's fun to hang out with them, they are also very smart and active and enjoy doing stuff.",
-  },
-  {
-    name: "Khuc Nguyen (Tano)",
-    role: "Vice-President",
-    image: tano,
-    bio: "Very good person, I like this person, they do cool stuff and it's fun to hang out with them, they are also very smart and active and enjoy doing stuff.",
-  },
-  {
-    name: "Ahmed S. Ahmed",
-    role: "Treasurer",
-    image: ahmed,
-    bio: "Very good person, I like this person, they do cool stuff and it's fun to hang out with them, they are also very smart and active and enjoy doing stuff.",
-  },
-  {
-    name: "Sarah Veloso",
-    role: "Internal",
-    image: sarah,
-    bio: "Very good person, I like this person, they do cool stuff and it's fun to hang out with them, they are also very smart and active and enjoy doing stuff.",
-  },
-  {
-    name: "Tonmoy Ghosh",
-    role: "External",
-    image: tonmoy,
-    bio: "Very good person, I like this person, they do cool stuff and it's fun to hang out with them, they are also very smart and active and enjoy doing stuff.",
-  },
-  {
-    name: "Graham Downey",
-    role: "Events",
-    image: graham,
-    bio: "Very good person, I like this person, they do cool stuff and it's fun to hang out with them, they are also very smart and active and enjoy doing stuff.",
-  },
-  {
-    name: "Max Abdulkhalikov",
-    role: "Promotions",
-    image: max,
-    bio: "Very good person, I like this person, they do cool stuff and it's fun to hang out with them, they are also very smart and active and enjoy doing stuff.",
-  },
-  {
-    name: "Hoang Minh Phan",
-    role: "Vice-executive",
-    image: minh,
-    bio: "Very good person, I like this person, they do cool stuff and it's fun to hang out with them, they are also very smart and active and enjoy doing stuff.",
-  },
-];
+import {
+  workshopImages,
+  hackathonImages,
+  devchampsImages,
+} from "@/resources/data/homepage-mission-images.js";
 
 function TeamMemberCard({ teamMemberData }) {
   const card = (
@@ -99,6 +49,35 @@ function TeamMemberCard({ teamMemberData }) {
   );
 
   return <Box sx={{ width: "100%", height: "100%" }}>{card}</Box>;
+}
+
+function MissionImageList({ imagesData }) {
+  return (
+    <ImageList
+      sx={{ width: 500, height: 250 }}
+      variant="quilted"
+      cols={4}
+      rowHeight={121}
+    >
+      {imagesData.map((item) => (
+        <ImageListItem
+          key={item.img}
+          cols={item.cols || 1}
+          rows={item.rows || 1}
+        >
+          <img
+            src={item.img}
+            alt={item.title}
+            loading="lazy"
+            style={{ cursor: "pointer" }}
+            onClick={() => {
+              window.open(item.img, "_blank");
+            }}
+          />
+        </ImageListItem>
+      ))}
+    </ImageList>
+  );
 }
 
 function Home() {
@@ -137,13 +116,58 @@ function Home() {
 
         <img className="lines-homepage" src={lines} alt="" />
 
-        <br />
-        <br />
+        <div className="title-container">
+          <h1 className="title-content">WHAT WE DO</h1>
+        </div>
+
         <br />
         <br />
 
-        <div className="title-container">
-          <h1 className="title-content">WHAT WE DO</h1>
+        <div className="missions-container">
+          <div className="mission-container">
+            <div className="mission-text-container">
+              <span className="mission-heading">Workshops</span>
+              <p className="mission-content">
+                Yaknow we have a workshop for you to learn how to code. We have
+                workshops for you to learn how to code. We have workshops for
+                you to learn how to code. We have workshops for you to learn how
+                to code. We have workshops for you to learn how to code. We have
+              </p>
+            </div>
+            <div className="mission-images-container">
+              <MissionImageList imagesData={workshopImages} />
+            </div>
+          </div>
+
+          <div className="mission-container">
+            <div className="mission-text-container">
+              <span className="mission-heading">Yearly Hackathon</span>
+              <p className="mission-content">
+                Yaknow we have a workshop for you to learn how to code. We have
+                workshops for you to learn how to code. We have workshops for
+                you to learn how to code. We have workshops for you to learn how
+                to code. We have workshops for you to learn how to code. We have
+              </p>
+            </div>
+            <div className="mission-images-container">
+              <MissionImageList imagesData={hackathonImages} />
+            </div>
+          </div>
+
+          <div className="mission-container">
+            <div className="mission-text-container">
+              <span className="mission-heading">.devChamps</span>
+              <p className="mission-content">
+                Yaknow we have a workshop for you to learn how to code. We have
+                workshops for you to learn how to code. We have workshops for
+                you to learn how to code. We have workshops for you to learn how
+                to code. We have workshops for you to learn how to code. We have
+              </p>
+            </div>
+            <div className="mission-images-container">
+              <MissionImageList imagesData={devchampsImages} />
+            </div>
+          </div>
         </div>
 
         <div className="title-container">
