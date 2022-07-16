@@ -3,13 +3,12 @@ import backgroundVideo from "@/resources/videos/wavy_video_background.mp4";
 import arrow from "@/resources/images/arrow.svg";
 import lines from "@/resources/images/lines.svg";
 
-import Box from "@mui/material/Box";
-import CardContent from "@mui/material/CardContent";
-import Typography from "@mui/material/Typography";
+import React from "react";
+
 import ImageList from "@mui/material/ImageList";
 import ImageListItem from "@mui/material/ImageListItem";
 
-import React from "react";
+import PeopleList from "@/components/PeopleList";
 
 import teamMembers from "@/resources/data/team-members.js";
 
@@ -18,44 +17,6 @@ import {
   hackathonImages,
   devchampsImages,
 } from "@/resources/data/homepage-mission-images.js";
-
-function TeamMemberCard({ teamMemberData }) {
-  const card = (
-    <>
-      <CardContent className="team-member">
-        <div class="image-container">
-          <img
-            src={teamMemberData.image}
-            alt={`Portrait of .devClub team member ${teamMemberData.name}`}
-          />
-        </div>
-        <br />
-        <br />
-        <br />
-        <Typography variant="h6" component="div" className="members-names">
-          {teamMemberData.name}
-        </Typography>
-        <Typography
-          sx={{ mb: 1.5 }}
-          color="text.secondary"
-          className="members-position"
-        >
-          {teamMemberData.role}
-        </Typography>
-        <Typography variant="body2" className="members-description">
-          {teamMemberData.bio}
-        </Typography>
-      </CardContent>
-      {/*
-          <CardActions>
-            <Button size="small">Learn More</Button>
-          </CardActions>
-        */}
-    </>
-  );
-
-  return <Box sx={{ width: "100%", height: "100%" }}>{card}</Box>;
-}
 
 function MissionImageList({ imagesData }) {
   return (
@@ -179,20 +140,7 @@ function Home() {
           <h1 className="title-content">OUR TEAM</h1>
         </div>
 
-        <div className="team-members-grid">
-          {teamMembers.map((teamMember) => (
-            <div
-              style={{
-                width: 200,
-                height: "100%",
-                backgroundColor: (theme) =>
-                  theme.palette.mode === "dark" ? "#1A2027" : "#fff",
-              }}
-            >
-              <TeamMemberCard teamMemberData={teamMember} />
-            </div>
-          ))}
-        </div>
+        <PeopleList peopleData={teamMembers} />
       </div>
       <footer className="footer">
         <h2 className="footer-text">website under construction</h2>

@@ -81,6 +81,7 @@
   margin-top: 0;
   margin-bottom: 10em;
   color: #dd2727;
+  text-align: center;
 }
 
 .faq {
@@ -109,7 +110,6 @@
 .questions {
   display: flex;
   justify-content: left;
-  align-items: center;
   flex-direction: column;
   margin-bottom: 0;
   margin-left: 3em;
@@ -122,6 +122,10 @@
 .question-3,
 .question-4 {
   margin-bottom: 2em;
+}
+
+.winners {
+  width: 100%;
 }
 
 .footer {
