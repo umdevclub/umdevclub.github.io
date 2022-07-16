@@ -1,5 +1,8 @@
 import "@/styles/DevChamps.scss";
 
+import PeopleList from "@/components/PeopleList.js";
+import championsData from "@/resources/data/champions.js";
+
 function DevChamps() {
   return (
     <div className="devchamps-container">
@@ -16,7 +19,9 @@ function DevChamps() {
         <h2 className="under-header-devchamps">
           join it by winning in any .devchamps category!
         </h2>
-        <div className="winners"></div>
+        <div className="winners">
+          <PeopleList peopleData={championsData} />
+        </div>
       </div>
       <div className="faq">
         <h1 className="header-devchamps">&lt;F.A.Q&gt;</h1>
