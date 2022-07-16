@@ -61,6 +61,9 @@ function DevChamps() {
           </div>
         </div>
       </div>
+      <footer className="footer">
+        <h2 className="footer-text">website under construction</h2>
+      </footer>
     </div>
   );
 }
