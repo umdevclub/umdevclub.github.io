@@ -1,3 +1,6 @@
+@import "_theme.scss";
+@import "media-queries.scss";
+
 .contact-page-container {
   width: 100%;
 }
@@ -12,14 +15,12 @@
 
 .contact-form {
   position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 
   background-color: white;
   width: 500px;
-
-  left: 50%;
-  position: relative;
-  transform: translate(-50%);
-  top: 25px;
 
   background: #ffffff;
   border: 1px solid #9c9c9c;
@@ -32,6 +33,11 @@
   padding-bottom: 30px;
   padding-left: 30px;
   padding-right: 30px;
+
+  @include mobile {
+    top: 55%;
+    width: 200px;
+  }
 }
 
 .contact-form > h2 {
@@ -44,6 +50,10 @@
   letter-spacing: 0.305em;
   text-transform: uppercase;
   margin-bottom: 10px;
+
+  @include mobile {
+    font-size: 1rem;
+  }
 }
 
 .contact-form > .text-field,
@@ -74,4 +84,8 @@
   width: 250px;
   left: 50%;
   transform: translate(-50%);
+
+  @include mobile {
+    width: 200px;
+  }
 }
