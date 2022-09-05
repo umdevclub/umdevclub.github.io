@@ -1,59 +1,55 @@
-import saul from "@/resources/images/other/saul.gif";
+import workshopImg1 from "@/resources/images/workshops/w1.jpg";
+import workshopImg2 from "@/resources/images/workshops/w2.jpg";
+import workshopImg3 from "@/resources/images/workshops/w3.jpg";
+import workshopImg4 from "@/resources/images/workshops/w4.jpg";
+
+import hackathonImg1 from "@/resources/images/hackathons/h1.jpg";
+import hackathonImg2 from "@/resources/images/hackathons/h2.jpg";
+import hackathonImg3 from "@/resources/images/hackathons/h3.jpg";
+import hackathonImg4 from "@/resources/images/hackathons/h4.jpg";
 
 export const workshopImages = [
   {
-    img: saul,
-    title: "Breakfast",
-    rows: 2,
-    cols: 2,
-  },
-  {
-    img: saul,
-    title: "Burger",
-  },
-  {
-    img: saul,
+    img: workshopImg4,
     title: "Camera",
+    rows: 2,
   },
   {
-    img: saul,
-    title: "Hats",
+    img: workshopImg3,
+    title: "Breakfast",
     cols: 2,
   },
   {
-    img: saul,
-    title: "Honey",
-    author: "@arwinneil",
+    img: workshopImg1,
+    title: "Burger",
     rows: 2,
+  },
+
+  {
+    img: workshopImg2,
+    title: "Hats",
     cols: 2,
   },
 ];
 
 export const hackathonImages = [
   {
-    img: saul,
+    img: hackathonImg2,
     title: "Breakfast",
     rows: 2,
     cols: 2,
   },
   {
-    img: saul,
+    img: hackathonImg1,
     title: "Burger",
   },
   {
-    img: saul,
+    img: hackathonImg3,
     title: "Camera",
   },
   {
-    img: saul,
+    img: hackathonImg4,
     title: "Hats",
-    cols: 2,
-  },
-  {
-    img: saul,
-    title: "Honey",
-    author: "@arwinneil",
-    rows: 2,
     cols: 2,
   },
 ];

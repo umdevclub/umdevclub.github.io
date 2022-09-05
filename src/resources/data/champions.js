@@ -1,25 +1,25 @@
 import champion1 from "@/resources/images/champions/champion1.png";
-import champion2 from "@/resources/images/champions/champion2.png";
+import champion2 from "@/resources/images/champions/champion2.jpg";
 import champion3 from "@/resources/images/champions/champion3.png";
 
 const champions = [
   {
-    name: "Champion 1",
-    role: "President",
+    name: "Graham Downey",
+    role: "Website Challenge",
     image: champion1,
-    bio: "Very good person, I like this person, they do cool stuff and it's fun to hang out with them, they are also very smart and active and enjoy doing stuff.",
+    bio: "Graham developed Alathra, a worldbuilding Minecraft server with a mix of geopolitics and light roleplay, focused on creating an interesting history from the events and actions of players within the land of Alathra.",
   },
   {
-    name: "Champion 2",
-    role: "Vice-President",
+    name: "Joshua Smallwood",
+    role: "Discord Bot Challenge",
     image: champion2,
-    bio: "Very good person, I like this person, they do cool stuff and it's fun to hang out with them, they are also very smart and active and enjoy doing stuff.",
+    bio: "Joshue developed Join Sound Johnson, a Discord bot that allows you to set a YouTube link to a video that plays when you connect to a voice channel.",
   },
   {
-    name: "Champion 3",
-    role: "Treasurer",
+    name: "TBD",
+    role: "Generative Art Challenge",
     image: champion3,
-    bio: "Very good person, I like this person, they do cool stuff and it's fun to hang out with them, they are also very smart and active and enjoy doing stuff.",
+    bio: "To be determined.",
   },
 ];
 
