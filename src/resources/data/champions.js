@@ -1,7 +1,7 @@
-import graham from "@/resources/images/champions/graham.png";
+import graham from "@/resources/images/champions/graham.jpg";
 import joshua from "@/resources/images/champions/joshua.jpg";
 import brooklynn from "@/resources/images/champions/brooklynn.png";
-import jacob from "@/resources/images/champions/jacob.jpeg";
+import jacob from "@/resources/images/champions/jacob.jpg";
 
 const champions = [
   {
