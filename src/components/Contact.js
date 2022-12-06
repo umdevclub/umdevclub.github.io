@@ -8,6 +8,7 @@ import TextField from "@mui/material/TextField";
 import Button from "@mui/material/Button";
 
 function Form() {
+  const [submissionInProgress, setSubmissionInProgress] = React.useState(false);
   const [successfulSubmission, setSuccessfulSubmission] = React.useState(false);
   const [nameInput, setNameInput] = React.useState("");
   const [nameInputError, setNameInputError] = React.useState("");
@@ -30,8 +31,10 @@ function Form() {
     }
 
     if (isValid) {
+      setSubmissionInProgress(true);
       submitFrom(nameInput, emailInput, messageInput)
         .then((response) => {
+          setSubmissionInProgress(false);
           if (response.status === 200 || response.status === 201) {
             onSubmissionSuccess();
           } else {
@@ -39,6 +42,7 @@ function Form() {
           }
         })
         .catch((error) => {
+          setSubmissionInProgress(false);
           onSubmissionError(error.message);
         });
     }
@@ -152,7 +156,12 @@ function Form() {
           Message sent successfully!
         </Typography>
       ) : null}
-      <Button variant="contained" size="large" onClick={onSubmit}>
+      <Button
+        variant="contained"
+        size="large"
+        onClick={onSubmit}
+        disabled={submissionInProgress}
+      >
         Send
       </Button>
     </div>
