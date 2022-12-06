@@ -55,7 +55,7 @@ function Form() {
     formData.append("email", emailInput);
     formData.append("text", submitText);
 
-    fetch(
+    return fetch(
       "https://send.pageclip.co/lPzFMSl9X7IOxQqDP4s7iv3Ow6GalMYv/contact-form",
       {
         headers: {
