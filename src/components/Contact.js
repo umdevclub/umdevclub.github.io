@@ -32,7 +32,7 @@ function Form() {
     if (isValid) {
       submitFrom(nameInput, emailInput, messageInput)
         .then((response) => {
-          if (response.status === 200) {
+          if (response.status === 200 || response.status === 201) {
             onSubmissionSuccess();
           } else {
             onSubmissionError(response.message);
@@ -59,6 +59,7 @@ function Form() {
         },
         body: formData,
         method: "post",
+        redirect: "follow",
       }
     );
   };
