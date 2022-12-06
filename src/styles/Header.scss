@@ -3,7 +3,7 @@
 
 $mobile-navbar-height: 80px;
 $tablet-navbar-height: 70px;
-$desktop-navbar-height: 50px;
+$desktop-navbar-height: 60px;
 
 .header {
   height: auto;
@@ -40,8 +40,8 @@ $desktop-navbar-height: 50px;
 .badge {
   position: absolute;
   z-index: 5;
-  height: 50px;
-  width: 50px;
+  height: 80px;
+  width: 80px;
   background-color: white;
   left: 40px;
   top: 15px;

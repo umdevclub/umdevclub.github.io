@@ -12,6 +12,8 @@ import PeopleList from "@/components/PeopleList";
 
 import teamMembers from "@/resources/data/team-members.js";
 
+import Footer from "@/components/Footer";
+
 import {
   workshopImages,
   hackathonImages,
@@ -145,9 +147,7 @@ function Home() {
 
         <PeopleList peopleData={teamMembers} />
       </div>
-      <footer className="footer">
-        <h2 className="footer-text">website under construction</h2>
-      </footer>
+      <Footer />
     </div>
   );
 }

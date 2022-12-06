@@ -3,6 +3,8 @@ import "@/styles/DevChamps.scss";
 import PeopleList from "@/components/PeopleList.js";
 import championsData from "@/resources/data/champions.js";
 
+import Footer from "@/components/Footer.js";
+
 function DevChamps() {
   return (
     <div className="devchamps-container">
@@ -61,9 +63,7 @@ function DevChamps() {
           </div>
         </div>
       </div>
-      <footer className="footer">
-        <h2 className="footer-text">website under construction</h2>
-      </footer>
+      <Footer />
     </div>
   );
 }
