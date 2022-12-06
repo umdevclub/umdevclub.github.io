@@ -9,9 +9,9 @@ import hackathonImg3 from "@/resources/images/hackathons/h3.jpg";
 import hackathonImg4 from "@/resources/images/hackathons/h4.jpg";
 
 import devchampsImg1 from "@/resources/images/devchamps/wall-of-flesh.gif";
-import devchampsImg2 from "@/resources/images/devchamps/brians-brain.png";
-import devchampsImg3 from "@/resources/images/devchamps/alathra.png";
-import devchampsImg4 from "@/resources/images/devchamps/golden-spiral.png";
+import devchampsImg2 from "@/resources/images/devchamps/brians-brain.jpg";
+import devchampsImg3 from "@/resources/images/devchamps/alathra.jpg";
+import devchampsImg4 from "@/resources/images/devchamps/golden-spiral.jpg";
 
 export const workshopImages = [
   {
