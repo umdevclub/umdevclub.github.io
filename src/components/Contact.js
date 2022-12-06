@@ -8,6 +8,7 @@ import TextField from "@mui/material/TextField";
 import Button from "@mui/material/Button";
 
 function Form() {
+  const [successfulSubmission, setSuccessfulSubmission] = React.useState(false);
   const [nameInput, setNameInput] = React.useState("");
   const [nameInputError, setNameInputError] = React.useState("");
   const [emailInput, setEmailInput] = React.useState("");
@@ -17,8 +18,29 @@ function Form() {
 
   const onSubmit = () => {
     let isValid = validateForm();
+    function onSubmissionError(message) {
+      alert(`Failed to submit form: ${message}`);
+      setSuccessfulSubmission(false);
+    }
+    function onSubmissionSuccess() {
+      setNameInput("");
+      setEmailInput("");
+      setMessageInput("");
+      setSuccessfulSubmission(true);
+    }
+
     if (isValid) {
-      submitFrom(nameInput, emailInput, messageInput);
+      submitFrom(nameInput, emailInput, messageInput)
+        .then((response) => {
+          if (response.status === 200) {
+            onSubmissionSuccess();
+          } else {
+            onSubmissionError(response.message);
+          }
+        })
+        .catch((error) => {
+          onSubmissionError(error.message);
+        });
     }
   };
 
@@ -123,6 +145,12 @@ function Form() {
         helperText={messageInputError || " "}
         error={messageInputError.length > 0}
       />
+      <br />
+      {successfulSubmission ? (
+        <Typography variant="h6" component="h3" color="green">
+          Message sent successfully!
+        </Typography>
+      ) : null}
       <Button variant="contained" size="large" onClick={onSubmit}>
         Send
       </Button>
