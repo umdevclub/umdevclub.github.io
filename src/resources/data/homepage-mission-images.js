@@ -8,6 +8,11 @@ import hackathonImg2 from "@/resources/images/hackathons/h2.jpg";
 import hackathonImg3 from "@/resources/images/hackathons/h3.jpg";
 import hackathonImg4 from "@/resources/images/hackathons/h4.jpg";
 
+import devchampsImg1 from "@/resources/images/devchamps/wall-of-flesh.gif";
+import devchampsImg2 from "@/resources/images/devchamps/brians-brain.jpg";
+import devchampsImg3 from "@/resources/images/devchamps/alathra.jpg";
+import devchampsImg4 from "@/resources/images/devchamps/golden-spiral.jpg";
+
 export const workshopImages = [
   {
     img: workshopImg4,
@@ -56,29 +61,28 @@ export const hackathonImages = [
 
 export const devchampsImages = [
   {
-    img: "https://images.unsplash.com/photo-1551963831-b3b1ca40c98e",
+    img: devchampsImg1,
+    title: "Hats",
+    rows: 1,
+    cols: 1,
+  },
+  {
+    img: devchampsImg2,
+    title: "Burger",
+    cols: 1,
+    rows: 1,
+  },
+
+  {
+    img: devchampsImg3,
     title: "Breakfast",
     rows: 2,
     cols: 2,
   },
   {
-    img: "https://images.unsplash.com/photo-1551782450-a2132b4ba21d",
-    title: "Burger",
-  },
-  {
-    img: "https://images.unsplash.com/photo-1522770179533-24471fcdba45",
+    img: devchampsImg4,
     title: "Camera",
-  },
-  {
-    img: "https://images.unsplash.com/photo-1533827432537-70133748f5c8",
-    title: "Hats",
     cols: 2,
-  },
-  {
-    img: "https://images.unsplash.com/photo-1558642452-9d2a7deb7f62",
-    title: "Honey",
-    author: "@arwinneil",
-    rows: 2,
-    cols: 2,
+    rows: 1,
   },
 ];
