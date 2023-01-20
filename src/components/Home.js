@@ -2,8 +2,11 @@ import "@/styles/Home.scss";
 import backgroundVideo from "@/resources/videos/wavy_video_background.mp4";
 import arrow from "@/resources/images/arrow.svg";
 import lines from "@/resources/images/lines.svg";
+import discordLogo from "@/resources/images/discord-mark-white.svg";
 
 import React from "react";
+
+import Link from "@mui/material/Button";
 
 import ImageList from "@mui/material/ImageList";
 import ImageListItem from "@mui/material/ImageListItem";
@@ -139,6 +142,46 @@ function Home() {
               <MissionImageList imagesData={devchampsImages} />
             </div>
           </div>
+        </div>
+
+        <div className="how-to-join-container">
+          <div className="title-container ">
+            <h1 className="title-content">HOW TO JOIN</h1>
+          </div>
+          <p className="how-to-join-text">
+            We are on the same discord server as&nbsp;
+            <a
+              href="https://umanitobacssa.ca/"
+              variant="body2"
+              underline="hover"
+              target="_blank"
+            >
+              CSSA
+            </a>
+            &nbsp;and&nbsp;
+            <a
+              href="https://umwics.vercel.app/"
+              variant="body2"
+              underline="hover"
+              target="_blank"
+            >
+              WICS
+            </a>
+            &nbsp;
+            <br />
+            Don't forget to opt-in for devClub announcement notifications!
+          </p>
+          <Link
+            href="https://forms.gle/C11YVJDVW2DhcbjXA"
+            target="_blank"
+            component="button"
+            variant="contained"
+            size="large"
+            className="how-to-join-button"
+          >
+            <img className="discord-logo" src={discordLogo} alt="" />
+            Click here to join
+          </Link>
         </div>
 
         <div className="title-container">

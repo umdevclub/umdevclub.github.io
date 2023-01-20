@@ -198,7 +198,8 @@ html {
   color: #000000;
 }
 
-.mission-content {
+.mission-content,
+.how-to-join-container .how-to-join-text {
   font-family: "Inter";
   font-style: normal;
   font-weight: 200;
@@ -237,4 +238,44 @@ html {
   .mission-content {
     text-align: center;
   }
+}
+
+/* "How to join" container */
+
+.how-to-join-container {
+  width: 70%;
+  min-width: fit-content;
+  padding-left: 2em;
+  padding-right: 2em;
+  border: black 1px solid;
+  border-radius: 88px;
+  margin: auto;
+  margin-top: 5em;
+}
+
+@include mobile {
+  .how-to-join-container {
+    min-width: 80%;
+  }
+}
+
+.how-to-join-container .title-content {
+  margin-top: 2em;
+  margin-bottom: 2em;
+}
+
+.how-to-join-container .discord-logo {
+  width: 40px;
+  height: 40px;
+  margin: auto;
+  margin-right: 20px;
+}
+
+.how-to-join-container .how-to-join-button {
+  margin-top: 2em;
+  margin-bottom: 3em;
+}
+
+.how-to-join-container .how-to-join-text a {
+  color: rgb(0, 135, 238);
 }
