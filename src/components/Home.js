@@ -155,6 +155,7 @@ function Home() {
               variant="body2"
               underline="hover"
               target="_blank"
+              rel="noreferrer"
             >
               CSSA
             </a>
@@ -164,6 +165,7 @@ function Home() {
               variant="body2"
               underline="hover"
               target="_blank"
+              rel="noreferrer"
             >
               WICS
             </a>
