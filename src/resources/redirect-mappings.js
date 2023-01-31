@@ -1,5 +1,5 @@
 const redirectMappings = {
-    "/devchamp": "/devchamps"
+  "/devchamp": "/devchamps",
 };
 
 export default redirectMappings;

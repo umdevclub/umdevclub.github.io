@@ -13,6 +13,7 @@ import ExamCramForms from "@/components/ExamCramForms.js";
 
 import PageNotFound from "@/components/PageNotFound.js";
 import React from "react";
+
 function App() {
   // The animation transitions out the current page first and then transitions into the new page
   // So we can have the pages be positioned as relative and not have to worry about making the
