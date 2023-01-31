@@ -53,8 +53,8 @@ const menuItems = [
     icon: <EmojiEventsIcon />,
   },
   {
-    title: ".HACKATHON",
-    path: "/hackathon-register",
+    title: "Hackathon",
+    path: "/hackathon",
     icon: <ComputerIcon />,
   },
   {

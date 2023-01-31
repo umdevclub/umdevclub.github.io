@@ -1,11 +1,11 @@
-import React, { useEffect } from "react";
+import React from "react";
 
-import { CircularProgress } from "@mui/material";
+import { Button } from "@mui/material";
+import { useHistory } from "react-router-dom";
 
 function Hackathon() {
-  useEffect(() => {
-    window.location.href = "https://3utrb7n0muk.typeform.com/to/RvKJTfsJ";
-  }, []);
+  const history = useHistory();
+
   return (
     <div
       style={{
@@ -17,8 +17,22 @@ function Hackathon() {
         alignItems: "center",
       }}
     >
-      <CircularProgress size="lg" />
-      <p>Loading...</p>
+      <h1
+        style={{
+          textTransform: "uppercase",
+          letterSpacing: "0.3em",
+        }}
+      >
+        Register for the hackathon!
+      </h1>
+      <Button
+        variant="contained"
+        size="large"
+        style={{ letterSpacing: "0.2em" }}
+        onClick={() => history.push("/hackathon-register")}
+      >
+        Register
+      </Button>
     </div>
   );
 }
