@@ -22,6 +22,7 @@ import MenuIcon from "@mui/icons-material/Menu";
 import HomeIcon from "@mui/icons-material/Home";
 import EmojiEventsIcon from "@mui/icons-material/EmojiEvents";
 import ContactSupportIcon from "@mui/icons-material/ContactSupport";
+import ComputerIcon from "@mui/icons-material/Computer";
 
 import InstagramIcon from "@mui/icons-material/Instagram";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
@@ -59,7 +60,7 @@ const menuItems = [
   {
     title: ".HACKATHON",
     path: "/hackathon-register",
-    icon: <ContactSupportIcon />,
+    icon: <ComputerIcon />,
   },
 ];
 

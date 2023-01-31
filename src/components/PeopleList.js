@@ -8,7 +8,7 @@ function PersonCard({ personData }) {
   const card = (
     <>
       <CardContent className="people">
-        <div class="image-container">
+        <div className="image-container">
           <img
             src={personData.image}
             alt={`Portrait of .devClub team member ${personData.name}`}
