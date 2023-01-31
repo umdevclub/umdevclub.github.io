@@ -1,0 +1,38 @@
+.error-boundary {
+  &-container {
+    letter-spacing: 0.305em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+    text-align: center;
+  }
+
+  &-text {
+    letter-spacing: 0.1em;
+    margin: 1rem 0;
+  }
+
+  &-button-container {
+    display: flex;
+    justify-content: space-around;
+    gap: 1rem;
+    margin-top: 1rem;
+
+    button {
+      padding: 1rem;
+      outline: none;
+      border: none;
+      color: white;
+      background-color: #272729;
+      border-radius: 15px;
+      cursor: pointer;
+      letter-spacing: 0.305em;
+
+      &:hover {
+        opacity: 0.8;
+      }
+    }
+  }
+}

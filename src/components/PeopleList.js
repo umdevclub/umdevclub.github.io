@@ -8,7 +8,7 @@ function PersonCard({ personData }) {
   const card = (
     <>
       <CardContent className="people">
-        <div class="image-container">
+        <div className="image-container">
           <img
             src={personData.image}
             alt={`Portrait of .devClub team member ${personData.name}`}
@@ -45,7 +45,7 @@ function PersonCard({ personData }) {
 function PeopleList({ peopleData }) {
   return (
     <div className="peoples-grid">
-      {peopleData.map((person) => (
+      {peopleData.map((person, index) => (
         <div
           style={{
             width: 200,
@@ -53,6 +53,7 @@ function PeopleList({ peopleData }) {
             backgroundColor: (theme) =>
               theme.palette.mode === "dark" ? "#1A2027" : "#fff",
           }}
+          key={index}
         >
           <PersonCard personData={person} />
         </div>

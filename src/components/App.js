@@ -10,9 +10,11 @@ import Home from "@/components/Home.js";
 import DevChamp from "@/components/DevChamps.js";
 import Contact from "@/components/Contact.js";
 import ExamCramForms from "@/components/ExamCramForms.js";
+import Hackathon from "@/components/Hackathon.js";
 
 import PageNotFound from "@/components/PageNotFound.js";
 import React from "react";
+
 function App() {
   // The animation transitions out the current page first and then transitions into the new page
   // So we can have the pages be positioned as relative and not have to worry about making the
@@ -48,6 +50,7 @@ function App() {
               <Route path="/devchamps" component={DevChamp} />
               <Route path="/contact" component={Contact} />
               <Route path="/examcram-forms" component={ExamCramForms} />
+              <Route path="/hackathon-register" component={Hackathon} />
               <Route path="*" component={PageNotFound} />
             </Switch>
           </CSSTransition>
