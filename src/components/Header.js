@@ -56,6 +56,11 @@ const menuItems = [
     path: "/contact",
     icon: <ContactSupportIcon />,
   },
+  {
+    title: ".HACKATHON",
+    path: "/hackathon-register",
+    icon: <ContactSupportIcon />,
+  },
 ];
 
 const socialIcons = [
