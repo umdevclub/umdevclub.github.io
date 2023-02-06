@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.6fd0c42b.css",
-    "main.js": "/static/js/main.ceadc4c7.js",
+    "main.css": "/static/css/main.bd430509.css",
+    "main.js": "/static/js/main.676f0c2b.js",
     "static/media/wall-of-flesh.gif": "/static/media/wall-of-flesh.726069fb00d35dd38b97.gif",
     "static/media/wavy_video_background.mp4": "/static/media/wavy_video_background.9d01c8b0d91cec00a23e.mp4",
     "static/media/w3.jpg": "/static/media/w3.4bd626fb6f40c950a167.jpg",
@@ -30,13 +30,13 @@
     "static/media/devclub-logo-horizontal.svg": "/static/media/devclub-logo-horizontal.f59db50029020c2e598478495610272e.svg",
     "static/media/joshua.jpg": "/static/media/joshua.2a0c4ebe85df6d286450.jpg",
     "static/media/arrow.svg": "/static/media/arrow.6d75ef80652995034fded5f20b4076fc.svg",
-    "static/media/discord-mark-white.svg": "/static/media/discord-mark-white.a420227021864513c33f564d51c99590.svg",
     "index.html": "/index.html",
-    "main.6fd0c42b.css.map": "/static/css/main.6fd0c42b.css.map",
-    "main.ceadc4c7.js.map": "/static/js/main.ceadc4c7.js.map"
+    "static/media/discord-mark-white.svg": "/static/media/discord-mark-white.a420227021864513c33f564d51c99590.svg",
+    "main.bd430509.css.map": "/static/css/main.bd430509.css.map",
+    "main.676f0c2b.js.map": "/static/js/main.676f0c2b.js.map"
   },
   "entrypoints": [
-    "static/css/main.6fd0c42b.css",
-    "static/js/main.ceadc4c7.js"
+    "static/css/main.bd430509.css",
+    "static/js/main.676f0c2b.js"
   ]
 }
