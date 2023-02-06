@@ -5,7 +5,7 @@ function HackathonRegister() {
     window.location.replace("https://3utrb7n0muk.typeform.com/to/RvKJTfsJ");
   }, []);
 
-  return <div></div>;
+  return null;
 }
 
 export default HackathonRegister;
