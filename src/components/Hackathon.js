@@ -1,11 +1,8 @@
 import React from "react";
 
 import { Button } from "@mui/material";
-import { useHistory } from "react-router-dom";
 
 function Hackathon() {
-  const history = useHistory();
-
   return (
     <div
       style={{
@@ -29,7 +26,7 @@ function Hackathon() {
         variant="contained"
         size="large"
         style={{ letterSpacing: "0.2em" }}
-        onClick={() => history.push("/hackathon-register")}
+        onClick={() => window.open("/hackathon-register")}
       >
         Register
       </Button>
