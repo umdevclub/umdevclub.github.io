@@ -48,14 +48,14 @@ const menuItems = [
     icon: <HomeIcon />,
   },
   {
+    title: "Hackathon",
+    path: "/hackathon",
+    icon: <ComputerIcon />,
+  },
+  {
     title: "DevChamps",
     path: "/devchamps",
     icon: <EmojiEventsIcon />,
-  },
-  {
-    title: ".HACKATHON",
-    path: "/hackathon-register",
-    icon: <ComputerIcon />,
   },
   {
     title: "Contact",

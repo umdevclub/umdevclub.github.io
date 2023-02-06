@@ -11,6 +11,7 @@ import DevChamp from "@/components/DevChamps.js";
 import Contact from "@/components/Contact.js";
 import ExamCramForms from "@/components/ExamCramForms.js";
 import Hackathon from "@/components/Hackathon.js";
+import HackathonRegister from "@/components/HackathonRegister.js";
 
 import PageNotFound from "@/components/PageNotFound.js";
 import React from "react";
@@ -50,7 +51,8 @@ function App() {
               <Route path="/devchamps" component={DevChamp} />
               <Route path="/contact" component={Contact} />
               <Route path="/examcram-forms" component={ExamCramForms} />
-              <Route path="/hackathon-register" component={Hackathon} />
+              <Route path="/hackathon" component={Hackathon} />
+              <Route path="/hackathon-register" component={HackathonRegister} />
               <Route path="*" component={PageNotFound} />
             </Switch>
           </CSSTransition>

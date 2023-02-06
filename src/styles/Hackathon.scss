@@ -1,0 +1,22 @@
+@import "media-queries.scss";
+
+.hackathon {
+  &-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 70vh;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &-heading {
+    text-transform: uppercase;
+    letter-spacing: 0.3em;
+
+    @include mobile {
+      font-size: 1.5rem;
+      text-align: center;
+    }
+  }
+}
