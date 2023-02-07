@@ -144,7 +144,7 @@ function Home() {
             </div>
           </div>
         </div>
-
+        <div id="join-club"></div>
         <div className="how-to-join-container">
           <div className="title-container ">
             <h1 className="title-content">HOW TO JOIN</h1>
