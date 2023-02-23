@@ -2,21 +2,151 @@
 
 .hackathon {
   &-container {
+    font-family: "IBM Plex Mono", monospace;
     display: flex;
     flex-direction: column;
     width: 100%;
-    height: 70vh;
+    height: 100%;
     justify-content: center;
     align-items: center;
   }
 
-  &-heading {
-    text-transform: uppercase;
-    letter-spacing: 0.3em;
+  &-welcome {
+    &.heading {
+      font-weight: 500;
+      font-size: 64px;
+      letter-spacing: 0.15em;
+      margin-top: 3em;
+      margin-bottom: 0;
+      text-align: center;
 
-    @include mobile {
-      font-size: 1.5rem;
+      @include mobile {
+        font-size: 35px;
+      }
+
+      @include tablet {
+        font-size: 45px;
+      }
+    }
+
+    &.sub-heading {
+      margin: 0;
+      font-weight: 500;
+      font-size: 18px;
+      letter-spacing: 0.15em;
       text-align: center;
     }
+
+    &.intro-text {
+      font-weight: 500;
+      font-size: 24px;
+      letter-spacing: 0.15em;
+      text-align: center;
+      margin-top: 3em;
+      max-width: 25em;
+
+      @include mobile {
+        margin-right: 5%;
+        margin-left: 5%;
+        font-size: 20px;
+      }
+      @include tablet {
+        margin-right: 5%;
+        margin-left: 5%;
+      }
+    }
+  }
+
+  &-rules {
+    &.container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      margin-top: 5em;
+      margin-bottom: 0;
+    }
+
+    &.heading {
+      text-align: center;
+      font-weight: 700;
+      font-size: 36px;
+      letter-spacing: 0.15em;
+      margin-top: 3em;
+      margin-bottom: 0.5em;
+    }
+  }
+
+  &-code-conduct {
+    &.heading {
+      text-align: center;
+      font-weight: 700;
+      font-size: 36px;
+      letter-spacing: 0.15em;
+      margin-top: 3em;
+      margin-bottom: 3emem;
+    }
+  }
+
+  &-register {
+    &-container {
+      display: flex;
+      align-items: center;
+      width: 85%;
+      height: 125px;
+      justify-content: space-between;
+      margin-bottom: 0;
+      background: #272729;
+      color: white;
+      border-radius: 4px;
+      padding: 0 3%;
+      margin-top: 7em;
+      margin-bottom: 4em;
+
+      @include mobile {
+        flex-direction: column;
+        padding: 2em 0;
+        width: 100%;
+      }
+    }
+
+    &.heading {
+      padding: 0 1em;
+    }
+  }
+}
+
+.container {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  &:nth-child(2) {
+    background: #f8f8f8;
+  }
+}
+
+.alpha-list {
+  list-style-type: lower-alpha;
+}
+
+.text-container {
+  margin-left: 3em;
+  margin-right: 3em;
+  font-weight: 500;
+  font-size: 18px;
+  letter-spacing: 0.15em;
+  line-height: 29px;
+
+  @include mobile {
+    font-size: 15px;
+    margin-left: 2em;
+    margin-right: 2em;
+  }
+
+  p {
+    text-indent: 3em;
   }
 }
