@@ -15,6 +15,7 @@ import HackathonRegister from "@/components/HackathonRegister.js";
 
 import PageNotFound from "@/components/PageNotFound.js";
 import React from "react";
+import Footer from "./Footer";
 
 function App() {
   // The animation transitions out the current page first and then transitions into the new page
@@ -25,7 +26,7 @@ function App() {
   return (
     <>
       <Header />
-      <div>
+      <main>
         <TransitionGroup className="navpage-container">
           <CSSTransition
             key={location.key}
@@ -57,7 +58,8 @@ function App() {
             </Switch>
           </CSSTransition>
         </TransitionGroup>
-      </div>
+      </main>
+      <Footer />
     </>
   );
 }

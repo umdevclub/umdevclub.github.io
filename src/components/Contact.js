@@ -173,8 +173,6 @@ function Contact() {
     <>
       <div className="contact-page-container">
         <Form />
-      </div>
-      <div>
         <video
           className="home-video"
           width="100%"

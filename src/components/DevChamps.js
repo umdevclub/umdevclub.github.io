@@ -3,8 +3,6 @@ import "@/styles/DevChamps.scss";
 import PeopleList from "@/components/PeopleList.js";
 import championsData from "@/resources/data/champions.js";
 
-import Footer from "@/components/Footer.js";
-
 function DevChamps() {
   return (
     <div className="devchamps-container">
@@ -63,7 +61,6 @@ function DevChamps() {
           </div>
         </div>
       </div>
-      <Footer />
     </div>
   );
 }

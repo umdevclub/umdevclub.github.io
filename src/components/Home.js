@@ -15,8 +15,6 @@ import PeopleList from "@/components/PeopleList";
 
 import teamMembers from "@/resources/data/team-members.js";
 
-import Footer from "@/components/Footer";
-
 import {
   workshopImages,
   hackathonImages,
@@ -193,7 +191,6 @@ function Home() {
 
         <PeopleList peopleData={teamMembers} />
       </div>
-      <Footer />
     </div>
   );
 }
