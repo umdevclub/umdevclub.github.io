@@ -75,7 +75,7 @@ function Hackathon() {
             {codeOfConduct.map((codeConduct, index) => {
               return (
                 <React.Fragment key={index}>
-                  <li>{codeConduct.item}</li>
+                  <li>{codeConduct.item()}</li>
                   {codeConduct.subItem.length > 0 && (
                     <ol className="hackathon-code-conduct alpha-list">
                       {codeConduct.subItem.map((subItem, idx) => (
