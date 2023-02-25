@@ -16,6 +16,7 @@ import HackathonRegister from "@/components/HackathonRegister.js";
 import PageNotFound from "@/components/PageNotFound.js";
 import React from "react";
 import Footer from "./Footer";
+import HackathonSubmit from "@/components/HackathonSubmit";
 
 function App() {
   // The animation transitions out the current page first and then transitions into the new page
@@ -54,6 +55,7 @@ function App() {
               <Route path="/examcram-forms" component={ExamCramForms} />
               <Route path="/hackathon" component={Hackathon} />
               <Route path="/hackathon-register" component={HackathonRegister} />
+              <Route path="/hackathon-submit" component={HackathonSubmit} />
               <Route path="*" component={PageNotFound} />
             </Switch>
           </CSSTransition>

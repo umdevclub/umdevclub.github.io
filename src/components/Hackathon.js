@@ -90,16 +90,14 @@ function Hackathon() {
         </div>
       </div>
       <div className="hackathon-register-container">
-        <h1 className="hackathon-register heading">
-          Register for the hackathon!
-        </h1>
+        <h1 className="hackathon-register heading">Submit your project!</h1>
         <Button
           variant="outlined"
           size="large"
           sx={btnStyles}
-          onClick={() => window.open("/hackathon-register")}
+          onClick={() => window.open("/hackathon-submit")}
         >
-          Register
+          Submit
         </Button>
       </div>
     </div>
