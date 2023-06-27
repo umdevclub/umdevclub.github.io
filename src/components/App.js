@@ -56,7 +56,7 @@ function App() {
               <Route path="/hackathon" component={Hackathon} />
               <Route path="/hackathon-register" component={HackathonRegister} />
               <Route path="/hackathon-submit" component={HackathonSubmit} />
-              <Route path="/picnic" component={Picnic} />
+              <Route path="/bbq" component={Picnic} />
               <Route path="*" component={PageNotFound} />
             </Switch>
           </CSSTransition>
