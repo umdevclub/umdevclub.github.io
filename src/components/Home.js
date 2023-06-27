@@ -20,6 +20,7 @@ import {
   hackathonImages,
   devchampsImages,
 } from "@/resources/data/homepage-mission-images.js";
+import { Button } from "@mui/material";
 
 function MissionImageList({ imagesData }) {
   return (
@@ -143,6 +144,35 @@ function Home() {
           </div>
         </div>
         <div id="join-club"></div>
+        <div className="how-to-join-container" id="#picnic-rsvp">
+          <div className="title-container ">
+            <h1 className="title-content">RSVP FOR SUMMER BBQ</h1>
+          </div>
+          <p className="how-to-join-text">
+            MARK YOUR CALENDARS! U of M's Computer Science Clubs are hosting a
+            Summer BBQ!
+            <br />
+            Whether you're a first-year Computer Science student or a professor,
+            we would love to have you join us! <br />
+            <br />
+            <span className="underline bold">Food IS provided!</span> <br />
+            <br />
+            We will be offering hamburgers, veggie burgers, salad, drinks,
+            potatoes, and more!
+            <br /> We have something for everyone's taste buds.
+          </p>
+          <Link
+            href="https://forms.office.com/r/dAUc4RDJQg"
+            target="_blank"
+            component="button"
+            variant="contained"
+            size="large"
+            className="how-to-join-button"
+            as={Button}
+          >
+            RSVP HERE!
+          </Link>
+        </div>
         <div className="how-to-join-container">
           <div className="title-container ">
             <h1 className="title-content">HOW TO JOIN</h1>

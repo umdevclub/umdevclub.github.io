@@ -12,7 +12,7 @@ import Contact from "@/components/Contact.js";
 import ExamCramForms from "@/components/ExamCramForms.js";
 import Hackathon from "@/components/Hackathon.js";
 import HackathonRegister from "@/components/HackathonRegister.js";
-
+import Picnic from "@/components/Picnic.js";
 import PageNotFound from "@/components/PageNotFound.js";
 import React from "react";
 import Footer from "./Footer";
@@ -56,6 +56,7 @@ function App() {
               <Route path="/hackathon" component={Hackathon} />
               <Route path="/hackathon-register" component={HackathonRegister} />
               <Route path="/hackathon-submit" component={HackathonSubmit} />
+              <Route path="/bbq" component={Picnic} />
               <Route path="*" component={PageNotFound} />
             </Switch>
           </CSSTransition>
