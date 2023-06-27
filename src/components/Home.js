@@ -173,7 +173,7 @@ function Home() {
             Don't forget to opt-in for devClub announcement notifications!
           </p>
           <Link
-            href="https://forms.gle/C11YVJDVW2DhcbjXA"
+            href="https://discord.gg/dp6TeBuUTn"
             target="_blank"
             component="button"
             variant="contained"
