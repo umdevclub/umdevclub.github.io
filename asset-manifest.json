@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.41f42014.css",
-    "main.js": "/static/js/main.844a1875.js",
+    "main.js": "/static/js/main.5327045d.js",
     "static/media/wall-of-flesh.gif": "/static/media/wall-of-flesh.726069fb00d35dd38b97.gif",
     "static/media/wavy_video_background.mp4": "/static/media/wavy_video_background.9d01c8b0d91cec00a23e.mp4",
     "static/media/w3.jpg": "/static/media/w3.4bd626fb6f40c950a167.jpg",
@@ -10,33 +10,33 @@
     "static/media/h2.jpg": "/static/media/h2.a88a1b00951c77a08287.jpg",
     "static/media/alathra.jpg": "/static/media/alathra.76ae08468460ac849975.jpg",
     "static/media/h4.jpg": "/static/media/h4.8c0f79c8c7cac58539d8.jpg",
+    "static/media/avneet-promotions.png": "/static/media/avneet-promotions.4b9e30cde6ac5d3c5489.png",
+    "static/media/jordan-internal.png": "/static/media/jordan-internal.d8d489495ceedb7d38db.png",
+    "static/media/vedant-treasurer.png": "/static/media/vedant-treasurer.38f5de4a5155e52b76e0.png",
     "static/media/h1.jpg": "/static/media/h1.2130b6ec6fe9e63d3222.jpg",
     "static/media/w4.jpg": "/static/media/w4.a5e1d6638cbb51a03e3f.jpg",
     "static/media/w2.jpg": "/static/media/w2.8f339811a5380c583e2f.jpg",
+    "static/media/ahmed-vice-pres.png": "/static/media/ahmed-vice-pres.f3a09fddc1cf86dbeafc.png",
+    "static/media/atishaya-events.png": "/static/media/atishaya-events.5e1a42e96a143b3e170c.png",
+    "static/media/pankaj-external.png": "/static/media/pankaj-external.e1f60971e47ed4321a2f.png",
+    "static/media/raman-pres.png": "/static/media/raman-pres.75bcc5700d0805a8b03f.png",
     "static/media/h3.jpg": "/static/media/h3.a69f45bcf57c7e761c83.jpg",
     "static/media/brians-brain.jpg": "/static/media/brians-brain.1136bd93ebfcad67dfea.jpg",
     "static/media/jacob.jpg": "/static/media/jacob.1a5e2310e85fc4f0fae6.jpg",
-    "static/media/minh.jpg": "/static/media/minh.e1c8ad32e16232f1468d.jpg",
     "static/media/brooklynn.png": "/static/media/brooklynn.23f9455e7a20977b2f91.png",
     "static/media/devclub-logo.svg": "/static/media/devclub-logo.e7c74582ac5c41171acfd35ee01e5d15.svg",
-    "static/media/sarah.jpg": "/static/media/sarah.b98f709e38d50299d70b.jpg",
-    "static/media/graham.jpg": "/static/media/graham.051b540d82aaed784e69.jpg",
-    "static/media/mohsen.jpg": "/static/media/mohsen.762c9befca6054deb5bf.jpg",
-    "static/media/tonmoy.jpg": "/static/media/tonmoy.79ea2844f0c38e9646cc.jpg",
-    "static/media/tano.jpg": "/static/media/tano.e9cca5b3d60fe88255e6.jpg",
+    "static/media/graham.jpg": "/static/media/graham.829dd3e30a443fc33341.jpg",
     "static/media/lines.svg": "/static/media/lines.631c805e1eb5db008b8ca8f02e98fec4.svg",
-    "static/media/ahmed.jpg": "/static/media/ahmed.e46f26352711656686ac.jpg",
-    "static/media/max.jpg": "/static/media/max.2d8975e11e37f6e94d1f.jpg",
     "static/media/devclub-logo-horizontal.svg": "/static/media/devclub-logo-horizontal.f59db50029020c2e598478495610272e.svg",
     "static/media/joshua.jpg": "/static/media/joshua.2a0c4ebe85df6d286450.jpg",
     "static/media/arrow.svg": "/static/media/arrow.6d75ef80652995034fded5f20b4076fc.svg",
     "index.html": "/index.html",
     "static/media/discord-mark-white.svg": "/static/media/discord-mark-white.a420227021864513c33f564d51c99590.svg",
     "main.41f42014.css.map": "/static/css/main.41f42014.css.map",
-    "main.844a1875.js.map": "/static/js/main.844a1875.js.map"
+    "main.5327045d.js.map": "/static/js/main.5327045d.js.map"
   },
   "entrypoints": [
     "static/css/main.41f42014.css",
-    "static/js/main.844a1875.js"
+    "static/js/main.5327045d.js"
   ]
 }
