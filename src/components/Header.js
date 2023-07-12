@@ -62,6 +62,10 @@ const menuItems = [
     path: "/contact",
     icon: <ContactSupportIcon />,
   },
+  {
+    title: "Link Tree",
+    path: "/link-tree",
+  },
 ];
 
 const socialIcons = [
