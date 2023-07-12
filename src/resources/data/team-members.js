@@ -1,59 +1,52 @@
-import ahmed from "@/resources/images/team-members/resized/ahmed.jpg";
-import graham from "@/resources/images/team-members/resized/graham.jpg";
-import max from "@/resources/images/team-members/resized/max.jpg";
-import minh from "@/resources/images/team-members/resized/minh.jpg";
-import mohsen from "@/resources/images/team-members/resized/mohsen.jpg";
-import sarah from "@/resources/images/team-members/resized/sarah.jpg";
-import tano from "@/resources/images/team-members/resized/tano.jpg";
-import tonmoy from "@/resources/images/team-members/resized/tonmoy.jpg";
+import raman from "@/resources/images/team-members/raman-pres.png";
+import ahmed from "@/resources/images/team-members/ahmed-vice-pres.png";
+import vedant from "@/resources/images/team-members/vedant-treasurer.png";
+import jordan from "@/resources/images/team-members/jordan-internal.png";
+import pankaj from "@/resources/images/team-members/pankaj-external.png";
+import atishaya from "@/resources/images/team-members/atishaya-events.png";
+import avneet from "@/resources/images/team-members/avneet-promotions.png";
 
 const teamMembers = [
   {
-    name: "Mohsen Yousefian",
+    name: "Raman Bhandari",
     role: "President",
-    image: mohsen,
+    image: raman,
     //bio: "Very good person, I like this person, they do cool stuff and it's fun to hang out with them, they are also very smart and active and enjoy doing stuff.",
   },
   {
-    name: "Khuc Nguyen (Tano)",
-    role: "Vice-President",
-    image: tano,
-    // bio: "Very good person, I like this person, they do cool stuff and it's fun to hang out with them, they are also very smart and active and enjoy doing stuff.",
-  },
-  {
     name: "Ahmed S. Ahmed",
-    role: "Treasurer",
+    role: "Vice-President",
     image: ahmed,
     // bio: "Very good person, I like this person, they do cool stuff and it's fun to hang out with them, they are also very smart and active and enjoy doing stuff.",
   },
   {
-    name: "Sarah Veloso",
+    name: "Vedant Pulahru",
+    role: "Treasurer",
+    image: vedant,
+    // bio: "Very good person, I like this person, they do cool stuff and it's fun to hang out with them, they are also very smart and active and enjoy doing stuff.",
+  },
+  {
+    name: "Jordon Hong",
     role: "Internal",
-    image: sarah,
+    image: jordan,
     // bio: "Very good person, I like this person, they do cool stuff and it's fun to hang out with them, they are also very smart and active and enjoy doing stuff.",
   },
   {
-    name: "Tonmoy Ghosh",
+    name: "Pankaj Choudhary",
     role: "External",
-    image: tonmoy,
+    image: pankaj,
     // bio: "Very good person, I like this person, they do cool stuff and it's fun to hang out with them, they are also very smart and active and enjoy doing stuff.",
   },
   {
-    name: "Graham Downey",
+    name: "Atishaya Maharjan",
     role: "Events",
-    image: graham,
+    image: atishaya,
     // bio: "Very good person, I like this person, they do cool stuff and it's fun to hang out with them, they are also very smart and active and enjoy doing stuff.",
   },
   {
-    name: "Max Abdulkhalikov",
+    name: "Avneet K. Sidhu",
     role: "Promotions",
-    image: max,
-    // bio: "Very good person, I like this person, they do cool stuff and it's fun to hang out with them, they are also very smart and active and enjoy doing stuff.",
-  },
-  {
-    name: "Hoang Minh Phan",
-    role: "Vice-executive",
-    image: minh,
+    image: avneet,
     // bio: "Very good person, I like this person, they do cool stuff and it's fun to hang out with them, they are also very smart and active and enjoy doing stuff.",
   },
 ];

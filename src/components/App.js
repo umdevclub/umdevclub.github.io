@@ -17,6 +17,7 @@ import PageNotFound from "@/components/PageNotFound.js";
 import React from "react";
 import Footer from "./Footer";
 import HackathonSubmit from "@/components/HackathonSubmit";
+import LinkTree from "@/components/LinkTree";
 
 function App() {
   // The animation transitions out the current page first and then transitions into the new page
@@ -57,6 +58,7 @@ function App() {
               <Route path="/hackathon-register" component={HackathonRegister} />
               <Route path="/hackathon-submit" component={HackathonSubmit} />
               <Route path="/bbq" component={Picnic} />
+              <Route path="/link-tree" component={LinkTree} />
               <Route path="*" component={PageNotFound} />
             </Switch>
           </CSSTransition>
