@@ -1,6 +1,5 @@
 import React from "react";
 
-import { Button } from "@mui/material";
 import "@/styles/Hackathon.scss";
 
 import rules from "@/resources/data/rules.js";
@@ -22,13 +21,13 @@ function Hackathon() {
   return (
     <div className="hackathon-container" dir="ltr">
       <div className="hackathon-welcome container">
-        <h1 className="hackathon-welcome heading">.hackathon</h1>
+        <h1 className="hackathon-welcome heading">.devHacks</h1>
         <h2 className="hackathon-welcome sub-heading">
           Build your dream project
         </h2>
         <h3 className="hackathon-welcome intro-text">
-          .hackathon is an annual hackathon hosted by .devClub for students to
-          showcase their creativity and endurance over a period of 12 hours of
+          .devHacks is an annual hackathon hosted by .devClub for students to
+          showcase their creativity and endurance over a period of 24 hours of
           fun filled development!
         </h3>
       </div>
@@ -36,7 +35,7 @@ function Hackathon() {
         <h1 className="hackathon-rules heading">Rules:</h1>
         <div className="hackathon-rules text-container">
           <p>
-            All hackathon participants are required to follow the .Hackathon
+            All hackathon participants are required to follow the .devHacks
             rules. These rules will be enforced throughout the event. We expect
             cooperation to ensure a fair and fun environment.Any failure to
             follow these rules will be dealt with accordingly and collectively
@@ -90,15 +89,7 @@ function Hackathon() {
         </div>
       </div>
       <div className="hackathon-register-container">
-        <h1 className="hackathon-register heading">Submit your project!</h1>
-        <Button
-          variant="outlined"
-          size="large"
-          sx={btnStyles}
-          onClick={() => window.open("/hackathon-submit")}
-        >
-          Submit
-        </Button>
+        <h1 className="hackathon-register heading">Coming soon!</h1>
       </div>
     </div>
   );
