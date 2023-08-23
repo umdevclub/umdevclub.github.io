@@ -6,17 +6,17 @@ import rules from "@/resources/data/rules.js";
 import codeOfConduct from "@/resources/data/code-of-conduct";
 
 function Hackathon() {
-  const btnStyles = {
-    letterSpacing: "0.2em",
-    height: "fit-content",
-    color: "white",
-    borderColor: "white",
-    fontWeight: "bold",
-    "&:hover": {
-      background: "white",
-      color: "#272729",
-    },
-  };
+  // const btnStyles = {
+  //   letterSpacing: "0.2em",
+  //   height: "fit-content",
+  //   color: "white",
+  //   borderColor: "white",
+  //   fontWeight: "bold",
+  //   "&:hover": {
+  //     background: "white",
+  //     color: "#272729",
+  //   },
+  // };
 
   return (
     <div className="hackathon-container" dir="ltr">
