@@ -54,7 +54,7 @@ function App() {
               <Route path="/devchamps" component={DevChamp} />
               <Route path="/contact" component={Contact} />
               <Route path="/examcram-forms" component={ExamCramForms} />
-              <Route path="/hackathon" component={Hackathon} />
+              <Route path="/devhacks" component={Hackathon} />
               <Route path="/hackathon-register" component={HackathonRegister} />
               <Route path="/hackathon-submit" component={HackathonSubmit} />
               <Route path="/bbq" component={Picnic} />
