@@ -20,7 +20,6 @@ import {
   hackathonImages,
   devchampsImages,
 } from "@/resources/data/homepage-mission-images.js";
-import { Button } from "@mui/material";
 
 function MissionImageList({ imagesData }) {
   return (
