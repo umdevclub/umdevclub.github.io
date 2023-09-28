@@ -2,7 +2,7 @@ import raman from "@/resources/images/team-members/raman-pres.png";
 import ahmed from "@/resources/images/team-members/ahmed-vice-pres.png";
 import vedant from "@/resources/images/team-members/vedant-treasurer.png";
 import jordan from "@/resources/images/team-members/jordan-internal.png";
-import pankaj from "@/resources/images/team-members/pankaj-external.png";
+import kha from "@/resources/images/team-members/kha-external.JPG";
 import atishaya from "@/resources/images/team-members/atishaya-events.png";
 import avneet from "@/resources/images/team-members/avneet-promotions.png";
 
@@ -32,9 +32,9 @@ const teamMembers = [
     // bio: "Very good person, I like this person, they do cool stuff and it's fun to hang out with them, they are also very smart and active and enjoy doing stuff.",
   },
   {
-    name: "Pankaj Choudhary",
+    name: "Kha Thế Phạm",
     role: "External",
-    image: pankaj,
+    image: kha,
     // bio: "Very good person, I like this person, they do cool stuff and it's fun to hang out with them, they are also very smart and active and enjoy doing stuff.",
   },
   {

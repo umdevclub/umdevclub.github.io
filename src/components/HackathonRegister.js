@@ -39,7 +39,7 @@ function HackathonRegister() {
   }
 
   return (
-    <div className="container">
+    <div className="devhacks-register container">
       <iframe
         data-tally-src="https://tally.so/r/3NlZYj?transparentBackground=1"
         width="100%"
