@@ -4,6 +4,7 @@ import "@/styles/Hackathon.scss";
 
 import rules from "@/resources/data/rules.js";
 import codeOfConduct from "@/resources/data/code-of-conduct";
+import { Button } from "@mui/material";
 
 function Hackathon() {
   // const btnStyles = {
@@ -18,18 +19,43 @@ function Hackathon() {
   //   },
   // };
 
+  const formId = "3NlZYj";
+
+  const handleButtonClick = () => {
+    if (window?.Tally) {
+      window.Tally.openPopup(formId, {
+        layout: "modal",
+        width: 700,
+        autoClose: 5000,
+      });
+    }
+  };
+
   return (
     <div className="hackathon-container" dir="ltr">
       <div className="hackathon-welcome container">
         <h1 className="hackathon-welcome heading">.devHacks</h1>
         <h2 className="hackathon-welcome sub-heading">
-          Build your dream project
+          Location: University of Manitoba <br />
+          Tentative Dates: February 23rd to 24th
         </h2>
         <h3 className="hackathon-welcome intro-text">
           .devHacks is an annual hackathon hosted by .devClub for students to
           showcase their creativity and endurance over a period of 24 hours of
           fun filled development!
         </h3>
+        <Button
+          onClick={handleButtonClick}
+          variant="contained"
+          sx={{
+            fontSize: "1.5rem",
+            fontFamily: "inherit",
+            mt: 3,
+            textTransform: "lowercase",
+          }}
+        >
+          Sign up for .devHacks&apos; updates!
+        </Button>
       </div>
       <div className="hackathon-rules container" id="rules">
         <h1 className="hackathon-rules heading">Rules:</h1>
