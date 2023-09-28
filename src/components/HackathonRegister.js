@@ -1,3 +1,4 @@
+/* eslint-disable no-sequences */
 import { useEffect } from "react";
 import "@/styles/HackathonRegister.scss";
 
