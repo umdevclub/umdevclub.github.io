@@ -1,9 +1,10 @@
 {
   "files": {
-    "main.css": "/static/css/main.a1a227fe.css",
-    "main.js": "/static/js/main.d296089c.js",
+    "main.css": "/static/css/main.1269df43.css",
+    "main.js": "/static/js/main.bc8a54ea.js",
     "static/media/wall-of-flesh.gif": "/static/media/wall-of-flesh.726069fb00d35dd38b97.gif",
     "static/media/wavy_video_background.mp4": "/static/media/wavy_video_background.9d01c8b0d91cec00a23e.mp4",
+    "static/media/kha-external.JPG": "/static/media/kha-external.1799c954d01f9f040f29.JPG",
     "static/media/w3.jpg": "/static/media/w3.4bd626fb6f40c950a167.jpg",
     "static/media/golden-spiral.jpg": "/static/media/golden-spiral.3ab11054acf6efc7df75.jpg",
     "static/media/w1.jpg": "/static/media/w1.be0ad0928af337398d77.jpg",
@@ -18,7 +19,6 @@
     "static/media/w2.jpg": "/static/media/w2.8f339811a5380c583e2f.jpg",
     "static/media/ahmed-vice-pres.png": "/static/media/ahmed-vice-pres.f3a09fddc1cf86dbeafc.png",
     "static/media/atishaya-events.png": "/static/media/atishaya-events.5e1a42e96a143b3e170c.png",
-    "static/media/pankaj-external.png": "/static/media/pankaj-external.e1f60971e47ed4321a2f.png",
     "static/media/raman-pres.png": "/static/media/raman-pres.75bcc5700d0805a8b03f.png",
     "static/media/h3.jpg": "/static/media/h3.a69f45bcf57c7e761c83.jpg",
     "static/media/brians-brain.jpg": "/static/media/brians-brain.1136bd93ebfcad67dfea.jpg",
@@ -32,11 +32,11 @@
     "static/media/arrow.svg": "/static/media/arrow.6d75ef80652995034fded5f20b4076fc.svg",
     "index.html": "/index.html",
     "static/media/discord-mark-white.svg": "/static/media/discord-mark-white.a420227021864513c33f564d51c99590.svg",
-    "main.a1a227fe.css.map": "/static/css/main.a1a227fe.css.map",
-    "main.d296089c.js.map": "/static/js/main.d296089c.js.map"
+    "main.1269df43.css.map": "/static/css/main.1269df43.css.map",
+    "main.bc8a54ea.js.map": "/static/js/main.bc8a54ea.js.map"
   },
   "entrypoints": [
-    "static/css/main.a1a227fe.css",
-    "static/js/main.d296089c.js"
+    "static/css/main.1269df43.css",
+    "static/js/main.bc8a54ea.js"
   ]
 }
