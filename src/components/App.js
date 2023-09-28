@@ -55,10 +55,10 @@ function App() {
               <Route path="/contact" component={Contact} />
               <Route path="/examcram-forms" component={ExamCramForms} />
               <Route path="/devhacks" component={Hackathon} />
-              <Route path="/hackathon-register" component={HackathonRegister} />
               <Route path="/hackathon-submit" component={HackathonSubmit} />
               <Route path="/bbq" component={Picnic} />
               <Route path="/link-tree" component={LinkTree} />
+              <Route path="/registration" component={HackathonRegister} />
               <Route path="*" component={PageNotFound} />
             </Switch>
           </CSSTransition>
