@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.1269df43.css",
-    "main.js": "/static/js/main.bc8a54ea.js",
+    "main.css": "/static/css/main.60cdcb79.css",
+    "main.js": "/static/js/main.3f4d5a27.js",
     "static/media/wall-of-flesh.gif": "/static/media/wall-of-flesh.726069fb00d35dd38b97.gif",
     "static/media/wavy_video_background.mp4": "/static/media/wavy_video_background.9d01c8b0d91cec00a23e.mp4",
     "static/media/kha-external.JPG": "/static/media/kha-external.1799c954d01f9f040f29.JPG",
@@ -23,20 +23,23 @@
     "static/media/h3.jpg": "/static/media/h3.a69f45bcf57c7e761c83.jpg",
     "static/media/brians-brain.jpg": "/static/media/brians-brain.1136bd93ebfcad67dfea.jpg",
     "static/media/jacob.jpg": "/static/media/jacob.1a5e2310e85fc4f0fae6.jpg",
+    "static/media/logo-wics.svg": "/static/media/logo-wics.a47fe917c0cda2f1cf3908a15fd324c2.svg",
     "static/media/brooklynn.png": "/static/media/brooklynn.23f9455e7a20977b2f91.png",
     "static/media/devclub-logo.svg": "/static/media/devclub-logo.e7c74582ac5c41171acfd35ee01e5d15.svg",
     "static/media/graham.jpg": "/static/media/graham.829dd3e30a443fc33341.jpg",
     "static/media/lines.svg": "/static/media/lines.631c805e1eb5db008b8ca8f02e98fec4.svg",
+    "static/media/logo-cssa.svg": "/static/media/logo-cssa.e52eabbc44c5f6d126d838f830e08f9f.svg",
     "static/media/devclub-logo-horizontal.svg": "/static/media/devclub-logo-horizontal.f59db50029020c2e598478495610272e.svg",
     "static/media/joshua.jpg": "/static/media/joshua.2a0c4ebe85df6d286450.jpg",
+    "static/media/logo-cusec.svg": "/static/media/logo-cusec.1538c387889889cdae3b54b721352c03.svg",
     "static/media/arrow.svg": "/static/media/arrow.6d75ef80652995034fded5f20b4076fc.svg",
     "index.html": "/index.html",
     "static/media/discord-mark-white.svg": "/static/media/discord-mark-white.a420227021864513c33f564d51c99590.svg",
-    "main.1269df43.css.map": "/static/css/main.1269df43.css.map",
-    "main.bc8a54ea.js.map": "/static/js/main.bc8a54ea.js.map"
+    "main.60cdcb79.css.map": "/static/css/main.60cdcb79.css.map",
+    "main.3f4d5a27.js.map": "/static/js/main.3f4d5a27.js.map"
   },
   "entrypoints": [
-    "static/css/main.1269df43.css",
-    "static/js/main.bc8a54ea.js"
+    "static/css/main.60cdcb79.css",
+    "static/js/main.3f4d5a27.js"
   ]
 }
