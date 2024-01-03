@@ -27,11 +27,11 @@
 
   &.club-container {
     padding-top: 5rem;
-    max-width: 100%;
+    max-width: 95%;
     margin: 0 auto;
     display: grid;
     gap: 25px;
-    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
 
     @include mobile {
       grid-template-columns: repeat(1, minmax(250, 1fr));
@@ -45,7 +45,7 @@
     .section {
       box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px,
         rgb(51, 51, 51) 0px 0px 0px 3px;
-      width: 350px;
+      width: 290px;
       height: 450px;
       transition: all 0.2s ease;
       display: flex;
