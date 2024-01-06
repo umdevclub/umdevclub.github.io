@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/static/css/main.ba53202c.css",
+    "main.css": "/static/css/main.83c59b2d.css",
     "main.js": "/static/js/main.3f4d5a27.js",
     "static/media/wall-of-flesh.gif": "/static/media/wall-of-flesh.726069fb00d35dd38b97.gif",
     "static/media/wavy_video_background.mp4": "/static/media/wavy_video_background.9d01c8b0d91cec00a23e.mp4",
@@ -35,11 +35,11 @@
     "static/media/arrow.svg": "/static/media/arrow.6d75ef80652995034fded5f20b4076fc.svg",
     "index.html": "/index.html",
     "static/media/discord-mark-white.svg": "/static/media/discord-mark-white.a420227021864513c33f564d51c99590.svg",
-    "main.ba53202c.css.map": "/static/css/main.ba53202c.css.map",
+    "main.83c59b2d.css.map": "/static/css/main.83c59b2d.css.map",
     "main.3f4d5a27.js.map": "/static/js/main.3f4d5a27.js.map"
   },
   "entrypoints": [
-    "static/css/main.ba53202c.css",
+    "static/css/main.83c59b2d.css",
     "static/js/main.3f4d5a27.js"
   ]
 }
