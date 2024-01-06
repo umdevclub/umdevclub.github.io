@@ -27,11 +27,13 @@
 
   &.club-container {
     padding-top: 5rem;
-    max-width: 95%;
+    max-width: 1350px;
     margin: 0 auto;
     display: grid;
     gap: 25px;
     grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+    width: 100%;
+    justify-items: center;
 
     @include mobile {
       grid-template-columns: repeat(1, minmax(250, 1fr));
