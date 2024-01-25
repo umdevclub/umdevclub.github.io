@@ -55,6 +55,12 @@
         margin-left: 5%;
       }
     }
+
+    &.btn-wrapper {
+      display: flex;
+      justify-content: space-between;
+      gap: 1rem;
+    }
   }
 
   &-interest-form {

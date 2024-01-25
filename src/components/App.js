@@ -18,6 +18,7 @@ import React from "react";
 import Footer from "./Footer";
 import HackathonSubmit from "@/components/HackathonSubmit";
 import LinkTree from "@/components/LinkTree";
+import DevhacksGithub from "@/components/DevhacksGithub";
 
 function App() {
   // The animation transitions out the current page first and then transitions into the new page
@@ -49,12 +50,12 @@ function App() {
                   ></Redirect>
                 )
               )}
-
               <Route exact path="/" component={Home} />
               <Route path="/devchamps" component={DevChamp} />
               <Route path="/contact" component={Contact} />
               <Route path="/examcram-forms" component={ExamCramForms} />
               <Route path="/devhacks" component={Hackathon} />
+              <Route exact path="/github-tutorial" component={DevhacksGithub} />
               <Route path="/hackathon-submit" component={HackathonSubmit} />
               <Route path="/bbq" component={Picnic} />
               <Route path="/link-tree" component={LinkTree} />

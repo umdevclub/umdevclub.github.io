@@ -16,6 +16,13 @@ code {
     monospace;
 }
 
+.code {
+  background-color: rgb(236, 236, 236);
+  padding: 1rem 0 1rem 2rem;
+  border-radius: 8px;
+  width: calc(80%);
+}
+
 #root {
   display: flex;
   flex-direction: column;
