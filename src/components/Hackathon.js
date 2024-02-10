@@ -19,7 +19,7 @@ function Hackathon() {
   //   },
   // };
 
-  const formId = "3NlZYj";
+  const formId = "meRpLq";
 
   const handleButtonClick = () => {
     if (window?.Tally) {
@@ -54,7 +54,7 @@ function Hackathon() {
             textTransform: "lowercase",
           }}
         >
-          Sign up for .devHacks&apos; updates!
+          Register for .devhacks!
         </Button>
       </div>
       <div className="hackathon-rules container" id="rules">
