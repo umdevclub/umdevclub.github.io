@@ -1,6 +1,11 @@
 import githubScreenShot from "@/resources/images/devhacks/github/github-ss.png";
 import githubRepo from "@/resources/images/devhacks/github/github-repo.png";
 import gitScmScreenShot from "@/resources/images/devhacks/github/git-scm.png";
+import gitVersionCheckScreenShot from "@/resources/images/devhacks/github/git-version-check.png";
+import gitNotRecognizedScreenShot from "@/resources/images/devhacks/github/git-not-recognized.png";
+import gitBashScreenShot from "@/resources/images/devhacks/github/git-bash-screenshot.png";
+
+import { Code } from "@/components/UI";
 
 export const windowsInstructions = [
   {
@@ -28,20 +33,60 @@ export const windowsInstructions = [
     ],
   },
   {
-    title: "Installation:",
+    title: "Download and Install git:",
     desc: [
       {
         text: () => (
           <>
-            Download and install Git from{" "}
-            <a href="https://git-scm.com" target="_blank" rel="noreferrer">
-              git-scm.com
-            </a>
-            .
+            <p>
+              Git sometimes comes preinstalled with some systems. To check
+              whether or not your system contains Git, type the following in
+              your terminal:
+            </p>
+            <Code text="git --version" />
+
+            <img src={gitVersionCheckScreenShot} alt="screenshot" />
+            <p>
+              Download and install Git from{" "}
+              <a href="https://git-scm.com" target="_blank" rel="noreferrer">
+                git-scm.com
+              </a>
+              .
+            </p>
           </>
         ),
         img: gitScmScreenShot,
       },
+      {
+        text: () => (
+          <>
+            <p>
+              If you don’t see a similar response and instead get something like
+              this:{" "}
+            </p>
+            <img src={gitNotRecognizedScreenShot} alt="screenshot" />
+            <p>
+              Then download and install Git from{" "}
+              <a href="https://git-scm.com" target="_blank" rel="noreferrer">
+                git-scm.com
+              </a>
+              . Follow the necessary installer guide until installation is
+              complete. Then open your terminal and follow the previous step to
+              verify that Git was installed successfully.{" "}
+              <strong>
+                NOTE: Git bash should also be installed automatically when you
+                install git.
+              </strong>
+              <img src={gitBashScreenShot} alt="screenshot" />
+            </p>
+          </>
+        ),
+      },
+    ],
+  },
+  {
+    title: "Setting up a GitHub Account:",
+    desc: [
       {
         text: () => (
           <>

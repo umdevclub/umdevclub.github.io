@@ -1,10 +1,11 @@
 import React from "react";
 
 import { windowsInstructions } from "@/resources/data/githubInstructions";
+import "@/styles/DevhacksGithub.scss";
 
 const GithubWindows = () => {
   return (
-    <div>
+    <div className="github">
       <h1>Beginner's Guide to Git and Github</h1>
       <ol>
         {windowsInstructions.map((item, idx) => (
@@ -19,9 +20,7 @@ const GithubWindows = () => {
                 return (
                   <li key={index}>
                     <p>{el.text()}</p>
-                    {el.img ? (
-                      <img src={el.img} alt="" style={{ width: "80%" }} />
-                    ) : null}
+                    {el.img ? <img src={el.img} alt="" /> : null}
                   </li>
                 );
               })}

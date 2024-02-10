@@ -1,6 +1,10 @@
 /* Google fonts to import */
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@200;300;500;600;700&family=Bebas+Neue&family=Lilita+One&family=Montserrat:wght@300;500;600;700&display=swap");
 
+* {
+  box-sizing: border-box;
+}
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
@@ -18,9 +22,10 @@ code {
 
 .code {
   background-color: rgb(236, 236, 236);
-  padding: 1rem 0 1rem 2rem;
+  padding: 0.5rem 1rem 0.5rem 1.5rem;
   border-radius: 8px;
-  width: calc(80%);
+  max-width: 750px;
+  width: 75%;
 }
 
 #root {
