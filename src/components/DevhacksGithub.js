@@ -72,7 +72,7 @@ export default function BasicTabs() {
           aria-label="github-tutorial"
         >
           <Tab label="Windows" {...a11yProps(0)} />
-          <Tab label="MacOS + Linux" {...a11yProps(1)} />
+          <Tab label="MacOS" {...a11yProps(1)} />
         </Tabs>
       </Box>
       <CustomTabPanel value={value} index={0}>
