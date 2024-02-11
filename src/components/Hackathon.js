@@ -5,6 +5,7 @@ import "@/styles/Hackathon.scss";
 import rules from "@/resources/data/rules.js";
 import codeOfConduct from "@/resources/data/code-of-conduct";
 import { Button } from "@mui/material";
+import { useHistory } from "react-router-dom/cjs/react-router-dom.min";
 
 function Hackathon() {
   // const btnStyles = {
@@ -31,6 +32,8 @@ function Hackathon() {
     }
   };
 
+  const history = useHistory();
+
   return (
     <div className="hackathon-container" dir="ltr">
       <div className="hackathon-welcome container">
@@ -44,18 +47,32 @@ function Hackathon() {
           showcase their creativity and endurance over a period of 24 hours of
           fun filled development!
         </h3>
-        <Button
-          onClick={handleButtonClick}
-          variant="contained"
-          sx={{
-            fontSize: "1.5rem",
-            fontFamily: "inherit",
-            mt: 3,
-            textTransform: "lowercase",
-          }}
-        >
-          Register for .devhacks!
-        </Button>
+        <div className="hackathon-welcome btn-wrapper">
+          <Button
+            onClick={handleButtonClick}
+            variant="contained"
+            sx={{
+              fontSize: "1.5rem",
+              fontFamily: "inherit",
+              mt: 3,
+              textTransform: "lowercase",
+            }}
+          >
+            Sign up for updates!
+          </Button>
+          <Button
+            onClick={() => history.push("/github-tutorial")}
+            variant="contained"
+            sx={{
+              fontSize: "1.5rem",
+              fontFamily: "inherit",
+              mt: 3,
+              textTransform: "lowercase",
+            }}
+          >
+            Github tutorial
+          </Button>
+        </div>
       </div>
       <div className="hackathon-rules container" id="rules">
         <h1 className="hackathon-rules heading">Rules:</h1>
