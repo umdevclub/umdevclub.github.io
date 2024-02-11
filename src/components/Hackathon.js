@@ -2,8 +2,6 @@ import React from "react";
 
 import "@/styles/Hackathon.scss";
 
-import rules from "@/resources/data/rules.js";
-import codeOfConduct from "@/resources/data/code-of-conduct";
 import { Button } from "@mui/material";
 import { useHistory } from "react-router-dom/cjs/react-router-dom.min";
 import Timer from "@/components/Timer";
