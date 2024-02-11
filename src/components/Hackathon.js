@@ -6,6 +6,7 @@ import rules from "@/resources/data/rules.js";
 import codeOfConduct from "@/resources/data/code-of-conduct";
 import { Button } from "@mui/material";
 import { useHistory } from "react-router-dom/cjs/react-router-dom.min";
+import Timer from "@/components/Timer";
 
 function Hackathon() {
   // const btnStyles = {
@@ -74,7 +75,7 @@ function Hackathon() {
           </Button>
         </div>
       </div>
-      <div className="hackathon-rules container" id="rules">
+      {/* <div className="hackathon-rules container" id="rules">
         <h1 className="hackathon-rules heading">Rules:</h1>
         <div className="hackathon-rules text-container">
           <p>
@@ -130,9 +131,11 @@ function Hackathon() {
             })}
           </ol>
         </div>
-      </div>
+      </div> */}
       <div className="hackathon-register-container">
-        <h1 className="hackathon-register heading">Coming soon!</h1>
+        <h1 className="hackathon-register heading">
+          <Timer />
+        </h1>
       </div>
     </div>
   );
