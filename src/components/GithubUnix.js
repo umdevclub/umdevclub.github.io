@@ -57,7 +57,7 @@ const GithubUnix = () => {
             ))}
           </ul>
         </aside>
-        <ol>
+        <ol className="github-list">
           {unixInstructions.map((item, idx) => (
             <li
               id={item.id}

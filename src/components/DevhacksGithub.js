@@ -17,6 +17,7 @@ function CustomTabPanel(props) {
       hidden={value !== index}
       id={`simple-tabpanel-${index}`}
       aria-labelledby={`simple-tab-${index}`}
+      style={{ width: "100%" }}
       {...other}
     >
       {value === index && (

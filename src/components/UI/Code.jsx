@@ -38,7 +38,16 @@ const Code = ({ text, commands = [] }) => {
       <div>
         {Array.isArray(commands) && commands.length > 0
           ? commands.map((command, idx) => (
-              <code key={idx} style={{ marginTop: "0.5rem" }}>
+              <code
+                key={idx}
+                style={{
+                  display: "block",
+                  maxWidth: "300px",
+                  marginTop: "0.5rem",
+                  wordWrap: "break-word",
+                  whiteSpace: "pre-wrap",
+                }}
+              >
                 {command}
                 <br />
               </code>
