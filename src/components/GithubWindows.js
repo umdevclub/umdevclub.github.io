@@ -18,7 +18,7 @@ const GithubWindows = () => {
           }
         });
       },
-      { threshold: 0.05 }
+      { threshold: 0 }
     );
 
     const refs = sectionRefs.current;
@@ -33,7 +33,14 @@ const GithubWindows = () => {
     <div className="github-tab-container">
       <h1>.DevHack's Guide to Git and Github</h1>
       <Box display="flex">
-        <aside className="github-table-of-contents">
+        <aside
+          className="github-table-of-contents"
+          style={{
+            borderRight: "1px solid #e0e0e0",
+            paddingRight: "1rem",
+            marginRight: "1rem",
+          }}
+        >
           <h2>Table of Contents</h2>
           <ul style={{ listStyleType: "none", padding: "0" }}>
             {windowsInstructions.map((item, idx) => (
