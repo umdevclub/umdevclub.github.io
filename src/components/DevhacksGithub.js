@@ -23,7 +23,7 @@ function CustomTabPanel(props) {
         <Box
           sx={{
             p: 3,
-            width: "80%",
+            width: "95%",
             marginLeft: "auto",
             marginRight: "auto",
           }}

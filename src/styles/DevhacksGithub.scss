@@ -11,10 +11,31 @@
     align-items: center;
   }
 
-  img {
-    max-width: 750px;
-    width: 75%;
-    margin-top: 0.5rem;
-    margin-bottom: 0.5rem;
+  &-tab-container {
+    width: 100%;
+    max-width: 1200px;
+
+    img {
+      max-width: 750px;
+      width: 100%;
+      margin-top: 0.5rem;
+      margin-bottom: 0.5rem;
+    }
+  }
+
+  &-table-of-contents {
+    position: sticky;
+    top: 80px;
+    height: fit-content;
+
+    a {
+      text-decoration: none;
+      color: #000;
+    }
+  }
+
+  &-green-text {
+    font-weight: 500;
+    color: #0b9632;
   }
 }

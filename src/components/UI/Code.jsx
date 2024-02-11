@@ -4,14 +4,19 @@ import Box from "@mui/material/Box";
 import AssignmentTurnedInOutlinedIcon from "@mui/icons-material/AssignmentTurnedInOutlined";
 import { ContentPaste } from "@mui/icons-material";
 
-const Code = ({ text }) => {
+const Code = ({ text, commands = [] }) => {
   const [copySuccess, setCopySuccess] = useState(false);
 
   function copyToClipboard(e) {
     if (copySuccess) {
       setCopySuccess(false);
     } else {
-      navigator.clipboard.writeText(text);
+      if (Array.isArray(commands) && commands.length > 0) {
+        const text = commands.join("\n");
+        navigator.clipboard.writeText(text);
+      } else {
+        navigator.clipboard.writeText(text);
+      }
       setCopySuccess(true);
 
       setTimeout(() => {
@@ -29,7 +34,17 @@ const Code = ({ text }) => {
         alignItems: "center",
       }}
     >
-      <code>{text}</code>
+      {text ? <code>{text}</code> : null}
+      <div>
+        {Array.isArray(commands) && commands.length > 0
+          ? commands.map((command, idx) => (
+              <code key={idx} style={{ marginTop: "0.5rem" }}>
+                {command}
+                <br />
+              </code>
+            ))
+          : null}
+      </div>{" "}
       <div title="Copy code">
         <IconButton onClick={copyToClipboard}>
           {copySuccess ? (

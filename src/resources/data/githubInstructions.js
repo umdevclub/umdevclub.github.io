@@ -1,14 +1,22 @@
+import React from "react";
+
 import githubScreenShot from "@/resources/images/devhacks/github/github-ss.png";
 import githubRepo from "@/resources/images/devhacks/github/github-repo.png";
 import gitScmScreenShot from "@/resources/images/devhacks/github/git-scm.png";
 import gitVersionCheckScreenShot from "@/resources/images/devhacks/github/git-version-check.png";
 import gitNotRecognizedScreenShot from "@/resources/images/devhacks/github/git-not-recognized.png";
 import gitBashScreenShot from "@/resources/images/devhacks/github/git-bash-screenshot.png";
+import githubAccountCreateScreenShot from "@/resources/images/devhacks/github/github-account-create.png";
+import gitUserNameConfirmScreenShot from "@/resources/images/devhacks/github/git-username-confirm.png";
+import gitEmailConfirmScreenShot from "@/resources/images/devhacks/github/github-email-confirm.png";
+import githubCliWebpageScreenShot from "@/resources/images/devhacks/github/github-cli-webpage.png";
+import ghAuthLoginScreenShot from "@/resources/images/devhacks/github/gh-auth-login.png";
 
 import { Code } from "@/components/UI";
 
 export const windowsInstructions = [
   {
+    id: "understand-git-and-github",
     title: "Understanding Git and Github",
     desc: [
       {
@@ -33,7 +41,8 @@ export const windowsInstructions = [
     ],
   },
   {
-    title: "Download and Install git:",
+    id: "download-and-install-git",
+    title: "Download and Install git",
     desc: [
       {
         text: () => (
@@ -44,18 +53,10 @@ export const windowsInstructions = [
               your terminal:
             </p>
             <Code text="git --version" />
-
             <img src={gitVersionCheckScreenShot} alt="screenshot" />
-            <p>
-              Download and install Git from{" "}
-              <a href="https://git-scm.com" target="_blank" rel="noreferrer">
-                git-scm.com
-              </a>
-              .
-            </p>
           </>
         ),
-        img: gitScmScreenShot,
+        img: null,
       },
       {
         text: () => (
@@ -70,103 +71,159 @@ export const windowsInstructions = [
               <a href="https://git-scm.com" target="_blank" rel="noreferrer">
                 git-scm.com
               </a>
-              . Follow the necessary installer guide until installation is
+            </p>
+            <img src={gitScmScreenShot} alt="screenshot" />
+            <p>
+              Follow the necessary installer guide until installation is
               complete. Then open your terminal and follow the previous step to
-              verify that Git was installed successfully.{" "}
+              verify that Git was installed successfully. <br />
               <strong>
                 NOTE: Git bash should also be installed automatically when you
                 install git.
               </strong>
-              <img src={gitBashScreenShot} alt="screenshot" />
+            </p>
+            <img src={gitBashScreenShot} alt="screenshot" />
+          </>
+        ),
+      },
+    ],
+  },
+  {
+    id: "setting-up-a-github-account",
+    title: "Setting up a GitHub Account",
+    desc: [
+      {
+        text: () => (
+          <>
+            <p>
+              Navigate over to{" "}
+              <a href="https://github.com/" target="_blank" rel="noreferrer">
+                github.com
+              </a>{" "}
+              to create an account.{" "}
+            </p>
+            <img src={githubScreenShot} alt="Screenshot" />
+            <p>
+              You will be asked for your email, you can use either a personal or
+              your school email. If you intend to keep using github, we would
+              recommend that you use your personal email.
+              <br />
+              <strong>
+                This will not affect your hackathon registration in any way.
+              </strong>{" "}
+              Then set up your username, password, and verify that you are a
+              human and your account should be set up.
             </p>
           </>
         ),
+        img: githubAccountCreateScreenShot,
       },
     ],
   },
   {
-    title: "Setting up a GitHub Account:",
+    id: "setting-up-username-and-email",
+    title: "Setting up username and email",
     desc: [
       {
         text: () => (
           <>
-            Create a GitHub account at{" "}
-            <a href="https://github.com" target="_blank" rel="noreferrer">
-              github.com
-            </a>
-            .
+            Open up a terminal. We would recommend you use git bash. You can
+            open git bash by searching git bash on your windows search bar
           </>
         ),
-        img: githubScreenShot,
-      },
-      {
-        text: () => <></>,
-        img: "",
-      },
-    ],
-  },
-  {
-    title: "Setting up username and email:",
-    desc: [
-      {
-        text: () => (
-          <>
-            Open up a terminal. You can do this by hitting the spotlight key
-            combination (COMMAND + SPACE)
-          </>
-        ),
-        img: "",
+        img: gitBashScreenShot,
       },
       {
         text: () => (
           <>
             <p>Set your username:</p>
-            <div className="code">
-              <code>git config --global user.name "Your Name"</code>
-            </div>
+            <Code text="git config –-global user.name “YOUR GITHUB USERNAME HERE”" />
+            <p>
+              You can verify whether or not your git username has been input
+              correctly by typing this:
+            </p>
+            <Code text="git config user.name" />
           </>
         ),
-        img: "",
+        img: gitUserNameConfirmScreenShot,
       },
       {
         text: () => (
           <>
+            <p>Set your username:</p>
+            <Code text='git config –-global user.email "YourGithubEmail@email.com"' />
             <p>
-              Set your email (Note: Set it exactly as your github email
-              address):
+              You can verify whether or not your git username has been input
+              correctly by typing this:
             </p>
-            <div className="code">
-              <code>
-                git config --global user.email "your.githubemail@example.com"
-              </code>
-            </div>
+            <Code text="git config user.name" />
+            <p>
+              You should be able to see your Github email output in the
+              terminal.
+            </p>
           </>
         ),
-        img: "",
+        img: gitEmailConfirmScreenShot,
       },
     ],
   },
   {
-    title: "Connecting GitHub Account to Local Git:",
+    id: "connecting-github-account-to-local-git",
+    title: "Connecting GitHub Account to Local Git",
     desc: [
       {
         text: () => (
           <>
             <p>
-              After creating your GitHub account, authenticate your local Git
-              with GitHub:
+              For ease of use, we'll be using the Github CLI (Command Line
+              Interface) for authenticating and connecting Git with Github.
+              Download the Github CLI from here:{" "}
+              <a
+                href="https://cli.github.com/"
+                target="_blank"
+                rel="noreferrer"
+              >
+                cli.github.com
+              </a>
             </p>
-            <div className="code">
-              <code>git config --global credential.helper cache</code>
-            </div>
+            <p>After it's downloaded, follow the prompts to install it.</p>
           </>
         ),
-        img: "",
+        img: githubCliWebpageScreenShot,
+      },
+      {
+        text: () => (
+          <>
+            <p>
+              After installation, open your terminal and type the following:
+            </p>
+            <Code text="gh auth login" />
+            <p>
+              And use your arrow keys and hit the Enter key to the options shown
+              below: (GitHub.com, HTTPS, Yes, and Login with a web browser).
+            </p>
+          </>
+        ),
+        img: ghAuthLoginScreenShot,
+      },
+      {
+        text: () => (
+          <>
+            <p>
+              After you've logged in, you should see a message that says
+              "Authentication complete. Press Enter to continue."{" "}
+            </p>
+            <p className="github-green-text" style={{ textAlign: "center" }}>
+              Congratulations! You have successfully linked your github and git!
+            </p>
+          </>
+        ),
       },
     ],
   },
   {
-    title: "Creating a Repository:",
+    id: "creating-a-repository",
+    title: "Creating a Repository",
     desc: [
       {
         text: () => (
@@ -184,7 +241,8 @@ export const windowsInstructions = [
     ],
   },
   {
-    title: "Connecting Repository to Local Folder:",
+    id: "connecting-repository-to-local-folder",
+    title: "Connecting Repository to Local Folder",
     desc: [
       {
         text: () => (
@@ -199,9 +257,14 @@ export const windowsInstructions = [
         text: () => (
           <>
             <p>Run the following commands:</p>
-            <div className="code">
-              <code>git remote add origin &lt;repository_url&gt;</code>
-            </div>
+            <Code
+              commands={[
+                "git init",
+                "git remote add origin https://github.com/USERNAME/REPOSITORY_NAME.git",
+                "git branch -M main",
+                "git push -u origin main",
+              ]}
+            />
           </>
         ),
         img: "",
@@ -209,15 +272,14 @@ export const windowsInstructions = [
     ],
   },
   {
-    title: "Basic Git Commands:",
+    id: "basic-git-commands",
+    title: "Basic Git Commands",
     desc: [
       {
         text: () => (
           <>
             <p>Add Changes:</p>
-            <div className="code">
-              <code>git add .</code>
-            </div>
+            <Code text="git add ." />
           </>
         ),
         img: "",
@@ -226,9 +288,7 @@ export const windowsInstructions = [
         text: () => (
           <>
             <p>Commit Changes:</p>
-            <div className="code">
-              <code>git commit -m "Your commit message"</code>
-            </div>
+            <Code text='git commit -m "Your commit message"' />
           </>
         ),
         img: "",
@@ -237,9 +297,10 @@ export const windowsInstructions = [
         text: () => (
           <>
             <p>Push Changes to Github:</p>
-            <div className="code">
-              <code>git push -u origin master</code>
-            </div>
+            <Code text="git push -u origin master" />
+            <p className="github-green-text" style={{ textAlign: "center" }}>
+              Congratulations on making it this far!
+            </p>
           </>
         ),
         img: "",
