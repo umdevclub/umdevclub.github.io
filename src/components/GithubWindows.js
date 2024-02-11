@@ -57,7 +57,7 @@ const GithubWindows = () => {
             ))}
           </ul>
         </aside>
-        <ol>
+        <ol className="github-list">
           {windowsInstructions.map((item, idx) => (
             <li
               id={item.id}

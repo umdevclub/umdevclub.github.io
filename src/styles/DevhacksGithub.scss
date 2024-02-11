@@ -32,6 +32,36 @@
       text-decoration: none;
       color: #000;
     }
+
+    @include tablet {
+      display: none;
+    }
+
+    @include mobile {
+      display: none;
+    }
+  }
+
+  &-list {
+    @include tablet {
+      padding: 0;
+      width: 100%;
+
+      ul {
+        padding: 0;
+        width: 100%;
+      }
+    }
+
+    @include mobile {
+      padding: 0;
+      width: 100%;
+
+      ul {
+        padding: 0;
+        width: 100%;
+      }
+    }
   }
 
   &-green-text {
