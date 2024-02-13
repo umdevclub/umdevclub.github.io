@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.aa49232c.css",
-    "main.js": "/static/js/main.41742dc9.js",
+    "main.css": "/static/css/main.4c16cee4.css",
+    "main.js": "/static/js/main.78cca398.js",
     "static/media/wall-of-flesh.gif": "/static/media/wall-of-flesh.726069fb00d35dd38b97.gif",
     "static/media/wavy_video_background.mp4": "/static/media/wavy_video_background.9d01c8b0d91cec00a23e.mp4",
     "static/media/kha-external.JPG": "/static/media/kha-external.1799c954d01f9f040f29.JPG",
@@ -54,11 +54,11 @@
     "static/media/arrow.svg": "/static/media/arrow.6d75ef80652995034fded5f20b4076fc.svg",
     "index.html": "/index.html",
     "static/media/discord-mark-white.svg": "/static/media/discord-mark-white.a420227021864513c33f564d51c99590.svg",
-    "main.aa49232c.css.map": "/static/css/main.aa49232c.css.map",
-    "main.41742dc9.js.map": "/static/js/main.41742dc9.js.map"
+    "main.4c16cee4.css.map": "/static/css/main.4c16cee4.css.map",
+    "main.78cca398.js.map": "/static/js/main.78cca398.js.map"
   },
   "entrypoints": [
-    "static/css/main.aa49232c.css",
-    "static/js/main.41742dc9.js"
+    "static/css/main.4c16cee4.css",
+    "static/js/main.78cca398.js"
   ]
 }
