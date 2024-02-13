@@ -48,6 +48,18 @@ function Hackathon() {
         </h3>
         <div className="hackathon-welcome btn-wrapper">
           <Button
+            onClick={() => history.push("/schedule")}
+            variant="contained"
+            sx={{
+              fontSize: "1.5rem",
+              fontFamily: "inherit",
+              mt: 3,
+              textTransform: "lowercase",
+            }}
+          >
+            Schedule
+          </Button>
+          <Button
             onClick={handleButtonClick}
             variant="contained"
             sx={{
@@ -57,7 +69,7 @@ function Hackathon() {
               textTransform: "lowercase",
             }}
           >
-            Sign up for updates!
+            Register now!
           </Button>
           <Button
             onClick={() => history.push("/github-tutorial")}
