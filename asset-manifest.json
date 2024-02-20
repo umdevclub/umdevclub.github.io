@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.4c16cee4.css",
-    "main.js": "/static/js/main.78cca398.js",
+    "main.css": "/static/css/main.c3ddb1b6.css",
+    "main.js": "/static/js/main.73fcea56.js",
     "static/media/wall-of-flesh.gif": "/static/media/wall-of-flesh.726069fb00d35dd38b97.gif",
     "static/media/wavy_video_background.mp4": "/static/media/wavy_video_background.9d01c8b0d91cec00a23e.mp4",
     "static/media/kha-external.JPG": "/static/media/kha-external.1799c954d01f9f040f29.JPG",
@@ -10,6 +10,7 @@
     "static/media/w3.jpg": "/static/media/w3.4bd626fb6f40c950a167.jpg",
     "static/media/github-cli-webpage-mac.png": "/static/media/github-cli-webpage-mac.763ee2c3b827f962a149.png",
     "static/media/github-cli-webpage.png": "/static/media/github-cli-webpage.6aec48ad4de31d0ea265.png",
+    "static/media/devhacks-schedule-bg.jpeg": "/static/media/devhacks-schedule-bg.c25327852a5a41a7b44c.jpeg",
     "static/media/homebrew-webpage-mac.png": "/static/media/homebrew-webpage-mac.acdd60813b58b2cb4d56.png",
     "static/media/golden-spiral.jpg": "/static/media/golden-spiral.3ab11054acf6efc7df75.jpg",
     "static/media/w1.jpg": "/static/media/w1.be0ad0928af337398d77.jpg",
@@ -54,11 +55,11 @@
     "static/media/arrow.svg": "/static/media/arrow.6d75ef80652995034fded5f20b4076fc.svg",
     "index.html": "/index.html",
     "static/media/discord-mark-white.svg": "/static/media/discord-mark-white.a420227021864513c33f564d51c99590.svg",
-    "main.4c16cee4.css.map": "/static/css/main.4c16cee4.css.map",
-    "main.78cca398.js.map": "/static/js/main.78cca398.js.map"
+    "main.c3ddb1b6.css.map": "/static/css/main.c3ddb1b6.css.map",
+    "main.73fcea56.js.map": "/static/js/main.73fcea56.js.map"
   },
   "entrypoints": [
-    "static/css/main.4c16cee4.css",
-    "static/js/main.78cca398.js"
+    "static/css/main.c3ddb1b6.css",
+    "static/js/main.73fcea56.js"
   ]
 }
