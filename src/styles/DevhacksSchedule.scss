@@ -1,0 +1,95 @@
+@import "media-queries.scss";
+
+// Colors:
+$white: #ffffff;
+$black: #010101;
+$blue: #69c9d0;
+$red: #ee1d52;
+
+.header-title {
+  color: $white;
+  letter-spacing: 10px;
+  text-shadow: 4px 2px 0 $red, -4px -2px 0 $blue;
+  cursor: pointer;
+  text-transform: uppercase;
+  font-weight: 500;
+  margin: 0 1rem 0 0;
+  text-align: center;
+
+  @include mobile {
+    font-size: 2.5rem;
+    margin-top: 2rem;
+  }
+
+  &:hover {
+    animation: shadows 0.4s ease-in infinite;
+  }
+}
+
+@keyframes shadows {
+  0%,
+  100% {
+    text-shadow: 4px 0 0 $red, 0 -4px 0 $blue;
+  }
+  25% {
+    text-shadow: 4px 4px 0 $red, -4px -4px 0 $blue;
+  }
+  50% {
+    text-shadow: 0 4px 0 $red, -4px 0 0 $blue;
+  }
+  75% {
+    text-shadow: 0 0 0 $red, 0 0 0 $blue;
+  }
+}
+
+.schedule {
+  &-block {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: $white;
+
+    @include mobile {
+      flex-direction: column;
+      width: 100%;
+      text-align: center;
+    }
+
+    h2 {
+      width: 20%;
+      text-align: center;
+      margin: 0;
+
+      @include mobile {
+        width: 100%;
+        margin-bottom: 1rem;
+      }
+    }
+
+    h3 {
+      font-size: 2.5rem;
+      margin: 0;
+    }
+
+    p {
+      font-size: 1.25rem;
+      margin: 0;
+      color: #f7f8f7;
+    }
+
+    span {
+      color: #cf4349;
+    }
+  }
+
+  &-time {
+    @include mobile {
+      margin-top: 1rem !important;
+      margin-bottom: 1rem !important;
+      font-weight: bold;
+    }
+  }
+}
