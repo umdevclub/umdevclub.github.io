@@ -48,6 +48,7 @@ const HackathonFaq = () => {
   return (
     <Box width="85%" mb={8}>
       <Typography
+        id="faq"
         variant="h3"
         mb={4}
         fontFamily='"IBM Plex Mono", monospace'
@@ -56,15 +57,16 @@ const HackathonFaq = () => {
         padding={2}
         border="2px solid #272729"
         borderRadius={1}
+        letterSpacing="0.15em"
       >
-        FAQs
+        .FAQs
       </Typography>
       {faqData.map((faq, index) => (
         <Accordion
           key={index}
           sx={{
             color: "white",
-            background: "#363535",
+            background: "#5d5c5c",
           }}
         >
           <AccordionSummary
@@ -87,7 +89,10 @@ const HackathonFaq = () => {
             </Typography>
           </AccordionSummary>
           <AccordionDetails>
-            <Typography fontFamily='"IBM Plex Mono", monospace'>
+            <Typography
+              fontFamily='"IBM Plex Mono", monospace'
+              fontWeight={500}
+            >
               {faq.answer}
             </Typography>
           </AccordionDetails>
