@@ -5,6 +5,7 @@ import "@/styles/Hackathon.scss";
 import { Button } from "@mui/material";
 import { useHistory } from "react-router-dom/cjs/react-router-dom.min";
 import Timer from "@/components/Timer";
+import HackathonFaq from "@/components/HackathonFaq";
 
 function Hackathon() {
   // const btnStyles = {
@@ -146,6 +147,9 @@ function Hackathon() {
         <h1 className="hackathon-register heading">
           <Timer />
         </h1>
+      </div>
+      <div className="container">
+        <HackathonFaq />
       </div>
     </div>
   );
