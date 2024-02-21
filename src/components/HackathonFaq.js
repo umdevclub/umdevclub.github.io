@@ -65,8 +65,8 @@ const HackathonFaq = () => {
         <Accordion
           key={index}
           sx={{
-            color: "#272729",
-            background: "white",
+            color: "white",
+            background: "#5d5c5c",
           }}
         >
           <AccordionSummary
