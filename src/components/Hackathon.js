@@ -39,8 +39,8 @@ function Hackathon() {
       <div className="hackathon-welcome container">
         <h1 className="hackathon-welcome heading">.devHacks</h1>
         <h2 className="hackathon-welcome sub-heading">
-          Location: University of Manitoba <br />
-          Tentative Dates: February 23rd to 24th
+          Location: EITC Atrium & E3 270 @ University of Manitoba <br />
+          Date & Time: February 23rd to 24th (5:00 PM - 5:00 PM)
         </h2>
         <h3 className="hackathon-welcome intro-text">
           .devHacks is an annual hackathon hosted by .devClub for students to
@@ -83,6 +83,18 @@ function Hackathon() {
             }}
           >
             Schedule
+          </Button>
+          <Button
+            onClick={() => history.push("/prize-categories")}
+            variant="contained"
+            sx={{
+              fontSize: "1.5rem",
+              fontFamily: "inherit",
+              mt: 3,
+              textTransform: "lowercase",
+            }}
+          >
+            Prize Categories
           </Button>
         </div>
       </div>

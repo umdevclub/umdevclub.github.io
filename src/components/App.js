@@ -20,6 +20,7 @@ import HackathonSubmit from "@/components/HackathonSubmit";
 import LinkTree from "@/components/LinkTree";
 import DevhacksGithub from "@/components/DevhacksGithub";
 import DevhacksSchedule from "@/components/DevhacksSchedule";
+import PrizeCategories from "@/components/PrizeCategories";
 
 function App() {
   // The animation transitions out the current page first and then transitions into the new page
@@ -62,6 +63,7 @@ function App() {
               <Route path="/link-tree" component={LinkTree} />
               <Route path="/registration" component={HackathonRegister} />
               <Route path="/schedule" component={DevhacksSchedule} />
+              <Route path="/prize-categories" component={PrizeCategories} />
               <Route path="*" component={PageNotFound} />
             </Switch>
           </CSSTransition>
