@@ -20,17 +20,17 @@ function Hackathon() {
   //   },
   // };
 
-  const formId = "meRpLq";
+  // const formId = "meRpLq";
 
-  const handleButtonClick = () => {
-    if (window?.Tally) {
-      window.Tally.openPopup(formId, {
-        layout: "modal",
-        width: 700,
-        autoClose: 5000,
-      });
-    }
-  };
+  // const handleButtonClick = () => {
+  //   if (window?.Tally) {
+  //     window.Tally.openPopup(formId, {
+  //       layout: "modal",
+  //       width: 700,
+  //       autoClose: 5000,
+  //     });
+  //   }
+  // };
 
   const history = useHistory();
 
@@ -48,7 +48,7 @@ function Hackathon() {
           fun filled development!
         </h3>
         <div className="hackathon-welcome btn-wrapper">
-          <Button
+          {/* <Button
             onClick={handleButtonClick}
             variant="contained"
             sx={{
@@ -59,7 +59,7 @@ function Hackathon() {
             }}
           >
             Register now!
-          </Button>
+          </Button> */}
           <Button
             onClick={() => history.push("/github-tutorial")}
             variant="contained"
