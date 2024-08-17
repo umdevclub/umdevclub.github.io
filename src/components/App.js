@@ -13,6 +13,7 @@ import ExamCramForms from "@/components/ExamCramForms.js";
 import Hackathon from "@/components/Hackathon.js";
 import HackathonRegister from "@/components/HackathonRegister.js";
 import Picnic from "@/components/Picnic.js";
+import AreWeThereYet from "@/components/AreWeThereYet.js";
 import PageNotFound from "@/components/PageNotFound.js";
 import React from "react";
 import Footer from "./Footer";
@@ -60,6 +61,7 @@ function App() {
               <Route exact path="/github-tutorial" component={DevhacksGithub} />
               <Route path="/hackathon-submit" component={HackathonSubmit} />
               <Route path="/bbq" component={Picnic} />
+              <Route path="/AreWeThereYet" component={AreWeThereYet} />
               <Route path="/link-tree" component={LinkTree} />
               <Route path="/registration" component={HackathonRegister} />
               <Route path="/schedule" component={DevhacksSchedule} />

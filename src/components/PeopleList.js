@@ -48,7 +48,7 @@ function PeopleList({ peopleData }) {
       {peopleData.map((person, index) => (
         <div
           style={{
-            width: 200,
+            width: 180,
             height: "100%",
             backgroundColor: (theme) =>
               theme.palette.mode === "dark" ? "#1A2027" : "#fff",
