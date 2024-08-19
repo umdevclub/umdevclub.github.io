@@ -2,8 +2,8 @@ import React from "react";
 
 import "@/styles/Hackathon.scss";
 
-import { Button } from "@mui/material";
-import { useHistory } from "react-router-dom/cjs/react-router-dom.min";
+// import { Button } from "@mui/material";
+// import { useHistory } from "react-router-dom/cjs/react-router-dom.min";
 // import Timer from "@/components/Timer";
 import HackathonFaq from "@/components/HackathonFaq";
 
@@ -32,7 +32,7 @@ function Hackathon() {
   //   }
   // };
 
-  const history = useHistory();
+  // const history = useHistory();
 
   return (
     <div className="hackathon-container" dir="ltr">
