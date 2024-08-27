@@ -1,14 +1,18 @@
 {
   "files": {
-    "main.css": "/static/css/main.35ea3379.css",
-    "main.js": "/static/js/main.d7e038d3.js",
+    "main.css": "/static/css/main.f77292f6.css",
+    "main.js": "/static/js/main.d0a6c277.js",
+    "static/media/Fawaz-events.png": "/static/media/Fawaz-events.53df5fb1c9cca0a0babf.png",
+    "static/media/Jordon-President.jpg": "/static/media/Jordon-President.5b2d22213dc035205e8d.jpg",
     "static/media/wall-of-flesh.gif": "/static/media/wall-of-flesh.726069fb00d35dd38b97.gif",
     "static/media/wavy_video_background.mp4": "/static/media/wavy_video_background.9d01c8b0d91cec00a23e.mp4",
-    "static/media/kha-external.JPG": "/static/media/kha-external.1799c954d01f9f040f29.JPG",
     "static/media/git-scm.png": "/static/media/git-scm.01eb8f4837a81c5eb82b.png",
     "static/media/github-ss.png": "/static/media/github-ss.74d9bb2e8d56cd86a212.png",
+    "static/media/kristel-internal.jpg": "/static/media/kristel-internal.11757137d03bc4e7be97.jpg",
     "static/media/w3.jpg": "/static/media/w3.4bd626fb6f40c950a167.jpg",
     "static/media/github-cli-webpage-mac.png": "/static/media/github-cli-webpage-mac.763ee2c3b827f962a149.png",
+    "static/media/arion-VicePres.jpg": "/static/media/arion-VicePres.c41f2dd654885f77115b.jpg",
+    "static/media/minh-external.jpg": "/static/media/minh-external.b8110f44f067b12664a0.jpg",
     "static/media/github-cli-webpage.png": "/static/media/github-cli-webpage.6aec48ad4de31d0ea265.png",
     "static/media/devhacks-schedule-bg.jpeg": "/static/media/devhacks-schedule-bg.c25327852a5a41a7b44c.jpeg",
     "static/media/homebrew-webpage-mac.png": "/static/media/homebrew-webpage-mac.acdd60813b58b2cb4d56.png",
@@ -19,16 +23,11 @@
     "static/media/h4.jpg": "/static/media/h4.8c0f79c8c7cac58539d8.jpg",
     "static/media/gh-auth-login-mac.png": "/static/media/gh-auth-login-mac.c695ae812ffd046efeb3.png",
     "static/media/git-bash-screenshot.png": "/static/media/git-bash-screenshot.8929908d96ff13d9071c.png",
-    "static/media/avneet-promotions.png": "/static/media/avneet-promotions.4b9e30cde6ac5d3c5489.png",
-    "static/media/jordan-internal.png": "/static/media/jordan-internal.d8d489495ceedb7d38db.png",
+    "static/media/adwait-treasurer.jpg": "/static/media/adwait-treasurer.abed380a04758d8b1d23.jpg",
     "static/media/gh-auth-login.png": "/static/media/gh-auth-login.ea6b60215835d7ee7fa9.png",
-    "static/media/vedant-treasurer.png": "/static/media/vedant-treasurer.38f5de4a5155e52b76e0.png",
     "static/media/h1.jpg": "/static/media/h1.2130b6ec6fe9e63d3222.jpg",
     "static/media/w4.jpg": "/static/media/w4.a5e1d6638cbb51a03e3f.jpg",
     "static/media/w2.jpg": "/static/media/w2.8f339811a5380c583e2f.jpg",
-    "static/media/ahmed-vice-pres.png": "/static/media/ahmed-vice-pres.f3a09fddc1cf86dbeafc.png",
-    "static/media/atishaya-events.png": "/static/media/atishaya-events.5e1a42e96a143b3e170c.png",
-    "static/media/raman-pres.png": "/static/media/raman-pres.75bcc5700d0805a8b03f.png",
     "static/media/h3.jpg": "/static/media/h3.a69f45bcf57c7e761c83.jpg",
     "static/media/brians-brain.jpg": "/static/media/brians-brain.1136bd93ebfcad67dfea.jpg",
     "static/media/jacob.jpg": "/static/media/jacob.1a5e2310e85fc4f0fae6.jpg",
@@ -44,6 +43,7 @@
     "static/media/brooklynn.png": "/static/media/brooklynn.23f9455e7a20977b2f91.png",
     "static/media/devclub-logo.svg": "/static/media/devclub-logo.e7c74582ac5c41171acfd35ee01e5d15.svg",
     "static/media/graham.jpg": "/static/media/graham.829dd3e30a443fc33341.jpg",
+    "static/media/pritha-promotions.jpg": "/static/media/pritha-promotions.9c0fde7afc3e44410ccd.jpg",
     "static/media/git-version-check.png": "/static/media/git-version-check.ec0b1d8a55f653d00b6a.png",
     "static/media/github-email-confirm.png": "/static/media/github-email-confirm.33cf73cb7cf0782bc3a8.png",
     "static/media/git-username-confirm.png": "/static/media/git-username-confirm.b134f0a6164231598570.png",
@@ -55,11 +55,11 @@
     "static/media/arrow.svg": "/static/media/arrow.6d75ef80652995034fded5f20b4076fc.svg",
     "index.html": "/index.html",
     "static/media/discord-mark-white.svg": "/static/media/discord-mark-white.a420227021864513c33f564d51c99590.svg",
-    "main.35ea3379.css.map": "/static/css/main.35ea3379.css.map",
-    "main.d7e038d3.js.map": "/static/js/main.d7e038d3.js.map"
+    "main.f77292f6.css.map": "/static/css/main.f77292f6.css.map",
+    "main.d0a6c277.js.map": "/static/js/main.d0a6c277.js.map"
   },
   "entrypoints": [
-    "static/css/main.35ea3379.css",
-    "static/js/main.d7e038d3.js"
+    "static/css/main.f77292f6.css",
+    "static/js/main.d0a6c277.js"
   ]
 }
