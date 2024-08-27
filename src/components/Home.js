@@ -14,7 +14,7 @@ import ImageListItem from "@mui/material/ImageListItem";
 import PeopleList from "@/components/PeopleList";
 
 import teamMembers from "@/resources/data/team-members.js";
-
+import { Button } from "@mui/material";
 import {
   workshopImages,
   hackathonImages,
@@ -141,6 +141,38 @@ function Home() {
               <MissionImageList imagesData={devchampsImages} />
             </div>
           </div>
+        </div>
+        <div className="how-to-join-container" id="#AWTY-rsvp">
+          <div className="title-container ">
+            <h1 className="title-content">RSVP FOR ARE WE THERE YET? </h1>
+          </div>
+          <p className="how-to-join-text">
+            MARK YOUR CALENDARS! Join .devClub for a day trip to Kenora on
+            September 7!
+            <br />
+            Whether you're a first-year Computer Science student or a professor,
+            we would love to have you join our adventure! <br />
+            <br />
+            <span className="underline bold">Breakfast</span>,{" "}
+            <span className="underline bold">Dinner</span> and a trip to{" "}
+            <span className="underline bold">Coney Island beach</span>! <br />
+            <br />
+            Register to reserve your spot for a small fee of{" "}
+            <span className="underline bold">$30</span>, limited slots
+            available.
+            <br />
+          </p>
+          <Link
+            href="https://forms.gle/6pnS5rigCfcb411DA"
+            target="_blank"
+            component="button"
+            variant="contained"
+            size="large"
+            className="how-to-join-button"
+            as={Button}
+          >
+            RSVP HERE!
+          </Link>
         </div>
         <div id="join-club"></div>
         <div className="how-to-join-container">

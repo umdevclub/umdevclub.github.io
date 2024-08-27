@@ -1,25 +1,29 @@
+@import "media-queries.scss";
+
 /* People */
 
 .peoples-grid {
   position: relative;
   left: 50%;
   transform: translateX(-50%);
-  max-width: 90%;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(225px, 1fr));
-  grid-gap: 3px;
+  max-width: 50%;
+  display: flex;
+  flex-wrap: wrap;
+  // grid-template-columns: repeat(auto-fit, minmax(225px, 1fr));
+  // grid-gap: 3px;
   justify-items: center;
+  justify-content: center;
   padding-top: 20px;
   text-align: center;
 }
 
 .people {
   height: 100%;
-  margin-bottom: 3em;
+  margin-bottom: 1em;
 }
 
 .people > .image-container {
-  width: 170px;
+  width: 100%;
   height: 170px;
   border-radius: 50%;
   overflow: hidden;
@@ -56,4 +60,10 @@
   font-size: 13px;
   line-height: 20px;
   letter-spacing: 0.06em;
+}
+
+@include mobile {
+  .peoples-grid {
+    max-width: fit-content;
+  }
 }

@@ -1,52 +1,52 @@
-import raman from "@/resources/images/team-members/raman-pres.png";
-import ahmed from "@/resources/images/team-members/ahmed-vice-pres.png";
-import vedant from "@/resources/images/team-members/vedant-treasurer.png";
-import jordan from "@/resources/images/team-members/jordan-internal.png";
-import kha from "@/resources/images/team-members/kha-external.JPG";
-import atishaya from "@/resources/images/team-members/atishaya-events.png";
-import avneet from "@/resources/images/team-members/avneet-promotions.png";
+import Jordon from "@/resources/images/team-members/Jordon-President.jpg";
+import Arion from "@/resources/images/team-members/arion-VicePres.jpg";
+import Kristel from "@/resources/images/team-members/kristel-internal.jpg";
+import Minh from "@/resources/images/team-members/minh-external.jpg";
+import Adwait from "@/resources/images/team-members/adwait-treasurer.jpg";
+import Fawaz from "@/resources/images/team-members/Fawaz-events.JPG";
+import Pritha from "@/resources/images/team-members/pritha-promotions.jpg";
 
 const teamMembers = [
   {
-    name: "Raman Bhandari",
+    name: "Jordon Hong",
     role: "President",
-    image: raman,
+    image: Jordon,
     //bio: "Very good person, I like this person, they do cool stuff and it's fun to hang out with them, they are also very smart and active and enjoy doing stuff.",
   },
   {
-    name: "Ahmed S. Ahmed",
+    name: " Arion Kennedy",
     role: "Vice-President",
-    image: ahmed,
+    image: Arion,
     // bio: "Very good person, I like this person, they do cool stuff and it's fun to hang out with them, they are also very smart and active and enjoy doing stuff.",
   },
   {
-    name: "Vedant Pulahru",
+    name: "Adwait Pujari",
     role: "Treasurer",
-    image: vedant,
+    image: Adwait,
     // bio: "Very good person, I like this person, they do cool stuff and it's fun to hang out with them, they are also very smart and active and enjoy doing stuff.",
   },
   {
-    name: "Jordon Hong",
+    name: "Kristel Marasigan",
     role: "Internal",
-    image: jordan,
+    image: Kristel,
     // bio: "Very good person, I like this person, they do cool stuff and it's fun to hang out with them, they are also very smart and active and enjoy doing stuff.",
   },
   {
-    name: "Kha Thế Phạm",
+    name: "Hoang Minh Phan",
     role: "External",
-    image: kha,
+    image: Minh,
     // bio: "Very good person, I like this person, they do cool stuff and it's fun to hang out with them, they are also very smart and active and enjoy doing stuff.",
   },
   {
-    name: "Atishaya Maharjan",
+    name: "Fawaz Saleem",
     role: "Events",
-    image: atishaya,
+    image: Fawaz,
     // bio: "Very good person, I like this person, they do cool stuff and it's fun to hang out with them, they are also very smart and active and enjoy doing stuff.",
   },
   {
-    name: "Avneet K. Sidhu",
+    name: "Pritha Das",
     role: "Promotions",
-    image: avneet,
+    image: Pritha,
     // bio: "Very good person, I like this person, they do cool stuff and it's fun to hang out with them, they are also very smart and active and enjoy doing stuff.",
   },
 ];

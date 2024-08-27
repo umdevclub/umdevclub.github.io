@@ -4,7 +4,7 @@ import "@/styles/Hackathon.scss";
 
 import { Button } from "@mui/material";
 import { useHistory } from "react-router-dom/cjs/react-router-dom.min";
-import Timer from "@/components/Timer";
+// import Timer from "@/components/Timer";
 import HackathonFaq from "@/components/HackathonFaq";
 
 function Hackathon() {
@@ -38,10 +38,10 @@ function Hackathon() {
     <div className="hackathon-container" dir="ltr">
       <div className="hackathon-welcome container">
         <h1 className="hackathon-welcome heading">.devHacks</h1>
-        <h2 className="hackathon-welcome sub-heading">
+        {/* <h2 className="hackathon-welcome sub-heading">
           Location: EITC Atrium & E3 270 @ University of Manitoba <br />
           Date & Time: February 23rd to 24th (5:00 PM - 5:00 PM)
-        </h2>
+        </h2> */}
         <h3 className="hackathon-welcome intro-text">
           .devHacks is an annual hackathon hosted by .devClub for students to
           showcase their creativity and endurance over a period of 24 hours of
@@ -72,7 +72,7 @@ function Hackathon() {
           >
             Github tutorial
           </Button>
-          <Button
+          {/* <Button
             onClick={() => history.push("/schedule")}
             variant="contained"
             sx={{
@@ -83,8 +83,8 @@ function Hackathon() {
             }}
           >
             Schedule
-          </Button>
-          <Button
+          </Button> */}
+          {/* <Button
             onClick={() => history.push("/prize-categories")}
             variant="contained"
             sx={{
@@ -95,7 +95,7 @@ function Hackathon() {
             }}
           >
             Prize Categories
-          </Button>
+          </Button> */}
         </div>
       </div>
       {/* <div className="hackathon-rules container" id="rules">
@@ -157,7 +157,7 @@ function Hackathon() {
       </div> */}
       <div className="hackathon-register-container">
         <h1 className="hackathon-register heading">
-          <Timer />
+          {/* <Timer /> */} Coming Soon!
         </h1>
       </div>
       <div className="container">
