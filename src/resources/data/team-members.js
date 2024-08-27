@@ -3,7 +3,7 @@ import Arion from "@/resources/images/team-members/arion-VicePres.jpg";
 import Kristel from "@/resources/images/team-members/kristel-internal.jpg";
 import Minh from "@/resources/images/team-members/minh-external.jpg";
 import Adwait from "@/resources/images/team-members/adwait-treasurer.jpg";
-import Fawaz from "@/resources/images/team-members/Fawaz-events.JPG";
+import Fawaz from "@/resources/images/team-members/Fawaz-events.png";
 import Pritha from "@/resources/images/team-members/pritha-promotions.jpg";
 
 const teamMembers = [
