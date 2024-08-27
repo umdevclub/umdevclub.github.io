@@ -153,9 +153,12 @@ function Home() {
             Whether you're a first-year Computer Science student or a professor,
             we would love to have you join our adventure! <br />
             <br />
-            <span className="underline bold">Food IS provided!</span> <br />
+            <span className="underline bold">Breakfast</span>,{" "}
+            <span className="underline bold">Dinner</span> and a trip to{" "}
+            <span className="underline bold">Coney Island beach</span>! <br />
             <br />
-            Register to reserve your spot for a small fee of $30, limited slots
+            Register to reserve your spot for a small fee of{" "}
+            <span className="underline bold">$30</span>, limited slots
             available.
             <br />
           </p>

@@ -2,8 +2,8 @@ import React from "react";
 
 import "@/styles/Hackathon.scss";
 
-// import { Button } from "@mui/material";
-// import { useHistory } from "react-router-dom/cjs/react-router-dom.min";
+import { Button } from "@mui/material";
+import { useHistory } from "react-router-dom/cjs/react-router-dom.min";
 // import Timer from "@/components/Timer";
 import HackathonFaq from "@/components/HackathonFaq";
 
@@ -32,12 +32,12 @@ function Hackathon() {
   //   }
   // };
 
-  // const history = useHistory();
+  const history = useHistory();
 
   return (
     <div className="hackathon-container" dir="ltr">
       <div className="hackathon-welcome container">
-        <h1 className="hackathon-welcome heading">&lt;.devHacks&gt;</h1>
+        <h1 className="hackathon-welcome heading">.devHacks</h1>
         {/* <h2 className="hackathon-welcome sub-heading">
           Location: EITC Atrium & E3 270 @ University of Manitoba <br />
           Date & Time: February 23rd to 24th (5:00 PM - 5:00 PM)
@@ -47,8 +47,8 @@ function Hackathon() {
           showcase their creativity and endurance over a period of 24 hours of
           fun filled development!
         </h3>
-        {/* <div className="hackathon-welcome btn-wrapper"> */}
-        {/* <Button
+        <div className="hackathon-welcome btn-wrapper">
+          {/* <Button
             onClick={handleButtonClick}
             variant="contained"
             sx={{
@@ -60,7 +60,7 @@ function Hackathon() {
           >
             Register now!
           </Button> */}
-        {/* <Button
+          <Button
             onClick={() => history.push("/github-tutorial")}
             variant="contained"
             sx={{
@@ -71,8 +71,8 @@ function Hackathon() {
             }}
           >
             Github tutorial
-          </Button> */}
-        {/* <Button
+          </Button>
+          {/* <Button
             onClick={() => history.push("/schedule")}
             variant="contained"
             sx={{
@@ -84,7 +84,7 @@ function Hackathon() {
           >
             Schedule
           </Button> */}
-        {/* <Button
+          {/* <Button
             onClick={() => history.push("/prize-categories")}
             variant="contained"
             sx={{
@@ -96,7 +96,7 @@ function Hackathon() {
           >
             Prize Categories
           </Button> */}
-        {/* </div> */}
+        </div>
       </div>
       {/* <div className="hackathon-rules container" id="rules">
         <h1 className="hackathon-rules heading">Rules:</h1>
@@ -156,12 +156,10 @@ function Hackathon() {
         </div>
       </div> */}
       <div className="hackathon-register-container">
-        {/* <h1 className="hackathon-register heading">
-          <Timer />
-        </h1> */}
-        <h1 className="hackathon-register heading">Coming soon!</h1>
+        <h1 className="hackathon-register heading">
+          {/* <Timer /> */} Coming Soon!
+        </h1>
       </div>
-      <br></br>
       <div className="container">
         <HackathonFaq />
       </div>
