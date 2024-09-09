@@ -72,6 +72,7 @@ function Hackathon() {
           >
             Github tutorial
           </Button>
+
           {/* <Button
             onClick={() => history.push("/schedule")}
             variant="contained"
@@ -155,11 +156,12 @@ function Hackathon() {
           </ol>
         </div>
       </div> */}
-      <div className="hackathon-register-container">
-        <h1 className="hackathon-register heading">
-          {/* <Timer /> */} Coming Soon!
-        </h1>
-      </div>
+      {/* <div className="hackathon-register-container">
+        <h1 className="hackathon-register heading"> */}
+      {/* <Timer /> Coming Soon! */}
+      {/* </h1>
+      </div> */}
+
       <div className="container">
         <HackathonFaq />
       </div>

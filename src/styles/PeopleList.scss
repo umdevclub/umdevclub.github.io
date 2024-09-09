@@ -67,3 +67,9 @@
     max-width: fit-content;
   }
 }
+
+@include tablet {
+  .peoples-grid {
+    max-width: 60%;
+  }
+}
