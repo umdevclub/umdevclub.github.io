@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.3b4d7eb9.css",
-    "main.js": "/static/js/main.cd1c9c60.js",
+    "main.js": "/static/js/main.a5528b61.js",
     "static/media/Fawaz-events.png": "/static/media/Fawaz-events.53df5fb1c9cca0a0babf.png",
     "static/media/Jordon-President.jpg": "/static/media/Jordon-President.5b2d22213dc035205e8d.jpg",
     "static/media/wall-of-flesh.gif": "/static/media/wall-of-flesh.726069fb00d35dd38b97.gif",
@@ -19,6 +19,7 @@
     "static/media/golden-spiral.jpg": "/static/media/golden-spiral.3ab11054acf6efc7df75.jpg",
     "static/media/w1.jpg": "/static/media/w1.be0ad0928af337398d77.jpg",
     "static/media/h2.jpg": "/static/media/h2.a88a1b00951c77a08287.jpg",
+    "static/media/logo-cusec.svg": "/static/media/logo-cusec.16f8983a995504d67308860dca272e2a.svg",
     "static/media/alathra.jpg": "/static/media/alathra.76ae08468460ac849975.jpg",
     "static/media/h4.jpg": "/static/media/h4.8c0f79c8c7cac58539d8.jpg",
     "static/media/gh-auth-login-mac.png": "/static/media/gh-auth-login-mac.c695ae812ffd046efeb3.png",
@@ -51,15 +52,14 @@
     "static/media/logo-cssa.svg": "/static/media/logo-cssa.e52eabbc44c5f6d126d838f830e08f9f.svg",
     "static/media/devclub-logo-horizontal.svg": "/static/media/devclub-logo-horizontal.f59db50029020c2e598478495610272e.svg",
     "static/media/joshua.jpg": "/static/media/joshua.2a0c4ebe85df6d286450.jpg",
-    "static/media/logo-cusec.svg": "/static/media/logo-cusec.1538c387889889cdae3b54b721352c03.svg",
     "static/media/arrow.svg": "/static/media/arrow.6d75ef80652995034fded5f20b4076fc.svg",
     "index.html": "/index.html",
     "static/media/discord-mark-white.svg": "/static/media/discord-mark-white.a420227021864513c33f564d51c99590.svg",
     "main.3b4d7eb9.css.map": "/static/css/main.3b4d7eb9.css.map",
-    "main.cd1c9c60.js.map": "/static/js/main.cd1c9c60.js.map"
+    "main.a5528b61.js.map": "/static/js/main.a5528b61.js.map"
   },
   "entrypoints": [
     "static/css/main.3b4d7eb9.css",
-    "static/js/main.cd1c9c60.js"
+    "static/js/main.a5528b61.js"
   ]
 }
