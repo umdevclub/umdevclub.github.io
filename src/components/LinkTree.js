@@ -30,7 +30,7 @@ const LinkTree = () => {
     {
       name: "CUSEC",
       logo: cusecLogo,
-      link: "https://linktr.ee/umdev",
+      link: "https://www.instagram.com/cusecofficial/",
       desc: "Canadian University Software Engineering Conference",
       className: "cusec",
     },
