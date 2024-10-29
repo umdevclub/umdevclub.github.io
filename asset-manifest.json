@@ -1,11 +1,12 @@
 {
   "files": {
     "main.css": "/static/css/main.3b4d7eb9.css",
-    "main.js": "/static/js/main.a5528b61.js",
+    "main.js": "/static/js/main.a192a5a2.js",
     "static/media/Fawaz-events.png": "/static/media/Fawaz-events.53df5fb1c9cca0a0babf.png",
     "static/media/Jordon-President.jpg": "/static/media/Jordon-President.5b2d22213dc035205e8d.jpg",
     "static/media/wall-of-flesh.gif": "/static/media/wall-of-flesh.726069fb00d35dd38b97.gif",
     "static/media/wavy_video_background.mp4": "/static/media/wavy_video_background.9d01c8b0d91cec00a23e.mp4",
+    "static/media/logo-cusec.svg": "/static/media/logo-cusec.53c2b851307ea8bca8d2df71322eaf45.svg",
     "static/media/git-scm.png": "/static/media/git-scm.01eb8f4837a81c5eb82b.png",
     "static/media/github-ss.png": "/static/media/github-ss.74d9bb2e8d56cd86a212.png",
     "static/media/kristel-internal.jpg": "/static/media/kristel-internal.11757137d03bc4e7be97.jpg",
@@ -19,7 +20,6 @@
     "static/media/golden-spiral.jpg": "/static/media/golden-spiral.3ab11054acf6efc7df75.jpg",
     "static/media/w1.jpg": "/static/media/w1.be0ad0928af337398d77.jpg",
     "static/media/h2.jpg": "/static/media/h2.a88a1b00951c77a08287.jpg",
-    "static/media/logo-cusec.svg": "/static/media/logo-cusec.16f8983a995504d67308860dca272e2a.svg",
     "static/media/alathra.jpg": "/static/media/alathra.76ae08468460ac849975.jpg",
     "static/media/h4.jpg": "/static/media/h4.8c0f79c8c7cac58539d8.jpg",
     "static/media/gh-auth-login-mac.png": "/static/media/gh-auth-login-mac.c695ae812ffd046efeb3.png",
@@ -56,10 +56,10 @@
     "index.html": "/index.html",
     "static/media/discord-mark-white.svg": "/static/media/discord-mark-white.a420227021864513c33f564d51c99590.svg",
     "main.3b4d7eb9.css.map": "/static/css/main.3b4d7eb9.css.map",
-    "main.a5528b61.js.map": "/static/js/main.a5528b61.js.map"
+    "main.a192a5a2.js.map": "/static/js/main.a192a5a2.js.map"
   },
   "entrypoints": [
     "static/css/main.3b4d7eb9.css",
-    "static/js/main.a5528b61.js"
+    "static/js/main.a192a5a2.js"
   ]
 }
