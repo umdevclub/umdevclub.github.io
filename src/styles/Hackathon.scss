@@ -110,7 +110,16 @@
       margin-bottom: 0.5em;
     }
   }
-
+  &-sponsors {
+    &.heading {
+      text-align: center;
+      font-weight: 700;
+      font-size: 36px;
+      letter-spacing: 0.15rem;
+      margin-top: 10rem;
+      margin-bottom: 1rem;
+    }
+  }
   &-code-conduct {
     &.heading {
       text-align: center;
