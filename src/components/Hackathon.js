@@ -22,17 +22,17 @@ function Hackathon() {
   //   },
   // };
 
-  // const formId = "war5yv";
+  const formId = "war5yv";
 
-  // const handleButtonClick = () => {
-  //   if (window?.Tally) {
-  //     window.Tally.openPopup(formId, {
-  //       layout: "modal",
-  //       width: 700,
-  //       autoClose: 5000,
-  //     });
-  //   }
-  // };
+  const handleButtonClick = () => {
+    if (window?.Tally) {
+      window.Tally.openPopup(formId, {
+        layout: "modal",
+        width: 700,
+        autoClose: 5000,
+      });
+    }
+  };
 
   const history = useHistory();
 
@@ -51,8 +51,7 @@ function Hackathon() {
           <h2 className="hackathon-welcome sub-heading">
             Location: EITC Atrium, E3 270 & E2 229 @ University of Manitoba{" "}
             <br />
-            Date & Time: February 21st to 22nd (1:00 PM - 1:00 PM) <br />
-            Registration will open soon. Stay tuned!
+            Date & Time: February 21st to 22nd (1:00 PM - 1:00 PM)
           </h2>
         }
         <h3 className="hackathon-welcome intro-text">
@@ -61,7 +60,7 @@ function Hackathon() {
           fun filled development!
         </h3>
         <div className="hackathon-welcome btn-wrapper">
-          {/* <Button
+          <Button
             onClick={handleButtonClick}
             variant="contained"
             sx={{
@@ -72,7 +71,7 @@ function Hackathon() {
             }}
           >
             Register now!
-          </Button> */}
+          </Button>
           <Button
             onClick={() => history.push("/github-tutorial")}
             variant="contained"
