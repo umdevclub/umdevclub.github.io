@@ -4,9 +4,11 @@ import "@/styles/Hackathon.scss";
 
 import { Button } from "@mui/material";
 import { useHistory } from "react-router-dom/cjs/react-router-dom.min";
-// import Timer from "@/components/Timer";
+import Timer from "@/components/Timer";
 import HackathonFaq from "@/components/HackathonFaq";
-
+import codeOfConduct from "@/resources/data/code-of-conduct.js";
+import rules from "@/resources/data/rules.js";
+// import Sponsors from "@/resources/data/devHacksSponsors.js"
 function Hackathon() {
   // const btnStyles = {
   //   letterSpacing: "0.2em",
@@ -20,7 +22,7 @@ function Hackathon() {
   //   },
   // };
 
-  // const formId = "meRpLq";
+  // const formId = "war5yv";
 
   // const handleButtonClick = () => {
   //   if (window?.Tally) {
@@ -36,12 +38,23 @@ function Hackathon() {
 
   return (
     <div className="hackathon-container" dir="ltr">
+      <div className="hackathon-register-container">
+        {/* <h1 className="hackathon-register heading"></h1> */}
+        <h1 className="hackathon-register heading">
+          <Timer />
+        </h1>
+      </div>
       <div className="hackathon-welcome container">
         <h1 className="hackathon-welcome heading">.devHacks</h1>
-        {/* <h2 className="hackathon-welcome sub-heading">
-          Location: EITC Atrium & E3 270 @ University of Manitoba <br />
-          Date & Time: February 23rd to 24th (5:00 PM - 5:00 PM)
-        </h2> */}
+
+        {
+          <h2 className="hackathon-welcome sub-heading">
+            Location: EITC Atrium, E3 270 & E2 229 @ University of Manitoba{" "}
+            <br />
+            Date & Time: February 21st to 22nd (1:00 PM - 1:00 PM) <br />
+            Registration will open soon. Stay tuned!
+          </h2>
+        }
         <h3 className="hackathon-welcome intro-text">
           .devHacks is an annual hackathon hosted by .devClub for students to
           showcase their creativity and endurance over a period of 24 hours of
@@ -99,7 +112,11 @@ function Hackathon() {
           </Button> */}
         </div>
       </div>
-      {/* <div className="hackathon-rules container" id="rules">
+
+      {/* <hi className="hackathon-sponsors heading">Our Sponsors:</hi>
+      <Sponsors />  */}
+
+      <div className="hackathon-rules container" id="rules">
         <h1 className="hackathon-rules heading">Rules:</h1>
         <div className="hackathon-rules text-container">
           <p>
@@ -155,12 +172,7 @@ function Hackathon() {
             })}
           </ol>
         </div>
-      </div> */}
-      {/* <div className="hackathon-register-container">
-        <h1 className="hackathon-register heading"> */}
-      {/* <Timer /> Coming Soon! */}
-      {/* </h1>
-      </div> */}
+      </div>
 
       <div className="container">
         <HackathonFaq />
