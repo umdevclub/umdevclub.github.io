@@ -55,12 +55,13 @@ function Home() {
     <div className="home-container">
       <h1 className="welcome-text">WELCOME TO .DEVCLUB</h1>
       <video
-        className="home-video"
+        className="wavy-background-video"
         width="100%"
         height="100%"
         autoPlay
         loop
         muted
+        playsInline
         controls={false}
       >
         <source type="video/mp4" src={backgroundVideo} />
