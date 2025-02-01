@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.3e87e71b.css",
-    "main.js": "/static/js/main.e8967f3e.js",
+    "main.js": "/static/js/main.fd73ae4c.js",
     "static/media/Fawaz-events.png": "/static/media/Fawaz-events.53df5fb1c9cca0a0babf.png",
     "static/media/Jordon-President.jpg": "/static/media/Jordon-President.5b2d22213dc035205e8d.jpg",
     "static/media/wall-of-flesh.gif": "/static/media/wall-of-flesh.726069fb00d35dd38b97.gif",
@@ -56,10 +56,10 @@
     "index.html": "/index.html",
     "static/media/discord-mark-white.svg": "/static/media/discord-mark-white.a420227021864513c33f564d51c99590.svg",
     "main.3e87e71b.css.map": "/static/css/main.3e87e71b.css.map",
-    "main.e8967f3e.js.map": "/static/js/main.e8967f3e.js.map"
+    "main.fd73ae4c.js.map": "/static/js/main.fd73ae4c.js.map"
   },
   "entrypoints": [
     "static/css/main.3e87e71b.css",
-    "static/js/main.e8967f3e.js"
+    "static/js/main.fd73ae4c.js"
   ]
 }
