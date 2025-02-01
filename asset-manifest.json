@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.86f9baee.css",
-    "main.js": "/static/js/main.1f3768c0.js",
+    "main.css": "/static/css/main.3e87e71b.css",
+    "main.js": "/static/js/main.e8967f3e.js",
     "static/media/Fawaz-events.png": "/static/media/Fawaz-events.53df5fb1c9cca0a0babf.png",
     "static/media/Jordon-President.jpg": "/static/media/Jordon-President.5b2d22213dc035205e8d.jpg",
     "static/media/wall-of-flesh.gif": "/static/media/wall-of-flesh.726069fb00d35dd38b97.gif",
@@ -55,11 +55,11 @@
     "static/media/arrow.svg": "/static/media/arrow.6d75ef80652995034fded5f20b4076fc.svg",
     "index.html": "/index.html",
     "static/media/discord-mark-white.svg": "/static/media/discord-mark-white.a420227021864513c33f564d51c99590.svg",
-    "main.86f9baee.css.map": "/static/css/main.86f9baee.css.map",
-    "main.1f3768c0.js.map": "/static/js/main.1f3768c0.js.map"
+    "main.3e87e71b.css.map": "/static/css/main.3e87e71b.css.map",
+    "main.e8967f3e.js.map": "/static/js/main.e8967f3e.js.map"
   },
   "entrypoints": [
-    "static/css/main.86f9baee.css",
-    "static/js/main.1f3768c0.js"
+    "static/css/main.3e87e71b.css",
+    "static/js/main.e8967f3e.js"
   ]
 }
