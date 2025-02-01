@@ -24,7 +24,7 @@ import {
 function MissionImageList({ imagesData }) {
   return (
     <ImageList
-      sx={{ width: 500, height: 250 }}
+      sx={{ maxWidth: 500, height: 250 }}
       variant="quilted"
       cols={4}
       rowHeight={121}

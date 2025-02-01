@@ -127,7 +127,7 @@
       font-size: 36px;
       letter-spacing: 0.15em;
       margin-top: 3em;
-      margin-bottom: 3emem;
+      margin-bottom: 3em;
     }
   }
 
@@ -168,7 +168,7 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  margin-bottom: 50px;
+  padding-bottom: 50px;
 
   &:nth-child(2) {
     background: #f8f8f8;
@@ -184,7 +184,6 @@
   margin-right: 3em;
   font-weight: 500;
   font-size: 18px;
-  letter-spacing: 0.15em;
   line-height: 29px;
   padding-bottom: 3rem;
 
