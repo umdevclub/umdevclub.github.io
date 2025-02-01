@@ -29,13 +29,19 @@ function App() {
   // new page absolute (i.e. make the pages absolute).
   const routerTransitionDuration = 300;
   const location = useLocation();
+
+  // Create a custom key that changes only when the pathname or search parameters change (not when the hash changes).
+  // This prevents the transition animation from triggering when the hash changes, leading to a re-render of the same page.
+  const { pathname, search } = location;
+  const transitionKey = pathname + search;
+
   return (
     <>
       <Header />
       <main>
         <TransitionGroup className="navpage-container">
           <CSSTransition
-            key={location.key}
+            key={transitionKey}
             timeout={{
               exit: routerTransitionDuration,
               enter: 2 * routerTransitionDuration,
