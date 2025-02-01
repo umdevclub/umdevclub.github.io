@@ -9,12 +9,14 @@ html {
   text-align: center;
 }
 
-.home-video {
+.wavy-background-video {
   position: fixed;
   z-index: -5;
   top: 0;
   left: 0;
   object-fit: cover;
+  touch-action: none;
+  pointer-events: none;
 }
 
 .welcome-text {
