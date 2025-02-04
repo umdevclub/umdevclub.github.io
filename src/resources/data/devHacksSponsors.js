@@ -9,47 +9,38 @@ import Priceline from "@/resources/images/devhacks/devHacksSponsors/priceline.sv
 import G3 from "@/resources/images/devhacks/devHacksSponsors/G3.png";
 import UMSU from "@/resources/images/devhacks/devHacksSponsors/UMSU.png";
 import FOS from "@/resources/images/devhacks/devHacksSponsors/FacultyOfScience.png";
-
 const Sponsors = () => {
   const sponsorData = {
     gold: { name: "Glitch Secure", logo: GlitchSecure },
+    silverPlus: { name: "Ubisoft", logo: Ubisoft },
     silver: [
-      { name: "Niche", logo: Niche },
-      { name: "Ubisoft", logo: Ubisoft },
       { name: "Priceline", logo: Priceline },
-      { name: "Varian", logo: Varian },
-      { name: "G3", logo: G3 },
       { name: "Pollard", logo: Pollard },
+      { name: "Varian", logo: Varian },
+      { name: "Niche", logo: Niche },
+      { name: "G3", logo: G3 },
       { name: "UMSU", logo: UMSU },
       { name: "FOS", logo: FOS },
     ],
   };
-
   return (
     <div className="sponsors-container">
-      <div className="gold-sponsor">
-        <img src={sponsorData.gold.logo} alt={sponsorData.gold.name} />
-      </div>
-
-      <div className="sponsors-row">
-        {sponsorData.silver.slice(0, 3).map((sponsor, index) => (
-          <div key={index} className="sponsor">
-            <img src={sponsor.logo} alt={sponsor.name} />
+      {sponsorData.gold && (
+        <div className="gold-sponsor">
+          <img src={sponsorData.gold.logo} alt={sponsorData.gold.name} />
+        </div>
+      )}
+      <div className="sponsors-grid">
+        {sponsorData.silverPlus && (
+          <div className="sponsor sponsor-silver-plus">
+            <img
+              src={sponsorData.silverPlus.logo}
+              alt={sponsorData.silverPlus.name}
+            />
           </div>
-        ))}
-      </div>
-
-      <div className="sponsors-row">
-        {sponsorData.silver.slice(3, 6).map((sponsor, index) => (
-          <div key={index} className="sponsor">
-            <img src={sponsor.logo} alt={sponsor.name} />
-          </div>
-        ))}
-      </div>
-
-      <div className="sponsors-row">
-        {sponsorData.silver.slice(6, 8).map((sponsor, index) => (
-          <div key={index} className="sponsor">
+        )}
+        {sponsorData.silver.map((sponsor, index) => (
+          <div key={index} className="sponsor sponsor-silver">
             <img src={sponsor.logo} alt={sponsor.name} />
           </div>
         ))}
@@ -57,5 +48,4 @@ const Sponsors = () => {
     </div>
   );
 };
-
 export default Sponsors;
