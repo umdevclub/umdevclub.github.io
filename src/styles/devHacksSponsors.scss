@@ -5,18 +5,17 @@
   flex-direction: column;
   align-items: center;
   text-align: center;
+  gap: 30px;
 }
 
-.gold-sponsor {
+.center-sponsor {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-bottom: 10px;
 }
 
-.sponsors-grid {
+.sponsors-row {
   display: flex;
-  flex-wrap: wrap;
   justify-content: center;
   gap: 20px;
 }
@@ -28,45 +27,38 @@
 }
 
 .sponsor img {
-  max-width: 150px;
+  max-width: 160px;
   height: auto;
   object-fit: contain;
 }
 
-.gold-sponsor img {
+.center-sponsor img {
   max-width: 500px;
   height: auto;
   object-fit: contain;
 }
 
-.sponsor-silver-plus img {
-  max-width: 175px;
-}
-
-.sponsor-silver img {
-  max-width: 150px;
-}
-
-@media (max-width: 1024px) {
-  .gold-sponsor img {
-    max-width: 350px;
+@include tablet {
+  .sponsors-row {
+    flex-wrap: wrap;
   }
-  .silverplus-sponsor img {
-    max-width: 155px;
+
+  .centre-sponsor img {
+    max-width: 400px;
   }
   .sponsor img {
-    max-width: 120px;
-  }
-}
-
-@media (max-width: 768px) {
-  .gold-sponsor img {
-    max-width: 300px;
-  }
-  .silverplus-sponsor img {
     max-width: 150px;
   }
+}
+
+@include mobile {
+  .sponsors-row {
+    flex-wrap: wrap;
+  }
   .sponsor img {
-    max-width: 125px;
+    max-width: 110px;
+  }
+  .center-sponsor img {
+    max-width: 350px;
   }
 }
