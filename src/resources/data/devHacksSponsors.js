@@ -8,7 +8,7 @@ import Pollard from "@/resources/images/devhacks/devHacksSponsors/pollard.jpg";
 import Priceline from "@/resources/images/devhacks/devHacksSponsors/priceline.svg";
 import G3 from "@/resources/images/devhacks/devHacksSponsors/G3.png";
 import UMSU from "@/resources/images/devhacks/devHacksSponsors/UMSU.png";
-import FacultyOfScience from "@/resources/images/devhacks/devHacksSponsors/FacultyOfScience.png";
+import FOS from "@/resources/images/devhacks/devHacksSponsors/FacultyOfScience.png";
 
 const Sponsors = () => {
   const sponsorData = {
@@ -21,7 +21,7 @@ const Sponsors = () => {
       { name: "G3", logo: G3 },
       { name: "Pollard", logo: Pollard },
       { name: "UMSU", logo: UMSU },
-      { name: "FOS", logo: FacultyOfScience },
+      { name: "FOS", logo: FOS },
     ],
   };
 
