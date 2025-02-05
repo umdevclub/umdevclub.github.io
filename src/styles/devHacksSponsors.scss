@@ -10,6 +10,8 @@
 .sponsors-row {
   display: flex;
   justify-content: center;
+  gap: 15px;
+  align-items: center;
 }
 
 .center-sponsor {
@@ -25,7 +27,7 @@
 }
 
 .center-sponsor img {
-  max-width: 450px;
+  max-width: 500px;
 }
 
 @media (max-width: 1024px) {
@@ -36,7 +38,7 @@
     max-width: 120px;
   }
   .center-sponsor img {
-    max-width: 350px;
+    max-width: 450px;
   }
 }
 @media (max-width: 768px) {
