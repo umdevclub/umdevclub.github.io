@@ -8,7 +8,7 @@ import Timer from "@/components/Timer";
 import HackathonFaq from "@/components/HackathonFaq";
 import codeOfConduct from "@/resources/data/code-of-conduct.js";
 import rules from "@/resources/data/rules.js";
-// import Sponsors from "@/resources/data/devHacksSponsors.js";
+import Sponsors from "@/resources/data/devHacksSponsors.js";
 function Hackathon() {
   // const btnStyles = {
   //   letterSpacing: "0.2em",
@@ -112,8 +112,8 @@ function Hackathon() {
         </div>
       </div>
 
-      {/* <hi className="hackathon-sponsors heading">Our Sponsors:</hi>
-      <Sponsors /> */}
+      <hi className="hackathon-sponsors heading">Our Sponsors:</hi>
+      <Sponsors />
 
       <div className="hackathon-rules container" id="rules">
         <h1 className="hackathon-rules heading">Rules:</h1>
