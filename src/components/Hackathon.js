@@ -8,7 +8,7 @@ import Timer from "@/components/Timer";
 import HackathonFaq from "@/components/HackathonFaq";
 import codeOfConduct from "@/resources/data/code-of-conduct.js";
 import rules from "@/resources/data/rules.js";
-import Sponsors from "@/resources/data/devHacksSponsors.js";
+// import Sponsors from "@/resources/data/devHacksSponsors.js";
 function Hackathon() {
   // const btnStyles = {
   //   letterSpacing: "0.2em",
