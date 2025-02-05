@@ -13,12 +13,12 @@ const Sponsors = () => {
   const sponsorData = {
     center: { name: "Glitch Secure", logo: GlitchSecure },
     surrounding: [
-      { name: "Ubisoft", logo: Ubisoft },
       { name: "Varian", logo: Varian },
+      { name: "Ubisoft", logo: Ubisoft },
       { name: "Niche", logo: Niche },
       { name: "Priceline", logo: Priceline },
-      { name: "Pollard", logo: Pollard },
       { name: "G3", logo: G3 },
+      { name: "Pollard", logo: Pollard },
       { name: "FOS", logo: FOS },
       { name: "UMSU", logo: UMSU },
     ],
