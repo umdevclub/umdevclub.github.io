@@ -112,8 +112,8 @@ function Hackathon() {
         </div>
       </div>
 
-      <hi className="hackathon-sponsors heading">Our Sponsors:</hi>
-      <Sponsors />
+      {/* <hi className="hackathon-sponsors heading">Our Sponsors:</hi>
+      <Sponsors /> */}
 
       <div className="hackathon-rules container" id="rules">
         <h1 className="hackathon-rules heading">Rules:</h1>
