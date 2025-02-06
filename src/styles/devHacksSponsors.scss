@@ -14,7 +14,7 @@
   align-items: center;
 }
 
-.center-sponsor {
+.gold-sponsor {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -26,7 +26,7 @@
   object-fit: contain;
 }
 
-.center-sponsor img {
+.gold-sponsor img {
   max-width: 500px;
 }
 
@@ -37,7 +37,7 @@
   .sponsor img {
     max-width: 120px;
   }
-  .center-sponsor img {
+  .gold-sponsor img {
     max-width: 450px;
   }
 }
@@ -48,7 +48,7 @@
   .sponsor img {
     max-width: 100px;
   }
-  .center-sponsor img {
+  .gold-sponsor img {
     max-width: 300px;
   }
 }

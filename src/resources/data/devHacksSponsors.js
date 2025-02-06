@@ -9,10 +9,11 @@ import Priceline from "@/resources/images/devhacks/devHacksSponsors/priceline.sv
 import G3 from "@/resources/images/devhacks/devHacksSponsors/G3.png";
 import FOS from "@/resources/images/devhacks/devHacksSponsors/FacultyOfScience.png";
 import UMSU from "@/resources/images/devhacks/devHacksSponsors/UMSU.png";
+
 const Sponsors = () => {
   const sponsorData = {
-    center: { name: "Glitch Secure", logo: GlitchSecure },
-    surrounding: [
+    gold: { name: "Glitch Secure", logo: GlitchSecure },
+    silver: [
       { name: "Varian", logo: Varian },
       { name: "Ubisoft", logo: Ubisoft },
       { name: "Niche", logo: Niche },
@@ -26,11 +27,11 @@ const Sponsors = () => {
 
   return (
     <div className="sponsors-container">
-      <div className="center-sponsor">
-        <img src={sponsorData.center.logo} alt={sponsorData.center.name} />
+      <div className="gold-sponsor">
+        <img src={sponsorData.gold.logo} alt={sponsorData.gold.name} />
       </div>
       <div className="sponsors-row">
-        {sponsorData.surrounding.slice(0, 3).map((sponsor, index) => (
+        {sponsorData.silver.slice(0, 3).map((sponsor, index) => (
           <div key={index} className="sponsor">
             <img src={sponsor.logo} alt={sponsor.name} />
           </div>
@@ -38,7 +39,7 @@ const Sponsors = () => {
       </div>
 
       <div className="sponsors-row">
-        {sponsorData.surrounding.slice(3, 6).map((sponsor, index) => (
+        {sponsorData.silver.slice(3, 6).map((sponsor, index) => (
           <div key={index} className="sponsor">
             <img src={sponsor.logo} alt={sponsor.name} />
           </div>
@@ -46,7 +47,7 @@ const Sponsors = () => {
       </div>
 
       <div className="sponsors-row">
-        {sponsorData.surrounding.slice(6, 9).map((sponsor, index) => (
+        {sponsorData.silver.slice(6, 9).map((sponsor, index) => (
           <div key={index} className="sponsor">
             <img src={sponsor.logo} alt={sponsor.name} />
           </div>
