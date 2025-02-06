@@ -163,13 +163,13 @@ export const windowsInstructions = [
       {
         text: () => (
           <>
-            <p>Set your username:</p>
+            <p>Set your user email:</p>
             <Code text='git config –-global user.email "YourGithubEmail@email.com"' />
             <p>
-              You can verify whether or not your git username has been input
+              You can verify whether or not your git user email has been input
               correctly by typing this:
             </p>
-            <Code text="git config user.name" />
+            <Code text="git config user.email" />
             <p>
               You should be able to see your Github email output in the
               terminal.
