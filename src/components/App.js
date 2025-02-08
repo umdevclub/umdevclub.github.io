@@ -22,7 +22,7 @@ import LinkTree from "@/components/LinkTree";
 import DevhacksGithub from "@/components/DevhacksGithub";
 import DevhacksSchedule from "@/components/DevhacksSchedule";
 import PrizeCategories from "@/components/PrizeCategories";
-
+import devHacksTeamRegistration from "@/components/devHacksTeamRegistration.js";
 function App() {
   // The animation transitions out the current page first and then transitions into the new page
   // So we can have the pages be positioned as relative and not have to worry about making the
@@ -72,6 +72,10 @@ function App() {
               <Route path="/registration" component={HackathonRegister} />
               <Route path="/schedule" component={DevhacksSchedule} />
               <Route path="/prize-categories" component={PrizeCategories} />
+              <Route
+                path="/team-registration"
+                component={devHacksTeamRegistration}
+              />
               <Route path="*" component={PageNotFound} />
             </Switch>
           </CSSTransition>

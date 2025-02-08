@@ -72,6 +72,7 @@ function Hackathon() {
           >
             Register now!
           </Button>
+
           <Button
             onClick={() => history.push("/github-tutorial")}
             variant="contained"
@@ -85,7 +86,7 @@ function Hackathon() {
             Github tutorial
           </Button>
 
-          {/* <Button
+          <Button
             onClick={() => history.push("/schedule")}
             variant="contained"
             sx={{
@@ -96,7 +97,7 @@ function Hackathon() {
             }}
           >
             Schedule
-          </Button> */}
+          </Button>
           {/* <Button
             onClick={() => history.push("/prize-categories")}
             variant="contained"

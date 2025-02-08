@@ -32,53 +32,29 @@ const PrizeCategories = () => {
     },
   ];
 
-  const g3ChallengeData = [
+  const goldChallengeData = [
     {
-      title: "User Authentication",
-      description:
-        "Implement a secure user authentication system for accessing the web application.",
+      title: "",
+      description: "Security scanners which identify system vulnerabilities.",
     },
     {
-      title: "Session Tracking",
-      description:
-        "Develop functionality to track user sessions, recording the start time when a user logs in and the end time when they log out or close the tab/browser.",
+      title: "",
+      description: "Browser extensions which enhance user privacy.",
     },
     {
-      title: "Location Tracking",
+      title: "",
       description:
-        "Utilize browser geolocation API or IP-based geolocation to determine the user's location accurately. Log this information along with the session data to the SQL server.",
+        "Security management software for devices such as computer systems or CCTV cameras.",
     },
     {
-      title: "SQL Database Integration",
-      description:
-        "Set up a SQL database to store user session and location data efficiently. Design appropriate tables to maintain this data.",
-    },
-    {
-      title: "Real-time Updates",
-      description:
-        "Implement real-time updates to the dashboard to reflect the latest user session and location data as it is logged to the SQL server. Utilize WebSockets or server-sent events for real-time communication.",
-    },
-    {
-      title: "Dashboard Visualization",
-      description:
-        "Design an interactive dashboard with a map view to visualize user location data. Use a mapping library like Leaflet.js or Google Maps API to display user locations dynamically on the map.",
-    },
-    {
-      title: "User Interface (UI)",
-      description:
-        "Create a user-friendly UI for the dashboard, allowing administrators to view and analyze user session and location data easily. Include features for filtering, searching, and customizing the displayed data.",
-    },
-    {
-      title: "Performance Optimization",
-      description:
-        "Optimize the performance of both the web application and the SQL server to handle a potentially large volume of user session and location data efficiently.",
-    },
-    {
-      title: "Security Measures",
-      description:
-        "Implement security measures to protect user data, including encryption of sensitive information and preventing unauthorized access to the dashboard.",
+      title: "",
+      description: "Cyber security training/awareness software.",
     },
   ];
+
+  // const silverPlusChallengeData =[
+
+  // ];
 
   return (
     <div className="prize-categories-container">
@@ -94,59 +70,51 @@ const PrizeCategories = () => {
               </li>
             ))}
             <li>
-              <h3>G3 Hack Challenge:</h3>
+              <h3>Glitch Secure Hack Challenge:</h3>
               <div>
-                <h4>
-                  Title: User Session and Location Monitoring Dashboard with Map
-                  View
-                </h4>
                 <p>
-                  <span className="bold">Challenge Description: </span>
-                  Create a web application that monitors user sessions and
-                  locations in real-time, logging the data to a SQL server and
-                  displaying it in an interactive dashboard with a map view.
-                  When a user logs in to the web page, track their session
-                  duration and location and visualize this data on a map within
-                  the dashboard.
+                  {/* <span className="bold">Challenge Description: </span> */}
+                  Create a security-focused project or tool that aids in digital
+                  security, computer system integrity or user privacy.
                 </p>
-                <div className="prize-categories g3-challenge">
-                  <h4>Key Components:</h4>
+                <div className="prize-categories gold-challenge">
+                  <h4>Examples Include:</h4>
                   <ul
                     style={{
                       listStyleType: "disc",
                     }}
                   >
-                    {g3ChallengeData.map((challenge, index) => (
+                    {goldChallengeData.map((challenge, index) => (
                       <li key={index}>
                         <h5>{challenge.title}</h5>
                         <p>{challenge.description}</p>
                       </li>
                     ))}
                   </ul>
-                  <h4>Bonus Challenge: (Optional)</h4>
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <h3>Ubisoft Hack Challenge:</h3>
+              <div>
+                <p>
+                  {/* <span className="bold">Challenge Description: </span> */}
+                  TBD
+                </p>
+                <div className="prize-categories goldSponsor-challenge">
+                  {/* <h4>Examples Include:</h4> */}
                   <ul
                     style={{
                       listStyleType: "disc",
                     }}
                   >
-                    <li>
-                      Implement user role-based access control to restrict
-                      access to the dashboard based on user roles (e.g., admin,
-                      manager).
-                    </li>
-                    <li>
-                      Add support for historical data analysis, allowing
-                      administrators to view past user sessions and location
-                      data.
-                    </li>
-                    <li>
-                      Implement alerts or notifications for unusual user
-                      activity patterns or suspicious locations.
-                    </li>
-                    <li>
-                      Deploy the application and dashboard to a cloud platform
-                      for scalability and accessibility.
-                    </li>
+                    {/* {goldSponsorChallengeData.map((challenge, index) => (
+                      <li key={index}>
+                        <h5>{challenge.title}</h5>
+                        <p>{challenge.description}</p>
+                      </li>
+                    ))} */}
                   </ul>
                 </div>
               </div>
