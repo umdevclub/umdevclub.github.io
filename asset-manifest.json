@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.197ec069.css",
-    "main.js": "/static/js/main.927bf21d.js",
+    "main.css": "/static/css/main.5d0f53ff.css",
+    "main.js": "/static/js/main.b41d8238.js",
     "static/media/Fawaz-events.png": "/static/media/Fawaz-events.53df5fb1c9cca0a0babf.png",
     "static/media/Jordon-President.jpg": "/static/media/Jordon-President.5b2d22213dc035205e8d.jpg",
     "static/media/wall-of-flesh.gif": "/static/media/wall-of-flesh.726069fb00d35dd38b97.gif",
@@ -15,7 +15,6 @@
     "static/media/arion-VicePres.jpg": "/static/media/arion-VicePres.c41f2dd654885f77115b.jpg",
     "static/media/minh-external.jpg": "/static/media/minh-external.b8110f44f067b12664a0.jpg",
     "static/media/github-cli-webpage.png": "/static/media/github-cli-webpage.6aec48ad4de31d0ea265.png",
-    "static/media/devhacks-schedule-bg.jpeg": "/static/media/devhacks-schedule-bg.c25327852a5a41a7b44c.jpeg",
     "static/media/homebrew-webpage-mac.png": "/static/media/homebrew-webpage-mac.acdd60813b58b2cb4d56.png",
     "static/media/golden-spiral.jpg": "/static/media/golden-spiral.3ab11054acf6efc7df75.jpg",
     "static/media/w1.jpg": "/static/media/w1.be0ad0928af337398d77.jpg",
@@ -29,6 +28,7 @@
     "static/media/GlitchSecure.png": "/static/media/GlitchSecure.023d629caf6eb2560e1a.png",
     "static/media/gh-auth-login.png": "/static/media/gh-auth-login.ea6b60215835d7ee7fa9.png",
     "static/media/h1.jpg": "/static/media/h1.2130b6ec6fe9e63d3222.jpg",
+    "static/media/devhacks-schedule-bg.png": "/static/media/devhacks-schedule-bg.cec54de70cb784411ecd.png",
     "static/media/w4.jpg": "/static/media/w4.a5e1d6638cbb51a03e3f.jpg",
     "static/media/w2.jpg": "/static/media/w2.8f339811a5380c583e2f.jpg",
     "static/media/h3.jpg": "/static/media/h3.a69f45bcf57c7e761c83.jpg",
@@ -63,11 +63,11 @@
     "static/media/arrow.svg": "/static/media/arrow.6d75ef80652995034fded5f20b4076fc.svg",
     "index.html": "/index.html",
     "static/media/discord-mark-white.svg": "/static/media/discord-mark-white.a420227021864513c33f564d51c99590.svg",
-    "main.197ec069.css.map": "/static/css/main.197ec069.css.map",
-    "main.927bf21d.js.map": "/static/js/main.927bf21d.js.map"
+    "main.5d0f53ff.css.map": "/static/css/main.5d0f53ff.css.map",
+    "main.b41d8238.js.map": "/static/js/main.b41d8238.js.map"
   },
   "entrypoints": [
-    "static/css/main.197ec069.css",
-    "static/js/main.927bf21d.js"
+    "static/css/main.5d0f53ff.css",
+    "static/js/main.b41d8238.js"
   ]
 }
