@@ -1,10 +1,10 @@
 @import "media-queries.scss";
 
 // Colors:
-$white: #ffffff;
+$white: #eb9ba1;
 $black: #010101;
-$blue: #69c9d0;
-$red: #ee1d52;
+$blue: #00e1e1;
+$red: #ff000b;
 
 .header-title {
   color: $white;
@@ -31,12 +31,15 @@ $red: #ee1d52;
   100% {
     text-shadow: 4px 0 0 $red, 0 -4px 0 $blue;
   }
+
   25% {
     text-shadow: 4px 4px 0 $red, -4px -4px 0 $blue;
   }
+
   50% {
     text-shadow: 0 4px 0 $red, -4px 0 0 $blue;
   }
+
   75% {
     text-shadow: 0 0 0 $red, 0 0 0 $blue;
   }
@@ -50,46 +53,92 @@ $red: #ee1d52;
     display: flex;
     justify-content: center;
     align-items: center;
-    color: $white;
+    color: $blue;
 
     @include mobile {
       flex-direction: column;
       width: 100%;
       text-align: center;
     }
-
-    h2 {
-      width: 20%;
-      text-align: center;
-      margin: 0;
-
-      @include mobile {
-        width: 100%;
-        margin-bottom: 1rem;
-      }
-    }
-
-    h3 {
-      font-size: 2.5rem;
-      margin: 0;
-    }
-
-    p {
-      font-size: 1.25rem;
-      margin: 0;
-      color: #f7f8f7;
-    }
-
-    span {
-      color: #cf4349;
-    }
   }
+}
 
-  &-time {
-    @include mobile {
-      margin-top: 1rem !important;
-      margin-bottom: 1rem !important;
-      font-weight: bold;
-    }
+.date-header {
+  font-size: 1.8rem;
+  color: #f6868e;
+  font-weight: bold;
+  text-align: center;
+  margin: 10px 0;
+  text-shadow: 5px 5px 10px #bb3c44;
+  font-size: 35px;
+}
+
+.event {
+  display: flex;
+  justify-content: center;
+  background: linear-gradient(to right, #b6323b 15%, rgba(35, 3, 3, 0.022));
+  padding: 10px 15px;
+  border-radius: 5px;
+  margin: 5px 0;
+  color: white;
+  font-weight: bold;
+  text-shadow: 1px 1px 5px #f6868e;
+}
+
+.event-time {
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-right: 3px;
+
+  @include mobile {
+    font-size: 0.83rem;
+  }
+}
+
+.event-desc {
+  flex: 3;
+  font-size: 1.2rem;
+  font-weight: bold;
+
+  @include mobile {
+    font-size: 0.8rem;
+  }
+}
+
+.eventAlt {
+  display: flex;
+  justify-content: center;
+  padding: 10px 15px;
+  border-radius: 5px;
+  margin: 5px 0;
+  color: white;
+  font-weight: bold;
+  text-shadow: 1px 1px 5px #f6868e;
+}
+.event-time-alt {
+  color: #f6868e;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-right: 3px;
+
+  @include mobile {
+    font-size: 0.83rem;
+  }
+}
+
+.event-desc-alt {
+  color: #f6868e;
+  flex: 3;
+  font-size: 1.2rem;
+  font-weight: bold;
+
+  @include mobile {
+    font-size: 0.8rem;
   }
 }

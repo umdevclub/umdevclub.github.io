@@ -1,10 +1,10 @@
 import React from "react";
 
-import scheduleBg from "@/resources/images/devhacks/devhacks-schedule-bg.jpeg";
+import scheduleBg from "@/resources/images/devhacks/devhacks-schedule-bg.png";
 import Box from "@mui/material/Box";
 import "@/styles/DevhacksSchedule.scss";
-import Divider from "@mui/material/Divider";
-
+// import Divider from "@mui/material/Divider";
+import Typography from "@mui/material/Typography";
 const DevhacksSchedule = () => {
   return (
     <Box
@@ -18,165 +18,83 @@ const DevhacksSchedule = () => {
       <Box className="schedule-block">
         <h1 className="header-title">Schedule</h1>
       </Box>
-      <Divider
-        sx={{
-          width: "80%",
-          height: "2px",
-          backgroundColor: "#92cd03",
-          margin: "2rem auto",
-        }}
-      />
-      <Box className="schedule-block">
-        <h2>FEB 23</h2>
-        <Box width="100%" pl={[0, 6]}>
-          <Box
-            fontSize="1rem"
-            fontWeight={700}
-            color="black"
-            sx={{
-              background: "#dddddd",
-              padding: "0.25rem 0.4rem",
-              borderRadius: "4px",
-              letterSpacing: "-0.02em",
-              width: "fit-content",
-              marginBottom: "1.5rem",
-            }}
-          >
-            REGISTRATION <span>|</span> 11:30 AM - 12:00 PM [
-            <span>REQUIRED</span>]
-          </Box>
-          <Box mb={2}>
-            <Box
-              sx={{
-                display: ["block", "flex"],
-                alignItems: "center",
-                justifyContent: "space-between",
-              }}
-            >
-              <h3>Meet & Greet</h3>
-              <p className="schedule-time">12 PM - 3 PM | EITC Atrium</p>
-            </Box>
-            <p>Sponsor Booths | Team Matching | Workshop | Food</p>
-          </Box>
-          <Box mb={2}>
-            <Box
-              sx={{
-                display: ["block", "flex"],
-                alignItems: "center",
-                justifyContent: "space-between",
-              }}
-            >
-              <h3>Cotton Candy Station</h3>
-              <p className="schedule-time">1:00 PM | EITC Atrium</p>
-            </Box>
-            <p>Sugar Treat</p>
-          </Box>
-          <Box mb={2}>
-            <Box
-              sx={{
-                display: ["block", "flex"],
-                alignItems: "center",
-                justifyContent: "space-between",
-              }}
-            >
-              <h3>Hackathon Kickoff</h3>
-              <p className="schedule-time">5:00 PM | E3 270</p>
-            </Box>
-            <p>Start Coding | Mentors</p>
-          </Box>
-          <Box mb={2}>
-            <Box
-              sx={{
-                display: ["block", "flex"],
-                alignItems: "center",
-                justifyContent: "space-between",
-              }}
-            >
-              <h3>Dinner</h3>
-              <p className="schedule-time">6:00 PM | EITC Atrium</p>
-            </Box>
-            <p>Food | Pop | Juice</p>
-          </Box>
-        </Box>
+
+      <Typography variant="h5" className="date-header">
+        FEB 21
+      </Typography>
+
+      <Box className="event">
+        <Typography className="event-time">8:00 - 10:00</Typography>
+        <Typography className="event-desc">REGISTRATION (REQUIRED)</Typography>
       </Box>
-      <Divider
-        sx={{
-          width: "80%",
-          height: "2px",
-          backgroundColor: "#92cd03",
-          margin: "2rem auto",
-        }}
-      />
-      <Box className="schedule-block" mb={4}>
-        <h2>FEB 24</h2>
-        <Box width="100%" pl={[0, 6]}>
-          <Box
-            fontSize="1rem"
-            fontWeight={700}
-            color="black"
-            sx={{
-              background: "#dddddd",
-              padding: "0.25rem 0.4rem",
-              borderRadius: "4px",
-              letterSpacing: "-0.02em",
-              width: "fit-content",
-              marginBottom: "1.5rem",
-            }}
-          >
-            CHECK-IN <span>|</span> 7:30 AM - 8:00 AM [<span>REQUIRED</span>]
-          </Box>
-          <Box mb={2}>
-            <Box
-              sx={{
-                display: ["block", "flex"],
-                alignItems: "center",
-                justifyContent: "space-between",
-              }}
-            >
-              <h3>Coding Retreat</h3>
-              <p className="schedule-time">8:00 AM | EITC E3 270</p>
-            </Box>
-            <p>Breakfast @ 9:00 AM</p>
-          </Box>
-          <Box mb={2}>
-            <Box
-              sx={{
-                display: ["block", "flex"],
-                alignItems: "center",
-                justifyContent: "space-between",
-              }}
-            >
-              <h3>Mid-day</h3>
-              <p className="schedule-time">12:00 PM | EITC Atrium</p>
-            </Box>
-            <p>Lunch | Socialize</p>
-          </Box>
-          <Box mb={2}>
-            <Box
-              sx={{
-                display: ["block", "flex"],
-                alignItems: "center",
-                justifyContent: "space-between",
-              }}
-            >
-              <h3>Coding Wrap-Up</h3>
-              <p className="schedule-time">5:00 PM | ETIC Atrium & E3 270</p>
-            </Box>
-            <p>Submission | Project Presentations | Judging | Dinner</p>
-          </Box>
-          <Box mb={2}>
-            <Box
-              sx={{
-                display: ["block", "flex"],
-                alignItems: "center",
-                justifyContent: "space-between",
-              }}
-            >
-              <h3>Closing Ceremony</h3>
-              <p className="schedule-time">7:00 PM | E3 270</p>
-            </Box>
-          </Box>
-        </Box>
+
+      <Box className="eventAlt">
+        <Typography className="event-time-alt">10:00 - 10:30</Typography>
+        <Typography className="event-desc-alt">
+          OPENING CEREMONY (E3-270)
+        </Typography>
+      </Box>
+
+      <Box className="event">
+        <Typography className="event-time">10:30 - 1:00</Typography>
+        <Typography className="event-desc">
+          MEET & GREET + CAREER FAIR (ATRIUM)
+        </Typography>
+      </Box>
+
+      <Box className="eventAlt">
+        <Typography className="event-time-alt">1:00 PM</Typography>
+        <Typography className="event-desc-alt">
+          {"<< HACKING STARTS >>"}
+        </Typography>
+      </Box>
+
+      <Box className="event">
+        <Typography className="event-time">2:00 - 3:00</Typography>
+        <Typography className="event-desc">LUNCH (ATRIUM)</Typography>
+      </Box>
+
+      <Box className="eventAlt">
+        <Typography className="event-time-alt">6:00 - 7:00</Typography>
+        <Typography className="event-desc-alt">DINNER (ATRIUM)</Typography>
+      </Box>
+
+      <Box className="event">
+        <Typography className="event-time">10:00 PM</Typography>
+        <Typography className="event-desc">DOORS CLOSE</Typography>
+      </Box>
+
+      <Typography variant="h5" className="date-header">
+        FEB 22
+      </Typography>
+
+      <Box className="event">
+        <Typography className="event-time">9:00 - 10:00</Typography>
+        <Typography className="event-desc">BREAKFAST (ATRIUM)</Typography>
+      </Box>
+
+      <Box className="eventAlt">
+        <Typography className="event-time-alt">1:00 PM</Typography>
+        <Typography className="event-desc-alt">
+          {"<< HACKING CLOSES >>"}
+        </Typography>
+      </Box>
+
+      <Box className="event">
+        <Typography className="event-time">1:00 - 2:00</Typography>
+        <Typography className="event-desc">LUNCH (ATRIUM)</Typography>
+      </Box>
+
+      <Box className="eventAlt">
+        <Typography className="event-time-alt">2:15 - 5:00</Typography>
+        <Typography className="event-desc-alt">JUDGING (ATRIUM)</Typography>
+      </Box>
+
+      <Box className="event">
+        <Typography className="event-time">6:00 - 7:00</Typography>
+        <Typography className="event-desc">
+          CLOSING CEREMONY (E3-270)
+        </Typography>
       </Box>
     </Box>
   );
