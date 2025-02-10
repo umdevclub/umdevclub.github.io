@@ -15,6 +15,7 @@ $red: #ff000b;
   font-weight: 500;
   margin: 0 1rem 0 0;
   text-align: center;
+  margin-bottom: 5px;
 
   @include mobile {
     font-size: 2.5rem;
@@ -69,18 +70,31 @@ $red: #ff000b;
   font-weight: bold;
   text-align: center;
   margin: 10px 0;
-  text-shadow: 5px 5px 10px #bb3c44;
+  text-shadow: 3px 3px 10px #bb3c44;
   font-size: 35px;
+}
+
+.event-box {
+  display: flex;
+  flex-direction: column;
+  background: #330d0fbf;
+  border-radius: 20px;
+  max-width: 90%;
+  margin: auto;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  width: 95%;
+  padding: 5px;
 }
 
 .event {
   display: flex;
   justify-content: center;
-  background: linear-gradient(to right, #b6323b 15%, rgba(35, 3, 3, 0.022));
+  background: linear-gradient(to right, #b6323b 25%, rgba(35, 3, 3, 0.022));
   padding: 10px 15px;
   border-radius: 5px;
   margin: 5px 0;
   color: white;
+  width: 100%;
   font-weight: bold;
   text-shadow: 1px 1px 5px #f6868e;
 }
@@ -94,7 +108,7 @@ $red: #ff000b;
   margin-right: 3px;
 
   @include mobile {
-    font-size: 0.83rem;
+    font-size: 0.7rem;
   }
 }
 
@@ -104,7 +118,7 @@ $red: #ff000b;
   font-weight: bold;
 
   @include mobile {
-    font-size: 0.8rem;
+    font-size: 0.7rem;
   }
 }
 
@@ -128,7 +142,7 @@ $red: #ff000b;
   margin-right: 3px;
 
   @include mobile {
-    font-size: 0.83rem;
+    font-size: 0.7rem;
   }
 }
 
@@ -139,6 +153,6 @@ $red: #ff000b;
   font-weight: bold;
 
   @include mobile {
-    font-size: 0.8rem;
+    font-size: 0.7rem;
   }
 }
