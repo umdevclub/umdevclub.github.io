@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.2023db17.css",
-    "main.js": "/static/js/main.897dd202.js",
+    "main.js": "/static/js/main.432fc398.js",
     "static/media/Fawaz-events.png": "/static/media/Fawaz-events.53df5fb1c9cca0a0babf.png",
     "static/media/Jordon-President.jpg": "/static/media/Jordon-President.5b2d22213dc035205e8d.jpg",
     "static/media/wall-of-flesh.gif": "/static/media/wall-of-flesh.726069fb00d35dd38b97.gif",
@@ -41,6 +41,7 @@
     "static/media/git-user-name-confirm-mac.png": "/static/media/git-user-name-confirm-mac.38ffbf709d2a8b0199c9.png",
     "static/media/pollard.jpg": "/static/media/pollard.b024c0d99a23a5f4083e.jpg",
     "static/media/git-version-check-mac.png": "/static/media/git-version-check-mac.77594c47346bb559140d.png",
+    "static/media/ssa.jpg": "/static/media/ssa.8ab7599a4df11d9e4519.jpg",
     "static/media/github-account-create.png": "/static/media/github-account-create.f87a8db705b3f2eff6f7.png",
     "static/media/varian.png": "/static/media/varian.8a9e245742d4dd955e61.png",
     "static/media/git-not-recognized.png": "/static/media/git-not-recognized.5e590f4de1e85b7858f4.png",
@@ -55,7 +56,6 @@
     "static/media/git-username-confirm.png": "/static/media/git-username-confirm.b134f0a6164231598570.png",
     "static/media/lines.svg": "/static/media/lines.631c805e1eb5db008b8ca8f02e98fec4.svg",
     "static/media/G3.png": "/static/media/G3.55fbb16b01d6c88d72dd.png",
-    "static/media/UMSU.png": "/static/media/UMSU.3faefad9fee2bdd5f07a.png",
     "static/media/logo-cssa.svg": "/static/media/logo-cssa.e52eabbc44c5f6d126d838f830e08f9f.svg",
     "static/media/priceline.svg": "/static/media/priceline.2ffbbfd7fe941f4957502a131017dacd.svg",
     "static/media/devclub-logo-horizontal.svg": "/static/media/devclub-logo-horizontal.f59db50029020c2e598478495610272e.svg",
@@ -64,10 +64,10 @@
     "index.html": "/index.html",
     "static/media/discord-mark-white.svg": "/static/media/discord-mark-white.a420227021864513c33f564d51c99590.svg",
     "main.2023db17.css.map": "/static/css/main.2023db17.css.map",
-    "main.897dd202.js.map": "/static/js/main.897dd202.js.map"
+    "main.432fc398.js.map": "/static/js/main.432fc398.js.map"
   },
   "entrypoints": [
     "static/css/main.2023db17.css",
-    "static/js/main.897dd202.js"
+    "static/js/main.432fc398.js"
   ]
 }
