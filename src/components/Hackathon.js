@@ -109,7 +109,7 @@ function Hackathon() {
             }}
           >
             Prize Categories
-          </Button> */}
+          </Button>  */}
         </div>
       </div>
 
