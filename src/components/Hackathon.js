@@ -72,7 +72,18 @@ function Hackathon() {
           >
             Register now!
           </Button>
-
+          <Button
+            onClick={() => history.push("/team-registration")}
+            variant="contained"
+            sx={{
+              fontSize: "1.5rem",
+              fontFamily: "inherit",
+              mt: 3,
+              textTransform: "lowercase",
+            }}
+          >
+            Team Registration
+          </Button>
           <Button
             onClick={() => history.push("/github-tutorial")}
             variant="contained"
@@ -98,7 +109,7 @@ function Hackathon() {
           >
             Schedule
           </Button>
-          {/* <Button
+          <Button
             onClick={() => history.push("/prize-categories")}
             variant="contained"
             sx={{
@@ -109,7 +120,7 @@ function Hackathon() {
             }}
           >
             Prize Categories
-          </Button>  */}
+          </Button>
         </div>
       </div>
 

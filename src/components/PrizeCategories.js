@@ -6,29 +6,28 @@ import "@/styles/PrizeCategories.scss";
 const PrizeCategories = () => {
   const prizeData = [
     {
-      title: "Best Societal Impact Hack",
+      title: "Legend of the Hacks",
+      description: "Score the highest points and claim Victory Royale!",
+    },
+    {
+      title: "Best Impact Hack",
       description:
-        "This Societal Impact challenge invites you to develop a hack that provides an innovative and practical solution that benefits society and/or promotes sustainable development. This can range from environmental to cultural.",
+        "This challenge invites you to develop a hack that provides a solution that benefits society or promotes sustainable development. From diversity to accessibility to industry, there are no limits to the problems you can address and the impacts you can make.",
     },
     {
       title: "Best First-Time Hack",
       description:
-        "This best first time hacker challenge is made to welcome new hackers (and those who work with beginners)! You are eligible for this category if at least half of your team is made of 1st/2nd year hackers.",
+        "This best first time hacker challenge is made to welcome new hackers (and those who work with beginners)! You are eligible for this category if at least half of your team is made of first-time hackers.",
     },
     {
-      title: "Best Design Hack",
+      title: "Best Chaotic Evil Hack",
       description:
-        "This design challenge invites you to develop a hack with innovative and visually appealing user interfaces (UI) and user experiences (UX).",
+        "This hack is the villain of all hacks—unpredictable and maybe helpful? It could either set the world on fire or secretly save it, but either way, make your project do something we didn't know we needed!",
     },
     {
-      title: "Fan’s Choice Award Hack",
+      title: "Best AI Hack",
       description:
-        "This fan’s choice award hack puts the power into the hands of your fellow hackers, mentors, audience, volunteers and organisers. Whether your project is a technological breakthrough, a stunning design or a simple solution, if it wins the hearts of the ‘fanss’, you take home the prize.",
-    },
-    {
-      title: "Open Innovation Challenge Hack",
-      description:
-        "This open innovation challenge invites you for creativity and innovation. There are no boundaries to what you can create, as long as it’s tech-based.",
+        "Who needs robots taking over the world? Make AI do something actually useful (or ridiculously cool). Automate, innovate, or break expectations with cutting-edge technology!",
     },
   ];
 
@@ -51,10 +50,6 @@ const PrizeCategories = () => {
       description: "Cyber security training/awareness software.",
     },
   ];
-
-  // const silverPlusChallengeData =[
-
-  // ];
 
   return (
     <div className="prize-categories-container">
@@ -99,23 +94,24 @@ const PrizeCategories = () => {
               <h3>Ubisoft Hack Challenge:</h3>
               <div>
                 <p>
-                  {/* <span className="bold">Challenge Description: </span> */}
-                  TBD
+                  Hackers are invited to incorporate{" "}
+                  <strong>race against the clock</strong> as an element in your
+                  game. It can be in a small way or a big way, but make it make
+                  sense in the context of your game. Use any engine, framework,
+                  or library to bring your vision to life.
+                  <br /> Our Ubisoft Ambassadors will be judging entries based
+                  on creativity, gameplay, and adherence to the theme.
+                  <br />
+                  Compete for a chance to win some cool prizes, including
+                  exclusive Ubisoft swag and PC game codes. <br />
+                  Unleash your creativity and show us what you can build!
                 </p>
                 <div className="prize-categories goldSponsor-challenge">
-                  {/* <h4>Examples Include:</h4> */}
                   <ul
                     style={{
                       listStyleType: "disc",
                     }}
-                  >
-                    {/* {goldSponsorChallengeData.map((challenge, index) => (
-                      <li key={index}>
-                        <h5>{challenge.title}</h5>
-                        <p>{challenge.description}</p>
-                      </li>
-                    ))} */}
-                  </ul>
+                  ></ul>
                 </div>
               </div>
             </li>
