@@ -22,25 +22,6 @@ const codeOfConduct = [
     ),
     subItem: [],
   },
-  {
-    item: () => (
-      <>
-        Academic dishonesty of any form will not be tolerated. All participants
-        must follow and meet the University of Manitoba’s Academic Integrity
-        Guidelines:
-        <a
-          href="https://umanitoba.ca/student-supports/academic-supports/academic-integrity."
-          target="_blank"
-          rel="noreferrer"
-        >
-          https://umanitoba.ca/student-supports/academic-supports/academic-integrity.
-        </a>
-      </>
-    ),
-    subItem: [
-      "Failure to comply can result in removal and expulsion from participating in the hackathon.",
-    ],
-  },
 ];
 
 export default codeOfConduct;

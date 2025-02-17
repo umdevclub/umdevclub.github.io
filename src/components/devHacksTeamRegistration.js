@@ -2,7 +2,7 @@ import { useEffect } from "react";
 
 const TeamRegistration = () => {
   useEffect(() => {
-    window.location.replace("https://www.youtube.com/watch?v=dQw4w9WgXcQ");
+    window.location.replace("https://devhacks-2025.devpost.com/");
   }, []);
 
   return null;
