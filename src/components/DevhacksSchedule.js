@@ -25,9 +25,7 @@ const DevhacksSchedule = () => {
 
         <Box className="event">
           <Typography className="event-time">8:00 - 10:00</Typography>
-          <Typography className="event-desc">
-            REGISTRATION (REQUIRED)
-          </Typography>
+          <Typography className="event-desc">CHECK-IN (REQUIRED)</Typography>
         </Box>
 
         <Box className="eventAlt">

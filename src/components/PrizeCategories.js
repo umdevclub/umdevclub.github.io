@@ -10,6 +10,11 @@ const PrizeCategories = () => {
       description: "Score the highest points and claim Victory Royale!",
     },
     {
+      title: "Best Accessibility Hack",
+      description:
+        "This hack recognizes projects that enhance digital inclusion, making tech easier to use for people with disabilities through innovative, thoughtful, and user-friendly solutions.",
+    },
+    {
       title: "Best Impact Hack",
       description:
         "This challenge invites you to develop a hack that provides a solution that benefits society or promotes sustainable development. From diversity to accessibility to industry, there are no limits to the problems you can address and the impacts you can make.",
