@@ -1,16 +1,14 @@
 import "@/styles/devHacksSponsors.scss";
 import React from "react";
-import Ubisoft from "@/resources/images/devhacks/devHacksSponsors/Ubisoft.jpg";
-import Niche from "@/resources/images/devhacks/devHacksSponsors/niche.png";
-import Varian from "@/resources/images/devhacks/devHacksSponsors/varian.png";
-import GlitchSecure from "@/resources/images/devhacks/devHacksSponsors/GlitchSecure.png";
-import Pollard from "@/resources/images/devhacks/devHacksSponsors/pollard.jpg";
-import Priceline from "@/resources/images/devhacks/devHacksSponsors/priceline.svg";
-import G3 from "@/resources/images/devhacks/devHacksSponsors/G3.png";
-import FOS from "@/resources/images/devhacks/devHacksSponsors/FacultyOfScience.png";
-import SSA from "@/resources/images/devhacks/devHacksSponsors/ssa.jpg";
+import Ubisoft from "@/resources/images/devhacks/2025/devHacksSponsors/Ubisoft.jpg";
+import Niche from "@/resources/images/devhacks/2025/devHacksSponsors/niche.png";
+import Varian from "@/resources/images/devhacks/2025/devHacksSponsors/varian.png";
+import GlitchSecure from "@/resources/images/devhacks/2025/devHacksSponsors/GlitchSecure.png";
+import Pollard from "@/resources/images/devhacks/2025/devHacksSponsors/pollard.jpg";
+import Priceline from "@/resources/images/devhacks/2025/devHacksSponsors/priceline.svg";
+import G3 from "@/resources/images/devhacks/2025/devHacksSponsors/G3.png";
 
-const Sponsors = () => {
+const Sponsors2025 = () => {
   const sponsorData = {
     gold: { name: "Glitch Secure", logo: GlitchSecure },
     silver: [
@@ -20,8 +18,6 @@ const Sponsors = () => {
       { name: "Priceline", logo: Priceline },
       { name: "G3", logo: G3 },
       { name: "Pollard", logo: Pollard },
-      { name: "SSA", logo: SSA },
-      { name: "FOS", logo: FOS },
     ],
   };
 
@@ -57,4 +53,4 @@ const Sponsors = () => {
   );
 };
 
-export default Sponsors;
+export default Sponsors2025;

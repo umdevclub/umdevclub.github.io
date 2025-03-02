@@ -39,9 +39,9 @@ const HackathonFaq = () => {
         "There is no required set of skills or experience. .devClub welcomes people of all skill levels to our hackathon, including engineers, designers, developers or even people with good ideas.",
     },
     {
-      question: "Can I work on the project after 10 pm on day 1, February 21?",
+      question: "Can I work on the project after the doors close on Day 1?",
       answer:
-        "Yes, you are welcome to work even after 10 pm on day 1. However, we encourage you to get some healthy sleep to re-fuel for the next day. Also, this is the latest when students should vacate the venue i.e., 10 pm.",
+        "Yes, you are welcome to work even after the doors close on day 1. However, we encourage you to get some healthy sleep to re-fuel for the next day. Also, this is the latest when students should vacate the venue i.e., 10 pm.",
     },
   ];
 

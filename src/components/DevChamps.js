@@ -7,7 +7,7 @@ function DevChamps() {
   return (
     <div className="devchamps-container">
       <div className="welcome-part">
-        <h1 className="devchamps">&lt;.devchamps&gt;</h1>
+        <h1 className="devchamps">&lt;.devChamps&gt;</h1>
         <h2 className="develop-with-us">develop with us</h2>
         <h3 className="intro-text">
           .DevChamps is a new, official two to three month project-based
