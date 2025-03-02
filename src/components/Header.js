@@ -53,7 +53,7 @@ const menuItems = [
     icon: <ComputerIcon />,
   },
   {
-    title: "DevChamps",
+    title: ".devChamps",
     path: "/devchamps",
     icon: <EmojiEventsIcon />,
   },

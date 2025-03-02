@@ -1,5 +1,5 @@
 import React from "react";
-import scheduleBg from "@/resources/images/devhacks/devhacks-schedule-bg.png";
+import scheduleBg from "@/resources/images/devhacks/2025/devhacks-schedule-bg.png";
 import Box from "@mui/material/Box";
 import "@/styles/DevhacksSchedule.scss";
 // import Divider from "@mui/material/Divider";

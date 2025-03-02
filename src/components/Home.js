@@ -116,9 +116,9 @@ function Home() {
 
           <div className="mission-container">
             <div className="mission-text-container">
-              <span className="mission-heading">Yearly Hackathon</span>
+              <span className="mission-heading">.devHacks</span>
               <p className="mission-content">
-                Our yearly hackathon is a 12-hour event where anyone can come
+                .devHacks is our annual 24-hour hackathon where anyone can come
                 and build something awesome. It's a great opportunity to learn
                 new skills, meet new people, and have a lot of fun.
               </p>
@@ -132,7 +132,7 @@ function Home() {
             <div className="mission-text-container">
               <span className="mission-heading">.devChamps</span>
               <p className="mission-content">
-                .DevChamps is a new, official two to three month project-based
+                .devChamps is a new, official two to three month project-based
                 programming battle featuring a new challenge every season. The
                 competition is designed to be approachable for beginners while
                 also providing a challenge for experienced programmers.

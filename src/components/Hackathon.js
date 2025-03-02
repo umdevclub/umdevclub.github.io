@@ -4,11 +4,12 @@ import "@/styles/Hackathon.scss";
 
 import { Button } from "@mui/material";
 import { useHistory } from "react-router-dom/cjs/react-router-dom.min";
-import Timer from "@/components/Timer";
+// import Timer from "@/components/Timer";
 import HackathonFaq from "@/components/HackathonFaq";
 import codeOfConduct from "@/resources/data/code-of-conduct.js";
 import rules from "@/resources/data/rules.js";
-import Sponsors from "@/resources/data/devHacksSponsors.js";
+// import Sponsors from "@/resources/data/devHacksArchive/devHacks2025/Sponsors2025.js";
+// import DevHacksHistory from "@/components/devHacksHistory";
 function Hackathon() {
   // const btnStyles = {
   //   letterSpacing: "0.2em",
@@ -22,45 +23,45 @@ function Hackathon() {
   //   },
   // };
 
-  const formId = "war5yv";
+  // const formId = "war5yv";
 
-  const handleButtonClick = () => {
-    if (window?.Tally) {
-      window.Tally.openPopup(formId, {
-        layout: "modal",
-        width: 700,
-        autoClose: 5000,
-      });
-    }
-  };
+  // const handleButtonClick = () => {
+  //   if (window?.Tally) {
+  //     window.Tally.openPopup(formId, {
+  //       layout: "modal",
+  //       width: 700,
+  //       autoClose: 5000,
+  //     });
+  //   }
+  // };
 
   const history = useHistory();
 
   return (
     <div className="hackathon-container" dir="ltr">
-      <div className="hackathon-register-container">
-        {/* <h1 className="hackathon-register heading"></h1> */}
-        <h1 className="hackathon-register heading">
+      {/* <div className="hackathon-register-container"> */}
+      {/* <h1 className="hackathon-register heading"></h1> */}
+      {/* <h1 className="hackathon-register heading">
           <Timer />
-        </h1>
-      </div>
+        </h1> */}
+      {/* </div> */}
       <div className="hackathon-welcome container">
-        <h1 className="hackathon-welcome heading">.devHacks</h1>
+        <h1 className="hackathon-welcome heading">&lt;.devHacks&gt;</h1>
 
-        {
+        {/* {
           <h2 className="hackathon-welcome sub-heading">
             Location: EITC Atrium, E3 270 & E2 229 @ University of Manitoba{" "}
             <br />
             Date & Time: February 21st to 22nd (1:00 PM - 1:00 PM)
           </h2>
-        }
+        } */}
         <h3 className="hackathon-welcome intro-text">
           .devHacks is an annual hackathon hosted by .devClub for students to
           showcase their creativity and endurance over a period of 24 hours of
           fun filled development!
         </h3>
         <div className="hackathon-welcome btn-wrapper">
-          <Button
+          {/* <Button
             onClick={handleButtonClick}
             variant="contained"
             sx={{
@@ -71,9 +72,9 @@ function Hackathon() {
             }}
           >
             Register now!
-          </Button>
+          </Button> */}
           <Button
-            onClick={() => history.push("/team-registration")}
+            onClick={() => history.push("/project-gallery-2025")}
             variant="contained"
             sx={{
               fontSize: "1.5rem",
@@ -82,7 +83,7 @@ function Hackathon() {
               textTransform: "lowercase",
             }}
           >
-            Team Registration
+            devHacks 2025 Projects
           </Button>
           <Button
             onClick={() => history.push("/github-tutorial")}
@@ -97,7 +98,7 @@ function Hackathon() {
             Github tutorial
           </Button>
 
-          <Button
+          {/* <Button
             onClick={() => history.push("/schedule")}
             variant="contained"
             sx={{
@@ -108,8 +109,8 @@ function Hackathon() {
             }}
           >
             Schedule
-          </Button>
-          <Button
+          </Button> */}
+          {/* <Button
             onClick={() => history.push("/prize-categories")}
             variant="contained"
             sx={{
@@ -120,12 +121,15 @@ function Hackathon() {
             }}
           >
             Prize Categories
-          </Button>
+          </Button> */}
         </div>
       </div>
 
-      <hi className="hackathon-sponsors heading">Our Sponsors:</hi>
-      <Sponsors />
+      {/* <hi className="hackathon-sponsors heading">Our Sponsors:</hi>
+      <Sponsors /> */}
+
+      {/* <h1 className="hackathon-history heading">.devHacks Through the Years</h1>
+  <DevHacksHistory /> */}
 
       <div className="hackathon-rules container" id="rules">
         <h1 className="hackathon-rules heading">Rules:</h1>

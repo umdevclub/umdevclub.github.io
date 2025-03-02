@@ -61,7 +61,7 @@ const PrizeCategories = () => {
       <Box width="85%">
         <h1 className="prize-categories-heading">Prize Categories</h1>
         <Box>
-          <h2>The awards this year are as follows:</h2>
+          <h2>The awards for .devHacks 2025 were as follows:</h2>
           <ol>
             {prizeData.map((prize, index) => (
               <li key={index}>
