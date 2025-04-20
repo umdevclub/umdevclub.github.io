@@ -4,6 +4,11 @@ import Box from "@mui/material/Box";
 import CardContent from "@mui/material/CardContent";
 import Typography from "@mui/material/Typography";
 
+import LinkedInIcon from "@mui/icons-material/LinkedIn";
+import GitHubIcon from "@mui/icons-material/GitHub";
+import LanguageIcon from "@mui/icons-material/Language";
+import InstagramIcon from "@mui/icons-material/Instagram";
+
 function PersonCard({ personData }) {
   const card = (
     <>
@@ -30,12 +35,55 @@ function PersonCard({ personData }) {
         <Typography variant="body2" className="person-description">
           {personData.bio}
         </Typography>
+
+        {(personData.linkedin ||
+          personData.github ||
+          personData.website ||
+          personData.instagram) && (
+          <div className="social-icons">
+            {personData.linkedin && (
+              <a
+                href={personData.linkedin}
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="LinkedIn"
+              >
+                <LinkedInIcon />
+              </a>
+            )}
+            {personData.github && (
+              <a
+                href={personData.github}
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="GitHub"
+              >
+                <GitHubIcon />
+              </a>
+            )}
+            {personData.website && (
+              <a
+                href={personData.website}
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Website"
+              >
+                <LanguageIcon />
+              </a>
+            )}
+            {personData.instagram && (
+              <a
+                href={personData.instagram}
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Instagram"
+              >
+                <InstagramIcon />
+              </a>
+            )}
+          </div>
+        )}
       </CardContent>
-      {/*
-            <CardActions>
-              <Button size="small">Learn More</Button>
-            </CardActions>
-          */}
     </>
   );
 

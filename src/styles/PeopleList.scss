@@ -1,5 +1,25 @@
 @import "media-queries.scss";
 
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  margin-top: 10px;
+
+  a {
+    color: #000;
+    transition: color 0.3s ease;
+
+    &:hover {
+      color: #0077b5;
+    }
+
+    svg {
+      font-size: 2rem;
+    }
+  }
+}
+
 /* People */
 
 .peoples-grid {

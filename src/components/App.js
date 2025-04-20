@@ -16,10 +16,14 @@ import Footer from "./Footer";
 import LinkTree from "@/components/LinkTree";
 import DevhacksGithub from "@/components/DevhacksGithub";
 
+import DevhacksSchedule2024 from "@/resources/data/devHacksArchive/devHacks2024/Schedule2024.js";
+import PrizeCategories2024 from "@/resources/data/devHacksArchive/devHacks2024/PrizeCategories2024.js";
+
 import DevhacksSchedule2025 from "@/resources/data/devHacksArchive/devHacks2025/Schedule2025.js";
 import PrizeCategories2025 from "@/resources/data/devHacksArchive/devHacks2025/PrizeCategories2025.js";
 import ProjectGallery2025 from "@/resources/data/devHacksArchive/devHacks2025/ProjectGallery2025.js";
-
+import Devhacks2025 from "@/resources/data/devHacksArchive/devHacks2025/devHacks2025.js";
+import Devhacks2024 from "@/resources/data/devHacksArchive/devHacks2024/devHacks2024.js";
 function App() {
   // The animation transitions out the current page first and then transitions into the new page
   // So we can have the pages be positioned as relative and not have to worry about making the
@@ -63,9 +67,17 @@ function App() {
               <Route exact path="/github-tutorial" component={DevhacksGithub} />
               <Route path="/link-tree" component={LinkTree} />
               <Route path="/schedule-2025" component={DevhacksSchedule2025} />
+              <Route path="/schedule-2024" component={DevhacksSchedule2024} />
+
+              <Route path="/devHacks2025" component={Devhacks2025} />
+              <Route path="/devHacks2024" component={Devhacks2024} />
               <Route
                 path="/prize-categories-2025"
                 component={PrizeCategories2025}
+              />
+              <Route
+                path="/prize-categories-2024"
+                component={PrizeCategories2024}
               />
               <Route
                 path="/project-gallery-2025"

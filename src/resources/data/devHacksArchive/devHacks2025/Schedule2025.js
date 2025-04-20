@@ -1,10 +1,10 @@
 import React from "react";
-import scheduleBg from "@/resources/images/devhacks/2025/devhacks-schedule-bg.png";
+import scheduleBg from "@/resources/images/devhacks/2025/devhacks2025-schedule-bg.png";
 import Box from "@mui/material/Box";
-import "@/styles/DevhacksSchedule.scss";
+import "@/styles/Devhacks2025Schedule.scss";
 // import Divider from "@mui/material/Divider";
 import Typography from "@mui/material/Typography";
-const DevhacksSchedule = () => {
+const Devhacks2025Schedule = () => {
   return (
     <Box
       sx={{
@@ -14,8 +14,8 @@ const DevhacksSchedule = () => {
         fontSize: "3rem",
       }}
     >
-      <Box className="schedule-block">
-        <h1 className="header-title">Schedule</h1>
+      <Box className="schedule-2025-block">
+        <h1 className="header-2025-title">Schedule</h1>
       </Box>
 
       <div class="event-box">
@@ -101,4 +101,4 @@ const DevhacksSchedule = () => {
   );
 };
 
-export default DevhacksSchedule;
+export default Devhacks2025Schedule;

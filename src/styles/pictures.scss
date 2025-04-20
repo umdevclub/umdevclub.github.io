@@ -1,0 +1,35 @@
+@import "media-queries.scss";
+
+.pictures-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+}
+
+.picture {
+  width: 22%;
+  display: flex;
+  justify-content: center;
+}
+
+.picture img {
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  object-fit: cover;
+}
+
+// Responsive
+@include tablet {
+  .picture {
+    width: 45%;
+  }
+}
+
+@include mobile {
+  .picture {
+    width: 90%;
+  }
+}
