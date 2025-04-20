@@ -9,7 +9,7 @@ import HackathonFaq from "@/components/HackathonFaq";
 import codeOfConduct from "@/resources/data/code-of-conduct.js";
 import rules from "@/resources/data/rules.js";
 // import Sponsors from "@/resources/data/devHacksArchive/devHacks2025/Sponsors2025.js";
-// import DevHacksHistory from "@/components/devHacksHistory";
+import PicturesGeneral from "@/resources/data/devHacksArchive/PicturesGeneral";
 function Hackathon() {
   // const btnStyles = {
   //   letterSpacing: "0.2em",
@@ -47,6 +47,9 @@ function Hackathon() {
       {/* </div> */}
       <div className="hackathon-welcome container">
         <h1 className="hackathon-welcome heading">&lt;.devHacks&gt;</h1>
+        <h2 className="hackathon-welcome description">
+          Build Your Dream Project
+        </h2>
 
         {/* {
           <h2 className="hackathon-welcome sub-heading">
@@ -55,6 +58,7 @@ function Hackathon() {
             Date & Time: February 21st to 22nd (1:00 PM - 1:00 PM)
           </h2>
         } */}
+
         <h3 className="hackathon-welcome intro-text">
           .devHacks is an annual hackathon hosted by .devClub for students to
           showcase their creativity and endurance over a period of 24 hours of
@@ -73,7 +77,7 @@ function Hackathon() {
           >
             Register now!
           </Button> */}
-          <Button
+          {/* <Button
             onClick={() => history.push("/project-gallery-2025")}
             variant="contained"
             sx={{
@@ -84,6 +88,30 @@ function Hackathon() {
             }}
           >
             devHacks 2025 Projects
+          </Button> */}
+          <Button
+            onClick={() => history.push("/devHacks2025")}
+            variant="contained"
+            sx={{
+              fontSize: "1.5rem",
+              fontFamily: "inherit",
+              mt: 3,
+              textTransform: "lowercase",
+            }}
+          >
+            devHacks 2025 archive
+          </Button>
+          <Button
+            onClick={() => history.push("/devHacks2024")}
+            variant="contained"
+            sx={{
+              fontSize: "1.5rem",
+              fontFamily: "inherit",
+              mt: 3,
+              textTransform: "lowercase",
+            }}
+          >
+            devHacks 2024 archive
           </Button>
           <Button
             onClick={() => history.push("/github-tutorial")}
@@ -128,8 +156,8 @@ function Hackathon() {
       {/* <hi className="hackathon-sponsors heading">Our Sponsors:</hi>
       <Sponsors /> */}
 
-      {/* <h1 className="hackathon-history heading">.devHacks Through the Years</h1>
-  <DevHacksHistory /> */}
+      <h1 className="hackathon-sponsors heading">Event Pictures</h1>
+      <PicturesGeneral />
 
       <div className="hackathon-rules container" id="rules">
         <h1 className="hackathon-rules heading">Rules:</h1>

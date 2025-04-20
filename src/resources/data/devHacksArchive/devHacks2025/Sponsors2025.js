@@ -7,6 +7,9 @@ import GlitchSecure from "@/resources/images/devhacks/2025/devHacksSponsors/Glit
 import Pollard from "@/resources/images/devhacks/2025/devHacksSponsors/pollard.jpg";
 import Priceline from "@/resources/images/devhacks/2025/devHacksSponsors/priceline.svg";
 import G3 from "@/resources/images/devhacks/2025/devHacksSponsors/G3.png";
+import FOS from "@/resources/images/devhacks/2025/devHacksSponsors/FacultyOfScience.png";
+import SSA from "@/resources/images/devhacks/2025/devHacksSponsors/ssa.jpg";
+import umsuCares from "@/resources/images/devhacks/2025/devHacksSponsors/umsuCares.png";
 
 const Sponsors2025 = () => {
   const sponsorData = {
@@ -18,6 +21,9 @@ const Sponsors2025 = () => {
       { name: "Priceline", logo: Priceline },
       { name: "G3", logo: G3 },
       { name: "Pollard", logo: Pollard },
+      { name: "SSA", logo: SSA },
+      { name: "umsuCares", logo: umsuCares },
+      { name: "fos", logo: FOS },
     ],
   };
 
