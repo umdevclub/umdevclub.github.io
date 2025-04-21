@@ -26,11 +26,14 @@ function PersonCard({ personData }) {
         <div className="image-container">
           <img
             src={personData.image}
-            alt={`Portrait of .devClub team member ${personData.name}`}
+            alt={`Portrait of .devClub team member ${personData.firstName} ${personData.lastName}`}
           />
         </div>
         <Typography variant="h6" component="div" className="person-names">
-          {personData.name}
+          {personData.firstName}
+        </Typography>
+        <Typography variant="h6" component="div" className="person-names">
+          {personData.lastName}
         </Typography>
         <Typography
           sx={{ mb: 1.5 }}
@@ -103,7 +106,8 @@ export default function PeopleList() {
     "2022-2023": execs2022,
   };
 
-  const [selectedYear, setSelectedYear] = useState("Current");
+  const yearLabels = Object.keys(execCollections);
+  const [selectedYear, setSelectedYear] = useState(yearLabels[0]);
   const peopleData = execCollections[selectedYear];
 
   return (
@@ -116,7 +120,6 @@ export default function PeopleList() {
             sx={{
               fontSize: "1.0rem",
               fontFamily: "IBM Plex Mono",
-              // fontWeight: "500",
               mt: 2,
               textTransform: "none",
               background: "#272729",
@@ -125,7 +128,7 @@ export default function PeopleList() {
               textAlign: "center",
             }}
           >
-            {Object.keys(execCollections).map((label) => (
+            {yearLabels.map((label) => (
               <MenuItem key={label} value={label}>
                 {label}
               </MenuItem>

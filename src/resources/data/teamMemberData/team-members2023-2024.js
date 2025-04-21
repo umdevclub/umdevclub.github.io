@@ -6,52 +6,49 @@ import Vedant from "@/resources/images/team-members/past-members/2023-2024/vedan
 import Atish from "@/resources/images/team-members/past-members/2023-2024/atishaya-events.png";
 import Avneet from "@/resources/images/team-members/past-members/2023-2024/avneet-promotions.png";
 
-const teamMembers2024 = [
+const teamMembers2023 = [
   {
-    name: "Raman Bhandari",
+    firstName: "Raman",
+    lastName: "Bhandari",
     role: "President",
     image: Raman,
-
-    //bio: "Very good person, I like this person, they do cool stuff and it's fun to hang out with them, they are also very smart and active and enjoy doing stuff.",
   },
   {
-    name: "Ahmed S. Ahmed",
+    firstName: "Ahmed S.",
+    lastName: "Ahmed",
     role: "Vice-President",
     image: Ahmed,
-    // bio: "Very good person, I like this person, they do cool stuff and it's fun to hang out with them, they are also very smart and active and enjoy doing stuff.",
   },
   {
-    name: "Vedant Pulahru",
+    firstName: "Vedant",
+    lastName: "Pulahru",
     role: "Treasurer",
     image: Vedant,
-
-    // bio: "Very good person, I like this person, they do cool stuff and it's fun to hang out with them, they are also very smart and active and enjoy doing stuff.",
   },
   {
-    name: "Jordon Hong",
+    firstName: "Jordon",
+    lastName: "Hong",
     role: "Internal",
     image: Jordon,
-    // bio: "Very good person, I like this person, they do cool stuff and it's fun to hang out with them, they are also very smart and active and enjoy doing stuff.",
   },
   {
-    name: "kha The Pham",
+    firstName: "Kha The",
+    lastName: "Pham",
     role: "External",
     image: Kha,
-    // bio: "Very good person, I like this person, they do cool stuff and it's fun to hang out with them, they are also very smart and active and enjoy doing stuff.",
   },
   {
-    name: "Atishaya Maharjan",
+    firstName: "Atishaya",
+    lastName: "Maharjan",
     role: "Events",
     image: Atish,
-    // bio: "Very good person, I like this person, they do cool stuff and it's fun to hang out with them, they are also very smart and active and enjoy doing stuff.",
   },
   {
-    name: "Avneet Sidhu",
+    firstName: "Avneet K.",
+    lastName: "Sidhu",
     role: "Promotions",
     image: Avneet,
-
-    // bio: "Very good person, I like this person, they do cool stuff and it's fun to hang out with them, they are also very smart and active and enjoy doing stuff.",
   },
 ];
 
-export default teamMembers2024;
+export default teamMembers2023;

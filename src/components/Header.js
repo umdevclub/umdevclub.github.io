@@ -23,6 +23,7 @@ import HomeIcon from "@mui/icons-material/Home";
 import EmojiEventsIcon from "@mui/icons-material/EmojiEvents";
 import ContactSupportIcon from "@mui/icons-material/ContactSupport";
 import ComputerIcon from "@mui/icons-material/Computer";
+import AttachFileIcon from "@mui/icons-material/AttachFile";
 
 import InstagramIcon from "@mui/icons-material/Instagram";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
@@ -65,6 +66,7 @@ const menuItems = [
   {
     title: "Link Tree",
     path: "/link-tree",
+    icon: <AttachFileIcon />,
   },
 ];
 
