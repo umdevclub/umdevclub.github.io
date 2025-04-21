@@ -111,7 +111,7 @@ function Form() {
   return (
     <div className="contact-form">
       <Typography variant="h4" component="h2">
-        Feedback Form
+        Contact Form
       </Typography>
       <TextField
         label="Name"
