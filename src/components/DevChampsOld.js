@@ -3,7 +3,7 @@ import devchampsHeading from "@/resources/images/devchamps/devchamps-heading.png
 import devchampsBackground from "@/resources/images/devchamps/devchamps-bg.jpg";
 import ashu from "@/resources/images/devchamps/ashu-cool.gif";
 
-import Faq from "react-faq-component";
+// import Faq from "react-faq-component";
 
 const data = {
   rows: [
@@ -89,7 +89,7 @@ function DevChamps() {
         </div>
         <div className="faq-container">
           <div className="accordions">
-            <Faq data={data} styles={styles} config={config} />
+            {/* <Faq data={data} styles={styles} config={config} /> */}
           </div>
         </div>
         <div className="bottom">

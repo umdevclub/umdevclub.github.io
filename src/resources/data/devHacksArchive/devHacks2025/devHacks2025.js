@@ -3,7 +3,7 @@ import React from "react";
 import "@/styles/Hackathon.scss";
 
 import { Button } from "@mui/material";
-import { useHistory } from "react-router-dom/cjs/react-router-dom.min";
+import { useNavigate } from "react-router";
 import HackathonFaq from "@/components/HackathonFaq";
 import codeOfConduct from "@/resources/data/code-of-conduct.js";
 import rules from "@/resources/data/rules.js";
@@ -11,7 +11,7 @@ import Sponsors from "@/resources/data/devHacksArchive/devHacks2025/Sponsors2025
 import Pictures2025 from "@/resources/data/devHacksArchive/devHacks2025/pictures2025";
 
 function DevHacks2025() {
-  const history = useHistory();
+  const navigate = useNavigate();
 
   return (
     <div className="hackathon-container" dir="ltr">
@@ -33,7 +33,7 @@ function DevHacks2025() {
 
         <div className="hackathon-welcome btn-wrapper">
           <Button
-            onClick={() => history.push("/github-tutorial")}
+            onClick={() => navigate("/github-tutorial")}
             variant="contained"
             sx={{
               fontSize: "1.5rem",
@@ -45,7 +45,7 @@ function DevHacks2025() {
             Github tutorial
           </Button>
           <Button
-            onClick={() => history.push("/project-gallery-2025")}
+            onClick={() => navigate("/project-gallery-2025")}
             variant="contained"
             sx={{
               fontSize: "1.5rem",
@@ -57,7 +57,7 @@ function DevHacks2025() {
             Project Gallery
           </Button>
           <Button
-            onClick={() => history.push("/schedule-2025")}
+            onClick={() => navigate("/schedule-2025")}
             variant="contained"
             sx={{
               fontSize: "1.5rem",
@@ -69,7 +69,7 @@ function DevHacks2025() {
             Schedule
           </Button>
           <Button
-            onClick={() => history.push("/prize-categories-2025")}
+            onClick={() => navigate("/prize-categories-2025")}
             variant="contained"
             sx={{
               fontSize: "1.5rem",
