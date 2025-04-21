@@ -3,7 +3,7 @@ import React from "react";
 import "@/styles/Hackathon.scss";
 
 import { Button } from "@mui/material";
-import { useHistory } from "react-router-dom/cjs/react-router-dom.min";
+import { useNavigate } from "react-router";
 // import Timer from "@/components/Timer";
 import HackathonFaq from "@/components/HackathonFaq";
 import codeOfConduct from "@/resources/data/code-of-conduct.js";
@@ -35,7 +35,7 @@ function DevHacks2024() {
   //     }
   //   };
 
-  const history = useHistory();
+  const navigate = useNavigate();
 
   return (
     <div className="hackathon-container" dir="ltr">
@@ -77,7 +77,7 @@ function DevHacks2024() {
             Register now!
           </Button> */}
           <Button
-            onClick={() => history.push("/github-tutorial")}
+            onClick={() => navigate("/github-tutorial")}
             variant="contained"
             sx={{
               fontSize: "1.5rem",
@@ -89,7 +89,7 @@ function DevHacks2024() {
             Github tutorial
           </Button>
           {/* <Button
-            onClick={() => history.push("/project-gallery-2025")}
+            onClick={() => navigate("/project-gallery-2025")}
             variant="contained"
             sx={{
               fontSize: "1.5rem",
@@ -102,7 +102,7 @@ function DevHacks2024() {
           </Button> */}
 
           <Button
-            onClick={() => history.push("/schedule-2024")}
+            onClick={() => navigate("/schedule-2024")}
             variant="contained"
             sx={{
               fontSize: "1.5rem",
@@ -114,7 +114,7 @@ function DevHacks2024() {
             Schedule
           </Button>
           <Button
-            onClick={() => history.push("/prize-categories-2024")}
+            onClick={() => navigate("/prize-categories-2024")}
             variant="contained"
             sx={{
               fontSize: "1.5rem",

@@ -1,6 +1,6 @@
 import "@/styles/App.scss";
 
-import { useLocation, Redirect, Switch, Route } from "react-router-dom";
+import { Navigate, Route, Routes, useLocation } from "react-router";
 import { TransitionGroup, CSSTransition } from "react-transition-group";
 import redirectMappings from "@/resources/redirect-mappings.js";
 
@@ -11,7 +11,7 @@ import DevChamp from "@/components/DevChamps.js";
 import Contact from "@/components/Contact.js";
 import Hackathon from "@/components/Hackathon.js";
 import PageNotFound from "@/components/PageNotFound.js";
-import React from "react";
+import React, { useRef } from "react";
 import Footer from "./Footer";
 import LinkTree from "@/components/LinkTree";
 import DevhacksGithub from "@/components/DevhacksGithub";
@@ -36,6 +36,8 @@ function App() {
   const { pathname, search } = location;
   const transitionKey = pathname + search;
 
+  const nodeRef = useRef(null); // Avoid using findDOMNode in TransitionGroup
+
   return (
     <>
       <Header />
@@ -49,42 +51,47 @@ function App() {
             }}
             classNames="fade"
             appear
+            nodeRef={nodeRef}
           >
-            <Switch location={location}>
+            <Routes location={location}>
               {Object.entries(redirectMappings).map(
                 ([fromPath, toPath], redirectEntryInd) => (
-                  <Redirect
+                  <Route
                     key={redirectEntryInd}
-                    from={fromPath}
-                    to={toPath}
-                  ></Redirect>
+                    path={fromPath}
+                    element={<Navigate to={toPath} replace />}
+                  />
                 )
               )}
-              <Route exact path="/" component={Home} />
-              <Route path="/devchamps" component={DevChamp} />
-              <Route path="/contact" component={Contact} />
-              <Route path="/devhacks" component={Hackathon} />
-              <Route exact path="/github-tutorial" component={DevhacksGithub} />
-              <Route path="/link-tree" component={LinkTree} />
-              <Route path="/schedule-2025" component={DevhacksSchedule2025} />
-              <Route path="/schedule-2024" component={DevhacksSchedule2024} />
+              <Route exact path="/" element={<Home />} />
+              <Route path="/devchamps" element={<DevChamp />} />
+              <Route path="/contact" element={<Contact />} />
+              <Route path="/devhacks" element={<Hackathon />} />
+              <Route
+                exact
+                path="/github-tutorial"
+                element={<DevhacksGithub />}
+              />
+              <Route path="/link-tree" element={<LinkTree />} />
+              <Route path="/schedule-2025" element={<DevhacksSchedule2025 />} />
+              <Route path="/schedule-2024" element={<DevhacksSchedule2024 />} />
 
-              <Route path="/devHacks2025" component={Devhacks2025} />
-              <Route path="/devHacks2024" component={Devhacks2024} />
+              <Route path="/devHacks2025" element={<Devhacks2025 />} />
+              <Route path="/devHacks2024" element={<Devhacks2024 />} />
               <Route
                 path="/prize-categories-2025"
-                component={PrizeCategories2025}
+                element={<PrizeCategories2025 />}
               />
               <Route
                 path="/prize-categories-2024"
-                component={PrizeCategories2024}
+                element={<PrizeCategories2024 />}
               />
               <Route
                 path="/project-gallery-2025"
-                component={ProjectGallery2025}
+                element={<ProjectGallery2025 />}
               />
-              <Route path="*" component={PageNotFound} />
-            </Switch>
+              <Route path="*" element={<PageNotFound />} />
+            </Routes>
           </CSSTransition>
         </TransitionGroup>
       </main>

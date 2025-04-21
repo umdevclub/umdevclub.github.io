@@ -4,9 +4,10 @@ import devclubLogoHorizontal from "@/resources/images/devclub-logo-horizontal.sv
 
 import React from "react";
 
-import { withRouter, NavLink } from "react-router-dom";
+import { NavLink, useLocation } from "react-router";
 import useToggle from "@/hooks/useToggle";
 
+import { createTheme, ThemeProvider } from "@mui/material";
 import Box from "@mui/material/Box";
 import SwipeableDrawer from "@mui/material/SwipeableDrawer";
 import IconButton from "@mui/material/IconButton";
@@ -31,8 +32,6 @@ import GitHubIcon from "@mui/icons-material/GitHub";
 
 import Tabs from "@mui/material/Tabs";
 import Tab from "@mui/material/Tab";
-
-import { createTheme, ThemeProvider } from "@mui/material/styles";
 
 const headerTheme = createTheme({
   palette: {
@@ -85,11 +84,13 @@ const socialIcons = [
   },
 ];
 
-function Header(props) {
+function Header() {
+  const location = useLocation();
+
   const activeMenuItemInd = React.useMemo(() => {
     const menuPaths = menuItems.map((menuItem) => menuItem.path);
-    return menuPaths.indexOf(props.location.pathname);
-  }, [props.location.pathname]);
+    return menuPaths.indexOf(location.pathname);
+  }, [location.pathname]);
 
   return (
     <ThemeProvider theme={headerTheme}>
@@ -233,4 +234,4 @@ function MobileDrawerButton() {
   );
 }
 
-export default withRouter(Header);
+export default Header;

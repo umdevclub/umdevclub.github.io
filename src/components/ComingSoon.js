@@ -1,7 +1,7 @@
 import logo from "@/resources/images/devclub-logo.png";
 import "@/styles/ComingSoon.css";
 
-import { Link } from "react-router-dom";
+import { Link } from "react-router";
 
 function ComingSoon() {
   return (
