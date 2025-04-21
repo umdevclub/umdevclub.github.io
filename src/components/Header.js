@@ -194,13 +194,7 @@ function MobileDrawerButton() {
       <Divider />
       <List>
         {menuItems.map((menuItem, index) => (
-          <ListItem
-            key={index}
-            component={NavLink}
-            exact={true}
-            to={menuItem.path}
-            button
-          >
+          <ListItem key={index} component={NavLink} to={menuItem.path} button>
             <ListItemIcon> {menuItem.icon} </ListItemIcon>
             <ListItemText primary={menuItem.title} />
           </ListItem>
