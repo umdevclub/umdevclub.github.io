@@ -1,17 +1,27 @@
+import React, { useState } from "react";
 import "@/styles/PeopleList.scss";
 
 import Box from "@mui/material/Box";
 import CardContent from "@mui/material/CardContent";
 import Typography from "@mui/material/Typography";
+import FormControl from "@mui/material/FormControl";
+import Select from "@mui/material/Select";
+import MenuItem from "@mui/material/MenuItem";
 
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import LanguageIcon from "@mui/icons-material/Language";
 import InstagramIcon from "@mui/icons-material/Instagram";
 
+// Import your data modules for each year
+import execs2025 from "@/resources/data/teamMemberData/team-members2025-2026";
+import execs2024 from "@/resources/data/teamMemberData/team-members2024-2025";
+import execs2023 from "@/resources/data/teamMemberData/team-members2023-2024";
+import execs2022 from "@/resources/data/teamMemberData/team-members2022-2023";
+
 function PersonCard({ personData }) {
-  const card = (
-    <>
+  return (
+    <Box sx={{ width: "100%", height: "100%" }}>
       <CardContent className="people">
         <div className="image-container">
           <img
@@ -19,9 +29,6 @@ function PersonCard({ personData }) {
             alt={`Portrait of .devClub team member ${personData.name}`}
           />
         </div>
-        <br />
-        <br />
-        <br />
         <Typography variant="h6" component="div" className="person-names">
           {personData.name}
         </Typography>
@@ -35,7 +42,6 @@ function PersonCard({ personData }) {
         <Typography variant="body2" className="person-description">
           {personData.bio}
         </Typography>
-
         {(personData.linkedin ||
           personData.github ||
           personData.website ||
@@ -84,30 +90,65 @@ function PersonCard({ personData }) {
           </div>
         )}
       </CardContent>
+    </Box>
+  );
+}
+
+export default function PeopleList() {
+  // Map each label to its corresponding data
+  const execCollections = {
+    Current: execs2025,
+    "2024-2025": execs2024,
+    "2023-2024": execs2023,
+    "2022-2023": execs2022,
+  };
+
+  const [selectedYear, setSelectedYear] = useState("Current");
+  const peopleData = execCollections[selectedYear];
+
+  return (
+    <>
+      <Box display="flex" justifyContent="center" mb={4}>
+        <FormControl sx={{ minWidth: 200 }}>
+          <Select
+            value={selectedYear}
+            onChange={(e) => setSelectedYear(e.target.value)}
+            sx={{
+              fontSize: "1.0rem",
+              fontFamily: "IBM Plex Mono",
+              // fontWeight: "500",
+              mt: 2,
+              textTransform: "none",
+              background: "#272729",
+              color: "white",
+              "& .MuiSelect-icon": { color: "white" },
+              textAlign: "center",
+            }}
+          >
+            {Object.keys(execCollections).map((label) => (
+              <MenuItem key={label} value={label}>
+                {label}
+              </MenuItem>
+            ))}
+          </Select>
+        </FormControl>
+      </Box>
+
+      <div className="peoples-grid">
+        {peopleData.map((person, index) => (
+          <div
+            style={{
+              width: 180,
+              height: "100%",
+              backgroundColor: (theme) =>
+                theme.palette.mode === "dark" ? "#1A2027" : "#fff",
+            }}
+            key={index}
+          >
+            <PersonCard personData={person} />
+          </div>
+        ))}
+      </div>
     </>
   );
-
-  return <Box sx={{ width: "100%", height: "100%" }}>{card}</Box>;
 }
-
-function PeopleList({ peopleData }) {
-  return (
-    <div className="peoples-grid">
-      {peopleData.map((person, index) => (
-        <div
-          style={{
-            width: 180,
-            height: "100%",
-            backgroundColor: (theme) =>
-              theme.palette.mode === "dark" ? "#1A2027" : "#fff",
-          }}
-          key={index}
-        >
-          <PersonCard personData={person} />
-        </div>
-      ))}
-    </div>
-  );
-}
-
-export default PeopleList;

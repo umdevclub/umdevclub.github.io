@@ -13,7 +13,7 @@ import ImageListItem from "@mui/material/ImageListItem";
 
 import PeopleList from "@/components/PeopleList";
 
-import teamMembers from "@/resources/data/team-members.js";
+import teamMembers from "@/resources/data/teamMemberData/team-members2025-2026.js";
 // import { Button } from "@mui/material";
 import {
   workshopImages,
