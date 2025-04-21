@@ -4,7 +4,7 @@ import arrow from "@/resources/images/arrow.svg";
 import lines from "@/resources/images/lines.svg";
 import discordLogo from "@/resources/images/discord-mark-white.svg";
 
-import React from "react";
+import React, { useState } from "react";
 
 import Link from "@mui/material/Button";
 
@@ -14,14 +14,14 @@ import ImageListItem from "@mui/material/ImageListItem";
 import PeopleList from "@/components/PeopleList";
 
 import teamMembers from "@/resources/data/teamMemberData/team-members2025-2026.js";
-// import { Button } from "@mui/material";
 import {
   workshopImages,
   hackathonImages,
   devchampsImages,
 } from "@/resources/data/homepage-mission-images.js";
+import { Box, Modal } from "@mui/material";
 
-function MissionImageList({ imagesData }) {
+function MissionImageList({ imagesData, openFn }) {
   return (
     <ImageList
       sx={{ maxWidth: 500, height: 250 }}
@@ -40,9 +40,7 @@ function MissionImageList({ imagesData }) {
             alt={item.title}
             loading="lazy"
             style={{ cursor: "pointer" }}
-            onClick={() => {
-              window.open(item.img, "_blank");
-            }}
+            onClick={() => openFn(item.img)}
           />
         </ImageListItem>
       ))}
@@ -51,6 +49,17 @@ function MissionImageList({ imagesData }) {
 }
 
 function Home() {
+  const [openImageModal, setOpenImageModal] = useState(false);
+  const [modalImage, setModalImage] = useState(null);
+  const handleOpenModal = (img) => {
+    setModalImage(img);
+    setOpenImageModal(true);
+  };
+  const handleCloseModal = () => {
+    setOpenImageModal(false);
+    setModalImage(null);
+  };
+
   return (
     <div className="home-container">
       <h1 className="welcome-text">WELCOME TO .DEVCLUB</h1>
@@ -98,6 +107,26 @@ function Home() {
         <br />
 
         <div className="missions-container">
+          <Modal open={openImageModal} onClose={handleCloseModal}>
+            <Box
+              sx={{
+                width: "fit-content",
+                height: "fit-content",
+                position: "absolute",
+                top: "50%",
+                left: "50%",
+                transform: "translate(-50%, -50%)",
+                boxShadow: 24,
+                outline: "none",
+              }}
+            >
+              <img
+                src={modalImage}
+                alt="Modal Content"
+                style={{ width: "100%", height: "100%", objectFit: "cover" }}
+              />
+            </Box>
+          </Modal>
           <div className="mission-container">
             <div className="mission-text-container">
               <span className="mission-heading">Workshops and Activities</span>
@@ -110,7 +139,10 @@ function Home() {
               </p>
             </div>
             <div className="mission-images-container">
-              <MissionImageList imagesData={workshopImages} />
+              <MissionImageList
+                imagesData={workshopImages}
+                openFn={handleOpenModal}
+              />
             </div>
           </div>
 
@@ -124,7 +156,10 @@ function Home() {
               </p>
             </div>
             <div className="mission-images-container">
-              <MissionImageList imagesData={hackathonImages} />
+              <MissionImageList
+                imagesData={hackathonImages}
+                openFn={handleOpenModal}
+              />
             </div>
           </div>
 
@@ -139,7 +174,10 @@ function Home() {
               </p>
             </div>
             <div className="mission-images-container">
-              <MissionImageList imagesData={devchampsImages} />
+              <MissionImageList
+                imagesData={devchampsImages}
+                openFn={handleOpenModal}
+              />
             </div>
           </div>
         </div>
