@@ -8,24 +8,24 @@ jobs:
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        node-version: [14.x]
+        node-version: [20.x]
     steps:
-    - uses: actions/checkout@v1
-    - name: Use Node.js ${{ matrix.node-version }}
-      uses: actions/setup-node@v1
-      with:
-        node-version: ${{ matrix.node-version }}
-    - name: Install Packages
-      run: npm install
-    - name: Build page
-      run: npm run build && echo "devclub.ca" > ./build/CNAME
-    - name: Deploy to gh-pages
-      uses: peaceiris/actions-gh-pages@v3
-      with:
-        deploy_key: ${{ secrets.ACTIONS_DEPLOY_SECRET }}
-        publish_dir: ./build
-    - name: Notify on Discord
-      uses: sarisia/actions-status-discord@v1
-      if: "always()"
-      with:
-        webhook: ${{ secrets.DISCORD_WEBHOOK }}
+      - uses: actions/checkout@v1
+      - name: Use Node.js ${{ matrix.node-version }}
+        uses: actions/setup-node@v1
+        with:
+          node-version: ${{ matrix.node-version }}
+      - name: Install Packages
+        run: npm install
+      - name: Build page
+        run: npm run build && echo "devclub.ca" > ./build/CNAME
+      - name: Deploy to gh-pages
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          deploy_key: ${{ secrets.ACTIONS_DEPLOY_SECRET }}
+          publish_dir: ./build
+      - name: Notify on Discord
+        uses: sarisia/actions-status-discord@v1
+        if: "always()"
+        with:
+          webhook: ${{ secrets.DISCORD_WEBHOOK }}
