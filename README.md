@@ -26,7 +26,7 @@ npm install
 npm start
 ```
 And now the app will be running in the development mode.  
-Open [http://localhost:3000](http://localhost:3000) to view local version of the website in the browser.
+Open [http://localhost:3000](http://localhost:5173) to view local version of the website in the browser.
 
 ## Deployment
 
