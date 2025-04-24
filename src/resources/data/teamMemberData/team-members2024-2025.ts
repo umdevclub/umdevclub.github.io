@@ -1,5 +1,5 @@
 import Jordon from "@/resources/images/team-members/past-members/2024-2025/Jordon-President.jpg";
-import Arion from "@/resources/images/team-members/past-members/2024-2025/arion-VicePres.jpg";
+import Arion from "@/resources/images/team-members/past-members/2024-2025/arion-vice-pres.jpg";
 import Kristel from "@/resources/images/team-members/past-members/2024-2025/kristel-internal.jpg";
 import Minh from "@/resources/images/team-members/past-members/2024-2025/minh-external.jpg";
 import Adwait from "@/resources/images/team-members/past-members/2024-2025/adwait-treasurer.jpg";
