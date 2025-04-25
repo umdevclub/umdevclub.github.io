@@ -104,10 +104,8 @@ export default function PeopleList() {
     "2022": execs2022,
   };
 
-  const yearLabels = Object.keys(execCollections);
-  const [selectedYear, setSelectedYear] = useState(
-    yearLabels[yearLabels.length - 1]
-  );
+  const yearLabels = Object.keys(execCollections).toReversed();
+  const [selectedYear, setSelectedYear] = useState(yearLabels[0]);
   const peopleData = execCollections[selectedYear];
 
   return (
