@@ -1,29 +1,31 @@
 {
   "name": "umdevclub",
   "version": "0.1.0",
+  "type": "module",
   "private": true,
   "dependencies": {
     "@emotion/react": "^11.14.0",
     "@emotion/styled": "^11.14.0",
     "@mui/icons-material": "^5.17.1",
     "@mui/material": "^5.17.1",
-    "@types/react": "^19.1.2",
-    "@types/react-dom": "^19.1.2",
+    "@react-router/node": "^7.5.2",
     "classnames": "^2.3.1",
     "gh-pages": "^3.2.0",
-    "react": "^17.0.0 || ^18.0.0 || ^19.0.0",
-    "react-dom": "^17.0.0 || ^18.0.0 || ^19.0.0",
-    "react-router": "^7.5.1",
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0",
+    "react-router": "^7.5.2",
     "react-transition-group": "^4.4.5",
     "sass": "^1.49.7",
     "web-vitals": "^1.1.2"
   },
   "scripts": {
     "start": "vite",
+    "dev": "react-router dev",
     "build": "vite build",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
-    "lint": "pretty-quick"
+    "lint": "pretty-quick",
+    "typecheck": "react-router typegen && tsc"
   },
   "browserslist": {
     "production": [
@@ -38,17 +40,17 @@
     ]
   },
   "devDependencies": {
+    "@react-router/dev": "^7.5.2",
     "@types/node": "^22.14.1",
+    "@types/react": "^19.1.2",
+    "@types/react-dom": "^19.1.2",
     "@vitejs/plugin-react": "^4.4.1",
     "husky": "^4.3.8",
     "prettier": "^2.5.1",
     "pretty-quick": "^3.1.3",
     "typescript": "^5.8.3",
-    "vite": "^6.3.2"
-  },
-  "peerDependencies": {
-    "react": "^17.0.0 || ^18.0.0 || ^19.0.0",
-    "react-dom": "^17.0.0 || ^18.0.0 || ^19.0.0"
+    "vite": "^6.3.3",
+    "vite-tsconfig-paths": "^5.1.4"
   },
   "husky": {
     "hooks": {

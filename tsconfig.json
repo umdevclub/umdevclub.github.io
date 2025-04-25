@@ -1,13 +1,16 @@
 {
+  "include": [".react-router/types/**/*", "src/**/*"],
   "compilerOptions": {
-    "jsx": "react-jsx",
-    "target": "ES6",
+    "jsx": "preserve",
+    "target": "ESNext",
     "module": "ESNext",
-    "moduleResolution": "Node",
+    "moduleResolution": "bundler",
+    "types": ["node", "vite/client"],
     "strict": true,
-    "baseUrl": "src",
+    "rootDirs": [".", "./.react-router/types"],
+    "baseUrl": ".",
     "paths": {
-      "@/*": ["*"]
+      "@/*": ["./src/*"]
     },
     "resolveJsonModule": true,
     "esModuleInterop": true
