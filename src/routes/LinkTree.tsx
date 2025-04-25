@@ -4,7 +4,7 @@ import cssaLogo from "@/resources/images/clubs/logo-cssa.svg";
 import wicsLogo from "@/resources/images/clubs/logo-wics.svg";
 import cusecLogo from "@/resources/images/clubs/logo-cusec.svg";
 
-const LinkTree = () => {
+export default function LinkTree() {
   const clubsData = [
     {
       name: ".devClub",
@@ -66,6 +66,4 @@ const LinkTree = () => {
       </div>
     </div>
   );
-};
-
-export default LinkTree;
+}

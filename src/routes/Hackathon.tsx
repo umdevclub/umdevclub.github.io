@@ -4,37 +4,12 @@ import "@/styles/Hackathon.scss";
 
 import { Button } from "@mui/material";
 import { useNavigate } from "react-router";
-// import Timer from "@/components/Timer";
 import HackathonFaq from "@/components/HackathonFaq";
 import codeOfConduct from "@/resources/data/code-of-conduct";
 import rules from "@/resources/data/rules";
-// import Sponsors from "@/resources/data/devHacksArchive/devHacks2025/Sponsors2025.js";
 import PicturesGeneral from "@/resources/data/devHacksArchive/PicturesGeneral";
-function Hackathon() {
-  // const btnStyles = {
-  //   letterSpacing: "0.2em",
-  //   height: "fit-content",
-  //   color: "white",
-  //   borderColor: "white",
-  //   fontWeight: "bold",
-  //   "&:hover": {
-  //     background: "white",
-  //     color: "#272729",
-  //   },
-  // };
 
-  // const formId = "war5yv";
-
-  // const handleButtonClick = () => {
-  //   if (window?.Tally) {
-  //     window.Tally.openPopup(formId, {
-  //       layout: "modal",
-  //       width: 700,
-  //       autoClose: 5000,
-  //     });
-  //   }
-  // };
-
+export default function Hackathon() {
   const navigate = useNavigate();
 
   return (
@@ -90,7 +65,7 @@ function Hackathon() {
             devHacks 2025 Projects
           </Button> */}
           <Button
-            onClick={() => navigate("/devHacks2025")}
+            onClick={() => navigate("/devhacks2025")}
             variant="contained"
             sx={{
               fontSize: "1.5rem",
@@ -102,7 +77,7 @@ function Hackathon() {
             devHacks 2025 archive
           </Button>
           <Button
-            onClick={() => navigate("/devHacks2024")}
+            onClick={() => navigate("/devhacks2024")}
             variant="contained"
             sx={{
               fontSize: "1.5rem",
@@ -223,5 +198,3 @@ function Hackathon() {
     </div>
   );
 }
-
-export default Hackathon;

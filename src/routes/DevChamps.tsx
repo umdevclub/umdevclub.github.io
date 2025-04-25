@@ -3,7 +3,7 @@ import "@/styles/DevChamps.scss";
 import ChampionsList from "@/components/championsList";
 import championsData from "@/resources/data/champions";
 
-function DevChamps() {
+export default function DevChamps() {
   return (
     <div className="devchamps-container">
       <div className="welcome-part">
@@ -17,7 +17,7 @@ function DevChamps() {
       <div className="hall-of-fame">
         <h1 className="header-devchamps">&lt;.hall of fame&gt;</h1>
         <h2 className="under-header-devchamps">
-          join it by winning in any .devchamps category!
+          join it by winning in any .devChamps category!
         </h2>
         <div className="winners">
           <ChampionsList peopleData={championsData} />
@@ -55,7 +55,7 @@ function DevChamps() {
             <h1 className="question">can I make changes after submission?</h1>
             <h2 className="answer">
               Of course you can! Only the last submission will be considered and
-              evaluated. Previous submissions will be ignored while eveluating
+              evaluated. Previous submissions will be ignored while evaluating
               the project.
             </h2>
           </div>
@@ -64,5 +64,3 @@ function DevChamps() {
     </div>
   );
 }
-
-export default DevChamps;

@@ -2,7 +2,7 @@ import Box from "@mui/material/Box";
 
 import "@/styles/PrizeCategories.scss";
 
-const PrizeCategories = () => {
+export default function PrizeCategories() {
   const prizeData = [
     {
       title: "Legend of the Hacks",
@@ -124,6 +124,4 @@ const PrizeCategories = () => {
       </Box>
     </div>
   );
-};
-
-export default PrizeCategories;
+}

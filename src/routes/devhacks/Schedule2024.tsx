@@ -3,7 +3,7 @@ import Box from "@mui/material/Box";
 import "@/styles/Devhacks2024Schedule.scss";
 import Divider from "@mui/material/Divider";
 
-const Devhacks2024Schedule = () => {
+export default function Devhacks2024Schedule() {
   return (
     <Box
       sx={{
@@ -180,6 +180,4 @@ const Devhacks2024Schedule = () => {
       </Box>
     </Box>
   );
-};
-
-export default Devhacks2024Schedule;
+}

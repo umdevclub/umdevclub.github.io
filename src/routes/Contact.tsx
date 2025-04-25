@@ -168,7 +168,7 @@ function Form() {
   );
 }
 
-function Contact() {
+export default function Contact() {
   return (
     <>
       <div className="contact-page-container">
@@ -189,5 +189,3 @@ function Contact() {
     </>
   );
 }
-
-export default Contact;

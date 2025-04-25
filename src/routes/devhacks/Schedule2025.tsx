@@ -2,7 +2,8 @@ import scheduleBg from "@/resources/images/devhacks/2025/devhacks2025-schedule-b
 import Box from "@mui/material/Box";
 import "@/styles/Devhacks2025Schedule.scss";
 import Typography from "@mui/material/Typography";
-const Devhacks2025Schedule = () => {
+
+export default function Devhacks2025Schedule() {
   return (
     <Box
       sx={{
@@ -97,6 +98,4 @@ const Devhacks2025Schedule = () => {
       </div>
     </Box>
   );
-};
-
-export default Devhacks2025Schedule;
+}

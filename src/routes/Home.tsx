@@ -6,7 +6,7 @@ import discordLogo from "@/resources/images/discord-mark-white.svg";
 
 import { useState } from "react";
 
-import Link from "@mui/material/Button";
+import { Button } from "@mui/material";
 
 import ImageList from "@mui/material/ImageList";
 import ImageListItem from "@mui/material/ImageListItem";
@@ -57,7 +57,7 @@ function MissionImageList({ imagesData, openFn }: IMissionImageList) {
   );
 }
 
-function Home() {
+export default function Home() {
   const [openImageModal, setOpenImageModal] = useState(false);
   const [modalImage, setModalImage] = useState<string | undefined>(undefined);
   const handleOpenModal = (img: string) => {
@@ -217,9 +217,8 @@ function Home() {
             <br />
             Don't forget to opt-in for devClub announcement notifications!
           </p>
-          <Link
+          <Button
             href="https://discord.umanitobacssa.ca/"
-            // target="_blank" // TODO: Make this open in a new tab
             component="button"
             variant="contained"
             size="large"
@@ -227,7 +226,7 @@ function Home() {
           >
             <img className="discord-logo" src={discordLogo} alt="" />
             Click here to join
-          </Link>
+          </Button>
         </div>
 
         <div className="title-container">
@@ -239,5 +238,3 @@ function Home() {
     </div>
   );
 }
-
-export default Home;
