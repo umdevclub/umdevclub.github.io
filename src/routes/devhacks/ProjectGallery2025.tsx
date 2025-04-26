@@ -1,6 +1,6 @@
 import { useEffect } from "react";
 
-const DevHacks2025ProjectGallery = () => {
+export default function DevHacks2025ProjectGallery() {
   useEffect(() => {
     window.location.replace(
       "https://devhacks-2025.devpost.com/project-gallery"
@@ -8,6 +8,4 @@ const DevHacks2025ProjectGallery = () => {
   }, []);
 
   return null;
-};
-
-export default DevHacks2025ProjectGallery;
+}

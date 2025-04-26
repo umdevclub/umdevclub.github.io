@@ -2,7 +2,7 @@ import Box from "@mui/material/Box";
 
 import "@/styles/PrizeCategories.scss";
 
-const PrizeCategories2024 = () => {
+export default function PrizeCategories2024() {
   const prizeData = [
     {
       title: "Best Societal Impact Hack",
@@ -155,6 +155,4 @@ const PrizeCategories2024 = () => {
       </Box>
     </div>
   );
-};
-
-export default PrizeCategories2024;
+}

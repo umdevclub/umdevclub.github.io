@@ -10,7 +10,7 @@ import rules from "@/resources/data/rules.js";
 import Sponsors from "@/resources/data/devHacksArchive/devHacks2025/Sponsors2025";
 import Pictures2025 from "@/resources/data/devHacksArchive/devHacks2025/pictures2025";
 
-function DevHacks2025() {
+export default function DevHacks2025() {
   const navigate = useNavigate();
 
   return (
@@ -150,5 +150,3 @@ function DevHacks2025() {
     </div>
   );
 }
-
-export default DevHacks2025;
