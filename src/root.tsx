@@ -2,6 +2,7 @@ import "@/styles/index.scss";
 import "@/styles/ErrorBoundary.scss";
 
 import {
+  isRouteErrorResponse,
   Links,
   Meta,
   Outlet,
@@ -10,8 +11,12 @@ import {
   useNavigate,
 } from "react-router";
 import { ReactNode } from "react";
+import {
+  StyledEngineProvider,
+  ThemeProvider,
+  createTheme,
+} from "@mui/material";
 import { Route } from "./+types/root";
-import { ThemeProvider, createTheme } from "@mui/material";
 
 const theme = createTheme({
   palette: {
@@ -57,6 +62,17 @@ export function meta() {
 export function ErrorBoundary({ error }: Route.ErrorBoundaryProps) {
   const navigate = useNavigate();
 
+  if (isRouteErrorResponse(error)) {
+    console.log("Route error");
+    console.log(error.status, error.statusText);
+    console.log(error.data);
+  }
+
+  if (error instanceof Error) {
+    console.log("Error");
+    console.log(error.message);
+  }
+
   return (
     <div className="error-boundary-container">
       <h1 className="error-boundary-heading">Oops! Something went wrong!</h1>
@@ -94,10 +110,11 @@ export function Layout({ children }: { children: ReactNode }) {
 }
 
 export default function Root() {
-  // return <Outlet />;
   return (
-    <ThemeProvider theme={theme}>
-      <Outlet />
-    </ThemeProvider>
+    <StyledEngineProvider injectFirst>
+      <ThemeProvider theme={theme}>
+        <Outlet />
+      </ThemeProvider>
+    </StyledEngineProvider>
   );
 }
