@@ -66,9 +66,7 @@ export function ErrorBoundary({ error }: Route.ErrorBoundaryProps) {
     console.log("Route error");
     console.log(error.status, error.statusText);
     console.log(error.data);
-  }
-
-  if (error instanceof Error) {
+  } else if (error instanceof Error) {
     console.log("Error");
     console.log(error.message);
   }
