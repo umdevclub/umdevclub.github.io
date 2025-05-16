@@ -11,7 +11,7 @@ import {
   createTheme,
   StyledEngineProvider,
 } from "@mui/material/styles";
-import { BrowserRouter } from "react-router";
+import { BrowserRouter } from "react-router-dom";
 
 const theme = createTheme({
   palette: {

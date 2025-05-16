@@ -3,7 +3,7 @@ import React from "react";
 import "@/styles/Hackathon.scss";
 
 import { Button } from "@mui/material";
-import { useNavigate } from "react-router";
+import { useNavigate } from "react-router-dom";
 import HackathonFaq from "@/components/HackathonFaq";
 import codeOfConduct from "@/resources/data/code-of-conduct.js";
 import rules from "@/resources/data/rules.js";

@@ -1,6 +1,6 @@
 import "@/styles/PageNotFound.scss";
 
-import { Link } from "react-router";
+import { Link } from "react-router-dom";
 
 function PageNotFound() {
   return (
