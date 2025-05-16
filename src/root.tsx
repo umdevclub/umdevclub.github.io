@@ -11,11 +11,8 @@ import {
   useNavigate,
 } from "react-router";
 import { ReactNode } from "react";
-import {
-  StyledEngineProvider,
-  ThemeProvider,
-  createTheme,
-} from "@mui/material";
+import { ThemeProvider, createTheme } from "@mui/material";
+import { StyledEngineProvider } from "@mui/material/styles";
 import { Route } from "./+types/root";
 
 const theme = createTheme({
