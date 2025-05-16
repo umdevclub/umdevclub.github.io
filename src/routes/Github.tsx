@@ -4,8 +4,8 @@ import Tab from "@mui/material/Tab";
 import Box from "@mui/material/Box";
 
 import "@/styles/DevhacksGithub.scss";
-import GithubWindows from "@/components/GithubWindows";
-import GithubUnix from "@/components/GithubUnix";
+import GithubWindows from "@/routes/GithubWindows";
+import GithubUnix from "@/routes/GithubUnix";
 
 function CustomTabPanel({ children, value, index, ...other }: ICustomTabPanel) {
   return (
@@ -46,7 +46,7 @@ function a11yProps(index: number) {
   };
 }
 
-export default function BasicTabs() {
+function GitHub() {
   const [value, setValue] = useState(0);
 
   const handleChange = (event: any, newValue: number) => {
@@ -82,3 +82,5 @@ export default function BasicTabs() {
     </div>
   );
 }
+
+export default GitHub;

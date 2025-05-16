@@ -1,29 +1,29 @@
 import "@/styles/App.scss";
 
-import { Navigate, Route, Routes, useLocation } from "react-router";
+import { useRef } from "react";
+import { Navigate, Route, Routes, useLocation } from "react-router-dom";
 import { TransitionGroup, CSSTransition } from "react-transition-group";
-import redirectMappings from "@/resources/redirect-mappings";
 
 import Header from "@/components/Header";
-
-import Home from "@/components/Home.js";
-import DevChamp from "@/components/DevChamps";
-import Contact from "@/components/Contact";
-import Hackathon from "@/components/Hackathon";
-import PageNotFound from "@/components/PageNotFound";
-import { useRef } from "react";
 import Footer from "@/components/Footer";
-import LinkTree from "@/components/LinkTree";
-import DevhacksGithub from "@/components/DevhacksGithub";
 
+import Contact from "@/routes/Contact";
+import DevChamps from "@/routes/DevChamps";
+import DevhacksGithub from "@/routes/Github";
+import Hackathon from "@/routes/Hackathon";
+import Home from "@/routes/Home.js";
+import LinkTree from "@/routes/LinkTree";
+import PageNotFound from "@/routes/PageNotFound";
+
+import Devhacks2024 from "@/resources/data/devHacksArchive/devHacks2024/devHacks2024";
 import DevhacksSchedule2024 from "@/resources/data/devHacksArchive/devHacks2024/Schedule2024";
+import Devhacks2025 from "@/resources/data/devHacksArchive/devHacks2025/devHacks2025";
 import PrizeCategories2024 from "@/resources/data/devHacksArchive/devHacks2024/PrizeCategories2024";
-
-import DevhacksSchedule2025 from "@/resources/data/devHacksArchive/devHacks2025/Schedule2025";
 import PrizeCategories2025 from "@/resources/data/devHacksArchive/devHacks2025/PrizeCategories2025";
 import ProjectGallery2025 from "@/resources/data/devHacksArchive/devHacks2025/ProjectGallery2025";
-import Devhacks2025 from "@/resources/data/devHacksArchive/devHacks2025/devHacks2025";
-import Devhacks2024 from "@/resources/data/devHacksArchive/devHacks2024/devHacks2024";
+import DevhacksSchedule2025 from "@/resources/data/devHacksArchive/devHacks2025/Schedule2025";
+import redirectMappings from "@/resources/redirect-mappings";
+
 function App() {
   // The animation transitions out the current page first and then transitions into the new page
   // So we can have the pages be positioned as relative and not have to worry about making the
@@ -63,8 +63,8 @@ function App() {
                   />
                 )
               )}
-              <Route path="/" element={<Home />} />
-              <Route path="/devchamps" element={<DevChamp />} />
+              <Route index element={<Home />} />
+              <Route path="/devchamps" element={<DevChamps />} />
               <Route path="/contact" element={<Contact />} />
               <Route path="/devhacks" element={<Hackathon />} />
               <Route path="/github-tutorial" element={<DevhacksGithub />} />

@@ -4,7 +4,7 @@ import devclubLogoHorizontal from "@/resources/images/devclub-logo-horizontal.sv
 
 import { useMemo } from "react";
 
-import { NavLink, useLocation } from "react-router";
+import { NavLink, useLocation } from "react-router-dom";
 import useToggle from "@/hooks/useToggle";
 
 import { createTheme, ThemeProvider } from "@mui/material";

@@ -5,7 +5,7 @@ import "@/styles/DevhacksGithub.scss";
 import Divider from "@mui/material/Divider";
 import Box from "@mui/material/Box";
 
-const GithubWindows = () => {
+function GithubWindows() {
   const [activeId, setActiveId] = useState("");
   const sectionRefs = useRef<HTMLLIElement[]>([]);
 
@@ -94,6 +94,6 @@ const GithubWindows = () => {
       </Box>
     </div>
   );
-};
+}
 
 export default GithubWindows;
