@@ -90,7 +90,7 @@ function Hackathon() {
             devHacks 2025 Projects
           </Button> */}
           <Button
-            onClick={() => navigate("/devHacks2025")}
+            onClick={() => navigate("/devhacks/2025")}
             variant="contained"
             sx={{
               fontSize: "1.5rem",
@@ -102,7 +102,7 @@ function Hackathon() {
             devHacks 2025 archive
           </Button>
           <Button
-            onClick={() => navigate("/devHacks2024")}
+            onClick={() => navigate("/devhacks/2024")}
             variant="contained"
             sx={{
               fontSize: "1.5rem",

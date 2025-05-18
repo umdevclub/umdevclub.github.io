@@ -16,11 +16,11 @@ const hackathonConfig: HackathonConfig = {
       },
       {
         text: "Schedule",
-        path: "/2024/schedule",
+        path: "/devhacks/2024/schedule",
       },
       {
         text: "Prize Categories",
-        path: "/2024/themes",
+        path: "/devhacks/2024/themes",
       },
     ],
   },
@@ -39,15 +39,15 @@ const hackathonConfig: HackathonConfig = {
       },
       {
         text: "Schedule",
-        path: "/2025/schedule",
+        path: "/devhacks/2025/schedule",
       },
       {
         text: "Prize Categories",
-        path: "/2025/themes",
+        path: "/devhacks/2025/themes",
       },
       {
         text: "Project Gallery",
-        path: "/project-gallery-2025",
+        path: "/devhacks/2025/gallery",
       },
     ],
   },
