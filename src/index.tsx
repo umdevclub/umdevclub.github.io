@@ -1,17 +1,14 @@
-import React from "react";
-import { createRoot } from "react-dom/client";
-
-import App from "@/components/App";
-import ErrorBoundary from "@/components/ErrorBoundary";
-
-import "@/styles/index.scss";
-
 import {
   ThemeProvider,
   createTheme,
   StyledEngineProvider,
 } from "@mui/material/styles";
-import { BrowserRouter } from "react-router-dom";
+import React from "react";
+import { createRoot } from "react-dom/client";
+
+import "@/styles/index.scss";
+
+import App from "./routes/App";
 
 const theme = createTheme({
   palette: {
@@ -28,15 +25,11 @@ const root = createRoot(document.getElementById("root")!);
 
 root.render(
   <React.StrictMode>
-    <ErrorBoundary>
-      <StyledEngineProvider injectFirst>
-        {/* Forces the css files to take precedence over mui styles */}
-        <BrowserRouter basename="/">
-          <ThemeProvider theme={theme}>
-            <App />
-          </ThemeProvider>
-        </BrowserRouter>
-      </StyledEngineProvider>
-    </ErrorBoundary>
+    <StyledEngineProvider injectFirst>
+      {/* Forces the css files to take precedence over mui styles */}
+      <ThemeProvider theme={theme}>
+        <App />
+      </ThemeProvider>
+    </StyledEngineProvider>
   </React.StrictMode>
 );
