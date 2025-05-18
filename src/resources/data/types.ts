@@ -1,3 +1,18 @@
+export type HackathonConfig = {
+  [key: string]: {
+    year: string;
+    title: string;
+    subtitle: string;
+    location: string;
+    date: string;
+    description: string;
+    links: {
+      text: string;
+      path: string;
+    }[];
+  };
+};
+
 export interface ITeamMember {
   firstName: string;
   lastName: string;
