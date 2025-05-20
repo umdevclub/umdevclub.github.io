@@ -34,6 +34,9 @@ function PersonCard({ personData }: { personData: ITeamMember }) {
           {personData.firstName}
         </Typography>
         <Typography variant="h6" component="div" className="person-names">
+          {personData.middleName}
+        </Typography>
+        <Typography variant="h6" component="div" className="person-names">
           {personData.lastName}
         </Typography>
         <Typography

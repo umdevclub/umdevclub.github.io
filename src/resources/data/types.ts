@@ -15,6 +15,7 @@ export type HackathonConfig = {
 
 export interface ITeamMember {
   firstName: string;
+  middleName?: string;
   lastName: string;
   role: string;
   image: string;

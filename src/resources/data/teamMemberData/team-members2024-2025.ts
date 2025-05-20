@@ -39,7 +39,8 @@ const teamMembers2024: ITeamMember[] = [
     github: "https://github.com/kristelaym",
   },
   {
-    firstName: "Hoang Minh",
+    firstName: "Hoang",
+    middleName: "Minh",
     lastName: "Phan",
     role: "External",
     image: Minh,
@@ -47,6 +48,7 @@ const teamMembers2024: ITeamMember[] = [
   },
   {
     firstName: "Fawaz",
+    middleName: "Bin",
     lastName: "Saleem",
     role: "Events",
     image: Fawaz,
