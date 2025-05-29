@@ -36,6 +36,10 @@ export interface ITeamMember {
   instagram?: string;
 }
 
+export interface ITeam {
+  [year: string]: ITeamMember[];
+}
+
 export interface IChampion {
   name: string;
   challenge: string;
