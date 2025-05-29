@@ -1,6 +1,11 @@
 import { useState } from "react";
 import "@/styles/PeopleList.scss";
 
+import LinkedInIcon from "@mui/icons-material/LinkedIn";
+import GitHubIcon from "@mui/icons-material/GitHub";
+import LanguageIcon from "@mui/icons-material/Language";
+import InstagramIcon from "@mui/icons-material/Instagram";
+
 import Box from "@mui/material/Box";
 import CardContent from "@mui/material/CardContent";
 import Typography from "@mui/material/Typography";
@@ -8,25 +13,16 @@ import FormControl from "@mui/material/FormControl";
 import Select from "@mui/material/Select";
 import MenuItem from "@mui/material/MenuItem";
 
-import LinkedInIcon from "@mui/icons-material/LinkedIn";
-import GitHubIcon from "@mui/icons-material/GitHub";
-import LanguageIcon from "@mui/icons-material/Language";
-import InstagramIcon from "@mui/icons-material/Instagram";
-
-// Import your data modules for each year
-import execs2025 from "@/resources/data/teamMemberData/team-members2025-2026";
-import execs2024 from "@/resources/data/teamMemberData/team-members2024-2025";
-import execs2023 from "@/resources/data/teamMemberData/team-members2023-2024";
-import execs2022 from "@/resources/data/teamMemberData/team-members2022-2023";
+import teamConfig from "@/resources/data/devHacksArchive/teamConfig";
 import { ITeamMember } from "@/resources/data/types";
 
 function PersonCard({ personData }: { personData: ITeamMember }) {
   return (
     <Box sx={{ width: "100%", height: "100%" }}>
-      <CardContent className="people">
+      <CardContent className="person">
         <div className="image-container">
           <img
-            src={personData.image}
+            src={`src/resources/images/team/${personData.image}`}
             alt={`Portrait of .devClub team member ${personData.firstName} ${personData.lastName}`}
           />
         </div>
@@ -99,19 +95,9 @@ function PersonCard({ personData }: { personData: ITeamMember }) {
 }
 
 export default function PeopleList() {
-  // Map each label to its corresponding data
-  const execCollections: Record<string, ITeamMember[]> = {
-    "2025": execs2025,
-    "2024": execs2024,
-    "2023": execs2023,
-    "2022": execs2022,
-  };
-
-  const yearLabels = Object.keys(execCollections);
-  const [selectedYear, setSelectedYear] = useState(
-    yearLabels[yearLabels.length - 1]
-  );
-  const peopleData = execCollections[selectedYear];
+  const yearLabels = Object.keys(teamConfig).reverse();
+  const [selectedYear, setSelectedYear] = useState(yearLabels[0]);
+  const peopleData = teamConfig[selectedYear];
 
   return (
     <>
