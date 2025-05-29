@@ -1,4 +1,15 @@
-export type HackathonConfig = {
+export type HackathonTheme = {
+  [key: string]: {
+    title: string;
+    description: string | string[];
+    details?: {
+      header: string;
+      content: string[];
+    }[];
+  }[];
+};
+
+export type HackathonInfo = {
   [key: string]: {
     year: string;
     title: string;
