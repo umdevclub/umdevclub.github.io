@@ -16,7 +16,10 @@ import DevChamps from "./DevChamps";
 import GitHub from "./Github";
 import Hackathon from "./hackathon/Hackathon";
 import HackathonArchive from "./hackathon/HackathonArchive";
-import { loader as hackathonLoader } from "./hackathon/hackathonLoader";
+import {
+  hackathonInfoLoader,
+  hackathonThemeLoader,
+} from "./hackathon/hackathonLoader";
 import HackathonSchedule from "./hackathon/HackathonSchedule";
 import HackathonThemes from "./hackathon/HackathonThemes";
 import Home from "./Home";
@@ -45,17 +48,17 @@ const router = createBrowserRouter(
       <Route
         path="/devhacks/:year"
         element={<HackathonArchive />}
-        loader={hackathonLoader}
+        loader={hackathonInfoLoader}
       />
       <Route
         path="/devhacks/:year/schedule"
         element={<HackathonSchedule />}
-        loader={hackathonLoader}
+        loader={hackathonInfoLoader}
       />
       <Route
         path="/devhacks/:year/themes"
         element={<HackathonThemes />}
-        loader={hackathonLoader}
+        loader={hackathonThemeLoader}
       />
       <Route
         path="/devhacks/2025/gallery"
