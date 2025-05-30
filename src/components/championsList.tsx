@@ -8,16 +8,13 @@ import Typography from "@mui/material/Typography";
 function PersonCard({ personData }: { personData: IChampion }) {
   const card = (
     <>
-      <CardContent className="people">
+      <CardContent className="person">
         <div className="image-container">
           <img
             src={personData.image}
             alt={`Portrait of .devClub team member ${personData.name} `}
           />
         </div>
-        <br />
-        <br />
-        <br />
         <Typography variant="h6" component="div" className="person-names">
           {personData.name}
         </Typography>
@@ -33,11 +30,6 @@ function PersonCard({ personData }: { personData: IChampion }) {
           {personData.bio}
         </Typography>
       </CardContent>
-      {/*
-            <CardActions>
-              <Button size="small">Learn More</Button>
-            </CardActions>
-          */}
     </>
   );
 
@@ -52,8 +44,6 @@ function ChampionList({ peopleData }: { peopleData: IChampion[] }) {
           sx={{
             width: 180,
             height: "100%",
-            backgroundColor: (theme) =>
-              theme.palette.mode === "dark" ? "#1A2027" : "#fff",
           }}
           key={index}
         >
