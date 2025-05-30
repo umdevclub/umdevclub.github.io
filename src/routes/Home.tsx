@@ -97,7 +97,7 @@ function Home() {
             </h1>
           </div>
           <h1 className="description-home">
-            devClub helps students achieve their coding goals, and they help us
+            .devClub helps students achieve their coding goals, and they help us
             accomplish our mission. We empower students to create and develop,
             using new cutting-edge technologies.
             <br />
@@ -215,7 +215,7 @@ function Home() {
             </a>
             &nbsp;
             <br />
-            Don't forget to opt-in for devClub announcement notifications!
+            Don't forget to opt-in for .devClub announcement notifications!
           </p>
           <Link
             href="https://discord.umanitobacssa.ca/"
