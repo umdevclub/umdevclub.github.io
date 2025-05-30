@@ -25,7 +25,7 @@ jobs:
           npm run build
 
       - name: Deploy preview
-        uses: rossjrw/pr-preview-action@v1
+        uses: rossjrw/pr-preview-action@v1.6.1
         with:
           preview-branch: main
           source-dir: ./build/
