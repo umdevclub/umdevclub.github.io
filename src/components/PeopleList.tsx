@@ -13,7 +13,7 @@ import FormControl from "@mui/material/FormControl";
 import Select from "@mui/material/Select";
 import MenuItem from "@mui/material/MenuItem";
 
-import teamConfig from "@/resources/data/devHacksArchive/teamConfig";
+import teamConfig from "@/resources/data/teamConfig";
 import { ITeamMember } from "@/resources/data/types";
 
 function PersonCard({ personData }: { personData: ITeamMember }) {
@@ -22,7 +22,7 @@ function PersonCard({ personData }: { personData: ITeamMember }) {
       <CardContent className="person">
         <div className="image-container">
           <img
-            src={`src/resources/images/team/${personData.image}`}
+            src={personData.image}
             alt={`Portrait of .devClub team member ${personData.firstName} ${personData.lastName}`}
           />
         </div>
