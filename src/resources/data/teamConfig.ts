@@ -24,7 +24,7 @@ const teamConfig: ITeam = {
       lastName: "Janneh",
       role: "Treasurer",
       image: "/assets/team/2025/treasurer-mohamed.png",
-      linkedin: "https://www.linkedin.com/in/fawaz-bin-saleem-425b921a1/",
+      linkedin: "https://www.linkedin.com/in/mohamed-janneh-17aa57267/",
       github: "https://github.com/Mohjay101",
     },
     {
@@ -75,6 +75,7 @@ const teamConfig: ITeam = {
       role: "Vice-President",
       image: "/assets/team/2024/vice-president-arion.jpg",
       linkedin: "https://www.linkedin.com/in/arionkennedy/",
+      github: "https://github.com/ArionKennedy",
     },
     {
       firstName: "Adwait",
