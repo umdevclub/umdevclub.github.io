@@ -48,9 +48,9 @@ const teamConfig: ITeam = {
       lastName: "Abad",
       role: "Events",
       image: "/assets/team/2025/events-kurt.png",
-      instagram: "https://www.instagram.com/kurt.abad/",
       github: "https://github.com/tastyphil",
       website: "http://kurtabad.ca",
+      linkedin: "https://www.linkedin.com/in/kurt-abad/",
     },
     {
       firstName: "Milita",
