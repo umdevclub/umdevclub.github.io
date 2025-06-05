@@ -219,8 +219,8 @@ function Home() {
           </p>
           <Link
             href="https://discord.umanitobacssa.ca/"
-            // target="_blank" // TODO: Make this open in a new tab
-            component="button"
+            target="_blank"
+            component="a"
             variant="contained"
             size="large"
             className="how-to-join-button"
