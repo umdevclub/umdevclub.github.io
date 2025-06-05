@@ -131,6 +131,8 @@ function Header() {
               {socialIcons.map((socialIcon, socialIconInd) => (
                 <Link
                   href={socialIcon.url}
+                  target="_blank"
+                  rel="noopener noreferrer"
                   sx={{ padding: 0.5 }}
                   key={socialIconInd}
                 >
@@ -185,7 +187,12 @@ function MobileDrawerButton() {
           className="mobile-drawer-social-media"
         >
           {socialIcons.map((socialIcon, socialIconInd) => (
-            <Link href={socialIcon.url} key={socialIconInd}>
+            <Link
+              href={socialIcon.url}
+              target="_blank"
+              rel="noopener noreferrer"
+              key={socialIconInd}
+            >
               {<socialIcon.icon style={{ color: "black" }} />}
             </Link>
           ))}
