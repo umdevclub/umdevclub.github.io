@@ -152,6 +152,10 @@ html {
   @include mobile {
     margin-top: 2em;
   }
+
+  @include desktop {
+    font-weight: 300;
+  }
 }
 
 .title-content {

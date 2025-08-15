@@ -2,7 +2,7 @@ import "@/styles/Header.scss";
 import devclubLogo from "@/resources/images/devclub-logo.svg";
 import devclubLogoHorizontal from "@/resources/images/devclub-logo-horizontal.svg";
 
-import { useMemo } from "react";
+import { useMemo, useEffect } from "react";
 
 import { NavLink, useLocation } from "react-router-dom";
 import useToggle from "@/hooks/useToggle";
