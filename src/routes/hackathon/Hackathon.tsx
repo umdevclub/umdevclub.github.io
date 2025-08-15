@@ -9,7 +9,12 @@ import HackathonFaq from "@/components/HackathonFaq";
 import codeOfConduct from "@/resources/data/code-of-conduct";
 import rules from "@/resources/data/rules";
 // import Sponsors from "@/resources/data/devHacksArchive/devHacks2025/Sponsors2025.js";
-import PicturesGeneral from "@/resources/data/devHacksArchive/PicturesGeneral";
+
+import HorizontalScroller from "@/components/HorizontalScroller";
+import GalleryScroller from "@/components/GalleryScroller";
+import { picturesGeneralImages } from "@/resources/data/devHacksArchive/PicturesGeneral";
+import { HackathonArchiveCards } from "@/routes/hackathon/HackathonArchiveCards";
+
 function Hackathon() {
   // const btnStyles = {
   //   letterSpacing: "0.2em",
@@ -89,7 +94,7 @@ function Hackathon() {
           >
             devHacks 2025 Projects
           </Button> */}
-          <Button
+          {/* <Button
             onClick={() => navigate("/devhacks/2025")}
             variant="contained"
             sx={{
@@ -112,7 +117,7 @@ function Hackathon() {
             }}
           >
             devHacks 2024 archive
-          </Button>
+          </Button> */}
           <Button
             onClick={() => navigate("/github-tutorial")}
             variant="contained"
@@ -157,7 +162,29 @@ function Hackathon() {
       <Sponsors /> */}
 
       <h1 className="hackathon-sponsors heading">Event Pictures</h1>
-      <PicturesGeneral />
+      <GalleryScroller images={picturesGeneralImages} />
+
+      <h1 className="hackathon-sponsors heading">Go Back in Time</h1>
+      <HorizontalScroller>
+        {HackathonArchiveCards.map((archive) => (
+          <button
+            key={archive.year}
+            type="button"
+            className="archive-card"
+            onClick={() => navigate(archive.route)}
+          >
+            <div
+              className="archive-card-media"
+              style={{ backgroundImage: `url(${archive.image})` }}
+            />
+            <div className="archive-card-overlay" />
+            <div className="archive-card-content">
+              <h3 className="archive-card-title">{archive.title}</h3>
+              <p className="archive-card-sub">{archive.subtitle}</p>
+            </div>
+          </button>
+        ))}
+      </HorizontalScroller>
 
       <div className="hackathon-rules container" id="rules">
         <h1 className="hackathon-rules heading">Rules:</h1>
