@@ -1,23 +1,21 @@
 .navpage-container {
   display: flex;
-  flex-direction: column-reverse; /* So the old page we are transitioning out of remains on top */
+  flex-direction: column-reverse;
 }
 
 .fade-enter {
-  opacity: 0;
+  opacity: 1;
 }
 
-.fade-enter.fade-enter-active {
+.fade-enter-active {
   opacity: 1;
-  transition: opacity 200ms ease-in;
-  transition-delay: 100ms;
 }
 
 .fade-exit {
   opacity: 1;
 }
 
-.fade-exit.fade-exit-active {
+.fade-exit-active {
   opacity: 0;
-  transition: opacity 100ms ease-in;
+  transition: opacity 150ms ease-out;
 }
