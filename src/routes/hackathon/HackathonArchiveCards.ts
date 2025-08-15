@@ -12,11 +12,12 @@ export type HackathonArchiveCard = {
 
 export const HackathonArchiveCards: HackathonArchiveCard[] = [
   {
-    year: 2023,
-    title: ".devHacks 2023",
-    subtitle: "The long-awaited return, with 200+ Hackers in one epic sprint!",
-    route: "/devhacks/2023",
-    image: scheduleBg2023,
+    year: 2025,
+    title: ".devHacks 2025",
+    subtitle:
+      "A decade of Hacking, celebrated with 50 incredible projects and 300+ Hackers!",
+    route: "/devhacks/2025",
+    image: scheduleBg2025,
   },
   {
     year: 2024,
@@ -26,11 +27,10 @@ export const HackathonArchiveCards: HackathonArchiveCard[] = [
     image: scheduleBg2024,
   },
   {
-    year: 2025,
-    title: ".devHacks 2025",
-    subtitle:
-      "A decade of Hacking, celebrated with 50 incredible projects and 300+ Hackers!",
-    route: "/devhacks/2025",
-    image: scheduleBg2025,
+    year: 2023,
+    title: ".devHacks 2023",
+    subtitle: "The long-awaited return, with 200+ Hackers in one epic sprint!",
+    route: "/devhacks/2023",
+    image: scheduleBg2023,
   },
 ];

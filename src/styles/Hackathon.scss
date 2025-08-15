@@ -367,4 +367,14 @@
   .gallery-card-media {
     object-fit: cover;
   }
+
+  @include mobile {
+    .archive-card,
+    .gallery-card {
+      flex: 0 0 100%;
+    }
+    .hscroller .hscroller-track {
+      scroll-snap-stop: always;
+    }
+  }
 }
