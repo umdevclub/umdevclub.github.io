@@ -26,6 +26,7 @@ import Home from "./Home";
 import LinkTree from "./LinkTree";
 import RootLayout from "./layouts/RootLayout";
 import PageNotFound from "./PageNotFound";
+import Events from "./Events";
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -45,6 +46,7 @@ const router = createBrowserRouter(
       <Route path="/github-tutorial" element={<GitHub />} />
       <Route path="/link-tree" element={<LinkTree />} />
       <Route path="/devhacks" element={<Hackathon />} />
+      <Route path="/events" element={<Events />} />
       <Route
         path="/devhacks/:year"
         element={<HackathonArchive />}

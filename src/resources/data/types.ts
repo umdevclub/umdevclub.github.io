@@ -46,3 +46,15 @@ export interface IChampion {
   image: string;
   bio: string;
 }
+export type Term = "Summer" | "Fall" | "Winter";
+
+export interface EventData {
+  id: string;
+  title: string;
+  term?: Term[];
+  description: string;
+  images: string;
+  path?: string;
+  recurring?: boolean;
+}
+export const TERMS_ORDER: Term[] = ["Summer", "Fall", "Winter"];
