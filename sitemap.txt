@@ -1,5 +1,6 @@
 https://devclub.ca/?/
 https://devclub.ca/?/devhacks
+https://devclub.ca/?/devhacks/2023
 https://devclub.ca/?/devhacks/2024
 https://devclub.ca/?/devhacks/2024/schedule
 https://devclub.ca/?/devhacks/2024/themes
@@ -11,3 +12,4 @@ https://devclub.ca/?/github-tutorial
 https://devclub.ca/?/devchamps
 https://devclub.ca/?/contact
 https://devclub.ca/?/link-tree
+https://devclub.ca/?/events

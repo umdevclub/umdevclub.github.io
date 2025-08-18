@@ -21,10 +21,10 @@ import Link from "@mui/material/Link";
 
 import MenuIcon from "@mui/icons-material/Menu";
 import HomeIcon from "@mui/icons-material/Home";
-import EmojiEventsIcon from "@mui/icons-material/EmojiEvents";
 import ContactSupportIcon from "@mui/icons-material/ContactSupport";
 import ComputerIcon from "@mui/icons-material/Computer";
 import AttachFileIcon from "@mui/icons-material/AttachFile";
+import Diversity1Icon from "@mui/icons-material/Diversity1";
 
 import InstagramIcon from "@mui/icons-material/Instagram";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
@@ -48,15 +48,16 @@ const menuItems = [
     icon: <HomeIcon />,
   },
   {
+    title: "Events",
+    path: "/events",
+    icon: <Diversity1Icon />,
+  },
+  {
     title: ".devHacks",
     path: "/devhacks",
     icon: <ComputerIcon />,
   },
-  {
-    title: ".devChamps",
-    path: "/devchamps",
-    icon: <EmojiEventsIcon />,
-  },
+
   {
     title: "Contact",
     path: "/contact",
