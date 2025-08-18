@@ -90,7 +90,6 @@ function Events() {
                   src={String(ev.images)}
                   alt={ev.title}
                   loading="lazy"
-                  decoding="async"
                 />
               );
             } else {
@@ -121,7 +120,7 @@ function Events() {
 
             let badge: React.ReactNode = null;
             if (ev.recurring) {
-              badge = <span className="event-badge">⭐</span>;
+              badge = <span className="event-badge">✔️</span>;
             }
 
             return (
