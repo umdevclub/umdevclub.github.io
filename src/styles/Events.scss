@@ -184,6 +184,11 @@
     opacity: 0;
     animation: none;
     will-change: transform, box-shadow;
+    transform-style: preserve-3d;
+    backface-visibility: hidden;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    backface-visibility: hidden;
 
     &:hover {
       transform: translateY(-8px) rotate(-2.25deg) scale(1.01);
@@ -209,6 +214,9 @@
       object-fit: cover;
       background: #f0f0f000;
       transition: transform 0.35s ease;
+      transform: translateZ(0);
+      backface-visibility: hidden;
+      image-rendering: auto;
     }
 
     .event-title {
@@ -266,6 +274,16 @@
         animation: btn-sparkle 1s linear infinite;
         pointer-events: none;
       }
+    }
+
+    .event-title,
+    .event-blurb,
+    .term-tags,
+    .btn {
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      transform: translateZ(0);
+      backface-visibility: hidden;
     }
   }
 
@@ -472,16 +490,4 @@
       background: $dark-blue;
     }
   }
-
-  // @media (prefers-reduced-motion: reduce) {
-  //   .event-card,
-  //   .chip,
-  //   .term-title {
-  //     animation: none !important;
-  //     transition: none !important;
-  //   }
-  //   .btn:hover::after {
-  //     display: none !important;
-  //   }
-  // }
 }
