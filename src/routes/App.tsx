@@ -27,6 +27,7 @@ import LinkTree from "./LinkTree";
 import RootLayout from "./layouts/RootLayout";
 import PageNotFound from "./PageNotFound";
 import Events from "./Events";
+import { formRedirectLoader } from "./FormRedirect";
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -66,7 +67,8 @@ const router = createBrowserRouter(
         path="/devhacks/2025/gallery"
         element={<DevHacks2025ProjectGallery />}
       />
-      <Route path="*" element={<PageNotFound />} />
+      {/* always keep this route last, otherwise it will mess with the actual links above */}
+      <Route path="*" loader={formRedirectLoader} element={<PageNotFound />} />
     </Route>
   )
 );

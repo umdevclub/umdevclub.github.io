@@ -16,7 +16,7 @@ import PeopleList from "@/components/PeopleList";
 import {
   workshopImages,
   hackathonImages,
-  devchampsImages,
+  // devchampsImages,
 } from "@/resources/data/homepage-mission-images";
 import { Box, Modal } from "@mui/material";
 
@@ -172,11 +172,11 @@ function Home() {
             </div>
           </div>
 
-          <div className="mission-container">
+          {/* <div className="mission-container">
             <div className="mission-text-container">
               <span className="mission-heading">.devChamps</span>
               <p className="mission-content">
-                .devChamps is a new, official two to three month project-based
+                .devChamps is a two to three month project-based
                 programming battle featuring a new challenge every season. The
                 competition is designed to be approachable for beginners while
                 also providing a challenge for experienced programmers.
@@ -188,7 +188,7 @@ function Home() {
                 openFn={handleOpenModal}
               />
             </div>
-          </div>
+          </div> */}
         </div>
 
         <div id="join-club"></div>

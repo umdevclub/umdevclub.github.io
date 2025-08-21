@@ -31,7 +31,7 @@ function GithubUnix() {
 
   return (
     <div className="github-tab-container">
-      <h1>.DevHack's Guide to Git and Github</h1>
+      <h1>.devHack's Guide to Git and Github</h1>
       <Box display="flex">
         <aside
           className="github-table-of-contents"
