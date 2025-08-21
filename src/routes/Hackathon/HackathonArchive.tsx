@@ -5,10 +5,9 @@ import { Button } from "@mui/material";
 import HackathonFaq from "@/components/HackathonFaq";
 
 import codeOfConduct from "@/resources/data/code-of-conduct";
-import Pictures2024 from "@/resources/data/devHacksArchive/devHacks2024/pictures2024";
-import Sponsors2024 from "@/resources/data/devHacksArchive/devHacks2024/Sponsors2024";
-import Pictures2025 from "@/resources/data/devHacksArchive/devHacks2025/pictures2025";
-import Sponsors2025 from "@/resources/data/devHacksArchive/devHacks2025/Sponsors2025";
+
+import HackathonYearPictures from "@/resources/data/devHacksArchive/HackathonYearPictures";
+import HackathonYearSponsors from "@/resources/data/devHacksArchive/HackathonYearSponsors";
 import rules from "@/resources/data/rules";
 import { HackathonInfo } from "@/resources/data/types";
 
@@ -48,10 +47,10 @@ function HackathonArchive() {
       </div>
 
       <h1 className="hackathon-sponsors heading">Sponsors:</h1>
-      {data.year === "2024" ? <Sponsors2024 /> : <Sponsors2025 />}
+      <HackathonYearSponsors year={data.year} />
 
       <h1 className="hackathon-sponsors heading">Event Pictures</h1>
-      {data.year === "2024" ? <Pictures2024 /> : <Pictures2025 />}
+      <HackathonYearPictures year={data.year} />
 
       <div className="hackathon-rules container" id="rules">
         <h1 className="hackathon-rules heading">Rules:</h1>
