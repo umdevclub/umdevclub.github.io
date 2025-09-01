@@ -2,10 +2,10 @@ import "@/styles/Header.scss";
 import devclubLogo from "@/resources/images/devclub-logo.svg";
 import devclubLogoHorizontal from "@/resources/images/devclub-logo-horizontal.svg";
 
-import { useMemo, useEffect } from "react";
+import { useMemo } from "react";
 
 import { NavLink, useLocation } from "react-router-dom";
-import useToggle from "@/hooks/useToggle";
+import useToggle from "@/utilities/useToggle";
 
 import { createTheme, ThemeProvider } from "@mui/material";
 import Box from "@mui/material/Box";
