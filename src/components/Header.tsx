@@ -1,6 +1,6 @@
 import "@/styles/Header.scss";
 import devclubLogo from "@/resources/images/devclub-logo.svg";
-import devclubLogoHorizontal from "@/resources/images/devclub-logo-horizontal.svg";
+import devclubLogoHorizontal from "@/resources/images/devclub-logo-horizontal-2.svg";
 
 import { useMemo } from "react";
 
