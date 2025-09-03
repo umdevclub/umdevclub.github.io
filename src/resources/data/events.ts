@@ -4,7 +4,7 @@ import devgames from "@/resources/images/events/devgames.jpg";
 import battlesnake from "@/resources/images/events/battlesnakes.jpg";
 import generalmeeting from "@/resources/images/events/generalMeeting.jpg";
 import devhacks from "@/resources/images/events/devhacks.jpg";
-import AWTY from "@/resources/images/events/AWTY.png";
+import AWTY from "@/resources/images/events/AWTY.jpg";
 import rendevouz from "@/resources/images/events/Rendezvous .jpg";
 import examCram from "@/resources/images/events/ExamCram.jpg";
 import devchamps from "@/resources/images/events/devchamps.jpeg";

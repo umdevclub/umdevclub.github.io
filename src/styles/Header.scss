@@ -61,7 +61,7 @@ $desktop-navbar-height: 60px;
     border: none;
     box-shadow: none;
     border-radius: 0;
-    left: 20px;
+    left: 0px; //alligns with the left fully
     top: 0px;
     width: auto;
     height: 80px;
@@ -86,7 +86,7 @@ $desktop-navbar-height: 60px;
   @include mobile {
     img.horizontal {
       display: block;
-      height: 50%;
+      height: 100%;
       width: auto;
       transform: none;
     }
