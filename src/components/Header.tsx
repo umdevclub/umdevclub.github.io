@@ -1,6 +1,5 @@
 import "@/styles/Header.scss";
 import devclubLogo from "@/resources/images/devclub-logo.svg";
-import devclubLogoHorizontal from "@/resources/images/devclub-logo-horizontal-2.svg";
 
 import { useMemo } from "react";
 
@@ -100,7 +99,7 @@ function Header() {
           <div className="badge">
             <img src={devclubLogo} alt=".devClub logo" className="vertical" />
             <img
-              src={devclubLogoHorizontal}
+              src={devclubLogo}
               alt=".devClub logo (horizontal)"
               className="horizontal"
             />

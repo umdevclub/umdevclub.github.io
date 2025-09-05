@@ -51,48 +51,43 @@ $desktop-navbar-height: 60px;
     rgba(0, 0, 0, 0.8) 0px 6px 5px;
   contain: content;
 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
   @include tablet {
     width: 70px;
     height: 70px;
   }
 
   @include mobile {
-    background: none;
-    border: none;
-    box-shadow: none;
-    border-radius: 0;
-    left: 0px; //alligns with the left fully
-    top: 0px;
-    width: auto;
-    height: 80px;
-    display: flex;
-    align-items: center;
+    left: 20px;
+    top: 15px;
+    width: 70px;
+    height: 70px;
+    border: 8px double $theme-primary;
+    box-shadow: rgba($theme-primary, 0.8) 0 0 0 6px,
+      rgba(0, 0, 0, 0.8) 0px 6px 5px;
   }
 
-  /* The image inside the badge/logo container */
+  img.vertical {
+    height: 100%;
+    width: auto;
+    transform: translateY(-5%);
+  }
 
-  @include not-mobile {
-    img.vertical {
-      height: 100%;
-      width: auto;
-      transform: translateY(-5%);
-    }
-
-    img.horizontal {
-      display: none;
-    }
+  img.horizontal {
+    display: none;
+    height: 100%;
+    width: auto;
   }
 
   @include mobile {
-    img.horizontal {
-      display: block;
-      height: 100%;
-      width: auto;
-      transform: none;
-    }
-
     img.vertical {
       display: none;
+    }
+    img.horizontal {
+      display: block;
     }
   }
 }
