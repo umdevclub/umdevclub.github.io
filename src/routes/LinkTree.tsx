@@ -10,7 +10,7 @@ function LinkTree() {
       name: ".devClub",
       logo: devclubLogo,
       link: "https://linktr.ee/umdev",
-      desc: "An academic and networking club for computer science students at the University of Manitoba.",
+      desc: ".devClub is the University of Manitoba's developer club where students from all faculties can learn, code, and connect.",
       className: "dev-club",
     },
     {

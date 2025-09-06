@@ -1,5 +1,6 @@
 import { ITeam } from "./types";
 
+//Please limit social medias to 3 per exec
 const teamConfig: ITeam = {
   "2025": [
     {
@@ -18,6 +19,7 @@ const teamConfig: ITeam = {
       image: "/assets/team/2025/vice-president-fawaz.png",
       linkedin: "https://www.linkedin.com/in/fawaz-bin-saleem-425b921a1/",
       github: "https://github.com/FawazBinSaleem",
+      website: "https://fawazbinsaleem.com",
     },
     {
       firstName: "Mohamed",

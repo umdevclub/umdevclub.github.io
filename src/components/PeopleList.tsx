@@ -5,6 +5,7 @@ import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import LanguageIcon from "@mui/icons-material/Language";
 import InstagramIcon from "@mui/icons-material/Instagram";
+import discordLogo from "@/resources/images/discord-mark-white.svg";
 
 import Box from "@mui/material/Box";
 import CardContent from "@mui/material/CardContent";
@@ -45,7 +46,8 @@ function PersonCard({ personData }: { personData: ITeamMember }) {
         {(personData.linkedin ||
           personData.github ||
           personData.website ||
-          personData.instagram) && (
+          personData.instagram ||
+          personData.discord) && (
           <div className="social-icons">
             {personData.linkedin && (
               <a
@@ -85,6 +87,17 @@ function PersonCard({ personData }: { personData: ITeamMember }) {
                 aria-label="Instagram"
               >
                 <InstagramIcon />
+              </a>
+            )}
+            {personData.discord && (
+              <a
+                href={personData.discord}
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Discord"
+                className="discord-link"
+              >
+                <img src={discordLogo} alt="Discord" />
               </a>
             )}
           </div>
