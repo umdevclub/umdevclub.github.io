@@ -20,6 +20,18 @@
   }
 }
 
+.discord-link img {
+  width: 2rem;
+  height: 2rem;
+  filter: invert(1);
+  transition: filter 0.3s ease;
+}
+
+.discord-link:hover img {
+  filter: invert(32%) sepia(92%) saturate(4171%) hue-rotate(190deg)
+    brightness(95%) contrast(92%);
+}
+
 /* People */
 
 .peoples-grid {

@@ -206,11 +206,7 @@ function Home() {
               CSSA
             </a>
             &nbsp;and&nbsp;
-            <a
-              href="https://umwics.vercel.app/"
-              target="_blank"
-              rel="noreferrer"
-            >
+            <a href="http://umwics.ca/" target="_blank" rel="noreferrer">
               WICS
             </a>
             &nbsp;

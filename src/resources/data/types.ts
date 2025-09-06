@@ -34,6 +34,7 @@ export interface ITeamMember {
   github?: string;
   website?: string;
   instagram?: string;
+  discord?: string;
 }
 
 export interface ITeam {
