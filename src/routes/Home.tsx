@@ -85,9 +85,18 @@ function Home() {
         <source type="video/mp4" src={backgroundVideo} />
       </video>
 
-      <a href="#intro">
-        <img className="arrow-homepage" src={arrow} alt="" />
-      </a>
+      <img
+        className="arrow-homepage"
+        src={arrow}
+        alt=""
+        style={{ cursor: "pointer" }}
+        onClick={() => {
+          const element = document.getElementById("intro");
+          if (element) {
+            element.scrollIntoView({ behavior: "smooth" });
+          }
+        }}
+      />
       <div className="white-background" id="intro">
         <div className="info">
           <div className="aboutAndText">

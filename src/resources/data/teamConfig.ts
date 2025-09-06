@@ -36,6 +36,7 @@ const teamConfig: ITeam = {
       image: "/assets/team/2025/internal-simi.png",
       linkedin: "https://www.linkedin.com/in/similoluwa-adeniyi-a816ab307/",
       github: "https://github.com/Simi-jpg",
+      discord: "https://discord.gg/g9jBx8TC",
     },
     {
       firstName: "Ashley",
