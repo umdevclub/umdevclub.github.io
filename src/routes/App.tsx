@@ -27,7 +27,7 @@ import LinkTree from "./LinkTree";
 import RootLayout from "./layouts/RootLayout";
 import PageNotFound from "./PageNotFound";
 import Events from "./Events";
-// import { formRedirectLoader } from "./FormRedirect";
+import Merch from "./Merch";
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -48,6 +48,7 @@ const router = createBrowserRouter(
       <Route path="/link-tree" element={<LinkTree />} />
       <Route path="/devhacks" element={<Hackathon />} />
       <Route path="/events" element={<Events />} />
+      <Route path="/merch" element={<Merch />} />
       <Route
         path="/devhacks/:year"
         element={<HackathonArchive />}
