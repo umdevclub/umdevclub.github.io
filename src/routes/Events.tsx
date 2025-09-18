@@ -6,16 +6,126 @@ import "@/styles/Events.scss";
 const TERMS: Term[] = ["Summer", "Fall", "Winter"];
 
 function Events() {
-  const [active, setActive] = useState<Term | "All">("All");
+  const [active, setActive] = useState<Term | "All" | "Upcoming">("All");
   const isAll = active === "All";
 
   const matches = (evTerms: Term[] | undefined, term: Term | "All") => {
-    if (term === "All") return true;
-    if (!evTerms || evTerms.length === 0) return true;
+    if (term === "All") {
+      return true;
+    }
+    if (!evTerms || evTerms.length === 0) {
+      return true;
+    }
     return evTerms.includes(term as Term);
   };
 
+  // Build filtered events
   const filteredEvents = useMemo(() => {
+    if (active === "Upcoming") {
+      const expanded = EVENTS.flatMap((ev) => {
+        // Titles
+        let titles: string[];
+        if (Array.isArray(ev.upcomingTitle)) {
+          titles = ev.upcomingTitle;
+        } else if (ev.upcomingTitle) {
+          titles = [ev.upcomingTitle];
+        } else {
+          titles = [ev.title];
+        }
+
+        // Descriptions
+        let descriptions: string[];
+        if (Array.isArray(ev.upcomingDescription)) {
+          descriptions = ev.upcomingDescription;
+        } else if (ev.upcomingDescription) {
+          descriptions = [ev.upcomingDescription];
+        } else {
+          descriptions = [ev.description];
+        }
+
+        // Images
+        let images: string[];
+        if (Array.isArray(ev.upcomingImage)) {
+          images = ev.upcomingImage;
+        } else if (ev.upcomingImage) {
+          images = [ev.upcomingImage];
+        } else {
+          images = [ev.image];
+        }
+
+        // Dates
+        let dates: string[];
+        if (Array.isArray(ev.date)) {
+          dates = ev.date;
+        } else if (ev.date) {
+          dates = [ev.date];
+        } else {
+          dates = [];
+        }
+
+        // Locations
+        let locations: string[];
+        if (Array.isArray(ev.location)) {
+          locations = ev.location;
+        } else if (ev.location) {
+          locations = [ev.location];
+        } else {
+          locations = [];
+        }
+
+        // RSVPs
+        let rsvps: string[];
+        if (Array.isArray(ev.rsvp)) {
+          rsvps = ev.rsvp;
+        } else if (ev.rsvp) {
+          rsvps = [ev.rsvp];
+        } else {
+          rsvps = [];
+        }
+
+        const maxLen = Math.max(
+          titles.length,
+          descriptions.length,
+          images.length,
+          dates.length,
+          locations.length,
+          rsvps.length
+        );
+
+        return Array.from({ length: maxLen }).map((_, i) => {
+          let title = titles[i] || titles[0];
+          let description = descriptions[i] || descriptions[0];
+          let image = images[i] || images[0];
+          let date: string | undefined = dates[i];
+          let location: string | undefined = locations[i];
+          let rsvp: string | undefined = rsvps[i];
+
+          return {
+            ...ev,
+            title,
+            description,
+            image,
+            date,
+            location,
+            rsvp,
+          };
+        });
+      });
+
+      const now = new Date();
+      const upcomingOnly = expanded.filter((ev) => {
+        if (!ev.date) return false;
+        return new Date(ev.date) > now;
+      });
+
+      return upcomingOnly.sort((a, b) => {
+        if (a.date && b.date) {
+          return new Date(a.date).getTime() - new Date(b.date).getTime();
+        }
+        return 0;
+      });
+    }
+
     return EVENTS.filter((ev) =>
       matches(ev.term as Term[] | undefined, active)
     );
@@ -45,14 +155,19 @@ function Events() {
   };
 
   const headingText = () => {
-    if (isAll) return "Events";
+    if (active === "Upcoming") {
+      return "Upcoming Events";
+    }
+    if (isAll) {
+      return "Events";
+    }
     return active as Term;
   };
 
   return (
     <div className="events-page container">
       <div className="filter-bar">
-        {(["All", ...TERMS] as const).map((term) => {
+        {(["Upcoming", "All", ...TERMS] as const).map((term) => {
           const isActive = active === term;
 
           let chipClass = "chip";
@@ -79,16 +194,16 @@ function Events() {
         </header>
 
         <div className="events-grid">
-          {filteredEvents.map((ev) => {
+          {filteredEvents.map((ev, idx) => {
             const terms = (ev.term as Term[] | undefined) ?? [];
 
             let media: React.ReactNode;
-            if (ev.images) {
+            if (ev.image) {
               media = (
                 <img
                   className="event-thumb"
-                  src={String(ev.images)}
-                  alt={ev.title}
+                  src={String(ev.image)}
+                  alt={String(ev.title)}
                   loading="lazy"
                 />
               );
@@ -96,41 +211,57 @@ function Events() {
               media = <div className="event-thumb event-thumb--placeholder" />;
             }
 
-            let termTags: React.ReactNode = null;
-            if (terms.length > 0) {
-              termTags = (
-                <div className="term-tags" aria-label="Occurs in terms">
-                  {terms.map((t) => (
-                    <span key={t} className={tagClass(t)}>
-                      {t}
-                    </span>
-                  ))}
-                </div>
-              );
-            }
-
-            let detailsBtn: React.ReactNode = null;
-            if (ev.path) {
-              detailsBtn = (
-                <a className="btn" href={ev.path}>
-                  Details
-                </a>
-              );
-            }
-
-            let badge: React.ReactNode = null;
-            if (ev.recurring) {
-              badge = <span className="event-badge">✔️</span>;
-            }
-
             return (
-              <article key={ev.id} className="event-card">
-                {badge}
+              <article key={`${ev.id}-${idx}`} className="event-card">
+                {active !== "Upcoming" && ev.recurring && (
+                  <span className="event-badge">✔️</span>
+                )}
                 {media}
+
                 <h3 className="event-title">{ev.title}</h3>
-                {termTags}
+
+                {active !== "Upcoming" && terms.length > 0 && (
+                  <div className="term-tags" aria-label="Occurs in terms">
+                    {terms.map((t) => (
+                      <span key={t} className={tagClass(t)}>
+                        {t}
+                      </span>
+                    ))}
+                  </div>
+                )}
+
+                {active === "Upcoming" &&
+                  ev.date &&
+                  typeof ev.date === "string" && (
+                    <div className="event-meta">
+                      <p>
+                        📍 {ev.location ? ev.location : "TBA"} <br />
+                        🗓 {new Date(ev.date).toLocaleDateString()}{" "}
+                        {new Date(ev.date).toLocaleTimeString([], {
+                          hour: "2-digit",
+                          minute: "2-digit",
+                        })}
+                      </p>
+                      {ev.rsvp && typeof ev.rsvp === "string" && (
+                        <a
+                          href={ev.rsvp}
+                          target="_blank"
+                          rel="noopener"
+                          className="btn"
+                        >
+                          RSVP
+                        </a>
+                      )}
+                    </div>
+                  )}
+
                 <p className="event-blurb">{ev.description}</p>
-                {detailsBtn}
+
+                {active !== "Upcoming" && ev.path && (
+                  <a className="btn" href={ev.path}>
+                    Details
+                  </a>
+                )}
               </article>
             );
           })}

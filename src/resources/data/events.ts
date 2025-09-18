@@ -10,6 +10,9 @@ import examCram from "@/resources/images/events/ExamCram.jpg";
 import devchamps from "@/resources/images/events/devchamps.jpeg";
 import labtours from "@/resources/images/events/Labtours.jpg";
 import codingKickoff from "@/resources/images/events/Coding Kickoff.png";
+import codingKickoffUpcoming from "@/resources/images/events/CodingKickoffUpcoming.png";
+import devgames1 from "@/resources/images/events/devgames1.png";
+import devgames2 from "@/resources/images/events/devgames2.png";
 
 export { TERMS_ORDER } from "./types";
 
@@ -20,7 +23,7 @@ export const EVENTS: EventData[] = [
     description:
       "Each term kicks off with a general meeting where we update students on .devClub's vision, goals, and planned events.",
     term: ["Summer", "Fall", "Winter"],
-    images: generalmeeting,
+    image: generalmeeting,
     recurring: true,
   },
   {
@@ -29,7 +32,7 @@ export const EVENTS: EventData[] = [
     description:
       "Summer means a .devClub leisure trip: a chance to decompress after exams. We've gone to Gimli, Kenora, and, most recently, Pinawa.",
     term: ["Summer"],
-    images: AWTY,
+    image: AWTY,
     recurring: true,
   },
   {
@@ -38,8 +41,12 @@ export const EVENTS: EventData[] = [
     description:
       "Kickstart your coding journey with a hands-on workshop! Learn the basics, set up your environment, and explore tech career paths while meeting fellow students.",
     term: ["Fall"],
-    images: codingKickoff,
+    image: codingKickoff,
     recurring: true,
+    date: "2025-09-18T17:00:00",
+    location: "EITC E2-125",
+    rsvp: "https://docs.google.com/forms/d/e/1FAIpQLSfSVtcqE3yz4dnmpBs7bLpXAj7nZ2VNsDoeZnFIO5IKo1hX7g/viewform",
+    upcomingImage: codingKickoffUpcoming,
   },
   {
     id: "workshops",
@@ -47,46 +54,51 @@ export const EVENTS: EventData[] = [
     description:
       ".devClub runs workshops every semester on all kinds of cool topics! We've played around with GitHub, built games in Unity, designed in Figma, hosted résumés online, and plenty more!",
     term: ["Fall", "Winter"],
-    images: workshop,
+    image: workshop,
     recurring: true,
   },
-
   {
     id: "rendezvous",
     title: "renDEVous",
     description:
       "Every month we host renDEVous, a fun hangout where you can game, present cool projects, or just kick back with the squad.",
     term: ["Summer", "Fall", "Winter"],
-    images: rendevouz,
+    image: rendevouz,
     recurring: true,
   },
   {
     id: "devgames",
-    title: ".devGames",
+    title: "devGames",
     description:
-      "Our new game development workshop series runs every month, offering students a chance to learn the fundamentals of game design and development step by step. ",
+      "Our new game development workshop series runs every month, offering students a chance to learn the fundamentals of game design and development step by step.",
     term: ["Fall"],
-    images: devgames,
+    image: devgames,
     recurring: true,
+    upcomingTitle: [".devGames Level 1", ".devGames Level 2"],
+    upcomingDescription: [
+      "Level 1: Learn the basics of game development in Unity. We will be building a simple 2D game from scratch.",
+      "Level 2: Join us for this special workshop in collaboration with UBISOFT and CSSA to learn about the fundamentals of Game Design.",
+    ],
+    upcomingImage: [devgames1, devgames2],
+    date: ["2025-09-25T18:00:00", "2025-10-01T18:00:00"],
+    location: ["EITC E2-110", "EITC E3-270"],
   },
-
   {
     id: "exam-crams",
     title: "Exam Crams",
     description:
       "Need a boost before finals? Our Fall Exam Crams offer guided study support for first and second year courses so you can prep smarter, not harder.",
     term: ["Fall"],
-    images: examCram,
+    image: examCram,
     recurring: true,
   },
-
   {
     id: "devhacks",
     title: ".devHacks",
     description:
       ".devHacks is an annual hackathon hosted by .devClub for students to showcase their creativity and endurance over a period of 24 hours of fun filled development!",
     term: ["Winter"],
-    images: devhacks,
+    image: devhacks,
     path: "/devhacks",
     recurring: true,
   },
@@ -96,24 +108,23 @@ export const EVENTS: EventData[] = [
     description:
       "Take a peek inside CS labs, meet profs, and see cool research in action!",
     term: ["Fall"],
-    images: labtours,
+    image: labtours,
   },
   {
     id: "devchamps",
-    title: ".devChamps ",
+    title: ".devChamps",
     description:
       ".devChamps is a two to three month project-based programming battle featuring a new challenge every season.",
     term: ["Fall", "Winter"],
-    images: devchamps,
+    image: devchamps,
     path: "/devchamps",
   },
-
   {
     id: "battlesnake",
     title: "Battle Snake",
     description:
       "Code your own snake, outsmart your friends, and see who slithers to the top!",
     term: ["Fall"],
-    images: battlesnake,
+    image: battlesnake,
   },
 ];
