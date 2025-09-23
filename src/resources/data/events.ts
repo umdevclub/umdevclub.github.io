@@ -43,10 +43,6 @@ export const EVENTS: EventData[] = [
     term: ["Fall"],
     image: codingKickoff,
     recurring: true,
-    date: "2025-09-18T17:00:00",
-    location: "EITC E2-125",
-    rsvp: "https://docs.google.com/forms/d/e/1FAIpQLSfSVtcqE3yz4dnmpBs7bLpXAj7nZ2VNsDoeZnFIO5IKo1hX7g/viewform",
-    upcomingImage: codingKickoffUpcoming,
   },
   {
     id: "workshops",
@@ -76,12 +72,13 @@ export const EVENTS: EventData[] = [
     recurring: true,
     upcomingTitle: [".devGames Level 1", ".devGames Level 2"],
     upcomingDescription: [
-      "Level 1: Learn the basics of game development in Unity. We will be building a simple 2D game from scratch.",
+      "Level 1: Learn the basics of game development in Unity.",
       "Level 2: Join us for this special workshop in collaboration with UBISOFT and CSSA to learn about the fundamentals of Game Design.",
     ],
     upcomingImage: [devgames1, devgames2],
-    date: ["2025-09-25T18:00:00", "2025-10-01T18:00:00"],
-    location: ["EITC E2-110", "EITC E3-270"],
+    date: ["2025-09-25T17:00:00", "2025-10-01T17:00:00"],
+    location: ["EITC E2-155", "EITC E3-270"],
+    rsvp: "https://forms.gle/h7eHKcXw2wSrWCpUA",
   },
   {
     id: "exam-crams",

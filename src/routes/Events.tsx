@@ -6,7 +6,7 @@ import "@/styles/Events.scss";
 const TERMS: Term[] = ["Summer", "Fall", "Winter"];
 
 function Events() {
-  const [active, setActive] = useState<Term | "All" | "Upcoming">("All");
+  const [active, setActive] = useState<Term | "All" | "Upcoming">("Upcoming");
   const isAll = active === "All";
 
   const matches = (evTerms: Term[] | undefined, term: Term | "All") => {
