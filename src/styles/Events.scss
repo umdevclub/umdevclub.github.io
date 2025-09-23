@@ -160,7 +160,9 @@
 
     .events-grid {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      grid-template-columns: repeat(auto-fill, minmax(280px, 350px));
+      justify-content: center;
+
       gap: 2rem;
       align-items: stretch;
 
@@ -191,21 +193,8 @@
     backface-visibility: hidden;
 
     &:hover {
-      transform: translateY(-8px) rotate(-2.25deg) scale(1.01);
+      transform: translateY(-8px) scale(1.02);
       box-shadow: 0 12px 26px rgba(0, 0, 0, 0.18);
-    }
-
-    &:nth-child(even):hover {
-      transform: translateY(-8px) rotate(2.25deg) scale(1.01);
-    }
-    &:nth-child(3n):hover {
-      transform: translateY(-8px) rotate(-1.25deg) scale(1.01);
-    }
-    &:nth-child(4n):hover {
-      transform: translateY(-8px) rotate(1.5deg) scale(1.01);
-    }
-    &:nth-child(5n):hover {
-      transform: translateY(-8px) rotate(-3deg) scale(1.01);
     }
 
     .event-thumb {
