@@ -10,9 +10,8 @@ import examCram from "@/resources/images/events/ExamCram.jpg";
 import devchamps from "@/resources/images/events/devchamps.jpeg";
 import labtours from "@/resources/images/events/Labtours.jpg";
 import codingKickoff from "@/resources/images/events/Coding Kickoff.png";
-import codingKickoffUpcoming from "@/resources/images/events/CodingKickoffUpcoming.png";
-import devgames1 from "@/resources/images/events/devgames1.png";
-import devgames2 from "@/resources/images/events/devgames2.png";
+import devgames3 from "@/resources/images/events/devgames 3.png";
+import google from "@/resources/images/events/resumeworkshop.png";
 
 export { TERMS_ORDER } from "./types";
 
@@ -52,6 +51,14 @@ export const EVENTS: EventData[] = [
     term: ["Fall", "Winter"],
     image: workshop,
     recurring: true,
+    upcomingTitle: "Resume Review with Google Talents",
+    upcomingDescription: [
+      "Join an industry panel featuring Google engineers as they review real student resumes live and share tips on what stands out to recruiters. The session will also include a Q&A and networking opportunities with professionals from the tech industry.",
+    ],
+    upcomingImage: google,
+    date: "2025-11-18T16:00:00",
+    location: "EITC E3-270",
+    rsvp: "https://docs.google.com/forms/d/e/1FAIpQLSeQ4ElP6kT1S7eUlr147fXRVJluoefPmufUzXmG1VYtyCxs4A/viewform?usp=send_form",
   },
   {
     id: "rendezvous",
@@ -70,15 +77,14 @@ export const EVENTS: EventData[] = [
     term: ["Fall"],
     image: devgames,
     recurring: true,
-    upcomingTitle: [".devGames Level 1", ".devGames Level 2"],
+    upcomingTitle: ".devGames Level 3",
     upcomingDescription: [
-      "Level 1: Learn the basics of game development in Unity.",
-      "Level 2: Join us for this special workshop in collaboration with UBISOFT and CSSA to learn about the fundamentals of Game Design.",
+      "In collaboration with UMSU CARES, learn how to make your games more accessible for all players. We'll explore features like Controller Support and Custom Keybindings, and discuss best practices for inclusive game design!",
     ],
-    upcomingImage: [devgames1, devgames2],
-    date: ["2025-09-25T17:00:00", "2025-10-01T17:00:00"],
-    location: ["EITC E2-155", "EITC E3-270"],
-    rsvp: "https://forms.gle/h7eHKcXw2wSrWCpUA",
+    upcomingImage: devgames3,
+    date: "2025-11-20T17:00:00",
+    location: "EITC E2-110",
+    rsvp: "https://forms.gle/37PJQLfcggXBn6eZ9",
   },
   {
     id: "exam-crams",
