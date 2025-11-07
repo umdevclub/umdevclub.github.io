@@ -1,54 +1,91 @@
 .sponsors-container {
   display: flex;
+  font-family: "IBM Plex Mono", monospace;
   flex-direction: column;
   align-items: center;
   text-align: center;
-  gap: 20px;
+  gap: 28px;
   max-width: 100vh;
 }
 
-.sponsors-row {
+.tier {
+  width: 100%;
   display: flex;
-  justify-content: center;
-  gap: 15px;
+  flex-direction: column;
   align-items: center;
+  gap: 18px;
 }
 
-.gold-sponsor {
+.tier-title {
+  font-family: "IBM Plex Mono", monospace;
+  font-size: clamp(1.1rem, 0.8rem + 1vw, 1.5rem);
+  letter-spacing: 0.06em;
+  // text-transform: uppercase;
+  opacity: 0.9;
+}
+
+.tier-logos {
   display: flex;
   justify-content: center;
   align-items: center;
+  gap: 16px;
+  flex-wrap: wrap;
 }
 
 .sponsor img {
-  max-width: 150px;
   height: auto;
   object-fit: contain;
 }
 
-.gold-sponsor img {
-  max-width: 500px;
+/* tier-specific sizing */
+.tier--platinum .sponsor img {
+  max-width: 450px;
+}
+.tier--gold .sponsor img {
+  max-width: 320px;
+}
+.tier--silver .sponsor img {
+  max-width: 250px;
+}
+.tier--bronze .sponsor img {
+  max-width: 160px;
+}
+.tier--inkind .sponsor img {
+  max-width: 130px;
 }
 
 @media (max-width: 1024px) {
-  .sponsors-row {
-    flex-wrap: wrap;
+  .tier--platinum .sponsor img {
+    max-width: 420px;
   }
-  .sponsor img {
+  .tier--gold .sponsor img {
+    max-width: 360px;
+  }
+  .tier--silver .sponsor img {
+    max-width: 150px;
+  }
+  .tier--bronze .sponsor img {
     max-width: 120px;
   }
-  .gold-sponsor img {
-    max-width: 450px;
+  .tier--inkind .sponsor img {
+    max-width: 120px;
   }
 }
+
 @media (max-width: 768px) {
-  .sponsors-row {
-    flex-wrap: wrap;
+  .tier--platinum .sponsor img {
+    max-width: 320px;
   }
-  .sponsor img {
+  .tier--gold .sponsor img {
+    max-width: 260px;
+  }
+  .tier--silver .sponsor img {
+    max-width: 120px;
+  }
+  .tier--bronze .sponsor img {
     max-width: 100px;
   }
-  .gold-sponsor img {
-    max-width: 300px;
+  .tier--inkind .sponsor img {
+    max-width: 100px;
   }
 }

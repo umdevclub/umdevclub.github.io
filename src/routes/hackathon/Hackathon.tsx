@@ -14,6 +14,7 @@ import HorizontalScroller from "@/components/HorizontalScroller";
 import GalleryScroller from "@/components/GalleryScroller";
 import { picturesGeneralImages } from "@/resources/data/devHacksArchive/PicturesGeneral";
 import { HackathonArchiveCards } from "@/routes/hackathon/HackathonArchiveCards";
+import HackathonYearSponsors from "@/resources/data/devHacksArchive/HackathonYearSponsors";
 
 function Hackathon() {
   // const btnStyles = {
@@ -158,8 +159,8 @@ function Hackathon() {
         </div>
       </div>
 
-      {/* <hi className="hackathon-sponsors heading">Our Sponsors:</hi>
-      <Sponsors /> */}
+      {/* <h1 className="hackathon-sponsors heading">Our Sponsors</h1>
+      <HackathonYearSponsors year={2026} /> */}
 
       <h1 className="hackathon-sponsors heading">Event Pictures</h1>
       <GalleryScroller images={picturesGeneralImages} />
