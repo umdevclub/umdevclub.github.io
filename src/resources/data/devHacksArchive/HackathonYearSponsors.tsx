@@ -1,6 +1,12 @@
 import "@/styles/devHacksSponsors.scss";
 import React from "react";
 
+//2026 logos
+import Ubisoft2026 from "@/resources/images/devhacks/2025/devHacksSponsors/Ubisoft.jpg";
+import Niche2026 from "@/resources/images/devhacks/2025/devHacksSponsors/niche.png";
+import G3_2026 from "@/resources/images/devhacks/2025/devHacksSponsors/G3.png";
+import Pollard2026 from "@/resources/images/devhacks/2025/devHacksSponsors/pollard.jpg";
+
 // 2025 logos
 import Ubisoft from "@/resources/images/devhacks/2025/devHacksSponsors/Ubisoft.jpg";
 import Niche2025 from "@/resources/images/devhacks/2025/devHacksSponsors/niche.png";
@@ -28,22 +34,46 @@ import Ubisoft2023 from "@/resources/images/devhacks/2023/devHacksSponsors/Ubiso
 import GreenUmbrella from "@/resources/images/devhacks/2023/devHacksSponsors/greenUmbrella.webp";
 import PayWorks from "@/resources/images/devhacks/2023/devHacksSponsors/payWorks.jpg";
 
-type HackathonYearSponsorsProps = {
-  year: string | number;
+type HackathonYearSponsorsProps = { year: string | number };
+
+type Tier = "platinum" | "gold" | "silver" | "bronze" | "inkind";
+type Sponsor = { name: string; logo: string };
+type YearSponsors = Partial<Record<Tier, Sponsor[]>>;
+
+/** Optional: nicer titles per tier */
+const TIER_LABEL: Record<Tier, string> = {
+  platinum: "Platinum Sponsor",
+  gold: "Gold Sponsor",
+  silver: "Silver Sponsors",
+  bronze: "Bronze Sponsors",
+  inkind: "In-Kind Sponsors",
 };
+
+/** Render order */
+const TIER_ORDER: Tier[] = ["platinum", "gold", "silver", "bronze", "inkind"];
 
 const HackathonYearSponsors: React.FC<HackathonYearSponsorsProps> = ({
   year,
 }) => {
-  const sponsors: Record<
-    string,
-    {
-      gold: { name: string; logo: string };
-      silver: { name: string; logo: string }[];
-    }
-  > = {
+  const sponsorsByYear: Record<string, YearSponsors> = {
+    /* -------------------- 2026 -------------------- */
+    "2026": {
+      // platinum: [{ name: "Ubisoft", logo: Ubisoft2026 }],
+      gold: [{ name: "G3", logo: G3_2026 }],
+      silver: [
+        { name: "Niche", logo: Niche2026 },
+        { name: "Pollard", logo: Pollard2026 },
+      ],
+      //  inkind: [
+      //   {
+      //     name:"UMSU CARES", logo:umsuCares,
+      //   }
+      //  ],
+    },
+
+    /* -------------------- 2025 -------------------- */
     "2025": {
-      gold: { name: "Glitch Secure", logo: GlitchSecure },
+      gold: [{ name: "Glitch Secure", logo: GlitchSecure }],
       silver: [
         { name: "Varian", logo: Varian },
         { name: "Ubisoft", logo: Ubisoft },
@@ -56,8 +86,10 @@ const HackathonYearSponsors: React.FC<HackathonYearSponsorsProps> = ({
         { name: "FOS", logo: FOS },
       ],
     },
+
+    /* -------------------- 2024 -------------------- */
     "2024": {
-      gold: { name: "Priceline", logo: Priceline2024 },
+      gold: [{ name: "Priceline", logo: Priceline2024 }],
       silver: [
         { name: "Niche", logo: Niche2024 },
         { name: "G3", logo: G3_2024 },
@@ -67,8 +99,10 @@ const HackathonYearSponsors: React.FC<HackathonYearSponsorsProps> = ({
         { name: "KarveIT", logo: KarveIT },
       ],
     },
+
+    /* -------------------- 2023 -------------------- */
     "2023": {
-      gold: { name: "Neo", logo: Neo },
+      gold: [{ name: "Neo", logo: Neo }],
       silver: [
         { name: "Payworks", logo: PayWorks },
         { name: "Ubisoft", logo: Ubisoft2023 },
@@ -77,30 +111,30 @@ const HackathonYearSponsors: React.FC<HackathonYearSponsorsProps> = ({
     },
   };
 
-  const sponsorData = sponsors[String(year)];
-  if (!sponsorData) return null;
+  const data = sponsorsByYear[String(year)];
+  if (!data) return null;
 
   return (
     <div className="sponsors-container">
-      {/* Gold sponsor */}
-      <div className="gold-sponsor">
-        <img src={sponsorData.gold.logo} alt={sponsorData.gold.name} />
-      </div>
+      {TIER_ORDER.map((tier) => {
+        const list = data[tier];
+        if (!list || list.length === 0) return null;
 
-      {/* Silver sponsors in rows of 3 */}
-      {Array.from({ length: Math.ceil(sponsorData.silver.length / 3) }).map(
-        (_, rowIndex) => (
-          <div key={rowIndex} className="sponsors-row">
-            {sponsorData.silver
-              .slice(rowIndex * 3, rowIndex * 3 + 3)
-              .map((sponsor, index) => (
-                <div key={index} className="sponsor">
-                  <img src={sponsor.logo} alt={sponsor.name} />
+        return (
+          <div className={`tier tier--${tier}`} key={tier}>
+            <h2 className="tier-title">
+              {TIER_LABEL[tier] ?? tier[0].toUpperCase() + tier.slice(1)}
+            </h2>
+            <div className="tier-logos">
+              {list.map((s, i) => (
+                <div key={i} className="sponsor">
+                  <img src={s.logo} alt={s.name} loading="lazy" />
                 </div>
               ))}
+            </div>
           </div>
-        )
-      )}
+        );
+      })}
     </div>
   );
 };
