@@ -2,13 +2,13 @@ import React from "react";
 import { useLoaderData, useNavigate } from "react-router-dom";
 import { Button } from "@mui/material";
 
-import HackathonFaq from "@/components/HackathonFaq";
+// import HackathonFaq from "@/components/HackathonFaq";
 
-import codeOfConduct from "@/resources/data/code-of-conduct";
+// import codeOfConduct from "@/resources/data/code-of-conduct";
 
 import HackathonYearPictures from "@/resources/data/devHacksArchive/HackathonYearPictures";
 import HackathonYearSponsors from "@/resources/data/devHacksArchive/HackathonYearSponsors";
-import rules from "@/resources/data/rules";
+// import rules from "@/resources/data/rules";
 import { HackathonInfo } from "@/resources/data/types";
 
 function HackathonArchive() {
@@ -46,13 +46,13 @@ function HackathonArchive() {
         </div>
       </div>
 
-      <h1 className="hackathon-sponsors heading">Sponsors:</h1>
+      <h1 className="hackathon-sponsors heading">Sponsors</h1>
       <HackathonYearSponsors year={data.year} />
 
       <h1 className="hackathon-sponsors heading">Event Pictures</h1>
       <HackathonYearPictures year={data.year} />
 
-      <div className="hackathon-rules container" id="rules">
+      {/* <div className="hackathon-rules container" id="rules">
         <h1 className="hackathon-rules heading">Rules:</h1>
         <div className="hackathon-rules text-container">
           <p>
@@ -77,9 +77,9 @@ function HackathonArchive() {
             ))}
           </ol>
         </div>
-      </div>
+      </div> */}
 
-      <div className="hackathon-code-conduct container" id="code-of-conduct">
+      {/* <div className="hackathon-code-conduct container" id="code-of-conduct">
         <h1 className="hackathon-code-conduct heading">Code Of Conduct:</h1>
         <div className="hackathon-code-conduct text-container">
           <p>
@@ -105,11 +105,11 @@ function HackathonArchive() {
             ))}
           </ol>
         </div>
-      </div>
+      </div> */}
 
-      <div className="container">
+      {/* <div className="container">
         <HackathonFaq />
-      </div>
+      </div> */}
     </div>
   );
 }
