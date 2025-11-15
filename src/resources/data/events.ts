@@ -58,7 +58,6 @@ export const EVENTS: EventData[] = [
     upcomingImage: google,
     date: "2025-11-18T16:00:00",
     location: "EITC E3-270",
-    rsvp: "https://docs.google.com/forms/d/e/1FAIpQLSeQ4ElP6kT1S7eUlr147fXRVJluoefPmufUzXmG1VYtyCxs4A/viewform?usp=send_form",
   },
   {
     id: "rendezvous",

@@ -214,7 +214,7 @@ function Events() {
             return (
               <article key={`${ev.id}-${idx}`} className="event-card">
                 {active !== "Upcoming" && ev.recurring && (
-                  <span className="event-badge">✔️</span>
+                  <span className="event-badge">Recurring</span>
                 )}
                 {media}
 

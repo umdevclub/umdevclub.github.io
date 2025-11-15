@@ -40,7 +40,6 @@ type Tier = "platinum" | "gold" | "silver" | "bronze" | "inkind";
 type Sponsor = { name: string; logo: string };
 type YearSponsors = Partial<Record<Tier, Sponsor[]>>;
 
-/** Optional: nicer titles per tier */
 const TIER_LABEL: Record<Tier, string> = {
   platinum: "Platinum Sponsor",
   gold: "Gold Sponsor",
@@ -49,29 +48,28 @@ const TIER_LABEL: Record<Tier, string> = {
   inkind: "In-Kind Sponsors",
 };
 
-/** Render order */
 const TIER_ORDER: Tier[] = ["platinum", "gold", "silver", "bronze", "inkind"];
 
 const HackathonYearSponsors: React.FC<HackathonYearSponsorsProps> = ({
   year,
 }) => {
   const sponsorsByYear: Record<string, YearSponsors> = {
-    /* -------------------- 2026 -------------------- */
     "2026": {
-      // platinum: [{ name: "Ubisoft", logo: Ubisoft2026 }],
+      platinum: [{ name: "QDoc Virtual", logo: Ubisoft2026 }],
       gold: [{ name: "G3", logo: G3_2026 }],
       silver: [
         { name: "Niche", logo: Niche2026 },
         { name: "Pollard", logo: Pollard2026 },
+        { name: "Ubisoft", logo: Ubisoft2026 },
       ],
-      //  inkind: [
-      //   {
-      //     name:"UMSU CARES", logo:umsuCares,
-      //   }
-      //  ],
+      inkind: [
+        {
+          name: "UMSU CARES",
+          logo: umsuCares,
+        },
+      ],
     },
 
-    /* -------------------- 2025 -------------------- */
     "2025": {
       gold: [{ name: "Glitch Secure", logo: GlitchSecure }],
       silver: [
@@ -81,13 +79,14 @@ const HackathonYearSponsors: React.FC<HackathonYearSponsorsProps> = ({
         { name: "Priceline", logo: Priceline2025 },
         { name: "G3", logo: G3_2025 },
         { name: "Pollard", logo: Pollard2025 },
+      ],
+      inkind: [
         { name: "SSA", logo: SSA },
         { name: "umsuCares", logo: umsuCares },
         { name: "FOS", logo: FOS },
       ],
     },
 
-    /* -------------------- 2024 -------------------- */
     "2024": {
       gold: [{ name: "Priceline", logo: Priceline2024 }],
       silver: [
@@ -100,7 +99,6 @@ const HackathonYearSponsors: React.FC<HackathonYearSponsorsProps> = ({
       ],
     },
 
-    /* -------------------- 2023 -------------------- */
     "2023": {
       gold: [{ name: "Neo", logo: Neo }],
       silver: [
