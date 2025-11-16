@@ -243,6 +243,7 @@
       transition: background 0.2s ease;
       position: relative;
       overflow: hidden;
+      text-decoration: none;
 
       &:hover {
         animation: btnColorCycle 3s linear infinite;
@@ -477,6 +478,72 @@
     }
     100% {
       background: $dark-blue;
+    }
+  }
+
+  .events-empty {
+    max-width: 600px;
+    margin: 2em auto 0;
+    text-align: center;
+    padding: 2em 1.5em;
+    border-radius: 16px;
+    background: #f8f8f8;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.06);
+  }
+
+  .events-empty-text {
+    font-size: 15px;
+    line-height: 1.6;
+    margin-bottom: 1.5em;
+    color: #333;
+  }
+
+  .events-empty-actions {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.75rem;
+
+    .btn-secondary {
+      background: #fff;
+      color: #000;
+      border: 1px solid #000;
+    }
+  }
+
+  .events-empty .btn {
+    padding: 0.5em 1.2em;
+    border-radius: 6px;
+    font-weight: 500;
+    font-size: 14px;
+    background: #000;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: background 0.2s ease;
+    position: relative;
+    overflow: hidden;
+    text-decoration: none;
+
+    &:hover {
+      animation: btnColorCycle 3s linear infinite;
+    }
+
+    &:hover::after {
+      content: "";
+      position: absolute;
+      top: -50%;
+      left: -50%;
+      width: 200%;
+      height: 200%;
+      background: radial-gradient(
+        circle,
+        rgba(255, 255, 255, 0.6) 10%,
+        transparent 10.01%
+      );
+      background-size: 10px 10px;
+      animation: btn-sparkle 1s linear infinite;
+      pointer-events: none;
     }
   }
 }
