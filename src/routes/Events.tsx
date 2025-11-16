@@ -193,79 +193,140 @@ function Events() {
           <h2 className="term-title">{headingText()}</h2>
         </header>
 
-        <div className="events-grid">
-          {filteredEvents.map((ev, idx) => {
-            const terms = (ev.term as Term[] | undefined) ?? [];
+        {filteredEvents.length === 0 ? (
+          <div className="events-empty">
+            {active === "Upcoming" ? (
+              <>
+                <p className="events-empty-text">
+                  <strong>There are no upcoming events.</strong>
+                  <br />
+                  That could mean two things:
+                </p>
 
-            let media: React.ReactNode;
-            if (ev.image) {
-              media = (
-                <img
-                  className="event-thumb"
-                  src={String(ev.image)}
-                  alt={String(ev.title)}
-                  loading="lazy"
-                />
-              );
-            } else {
-              media = <div className="event-thumb event-thumb--placeholder" />;
-            }
+                <ul className="events-empty-list">
+                  <li>
+                    <strong>There genuinely aren't any events planned</strong>
+                    …<br />
+                    but let's be honest, that's basically impossible.
+                  </li>
 
-            return (
-              <article key={`${ev.id}-${idx}`} className="event-card">
-                {active !== "Upcoming" && ev.recurring && (
-                  <span className="event-badge">Recurring</span>
-                )}
-                {media}
+                  <li>
+                    <strong>
+                      Spider-Man is currently busy saving the city
+                    </strong>{" "}
+                    <br />
+                    and hasn't updated the website yet.
+                  </li>
+                </ul>
 
-                <h3 className="event-title">{ev.title}</h3>
+                <p className="events-empty-text">
+                  While he swings back, here's what you can do to stay in the
+                  loop:
+                </p>
 
-                {active !== "Upcoming" && terms.length > 0 && (
-                  <div className="term-tags" aria-label="Occurs in terms">
-                    {terms.map((t) => (
-                      <span key={t} className={tagClass(t)}>
-                        {t}
-                      </span>
-                    ))}
-                  </div>
-                )}
+                <div className="events-empty-actions">
+                  <a
+                    href="https://instagram.com/umdevclub"
+                    target="_blank"
+                    rel="noopener"
+                    className="btn "
+                  >
+                    Follow us on Instagram
+                  </a>
 
-                {active === "Upcoming" &&
-                  ev.date &&
-                  typeof ev.date === "string" && (
-                    <div className="event-meta">
-                      <p>
-                        📍 {ev.location ? ev.location : "TBA"} <br />
-                        🗓 {new Date(ev.date).toLocaleDateString()}{" "}
-                        {new Date(ev.date).toLocaleTimeString([], {
-                          hour: "2-digit",
-                          minute: "2-digit",
-                        })}
-                      </p>
-                      {ev.rsvp && typeof ev.rsvp === "string" && (
-                        <a
-                          href={ev.rsvp}
-                          target="_blank"
-                          rel="noopener"
-                          className="btn"
-                        >
-                          RSVP
-                        </a>
-                      )}
+                  <button
+                    type="button"
+                    className="btn btn-secondary"
+                    onClick={() => setActive("All")}
+                  >
+                    View all events
+                  </button>
+                </div>
+              </>
+            ) : (
+              <p className="events-empty-text">
+                No events in this category yet. Check back later or browse other
+                terms.
+              </p>
+            )}
+          </div>
+        ) : (
+          <div className="events-grid">
+            {filteredEvents.map((ev, idx) => {
+              const terms = (ev.term as Term[] | undefined) ?? [];
+
+              let media: React.ReactNode;
+              if (ev.image) {
+                media = (
+                  <img
+                    className="event-thumb"
+                    src={String(ev.image)}
+                    alt={String(ev.title)}
+                    loading="lazy"
+                  />
+                );
+              } else {
+                media = (
+                  <div className="event-thumb event-thumb--placeholder" />
+                );
+              }
+
+              return (
+                <article key={`${ev.id}-${idx}`} className="event-card">
+                  {active !== "Upcoming" && ev.recurring && (
+                    <span className="event-badge">Recurring</span>
+                  )}
+                  {media}
+
+                  <h3 className="event-title">{ev.title}</h3>
+
+                  {active !== "Upcoming" && terms.length > 0 && (
+                    <div className="term-tags" aria-label="Occurs in terms">
+                      {terms.map((t) => (
+                        <span key={t} className={tagClass(t)}>
+                          {t}
+                        </span>
+                      ))}
                     </div>
                   )}
 
-                <p className="event-blurb">{ev.description}</p>
+                  {active === "Upcoming" &&
+                    ev.date &&
+                    typeof ev.date === "string" && (
+                      <div className="event-meta">
+                        <p>
+                          📍 {ev.location ? ev.location : "TBA"} <br />
+                          🗓 {new Date(ev.date).toLocaleDateString()}{" "}
+                          {new Date(ev.date).toLocaleTimeString([], {
+                            hour: "2-digit",
+                            minute: "2-digit",
+                          })}
+                        </p>
+                        {ev.rsvp && typeof ev.rsvp === "string" && (
+                          <a
+                            href={ev.rsvp}
+                            target="_blank"
+                            rel="noopener"
+                            className="btn"
+                          >
+                            RSVP
+                          </a>
+                        )}
+                      </div>
+                    )}
 
-                {active !== "Upcoming" && ev.path && (
-                  <a className="btn" href={ev.path}>
-                    Details
-                  </a>
-                )}
-              </article>
-            );
-          })}
-        </div>
+                  <p className="event-blurb">{ev.description}</p>
+
+                  {active !== "Upcoming" && ev.path && (
+                    <a className="btn" href={ev.path}>
+                      Details
+                    </a>
+                  )}
+                </article>
+              );
+            })}
+          </div>
+        )}
       </section>
     </div>
   );
