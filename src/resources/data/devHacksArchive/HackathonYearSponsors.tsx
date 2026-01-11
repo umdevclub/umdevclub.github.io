@@ -49,11 +49,11 @@ type Sponsor = { name: string; logo: string };
 type YearSponsors = Partial<Record<Tier, Sponsor[]>>;
 
 const TIER_LABEL: Record<Tier, string> = {
-  platinum: "Platinum Sponsor",
-  gold: "Gold Sponsors",
-  silver: "Silver Sponsors",
-  bronze: "Bronze Sponsors",
-  inkind: "In-Kind Sponsors",
+  platinum: "Platinum",
+  gold: "Gold",
+  silver: "Silver",
+  bronze: "Bronze",
+  inkind: "In-Kind",
 };
 
 const TIER_ORDER: Tier[] = ["platinum", "gold", "silver", "bronze", "inkind"];
@@ -66,10 +66,9 @@ const HackathonYearSponsors: React.FC<HackathonYearSponsorsProps> = ({
       platinum: [{ name: "QDoc Virtual", logo: Qdoc }],
 
       gold: [
-        { name: "Taiv", logo: Taiv },
         { name: "G3", logo: G3_2026 },
-
         { name: "Payworks", logo: Payworks },
+        { name: "Taiv", logo: Taiv },
       ],
       silver: [
         { name: "IG Wealth Management", logo: IG },
