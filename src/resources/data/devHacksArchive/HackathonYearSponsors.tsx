@@ -8,7 +8,7 @@ import Payworks from "@/resources/images/devhacks/2026/Payworks.png";
 import G3_2026 from "@/resources/images/devhacks/2026/G3.png";
 
 import Ubisoft2026 from "@/resources/images/devhacks/2026/Ubisoft2026.png";
-import Niche2026 from "@/resources/images/devhacks/2026/niche2026.png";
+import Niche2026 from "@/resources/images/devhacks/2026/Niche2026.png";
 import Pollard2026 from "@/resources/images/devhacks/2026/Pollard.svg";
 import Priceline2026 from "@/resources/images/devhacks/2026/priceline.jpg";
 import IG from "@/resources/images/devhacks/2026/IG.png";
@@ -66,10 +66,10 @@ const HackathonYearSponsors: React.FC<HackathonYearSponsorsProps> = ({
       platinum: [{ name: "QDoc Virtual", logo: Qdoc }],
 
       gold: [
-        { name: Taiv, logo: Taiv },
+        { name: "Taiv", logo: Taiv },
         { name: "G3", logo: G3_2026 },
 
-        { name: Payworks, logo: Payworks },
+        { name: "Payworks", logo: Payworks },
       ],
       silver: [
         { name: "IG Wealth Management", logo: IG },
