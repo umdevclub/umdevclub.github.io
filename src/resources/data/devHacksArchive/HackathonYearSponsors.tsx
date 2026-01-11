@@ -2,10 +2,18 @@ import "@/styles/devHacksSponsors.scss";
 import React from "react";
 
 //2026 logos
-import Ubisoft2026 from "@/resources/images/devhacks/2025/devHacksSponsors/Ubisoft.jpg";
-import Niche2026 from "@/resources/images/devhacks/2025/devHacksSponsors/niche.png";
-import G3_2026 from "@/resources/images/devhacks/2025/devHacksSponsors/G3.png";
-import Pollard2026 from "@/resources/images/devhacks/2025/devHacksSponsors/pollard.jpg";
+import Qdoc from "@/resources/images/devhacks/2026/QDocLogo.png";
+import Taiv from "@/resources/images/devhacks/2026/Taiv.png";
+import Payworks from "@/resources/images/devhacks/2026/Payworks.png";
+import G3_2026 from "@/resources/images/devhacks/2026/G3.png";
+
+import Ubisoft2026 from "@/resources/images/devhacks/2026/Ubisoft2026.png";
+import Niche2026 from "@/resources/images/devhacks/2026/Niche2026.png";
+import Pollard2026 from "@/resources/images/devhacks/2026/Pollard.svg";
+import Priceline2026 from "@/resources/images/devhacks/2026/priceline.jpg";
+import IG from "@/resources/images/devhacks/2026/IG.png";
+import CompSciDept from "@/resources/images/devhacks/2026/CompSciDept.jpeg";
+import CanadaLife from "@/resources/images/devhacks/2026/CanadaLife.png";
 
 // 2025 logos
 import Ubisoft from "@/resources/images/devhacks/2025/devHacksSponsors/Ubisoft.jpg";
@@ -20,7 +28,7 @@ import SSA from "@/resources/images/devhacks/2025/devHacksSponsors/ssa.jpg";
 import umsuCares from "@/resources/images/devhacks/2025/devHacksSponsors/umsuCares.png";
 
 // 2024 logos
-import Niche2024 from "@/resources/images/devhacks/2025/devHacksSponsors/niche.png";
+import Niche2024 from "@/resources/images/devhacks/2024/devHacksSponsors/niche.png";
 import Pollard2024 from "@/resources/images/devhacks/2024/devHacksSponsors/pollard.jpg";
 import Priceline2024 from "@/resources/images/devhacks/2024/devHacksSponsors/priceline.svg";
 import G3_2024 from "@/resources/images/devhacks/2024/devHacksSponsors/G3.png";
@@ -42,7 +50,7 @@ type YearSponsors = Partial<Record<Tier, Sponsor[]>>;
 
 const TIER_LABEL: Record<Tier, string> = {
   platinum: "Platinum Sponsor",
-  gold: "Gold Sponsor",
+  gold: "Gold Sponsors",
   silver: "Silver Sponsors",
   bronze: "Bronze Sponsors",
   inkind: "In-Kind Sponsors",
@@ -55,19 +63,23 @@ const HackathonYearSponsors: React.FC<HackathonYearSponsorsProps> = ({
 }) => {
   const sponsorsByYear: Record<string, YearSponsors> = {
     "2026": {
-      platinum: [{ name: "QDoc Virtual", logo: Ubisoft2026 }],
-      gold: [{ name: "G3", logo: G3_2026 }],
+      platinum: [{ name: "QDoc Virtual", logo: Qdoc }],
+
+      gold: [
+        { name: "Taiv", logo: Taiv },
+        { name: "G3", logo: G3_2026 },
+
+        { name: "Payworks", logo: Payworks },
+      ],
       silver: [
+        { name: "IG Wealth Management", logo: IG },
+        { name: "Ubisoft", logo: Ubisoft2026 },
         { name: "Niche", logo: Niche2026 },
         { name: "Pollard", logo: Pollard2026 },
-        { name: "Ubisoft", logo: Ubisoft2026 },
+        { name: "Computer Science Department", logo: CompSciDept },
+        { name: "Priceline", logo: Priceline2026 },
       ],
-      inkind: [
-        {
-          name: "UMSU CARES",
-          logo: umsuCares,
-        },
-      ],
+      bronze: [{ name: "Canada Life", logo: CanadaLife }],
     },
 
     "2025": {

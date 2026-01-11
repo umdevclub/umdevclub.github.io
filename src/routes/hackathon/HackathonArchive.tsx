@@ -2,14 +2,16 @@ import React from "react";
 import { useLoaderData, useNavigate } from "react-router-dom";
 import { Button } from "@mui/material";
 
-// import HackathonFaq from "@/components/HackathonFaq";
+import HackathonFaq from "@/components/HackathonFaq";
 
-// import codeOfConduct from "@/resources/data/code-of-conduct";
-
+import codeOfConduct from "@/resources/data/code-of-conduct";
+import Timer from "@/components/Timer";
 import HackathonYearPictures from "@/resources/data/devHacksArchive/HackathonYearPictures";
 import HackathonYearSponsors from "@/resources/data/devHacksArchive/HackathonYearSponsors";
-// import rules from "@/resources/data/rules";
+import rules from "@/resources/data/rules";
 import { HackathonInfo } from "@/resources/data/types";
+import HorizontalScroller from "@/components/HorizontalScroller";
+import { HackathonArchiveCards } from "@/routes/hackathon/HackathonArchiveCards";
 
 function HackathonArchive() {
   const { data } = useLoaderData() as HackathonInfo;
@@ -18,6 +20,13 @@ function HackathonArchive() {
   return (
     <div className="hackathon-container" dir="ltr">
       <div className="hackathon-welcome container">
+        {data.year === "2026" && (
+          <div className="hackathon-register-container">
+            <h1 className="hackathon-register heading">
+              <Timer />
+            </h1>
+          </div>
+        )}
         <h1 className="hackathon-welcome heading">&lt;{data.title}&gt;</h1>
         <h2 className="hackathon-welcome description">{data.subtitle}</h2>
         <h2 className="hackathon-welcome sub-heading">
@@ -49,10 +58,17 @@ function HackathonArchive() {
       <h1 className="hackathon-sponsors heading">Sponsors</h1>
       <HackathonYearSponsors year={data.year} />
 
-      <h1 className="hackathon-sponsors heading">Event Pictures</h1>
-      <HackathonYearPictures year={data.year} />
+      {/* <h1 className="hackathon-sponsors heading">Event Pictures</h1>
+      <HackathonYearPictures year={data.year} /> */}
 
-      {/* <div className="hackathon-rules container" id="rules">
+      {data.year !== "2026" && (
+        <>
+          <h1 className="hackathon-sponsors heading">Event Pictures</h1>
+          <HackathonYearPictures year={data.year} />
+        </>
+      )}
+
+      <div className="hackathon-rules container" id="rules">
         <h1 className="hackathon-rules heading">Rules:</h1>
         <div className="hackathon-rules text-container">
           <p>
@@ -77,9 +93,9 @@ function HackathonArchive() {
             ))}
           </ol>
         </div>
-      </div> */}
+      </div>
 
-      {/* <div className="hackathon-code-conduct container" id="code-of-conduct">
+      <div className="hackathon-code-conduct container" id="code-of-conduct">
         <h1 className="hackathon-code-conduct heading">Code Of Conduct:</h1>
         <div className="hackathon-code-conduct text-container">
           <p>
@@ -105,11 +121,36 @@ function HackathonArchive() {
             ))}
           </ol>
         </div>
-      </div> */}
+      </div>
 
-      {/* <div className="container">
+      <div className="container">
         <HackathonFaq />
-      </div> */}
+      </div>
+      {data.year === "2026" && (
+        <>
+          <h1 className="hackathon-sponsors heading">Go Back in Time</h1>
+          <HorizontalScroller>
+            {HackathonArchiveCards.map((archive) => (
+              <button
+                key={archive.year}
+                type="button"
+                className="archive-card"
+                onClick={() => navigate(archive.route)}
+              >
+                <div
+                  className="archive-card-media"
+                  style={{ backgroundImage: `url(${archive.image})` }}
+                />
+                <div className="archive-card-overlay" />
+                <div className="archive-card-content">
+                  <h3 className="archive-card-title">{archive.title}</h3>
+                  <p className="archive-card-sub">{archive.subtitle}</p>
+                </div>
+              </button>
+            ))}
+          </HorizontalScroller>
+        </>
+      )}
     </div>
   );
 }

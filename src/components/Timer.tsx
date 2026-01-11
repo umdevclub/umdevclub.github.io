@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import "@/styles/DevhacksGithub.scss";
 
 const CountdownTimer = () => {
-  const hackathonDate = new Date("February 21, 2025 13:00:00").getTime();
+  const hackathonDate = new Date("February 20, 2026 13:00:00").getTime();
   const [timeRemaining, setTimeRemaining] = useState(calculateTimeRemaining());
 
   useEffect(() => {
