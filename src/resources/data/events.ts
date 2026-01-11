@@ -10,11 +10,14 @@ import examCram from "@/resources/images/events/ExamCram.jpg";
 import devchamps from "@/resources/images/events/devchamps.jpeg";
 import labtours from "@/resources/images/events/Labtours.jpg";
 import codingKickoff from "@/resources/images/events/Coding Kickoff.png";
-import devgames3 from "@/resources/images/events/devgames 3.png";
-import google from "@/resources/images/events/resumeworkshop.png";
+
+//add upcoming image imports here
+import WinterGeneralMeeting from "@/resources/images/events/Winter_General_Meeting.png";
 
 export { TERMS_ORDER } from "./types";
 
+//if you want to add an uocoming event
+//add the fields: upcomingDescription, upcomingImage,location, date in the format 026-01-13T18:00:00 and rsvp to the relevant event object below
 export const EVENTS: EventData[] = [
   {
     id: "general-meeting",
@@ -24,6 +27,13 @@ export const EVENTS: EventData[] = [
     term: ["Summer", "Fall", "Winter"],
     image: generalmeeting,
     recurring: true,
+    upcomingTitle: "Winter 2026 General Meeting",
+    upcomingDescription:
+      "WELCOME BACK .devClub! 🎉 We hope you’ve had a wonderful break and holidays! 🎄 We are excited to announce our upcoming winter general meeting ❄️. Meet your execs and new councillors, learn more about our upcoming events 🤩 and spend a great time meeting your peers! We hope to see you there !!",
+    upcomingImage: WinterGeneralMeeting,
+    date: "2026-01-13T18:00:00",
+    location: "SSA Lounge (Armes Building)",
+    rsvp: "https://docs.google.com/forms/d/e/1FAIpQLSf0raaCmdIrrLkbXgqVNno1-O_1qM9pfcapjIt9H4rHDNF01Q/viewform",
   },
   {
     id: "are-we-there-yet",
@@ -51,13 +61,6 @@ export const EVENTS: EventData[] = [
     term: ["Fall", "Winter"],
     image: workshop,
     recurring: true,
-    upcomingTitle: "Resume Review with Google Talents",
-    upcomingDescription: [
-      "Join an industry panel featuring Google engineers as they review real student resumes live and share tips on what stands out to recruiters. The session will also include a Q&A and networking opportunities with professionals from the tech industry.",
-    ],
-    upcomingImage: google,
-    date: "2025-11-18T16:00:00",
-    location: "EITC E3-270",
   },
   {
     id: "rendezvous",
@@ -76,14 +79,6 @@ export const EVENTS: EventData[] = [
     term: ["Fall"],
     image: devgames,
     recurring: true,
-    upcomingTitle: ".devGames Level 3",
-    upcomingDescription: [
-      "In collaboration with UMSU CARES, learn how to make your games more accessible for all players. We'll explore features like Controller Support and Custom Keybindings, and discuss best practices for inclusive game design!",
-    ],
-    upcomingImage: devgames3,
-    date: "2025-11-20T17:00:00",
-    location: "EITC E2-110",
-    rsvp: "https://forms.gle/37PJQLfcggXBn6eZ9",
   },
   {
     id: "exam-crams",
