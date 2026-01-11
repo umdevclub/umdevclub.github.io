@@ -53,7 +53,7 @@ const menuItems = [
   },
   {
     title: ".devHacks",
-    path: "/devhacks",
+    path: "/devhacks/2026",
     icon: <ComputerIcon />,
   },
 

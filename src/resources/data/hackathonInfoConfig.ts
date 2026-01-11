@@ -1,6 +1,29 @@
 import { HackathonInfo } from "./types";
 
 const hackathonInfoConfig: HackathonInfo = {
+  "2026": {
+    year: "2026",
+    title: ".devHacks 2026",
+    subtitle: "Build Your Dream Project",
+    location: "EITC Atrium, E3 270 @ University of Manitoba",
+    date: "February 20nd to 21st (1:00 PM - 1:00 PM)",
+    description:
+      ".devHacks is an annual hackathon hosted by .devClub for students to showcase their creativity and endurance over a period of 24 hours of fun filled development!",
+    links: [
+      {
+        text: "Github tutorial",
+        path: "/github-tutorial",
+      },
+      // {
+      //   text: "Schedule",
+      //   path: "/devhacks/2026/schedule",
+      // },
+      // {
+      //   text: "Prize Categories",
+      //   path: "/devhacks/2026/themes",
+      // },
+    ],
+  },
   "2025": {
     year: "2025",
     title: ".devHacks 2025",

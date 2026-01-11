@@ -21,8 +21,10 @@
 .tier-title {
   font-family: "IBM Plex Mono", monospace;
   font-size: clamp(1.1rem, 0.8rem + 1vw, 1.5rem);
-  letter-spacing: 0.06em;
-  // text-transform: uppercase;
+  letter-spacing: 0.08em;
+  margin: 16px 0 20px;
+  padding: 8px 14px;
+  line-height: 1.2;
   opacity: 0.9;
 }
 
@@ -43,13 +45,13 @@
   max-width: 450px;
 }
 .tier--gold .sponsor img {
-  max-width: 400px;
+  max-width: 230px;
 }
 .tier--silver .sponsor img {
-  max-width: 200px;
+  max-width: 190px;
 }
 .tier--bronze .sponsor img {
-  max-width: 160px;
+  max-width: 185px;
 }
 .tier--inkind .sponsor img {
   max-width: 150px;
@@ -60,13 +62,13 @@
     max-width: 420px;
   }
   .tier--gold .sponsor img {
-    max-width: 360px;
+    max-width: 300px;
   }
   .tier--silver .sponsor img {
-    max-width: 130px;
+    max-width: 200px;
   }
   .tier--bronze .sponsor img {
-    max-width: 120px;
+    max-width: 175px;
   }
   .tier--inkind .sponsor img {
     max-width: 120px;
@@ -78,15 +80,15 @@
     max-width: 320px;
   }
   .tier--gold .sponsor img {
-    max-width: 260px;
+    max-width: 200px;
   }
   .tier--silver .sponsor img {
-    max-width: 120px;
+    max-width: 130px;
   }
   .tier--bronze .sponsor img {
-    max-width: 100px;
+    max-width: 125px;
   }
   .tier--inkind .sponsor img {
-    max-width: 100px;
+    max-width: 110px;
   }
 }
