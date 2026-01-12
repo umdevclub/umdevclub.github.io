@@ -66,7 +66,6 @@
   bottom: 0;
   height: 3px;
   width: 120px;
-
   border-radius: 999px;
 
   transform: translateX(-50%) scaleX(0);
@@ -75,6 +74,7 @@
 
   animation: underlineIn 0.45s ease forwards;
   animation-delay: 0.12s;
+
   transition: transform 0.2s ease;
 }
 
@@ -89,23 +89,18 @@
   }
 }
 
-/* tier underline accents */
 .tier--platinum .tier-title::after {
   background: linear-gradient(90deg, #8a2be2, #2b6fff);
 }
-
 .tier--gold .tier-title::after {
   background: linear-gradient(90deg, #ffd36a, #ff9f1a);
 }
-
 .tier--silver .tier-title::after {
   background: linear-gradient(90deg, #f1f5f9, #94a3b8);
 }
-
 .tier--bronze .tier-title::after {
   background: linear-gradient(90deg, #e4a07a, #b16b3a);
 }
-
 .tier--inkind .tier-title::after {
   background: linear-gradient(90deg, #7cf3ff, #5b7cfa);
 }
@@ -160,24 +155,24 @@
   min-height: 120px;
 }
 .tier--platinum .sponsor img {
-  height: 130px;
+  height: 155px;
 }
 
 .tier--gold .sponsor {
   min-height: 90px;
 }
 .tier--gold .sponsor img {
-  height: 55px;
+  height: 85px;
 }
 
 .tier--silver .sponsor img {
-  height: 56px;
+  height: 80px;
 }
 
 .tier--bronze .sponsor img {
-  height: 54px;
+  height: 75px;
 }
 
 .tier--inkind .sponsor img {
-  height: 50px;
+  height: 65px;
 }
