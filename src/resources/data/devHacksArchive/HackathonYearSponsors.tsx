@@ -66,8 +66,8 @@ const HackathonYearSponsors: React.FC<HackathonYearSponsorsProps> = ({
       platinum: [{ name: "QDoc Virtual", logo: Qdoc }],
 
       gold: [
-        { name: "G3", logo: G3_2026 },
         { name: "Payworks", logo: Payworks },
+        { name: "G3", logo: G3_2026 },
         { name: "Taiv", logo: Taiv },
       ],
       silver: [
