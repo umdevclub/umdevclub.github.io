@@ -11,6 +11,10 @@ const hackathonInfoConfig: HackathonInfo = {
       ".devHacks is an annual hackathon hosted by .devClub for students to showcase their creativity and endurance over a period of 24 hours of fun filled development!",
     links: [
       {
+        text: "Register",
+        path: "/devhacks/2026/register",
+      },
+      {
         text: "Github tutorial",
         path: "/github-tutorial",
       },

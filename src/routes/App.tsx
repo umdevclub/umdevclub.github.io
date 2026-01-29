@@ -22,6 +22,7 @@ import {
 } from "./hackathon/hackathonLoader";
 import HackathonSchedule from "./hackathon/HackathonSchedule";
 import HackathonThemes from "./hackathon/HackathonThemes";
+import Register from "@/resources/data/devHacksArchive/devHacks2026/Register";
 import Home from "./Home";
 import LinkTree from "./LinkTree";
 import RootLayout from "./layouts/RootLayout";
@@ -68,6 +69,7 @@ const router = createBrowserRouter(
         path="/devhacks/2025/gallery"
         element={<DevHacks2025ProjectGallery />}
       />
+      <Route path="/devhacks/2026/register" element={<Register />} />
       {/* always keep this route last, otherwise it will mess with the actual links above */}
       <Route path="*" element={<PageNotFound />} />
     </Route>
