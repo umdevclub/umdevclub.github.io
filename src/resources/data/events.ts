@@ -12,11 +12,11 @@ import labtours from "@/resources/images/events/Labtours.jpg";
 import codingKickoff from "@/resources/images/events/Coding Kickoff.png";
 
 //add upcoming image imports here
-import WinterGeneralMeeting from "@/resources/images/events/Winter_General_Meeting.png";
+import devhacks2026 from "@/resources/images/devhacks/2026/devhacks2026.png";
 
 export { TERMS_ORDER } from "./types";
 
-//if you want to add an uocoming event
+//if you want to add an upcoming event
 //add the fields: upcomingDescription, upcomingImage,location, date in the format 026-01-13T18:00:00 and rsvp to the relevant event object below
 export const EVENTS: EventData[] = [
   {
@@ -27,13 +27,6 @@ export const EVENTS: EventData[] = [
     term: ["Summer", "Fall", "Winter"],
     image: generalmeeting,
     recurring: true,
-    upcomingTitle: "Winter 2026 General Meeting",
-    upcomingDescription:
-      "WELCOME BACK .devClub! 🎉 We hope you’ve had a wonderful break and holidays! 🎄 We are excited to announce our upcoming winter general meeting ❄️. Meet your execs and new councillors, learn more about our upcoming events 🤩 and spend a great time meeting your peers! We hope to see you there !!",
-    upcomingImage: WinterGeneralMeeting,
-    date: "2026-01-13T18:00:00",
-    location: "SSA Lounge (Armes Building)",
-    rsvp: "https://docs.google.com/forms/d/e/1FAIpQLSf0raaCmdIrrLkbXgqVNno1-O_1qM9pfcapjIt9H4rHDNF01Q/viewform",
   },
   {
     id: "are-we-there-yet",
@@ -96,8 +89,15 @@ export const EVENTS: EventData[] = [
       ".devHacks is an annual hackathon hosted by .devClub for students to showcase their creativity and endurance over a period of 24 hours of fun filled development!",
     term: ["Winter"],
     image: devhacks,
-    path: "/devhacks",
+    path: "/devhacks/2026",
     recurring: true,
+    upcomingTitle: ".devHacks 2026",
+    upcomingDescription:
+      ".devClub's annual hackathon returns for its 11th iteration on Feb 20-21",
+    upcomingImage: devhacks2026,
+    date: "2026-02-20T13:00:00",
+    location: "EITC ATRIUM",
+    rsvp: "https://devclub.ca/devhacks/2026/register",
   },
   {
     id: "labtours",

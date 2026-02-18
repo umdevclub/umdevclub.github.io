@@ -15,17 +15,17 @@ const hackathonInfoConfig: HackathonInfo = {
         path: "/devhacks/2026/register",
       },
       {
+        text: "devpost page",
+        path: "/devhacks/2026/devpost",
+      },
+      {
+        text: "Schedule",
+        path: "/devhacks/2026/schedule",
+      },
+      {
         text: "Github tutorial",
         path: "/github-tutorial",
       },
-      // {
-      //   text: "Schedule",
-      //   path: "/devhacks/2026/schedule",
-      // },
-      // {
-      //   text: "Prize Categories",
-      //   path: "/devhacks/2026/themes",
-      // },
     ],
   },
   "2025": {
