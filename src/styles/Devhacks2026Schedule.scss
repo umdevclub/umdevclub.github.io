@@ -1,233 +1,59 @@
-@import "media-queries.scss";
-
-// Poster-ish palette
-$white: rgba(245, 245, 245, 0.95);
-$blue: #00e1e1;
-
-// Lines / borders (thicker than before)
-$line: rgba(255, 255, 255, 0.72);
-$lineSoft: rgba(255, 255, 255, 0.42);
-
-// Table header bar
-$headerBar: rgba(0, 225, 225, 0.18);
-
-// Background overlays
-$overlayMain: rgba(0, 0, 0, 0.68);
-$overlayVignette: rgba(0, 0, 0, 0.35);
-
-.schedule-2026 {
+.schedule-images-wrapper {
   position: relative;
-  min-height: 100%;
-  padding: 3rem 1rem 4.5rem;
+  min-height: 100vh;
+  padding: 4rem 1rem;
 
-  // background image passed from TSX via CSS variable
-  background-image: var(--bg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+
+  display: flex;
+  justify-content: center;
 }
 
-.schedule-2026-overlay {
+.schedule-dark-overlay {
   position: absolute;
   inset: 0;
-  background: $overlayMain;
+  background: rgba(0, 0, 0, 0.7);
   pointer-events: none;
-}
-
-// subtle vignette like the poster
-.schedule-2026::after {
-  content: "";
-  position: absolute;
-  inset: 0;
-  pointer-events: none;
-  background: radial-gradient(
-    circle at 50% 35%,
-    rgba(0, 0, 0, 0) 0%,
-    rgba(0, 0, 0, 0.18) 45%,
-    $overlayVignette 100%
-  );
-}
-
-.schedule-2026-inner {
-  position: relative;
   z-index: 1;
+}
+
+.schedule-grain-overlay {
+  position: absolute;
+  inset: 0;
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  pointer-events: none;
+  z-index: 3;
+  opacity: 0.95;
+}
+
+.schedule-content {
+  position: relative;
+  z-index: 2;
+
   max-width: 1100px;
-  margin: 0 auto;
-}
+  width: 100%;
 
-.schedule-2026-title {
-  margin: 0 auto 2rem;
-  text-align: center;
-  text-transform: uppercase;
-  letter-spacing: 5px;
-
-  .top {
-    display: block;
-    font-size: 3rem;
-    font-weight: 900;
-    color: rgba(120, 170, 220, 0.95);
-    margin-bottom: 0.25rem;
-  }
-
-  .bottom {
-    display: block;
-    font-size: 3.2rem;
-    font-weight: 900;
-    color: rgba(245, 245, 245, 0.95);
-    letter-spacing: 3px;
-  }
-
-  @include mobile {
-    margin-bottom: 1.5rem;
-
-    .top {
-      font-size: 2.25rem;
-    }
-    .bottom {
-      font-size: 2.4rem;
-    }
-  }
-}
-
-.schedule-2026-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 2.2rem;
+  gap: 2rem;
 
-  @include mobile {
+  img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 18px;
+
+    box-shadow: 0 18px 55px rgba(0, 0, 0, 0.55),
+      0 0 0 1px rgba(255, 255, 255, 0.2), 0 0 30px rgba(0, 225, 225, 0.08);
+  }
+
+  @media (max-width: 768px) {
     grid-template-columns: 1fr;
-    gap: 1.4rem;
-  }
-}
-
-// "Poster card" wrapper (narrower like IG)
-.schedule-2026-card {
-  border-radius: 18px;
-  overflow: hidden;
-
-  // center + keep it poster-like instead of full width
-  max-width: 540px;
-  margin: 0 auto;
-
-  // poster glow
-  box-shadow: 0 18px 55px rgba(0, 0, 0, 0.55),
-    0 0 0 1px rgba(255, 255, 255, 0.22), 0 0 30px rgba(0, 225, 225, 0.08);
-
-  @include mobile {
-    max-width: 420px;
-  }
-}
-
-.schedule-2026-table {
-  border: 2px solid $line;
-  background: rgba(0, 0, 0, 0.28);
-
-  // safety net if something is too long on tiny screens
-  overflow-x: auto;
-  -webkit-overflow-scrolling: touch;
-}
-
-.schedule-2026-row {
-  display: grid;
-  grid-template-columns: 1.15fr 2.55fr 1.6fr;
-  align-items: center;
-
-  border-bottom: 1.5px solid $lineSoft;
-
-  .cell {
-    padding: 0.95rem 0.85rem;
-    font-weight: 900;
-    text-transform: uppercase;
-    color: $white;
-    letter-spacing: 1px;
-    font-size: 0.95rem;
-
-    // Default: ellipsis for long text (title/location)
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-  }
-
-  .cell.time {
-    color: rgba(180, 220, 255, 0.92);
-    border-right: 1.5px solid $lineSoft;
-    text-align: center;
-
-    // ✅ FIX: don't ellipsis the time
-    white-space: normal; // wrapping is allowed (you said it's fine)
-    overflow: visible;
-    text-overflow: clip;
-
-    // time is narrow—keep it readable
-    letter-spacing: 0.6px;
-  }
-
-  .cell.title {
-    text-align: center;
-    border-right: 1.5px solid $lineSoft;
-  }
-
-  .cell.location {
-    text-align: center;
-    color: rgba(180, 220, 255, 0.92);
-  }
-
-  // ✅ MOBILE: KEEP 3 columns (poster look), just shrink
-  @include mobile {
-    grid-template-columns: 1.05fr 2.35fr 1.45fr;
-
-    .cell {
-      padding: 0.62rem 0.5rem;
-      font-size: 0.72rem;
-      letter-spacing: 0.6px;
-    }
-
-    .cell.time {
-      font-size: 0.68rem; // slightly smaller so long ranges fit better
-      line-height: 1.05;
-    }
-  }
-}
-
-.schedule-2026-row--header {
-  background: $headerBar;
-  border-bottom: 2px solid $line;
-
-  .cell {
-    color: rgba(230, 250, 255, 0.95);
-    font-size: 0.88rem;
-    letter-spacing: 2px;
-  }
-
-  .cell.title {
-    display: flex;
-    flex-direction: column;
-    gap: 0.35rem;
-
-    .date {
-      font-size: 0.78rem;
-      opacity: 0.95;
-      letter-spacing: 2px;
-    }
-  }
-
-  @include mobile {
-    .cell {
-      font-size: 0.72rem;
-      letter-spacing: 1.6px;
-    }
-
-    .cell.title .date {
-      font-size: 0.65rem;
-    }
-  }
-}
-
-// Meals / highlighted rows (subtle pink tint like your older scheme)
-.schedule-2026-row--alt {
-  .cell.time,
-  .cell.title,
-  .cell.location {
-    color: rgba(255, 220, 230, 0.95);
   }
 }
