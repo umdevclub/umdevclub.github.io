@@ -23,6 +23,10 @@ const hackathonInfoConfig: HackathonInfo = {
         path: "/devhacks/2026/schedule",
       },
       {
+        text: "Prize Categories",
+        path: "/devhacks/2026/themes",
+      },
+      {
         text: "Github tutorial",
         path: "/github-tutorial",
       },
