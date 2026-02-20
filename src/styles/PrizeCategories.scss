@@ -44,4 +44,23 @@
       }
     }
   }
+
+  /* body (plain text) formatting */
+  &-body {
+    margin-top: 0.75rem;
+  }
+
+  &-body-line {
+    margin: 0;
+    margin-bottom: 0.5rem;
+    white-space: pre-wrap; // keeps indentation/newlines
+  }
+
+  &-spacer {
+    height: 0.75rem;
+  }
+
+  a {
+    text-decoration: underline;
+  }
 }

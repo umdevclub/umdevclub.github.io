@@ -3,9 +3,10 @@ export type HackathonTheme = {
     title: string;
     description: string | string[];
     details?: {
-      header: string;
-      content: string[];
+      header?: string;
+      content?: string[];
     }[];
+    body?: string;
   }[];
 };
 
