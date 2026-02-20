@@ -4,10 +4,6 @@ import { HackathonTheme } from "./types";
 const hackathonThemeConfig: HackathonTheme = {
   "2026": [
     {
-      title: "Master of .devHacks",
-      description: "Winner Winner Chicken Dinner.",
-    },
-    {
       title: "Rookie of the Year Hack",
       description:
         "This award celebrates strong fundamentals, creativity, and technical growth demonstrated by participants who declare themselves as participating in their first hackathon.",
