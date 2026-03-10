@@ -63,7 +63,7 @@ const hackathonWinners: Record<string, HackathonWinner[]> = {
 
   "2025": [
     {
-      prizeIndex: 7,
+      prizeIndex: 6,
       projectName: "GTFO",
       teamMembers: [
         "Peter Vu",
@@ -75,7 +75,7 @@ const hackathonWinners: Record<string, HackathonWinner[]> = {
       projectUrl: "https://devpost.com/software/gtfo-2s50hi",
     },
     {
-      prizeIndex: 6,
+      prizeIndex: 7,
       projectName: "Escape Protocol: Rogue AI",
       teamMembers: [
         "Matthew Indico",
