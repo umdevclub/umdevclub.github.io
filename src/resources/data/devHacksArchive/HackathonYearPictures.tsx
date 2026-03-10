@@ -3,6 +3,27 @@ import { Modal, Box } from "@mui/material";
 import HorizontalScroller from "@/components/HorizontalScroller";
 import "@/styles/pictures.scss";
 
+//2026 images
+import P2026_1 from "@/resources/images/devhacks/2026/pictures/2026_1.png";
+import P2026_2 from "@/resources/images/devhacks/2026/pictures/2026_2.png";
+import P2026_3 from "@/resources/images/devhacks/2026/pictures/2026_3.png";
+import P2026_4 from "@/resources/images/devhacks/2026/pictures/2026_4.png";
+import P2026_5 from "@/resources/images/devhacks/2026/pictures/2026_5.png";
+import P2026_6 from "@/resources/images/devhacks/2026/pictures/2026_6.png";
+import P2026_8 from "@/resources/images/devhacks/2026/pictures/2026_8.png";
+import P2026_9 from "@/resources/images/devhacks/2026/pictures/2026_9.png";
+import P2026_10 from "@/resources/images/devhacks/2026/pictures/2026_10.png";
+import P2026_11 from "@/resources/images/devhacks/2026/pictures/2026_11.png";
+import P2026_12 from "@/resources/images/devhacks/2026/pictures/2026_12.png";
+import P2026_13 from "@/resources/images/devhacks/2026/pictures/2026_13.png";
+import P2026_14 from "@/resources/images/devhacks/2026/pictures/2026_14.png";
+import P2026_15 from "@/resources/images/devhacks/2026/pictures/2026_15.png";
+import P2026_16 from "@/resources/images/devhacks/2026/pictures/2026_16.png";
+import P2026_17 from "@/resources/images/devhacks/2026/pictures/2026_17.png";
+import P2026_18 from "@/resources/images/devhacks/2026/pictures/2026_18.png";
+import P2026_19 from "@/resources/images/devhacks/2026/pictures/2026_19.png";
+import P2026_20 from "@/resources/images/devhacks/2026/pictures/2026_20.png";
+
 // 2024 images
 import P2024_1 from "@/resources/images/devhacks/2024/pictures/2024_1.png";
 import P2024_2 from "@/resources/images/devhacks/2024/pictures/2024_2.png";
@@ -96,6 +117,30 @@ const HackathonYearPictures: React.FC<HackathonYearPicturesProps> = ({
       { src: P2025_14, alt: "devHacks 2025 photo 14" },
       { src: P2025_15, alt: "devHacks 2025 photo 15" },
       { src: P2025_16, alt: "devHacks 2025 photo 16" },
+    ],
+    "2026": [
+      { src: P2026_1, alt: "devHacks 2026 photo 1" },
+      { src: P2026_2, alt: "devHacks 2026 photo 2" },
+      { src: P2026_3, alt: "devHacks 2026 photo 3" },
+      { src: P2026_5, alt: "devHacks 2026 photo 5" },
+      { src: P2026_12, alt: "devHacks 2026 photo 12" },
+      { src: P2026_4, alt: "devHacks 2026 photo 4" },
+      { src: P2026_6, alt: "devHacks 2026 photo 6" },
+      { src: P2026_10, alt: "devHacks 2026 photo 10" },
+      { src: P2026_15, alt: "devHacks 2026 photo 15" },
+      { src: P2026_9, alt: "devHacks 2026 photo 9" },
+      { src: P2026_11, alt: "devHacks 2026 photo 11" },
+
+      { src: P2026_8, alt: "devHacks 2026 photo 8" },
+
+      { src: P2026_13, alt: "devHacks 2026 photo 13" },
+      { src: P2026_14, alt: "devHacks 2026 photo 14" },
+
+      { src: P2026_16, alt: "devHacks 2026 photo 16" },
+      { src: P2026_17, alt: "devHacks 2026 photo 17" },
+      { src: P2026_18, alt: "devHacks 2026 photo 18" },
+      { src: P2026_19, alt: "devHacks 2026 photo 19" },
+      { src: P2026_20, alt: "devHacks 2026 photo 20" },
     ],
   };
 

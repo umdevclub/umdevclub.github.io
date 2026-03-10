@@ -1,0 +1,126 @@
+.hackathon-winners {
+  width: min(100%, 1200px);
+  margin: 0 auto;
+  padding: clamp(2.5rem, 6vw, 4rem) 1rem;
+
+  &_header {
+    text-align: center;
+    margin-bottom: 2rem;
+
+    h2 {
+      font-size: clamp(1.8rem, 4vw, 2.5rem);
+      font-weight: 700;
+      letter-spacing: 0.08em;
+    }
+  }
+
+  &_scroller {
+    margin-top: 1.5rem;
+  }
+
+  &_card {
+    flex: 0 0 clamp(260px, 72vw, 340px);
+    width: clamp(260px, 72vw, 340px);
+    min-height: clamp(220px, 30vw, 250px);
+
+    background: linear-gradient(180deg, #ffffff 0%, #fafafa 100%);
+    border: 1px solid #ececec;
+    border-radius: 20px;
+    padding: clamp(1rem, 2vw, 1.4rem);
+
+    box-shadow: 0 12px 32px rgba(0, 0, 0, 0.05);
+
+    transition: transform 0.2s ease, box-shadow 0.2s ease,
+      border-color 0.2s ease;
+
+    scroll-snap-align: start;
+
+    &:hover {
+      transform: translateY(-4px);
+      border-color: #f97316;
+      box-shadow: 0 18px 40px rgba(0, 0, 0, 0.08);
+    }
+  }
+
+  &_top {
+    display: flex;
+    align-items: flex-start;
+    gap: 0.85rem;
+    margin-bottom: 1rem;
+  }
+
+  &_icon {
+    font-size: 1.4rem;
+    flex-shrink: 0;
+  }
+
+  &_title {
+    font-size: clamp(1rem, 2vw, 1.1rem);
+    font-weight: 700;
+    line-height: 1.35;
+    margin: 0;
+  }
+
+  &_body {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  &_block {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+  }
+
+  &_label {
+    font-size: 0.75rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: #9ca3af;
+  }
+
+  &_project {
+    font-size: clamp(0.95rem, 2vw, 1rem);
+    font-weight: 600;
+    color: #1f2937;
+  }
+
+  &_project-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+
+    text-decoration: none;
+    color: #1f2937;
+    font-weight: 600;
+
+    transition: color 0.15s ease;
+  }
+
+  &_project-link:hover {
+    color: #f97316;
+  }
+
+  &_link-icon {
+    opacity: 0.6;
+    transition: opacity 0.15s ease, transform 0.15s ease;
+  }
+
+  &_project-link:hover &_link-icon {
+    opacity: 1;
+    transform: translate(2px, -1px);
+  }
+
+  &_team {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+  }
+
+  &_member {
+    font-size: 0.9rem;
+    color: #374151;
+  }
+}

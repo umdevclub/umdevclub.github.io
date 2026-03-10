@@ -8,15 +8,11 @@ const hackathonInfoConfig: HackathonInfo = {
     location: "EITC Atrium, E3 270 @ University of Manitoba",
     date: "February 20nd to 21st (1:00 PM - 1:00 PM)",
     description:
-      ".devHacks is an annual hackathon hosted by .devClub for students to showcase their creativity and endurance over a period of 24 hours of fun filled development!",
+      ".devHacks 2026 marked .devClub's largest hackathon to date, bringing together 417 hackers, 11 incredible sponsors, and 72 innovative projects over one unforgettable weekend of building, learning, and collaboration. ",
     links: [
       {
-        text: "Register",
-        path: "/devhacks/2026/register",
-      },
-      {
-        text: "devpost page",
-        path: "/devhacks/2026/devpost",
+        text: "Project Gallery",
+        path: "/devhacks/2026/gallery",
       },
       {
         text: "Schedule",
@@ -25,10 +21,6 @@ const hackathonInfoConfig: HackathonInfo = {
       {
         text: "Prize Categories",
         path: "/devhacks/2026/themes",
-      },
-      {
-        text: "Github tutorial",
-        path: "/github-tutorial",
       },
     ],
   },
@@ -69,10 +61,6 @@ const hackathonInfoConfig: HackathonInfo = {
       ".devHacks 2024 was our second in-person Hackathon since the pandemic, bringing together over 300 hackers who tirelessly innovated over an intense 24-hour period.",
     links: [
       {
-        text: "Github tutorial",
-        path: "/github-tutorial",
-      },
-      {
         text: "Schedule",
         path: "/devhacks/2024/schedule",
       },
@@ -90,12 +78,7 @@ const hackathonInfoConfig: HackathonInfo = {
     date: "February 25th (8:00 AM - 8:00 PM)",
     description:
       "After years away from in-person events, .devHacks 2023 brought together more than 200 passionate students, who turned ideas into extraordinary projects in just 12 hours.",
-    links: [
-      {
-        text: "Github tutorial",
-        path: "/github-tutorial",
-      },
-    ],
+    links: [],
   },
 };
 
