@@ -23,7 +23,7 @@ import HackathonSchedule from "./hackathon/HackathonSchedule";
 import HackathonThemes from "./hackathon/HackathonThemes";
 
 import DevHacks2025ProjectGallery from "@/resources/data/devHacksArchive/devHacks2025/ProjectGallery2025";
-import Devhacks2026ProjectGallery from "@/resources/data/devHacksArchive/devHacks2026/gallery";
+import Devhacks2026ProjectGallery from "@/resources/data/devHacksArchive/devHacks2026/Gallery";
 import Home from "./Home";
 import LinkTree from "./LinkTree";
 import RootLayout from "./layouts/RootLayout";
