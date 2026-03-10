@@ -91,13 +91,6 @@ export const EVENTS: EventData[] = [
     image: devhacks,
     path: "/devhacks/2026",
     recurring: true,
-    upcomingTitle: ".devHacks 2026",
-    upcomingDescription:
-      ".devClub's annual hackathon returns for its 11th iteration on Feb 20-21",
-    upcomingImage: devhacks2026,
-    date: "2026-02-20T13:00:00",
-    location: "EITC ATRIUM",
-    rsvp: "https://devclub.ca/devhacks/2026/register",
   },
   {
     id: "labtours",

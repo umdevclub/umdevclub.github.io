@@ -8,7 +8,6 @@ import {
 
 import ErrorBoundary from "@/components/ErrorBoundary";
 
-import DevHacks2025ProjectGallery from "@/resources/data/devHacksArchive/devHacks2025/ProjectGallery2025";
 import redirectMappings from "@/resources/redirect-mappings";
 
 import Contact from "./Contact";
@@ -22,8 +21,9 @@ import {
 } from "./hackathon/hackathonLoader";
 import HackathonSchedule from "./hackathon/HackathonSchedule";
 import HackathonThemes from "./hackathon/HackathonThemes";
-import Register from "@/resources/data/devHacksArchive/devHacks2026/Register";
-import Devpost from "@/resources/data/devHacksArchive/devHacks2026/devpost";
+
+import DevHacks2025ProjectGallery from "@/resources/data/devHacksArchive/devHacks2025/ProjectGallery2025";
+import Devhacks2026ProjectGallery from "@/resources/data/devHacksArchive/devHacks2026/gallery";
 import Home from "./Home";
 import LinkTree from "./LinkTree";
 import RootLayout from "./layouts/RootLayout";
@@ -70,8 +70,10 @@ const router = createBrowserRouter(
         path="/devhacks/2025/gallery"
         element={<DevHacks2025ProjectGallery />}
       />
-      <Route path="/devhacks/2026/devpost" element={<Devpost />} />
-      <Route path="/devhacks/2026/register" element={<Register />} />
+      <Route
+        path="/devhacks/2026/gallery"
+        element={<Devhacks2026ProjectGallery />}
+      />
       {/* always keep this route last, otherwise it will mess with the actual links above */}
       <Route path="*" element={<PageNotFound />} />
     </Route>

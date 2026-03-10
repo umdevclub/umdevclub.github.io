@@ -16,7 +16,14 @@ import P10 from "@/resources/images/devhacks/general/2024_11.png";
 import P11 from "@/resources/images/devhacks/general/2024_12.png";
 import P12 from "@/resources/images/devhacks/general/2025_3.png";
 
+import P13 from "@/resources/images/devhacks/2026/pictures/2026_1.png";
+import P14 from "@/resources/images/devhacks/2026/pictures/2026_2.png";
+import P15 from "@/resources/images/devhacks/2026/pictures/2026_3.png";
+
 export const picturesGeneralImages = [
+  { src: P13, alt: "devHacks photo 13" },
+  { src: P14, alt: "devHacks photo 14" },
+  { src: P15, alt: "devHacks photo 15" },
   { src: P1, alt: "devHacks photo 1" },
   { src: P2, alt: "devHacks photo 2" },
   { src: P3, alt: "devHacks photo 3" },

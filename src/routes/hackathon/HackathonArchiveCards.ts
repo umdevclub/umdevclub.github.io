@@ -1,5 +1,7 @@
 import scheduleBg2024 from "@/resources/images/devhacks/2024/devhacks2024-schedule-bg.jpeg";
 import scheduleBg2025 from "@/resources/images/devhacks/2025/devhacks2025-schedule-bg.png";
+import scheduleBg2026 from "@/resources/images/devhacks/2026/schedule_bg_2026.png";
+
 import scheduleBg2023 from "@/resources/images/devhacks/2023/devhacks2023-schedule-bg.png";
 
 export type HackathonArchiveCard = {
@@ -11,6 +13,14 @@ export type HackathonArchiveCard = {
 };
 
 export const HackathonArchiveCards: HackathonArchiveCard[] = [
+  {
+    year: 2026,
+    title: ".devHacks 2026",
+    subtitle:
+      "11th Hackathon. 11 Sponsors. 400+ Hackers. 70+ Projects. One unforgettable weekend.",
+    route: "/devhacks/2026",
+    image: scheduleBg2026,
+  },
   {
     year: 2025,
     title: ".devHacks 2025",
