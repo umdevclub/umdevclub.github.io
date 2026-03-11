@@ -40,7 +40,7 @@ const hackathonWinners: Record<string, HackathonWinner[]> = {
         "Garrett Malenko",
         "Ben Purvis",
       ],
-      projectUrl: "https://devpost.com/software/studynav",
+      projectUrl: "https://devpost.com/software/libby-g1ckli",
     },
     {
       prizeIndex: 3,
