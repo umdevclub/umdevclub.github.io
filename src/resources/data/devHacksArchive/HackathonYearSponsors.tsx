@@ -2,18 +2,18 @@ import "@/styles/devHacksSponsors.scss";
 import React from "react";
 
 //2026 logos
-import Qdoc from "@/resources/images/devhacks/2026/QDocLogo.png";
-import Taiv from "@/resources/images/devhacks/2026/Taiv.png";
-import Payworks from "@/resources/images/devhacks/2026/Payworks.png";
-import G3_2026 from "@/resources/images/devhacks/2026/G3.png";
+import Qdoc from "@/resources/images/devhacks/2026/sponsors/QDocLogo.png";
+import Taiv from "@/resources/images/devhacks/2026/sponsors/Taiv.png";
+import Payworks from "@/resources/images/devhacks/2026/sponsors/Payworks.png";
+import G3_2026 from "@/resources/images/devhacks/2026/sponsors/G3.png";
 
-import Ubisoft2026 from "@/resources/images/devhacks/2026/Ubisoft2026.png";
-import Niche2026 from "@/resources/images/devhacks/2026/Niche2026.png";
-import Pollard2026 from "@/resources/images/devhacks/2026/Pollard.svg";
-import Priceline2026 from "@/resources/images/devhacks/2026/priceline.jpg";
-import IG from "@/resources/images/devhacks/2026/IG.png";
-import CompSciDept from "@/resources/images/devhacks/2026/CompSciDept.jpeg";
-import CanadaLife from "@/resources/images/devhacks/2026/CanadaLife.png";
+import Ubisoft2026 from "@/resources/images/devhacks/2026/sponsors/Ubisoft2026.png";
+import Niche2026 from "@/resources/images/devhacks/2026/sponsors/Niche2026.png";
+import Pollard2026 from "@/resources/images/devhacks/2026/sponsors/Pollard.svg";
+import Priceline2026 from "@/resources/images/devhacks/2026/sponsors/priceline.jpg";
+import IG from "@/resources/images/devhacks/2026/sponsors/IG.png";
+import CompSciDept from "@/resources/images/devhacks/2026/sponsors/CompSciDept.jpeg";
+import CanadaLife from "@/resources/images/devhacks/2026/sponsors/CanadaLife.png";
 
 // 2025 logos
 import Ubisoft from "@/resources/images/devhacks/2025/devHacksSponsors/Ubisoft.jpg";
@@ -44,7 +44,13 @@ import PayWorks from "@/resources/images/devhacks/2023/devHacksSponsors/payWorks
 
 type HackathonYearSponsorsProps = { year: string | number };
 
-type Tier = "platinum" | "gold" | "silver" | "bronze" | "inkind";
+type Tier =
+  | "platinum"
+  | "gold"
+  | "silver"
+  | "bronze"
+  | "inkind"
+  | "schoolSponsor"; //size not implemented in devHacksSponsors.scss
 type Sponsor = { name: string; logo: string };
 type YearSponsors = Partial<Record<Tier, Sponsor[]>>;
 
@@ -53,10 +59,18 @@ const TIER_LABEL: Record<Tier, string> = {
   gold: "Gold",
   silver: "Silver",
   bronze: "Bronze",
+  schoolSponsor: "School Sponsor",
   inkind: "In-Kind",
 };
 
-const TIER_ORDER: Tier[] = ["platinum", "gold", "silver", "bronze", "inkind"];
+const TIER_ORDER: Tier[] = [
+  "platinum",
+  "gold",
+  "silver",
+  "bronze",
+  "inkind",
+  "schoolSponsor",
+];
 
 const HackathonYearSponsors: React.FC<HackathonYearSponsorsProps> = ({
   year,

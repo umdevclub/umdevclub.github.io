@@ -17,7 +17,7 @@ import devhacks2026 from "@/resources/images/devhacks/2026/devhacks2026.png";
 export { TERMS_ORDER } from "./types";
 
 //if you want to add an upcoming event
-//add the fields: upcomingDescription, upcomingImage,location, date in the format 026-01-13T18:00:00 and rsvp to the relevant event object below
+//add the fields: upcomingTitle, upcomingDescription, upcomingImage,location, date in the format 026-01-13T18:00:00 and rsvp to the relevant event object below
 export const EVENTS: EventData[] = [
   {
     id: "general-meeting",
