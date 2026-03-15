@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-import { Modal, Box } from "@mui/material";
 import HorizontalScroller from "@/components/HorizontalScroller";
+import ImagePreviewModal from "@/components/ImagePreviewModal";
 import "@/styles/pictures.scss";
 
 //2026 images
@@ -76,15 +76,15 @@ const HackathonYearPictures: React.FC<HackathonYearPicturesProps> = ({
 }) => {
   const pictures: Record<string, { src: string; alt: string }[]> = {
     "2023": [
-      { src: P2023_1, alt: "devHacks 2024 photo 1" },
-      { src: P2023_2, alt: "devHacks 2024 photo 2" },
-      { src: P2023_3, alt: "devHacks 2024 photo 3" },
-      { src: P2023_4, alt: "devHacks 2024 photo 4" },
-      { src: P2023_5, alt: "devHacks 2024 photo 5" },
-      { src: P2023_6, alt: "devHacks 2024 photo 6" },
-      { src: P2023_7, alt: "devHacks 2024 photo 7" },
-      { src: P2023_8, alt: "devHacks 2024 photo 8" },
-      { src: P2023_9, alt: "devHacks 2024 photo 9" },
+      { src: P2023_1, alt: "devHacks 2023 photo 1" },
+      { src: P2023_2, alt: "devHacks 2023 photo 2" },
+      { src: P2023_3, alt: "devHacks 2023 photo 3" },
+      { src: P2023_4, alt: "devHacks 2023 photo 4" },
+      { src: P2023_5, alt: "devHacks 2023 photo 5" },
+      { src: P2023_6, alt: "devHacks 2023 photo 6" },
+      { src: P2023_7, alt: "devHacks 2023 photo 7" },
+      { src: P2023_8, alt: "devHacks 2023 photo 8" },
+      { src: P2023_9, alt: "devHacks 2023 photo 9" },
     ],
     "2024": [
       { src: P2024_1, alt: "devHacks 2024 photo 1" },
@@ -130,12 +130,9 @@ const HackathonYearPictures: React.FC<HackathonYearPicturesProps> = ({
       { src: P2026_15, alt: "devHacks 2026 photo 15" },
       { src: P2026_9, alt: "devHacks 2026 photo 9" },
       { src: P2026_11, alt: "devHacks 2026 photo 11" },
-
       { src: P2026_8, alt: "devHacks 2026 photo 8" },
-
       { src: P2026_13, alt: "devHacks 2026 photo 13" },
       { src: P2026_14, alt: "devHacks 2026 photo 14" },
-
       { src: P2026_16, alt: "devHacks 2026 photo 16" },
       { src: P2026_17, alt: "devHacks 2026 photo 17" },
       { src: P2026_18, alt: "devHacks 2026 photo 18" },
@@ -151,6 +148,11 @@ const HackathonYearPictures: React.FC<HackathonYearPicturesProps> = ({
 
   const yearKey = String(year) as keyof typeof pictures;
   const images = pictures[yearKey] || [];
+
+  const handleClose = () => {
+    setOpen(false);
+    setActive(null);
+  };
 
   return (
     <>
@@ -175,34 +177,7 @@ const HackathonYearPictures: React.FC<HackathonYearPicturesProps> = ({
         ))}
       </HorizontalScroller>
 
-      <Modal open={open} onClose={() => setOpen(false)}>
-        <Box
-          sx={{
-            position: "absolute",
-            top: "50%",
-            left: "50%",
-            transform: "translate(-50%,-50%)",
-            maxWidth: "min(95vw, 1200px)",
-            maxHeight: "90vh",
-            boxShadow: 24,
-            outline: "none",
-          }}
-        >
-          {active && (
-            <img
-              src={active.src}
-              alt={active.alt}
-              style={{
-                display: "block",
-                width: "100%",
-                height: "100%",
-                objectFit: "contain",
-                background: "#000",
-              }}
-            />
-          )}
-        </Box>
-      </Modal>
+      <ImagePreviewModal open={open} image={active} onClose={handleClose} />
     </>
   );
 };
