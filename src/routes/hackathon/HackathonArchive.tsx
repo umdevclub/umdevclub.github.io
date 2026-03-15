@@ -7,7 +7,7 @@ import HackathonWinners from "@/routes/hackathon/hackathonWinners";
 import HackathonYearPictures from "@/resources/data/devHacksArchive/HackathonYearPictures";
 import HackathonYearSponsors from "@/resources/data/devHacksArchive/HackathonYearSponsors";
 
-import { HackathonInfo } from "@/resources/data/types";
+import { HackathonInfo } from "@/types/hackathon/hackathon";
 
 function HackathonArchive() {
   const { data } = useLoaderData() as HackathonInfo;

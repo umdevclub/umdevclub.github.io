@@ -1,4 +1,4 @@
-import { IChampion } from "@/resources/data/types";
+import { IChampion } from "@/types/types";
 import "@/styles/PeopleList.scss";
 
 import Box from "@mui/material/Box";

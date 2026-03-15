@@ -1,5 +1,5 @@
 import { hexToRgb } from "@mui/material";
-import { HackathonTheme } from "./types";
+import { HackathonTheme } from "../../types/types";
 
 const hackathonThemeConfig: HackathonTheme = {
   "2026": [

@@ -2,7 +2,7 @@ import graham from "@/resources/images/champions/graham.jpg";
 import joshua from "@/resources/images/champions/joshua.jpg";
 import brooklynn from "@/resources/images/champions/brooklynn.png";
 import jacob from "@/resources/images/champions/jacob.jpg";
-import { IChampion } from "./types";
+import { IChampion } from "@/types/team";
 
 const champions: IChampion[] = [
   {

@@ -3,7 +3,7 @@ import { useLoaderData } from "react-router-dom";
 import { memo, useMemo, ReactNode } from "react";
 
 import "@/styles/PrizeCategories.scss";
-import { HackathonTheme } from "@/resources/data/types";
+import { HackathonTheme } from "@/types/types";
 
 type ThemeDetail = {
   header?: string;

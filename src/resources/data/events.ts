@@ -1,4 +1,4 @@
-import type { EventData } from "./types";
+import type { EventData } from "@/types/events";
 import workshop from "@/resources/images/events/workshop.jpg";
 import devgames from "@/resources/images/events/devgames.jpg";
 import battlesnake from "@/resources/images/events/battlesnakes.jpg";
@@ -12,9 +12,8 @@ import labtours from "@/resources/images/events/Labtours.jpg";
 import codingKickoff from "@/resources/images/events/Coding Kickoff.png";
 
 //add upcoming image imports here
-import devhacks2026 from "@/resources/images/devhacks/2026/devhacks2026.png";
 
-export { TERMS_ORDER } from "./types";
+export { TERMS_ORDER } from "@/types/events";
 
 //if you want to add an upcoming event
 //add the fields: upcomingTitle, upcomingDescription, upcomingImage,location, date in the format 026-01-13T18:00:00 and rsvp to the relevant event object below

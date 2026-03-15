@@ -1,4 +1,4 @@
-import { HackathonInfo } from "./types";
+import { HackathonInfo } from "../../types/types";
 
 const hackathonInfoConfig: HackathonInfo = {
   "2026": {

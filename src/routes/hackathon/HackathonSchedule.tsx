@@ -4,7 +4,7 @@ import Devhacks2024Schedule from "@/resources/data/devHacksArchive/devHacks2024/
 import Devhacks2025Schedule from "@/resources/data/devHacksArchive/devHacks2025/Schedule2025";
 import Devhacks2026Schedule from "@/resources/data/devHacksArchive/devHacks2026/Schedule2026";
 
-import { HackathonConfig } from "@/resources/data/types";
+import { HackathonInfo } from "@/types/hackathon/hackathon";
 
 const scheduleMap = {
   "2024": Devhacks2024Schedule,
@@ -15,7 +15,7 @@ const scheduleMap = {
 type YearKey = keyof typeof scheduleMap;
 
 function HackathonSchedule() {
-  const { data } = useLoaderData() as HackathonConfig;
+  const { data } = useLoaderData() as HackathonInfo;
 
   const ScheduleComponent = scheduleMap[data.year as YearKey];
 
