@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-import { Modal, Box } from "@mui/material";
 import HorizontalScroller from "@/components/HorizontalScroller";
+import ImagePreviewModal from "@/components/ImagePreviewModal";
 import "@/styles/pictures.scss";
 
 import P1 from "@/resources/images/devhacks/general/2024_1.png";
@@ -22,12 +22,11 @@ import P15 from "@/resources/images/devhacks/2026/pictures/2026_3.png";
 
 export const picturesGeneralImages = [
   { src: P13, alt: "devHacks photo 13" },
-  { src: P14, alt: "devHacks photo 14" },
-  { src: P15, alt: "devHacks photo 15" },
-  { src: P1, alt: "devHacks photo 1" },
   { src: P2, alt: "devHacks photo 2" },
-  { src: P3, alt: "devHacks photo 3" },
+  { src: P1, alt: "devHacks photo 1" },
+  { src: P15, alt: "devHacks photo 15" },
   { src: P4, alt: "devHacks photo 4" },
+  { src: P3, alt: "devHacks photo 3" },
   { src: P5, alt: "devHacks photo 5" },
   { src: P6, alt: "devHacks photo 6" },
   { src: P7, alt: "devHacks photo 7" },
@@ -43,6 +42,11 @@ const PicturesGeneral: React.FC = () => {
   const [active, setActive] = useState<
     typeof picturesGeneralImages[number] | null
   >(null);
+
+  const handleClose = () => {
+    setOpen(false);
+    setActive(null);
+  };
 
   return (
     <>
@@ -67,34 +71,7 @@ const PicturesGeneral: React.FC = () => {
         ))}
       </HorizontalScroller>
 
-      <Modal open={open} onClose={() => setOpen(false)}>
-        <Box
-          sx={{
-            position: "absolute",
-            top: "50%",
-            left: "50%",
-            transform: "translate(-50%,-50%)",
-            maxWidth: "min(95vw, 1200px)",
-            maxHeight: "90vh",
-            boxShadow: 24,
-            outline: "none",
-          }}
-        >
-          {active && (
-            <img
-              src={active.src}
-              alt={active.alt}
-              style={{
-                display: "block",
-                width: "100%",
-                height: "100%",
-                objectFit: "contain",
-                background: "#000",
-              }}
-            />
-          )}
-        </Box>
-      </Modal>
+      <ImagePreviewModal open={open} image={active} onClose={handleClose} />
     </>
   );
 };

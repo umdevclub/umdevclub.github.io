@@ -12,13 +12,13 @@ import ImageList from "@mui/material/ImageList";
 import ImageListItem from "@mui/material/ImageListItem";
 
 import PeopleList from "@/components/PeopleList";
+import ImagePreviewModal from "@/components/ImagePreviewModal";
 
 import {
   workshopImages,
   hackathonImages,
   // devchampsImages,
 } from "@/resources/data/homepage-mission-images";
-import { Box, Modal } from "@mui/material";
 
 interface IMissionImageList {
   imagesData: {
@@ -27,7 +27,7 @@ interface IMissionImageList {
     rows?: number;
     cols?: number;
   }[];
-  openFn: (img: string) => void;
+  openFn: (img: string, title: string) => void;
 }
 
 function MissionImageList({ imagesData, openFn }: IMissionImageList) {
@@ -49,7 +49,7 @@ function MissionImageList({ imagesData, openFn }: IMissionImageList) {
             alt={item.title}
             loading="lazy"
             style={{ cursor: "pointer" }}
-            onClick={() => openFn(item.img)}
+            onClick={() => openFn(item.img, item.title)}
           />
         </ImageListItem>
       ))}
@@ -59,14 +59,22 @@ function MissionImageList({ imagesData, openFn }: IMissionImageList) {
 
 function Home() {
   const [openImageModal, setOpenImageModal] = useState(false);
-  const [modalImage, setModalImage] = useState<string | undefined>(undefined);
-  const handleOpenModal = (img: string) => {
-    setModalImage(img);
+  const [modalImage, setModalImage] = useState<{
+    src: string;
+    alt: string;
+  } | null>(null);
+
+  const handleOpenModal = (img: string, title: string) => {
+    setModalImage({
+      src: img,
+      alt: title,
+    });
     setOpenImageModal(true);
   };
+
   const handleCloseModal = () => {
     setOpenImageModal(false);
-    setModalImage(undefined);
+    setModalImage(null);
   };
 
   return (
@@ -97,6 +105,7 @@ function Home() {
           }
         }}
       />
+
       <div className="white-background" id="intro">
         <div className="info">
           <div className="aboutAndText">
@@ -125,26 +134,12 @@ function Home() {
         <br />
 
         <div className="missions-container">
-          <Modal open={openImageModal} onClose={handleCloseModal}>
-            <Box
-              sx={{
-                width: "fit-content",
-                height: "fit-content",
-                position: "absolute",
-                top: "50%",
-                left: "50%",
-                transform: "translate(-50%, -50%)",
-                boxShadow: 24,
-                outline: "none",
-              }}
-            >
-              <img
-                src={modalImage}
-                alt="Modal Content"
-                style={{ width: "100%", height: "100%", objectFit: "cover" }}
-              />
-            </Box>
-          </Modal>
+          <ImagePreviewModal
+            open={openImageModal}
+            image={modalImage}
+            onClose={handleCloseModal}
+          />
+
           <div className="mission-container">
             <div className="mission-text-container">
               <span className="mission-heading">Workshops and Activities</span>
