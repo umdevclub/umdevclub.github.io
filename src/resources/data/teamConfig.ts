@@ -1,4 +1,4 @@
-import { ITeam } from "./types";
+import { ITeam } from "@/types/team";
 
 //Please limit social medias to 3 per exec
 const teamConfig: ITeam = {

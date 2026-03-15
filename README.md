@@ -45,4 +45,5 @@ So you don't need to worry about deployment of your code: As long as your change
 
 ## Contributing
 
+Thank you for considering contributing to the .devClub website.
 Please read the [Contributing Guide](CONTRIBUTING.md) before opening a pull request.

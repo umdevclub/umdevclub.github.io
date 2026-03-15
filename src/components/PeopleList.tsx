@@ -15,7 +15,7 @@ import Select from "@mui/material/Select";
 import MenuItem from "@mui/material/MenuItem";
 
 import teamConfig from "@/resources/data/teamConfig";
-import { ITeamMember } from "@/resources/data/types";
+import { ITeamMember } from "@/types/types";
 
 function PersonCard({ personData }: { personData: ITeamMember }) {
   return (

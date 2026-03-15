@@ -1,9 +1,6 @@
-export type HackathonWinner = {
-  prizeIndex: number;
-  projectName: string;
-  teamMembers: string[];
-  projectUrl?: string;
-};
+import { HackathonWinner } from "@/types/hackathon/winner";
+
+//prize index is the prize category index from its respective year
 
 const hackathonWinners: Record<string, HackathonWinner[]> = {
   "2026": [

@@ -4,13 +4,7 @@ import scheduleBg2026 from "@/resources/images/devhacks/2026/schedule_bg_2026.pn
 
 import scheduleBg2023 from "@/resources/images/devhacks/2023/devhacks2023-schedule-bg.png";
 
-export type HackathonArchiveCard = {
-  year: number;
-  title: string;
-  subtitle: string;
-  route: string;
-  image: string;
-};
+import { HackathonArchiveCard } from "@/types/hackathon/hackathon";
 
 export const HackathonArchiveCards: HackathonArchiveCard[] = [
   {

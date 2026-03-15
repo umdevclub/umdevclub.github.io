@@ -42,17 +42,11 @@ import Ubisoft2023 from "@/resources/images/devhacks/2023/devHacksSponsors/Ubiso
 import GreenUmbrella from "@/resources/images/devhacks/2023/devHacksSponsors/greenUmbrella.webp";
 import PayWorks from "@/resources/images/devhacks/2023/devHacksSponsors/payWorks.jpg";
 
-type HackathonYearSponsorsProps = { year: string | number };
-
-type Tier =
-  | "platinum"
-  | "gold"
-  | "silver"
-  | "bronze"
-  | "inkind"
-  | "schoolSponsor"; //size not implemented in devHacksSponsors.scss
-type Sponsor = { name: string; logo: string };
-type YearSponsors = Partial<Record<Tier, Sponsor[]>>;
+import type {
+  HackathonYearSponsorsProps,
+  Tier,
+  YearSponsors,
+} from "@/types/hackathon/sponsors";
 
 const TIER_LABEL: Record<Tier, string> = {
   platinum: "Platinum",

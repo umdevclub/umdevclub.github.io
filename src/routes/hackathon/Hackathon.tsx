@@ -162,7 +162,7 @@ function Hackathon() {
       {/* <h1 className="hackathon-sponsors heading">Our Sponsors</h1>
       <HackathonYearSponsors year={2026} /> */}
 
-      <h1 className="hackathon-sponsors heading">Event Pictures</h1>
+      <h1 className="hackathon-sponsors heading">Pictures</h1>
       <GalleryScroller images={picturesGeneralImages} />
 
       <h1 className="hackathon-sponsors heading">Go Back in Time</h1>

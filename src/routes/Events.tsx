@@ -1,6 +1,6 @@
 import React, { useMemo, useState } from "react";
 import { EVENTS } from "@/resources/data/events";
-import type { Term } from "@/resources/data/types";
+import type { Term } from "@/types/events";
 import "@/styles/Events.scss";
 
 const TERMS: Term[] = ["Summer", "Fall", "Winter"];
