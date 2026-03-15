@@ -51,8 +51,6 @@ function HackathonArchive() {
             <iframe
               loading="lazy"
               src="https://www.youtube.com/embed/CBMg3kI84ok"
-              title=".devHacks 2026 Recap"
-              allow="autoplay; picture-in-picture"
               allowFullScreen
             />
           </div>

@@ -19,13 +19,13 @@ const hackathonWinners: Record<string, HackathonWinner[]> = {
     {
       prizeIndex: 0,
       projectName: "Lychee",
-      teamMembers: ["Jack Heppner", "Tiffany Iao"],
+      teamMembers: ["Thea Heppner", "Tiffany Iao"],
       projectUrl: "https://devpost.com/software/lychee-nacvme",
     },
     {
       prizeIndex: 1,
       projectName: "Lychee",
-      teamMembers: ["Jack Heppner", "Tiffany Iao"],
+      teamMembers: ["Thea Heppner", "Tiffany Iao"],
       projectUrl: "https://devpost.com/software/lychee-nacvme",
     },
     {
