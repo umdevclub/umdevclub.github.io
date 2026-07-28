@@ -14,6 +14,7 @@ import Contact from "./Contact";
 import DevChamps from "./DevChamps";
 import GitHub from "./Github";
 import Hackathon from "./hackathon/Hackathon";
+import Hackathon2027 from "./hackathon/Hackathon2027";
 import HackathonArchive from "./hackathon/HackathonArchive";
 import {
   hackathonInfoLoader,
@@ -49,6 +50,7 @@ const router = createBrowserRouter(
       <Route path="/github-tutorial" element={<GitHub />} />
       <Route path="/link-tree" element={<LinkTree />} />
       <Route path="/devhacks" element={<Hackathon />} />
+      <Route path="/devhacks/2027" element={<Hackathon2027 />} />
       <Route path="/events" element={<Events />} />
       <Route path="/merch" element={<Merch />} />
       <Route
