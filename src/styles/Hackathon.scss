@@ -134,7 +134,7 @@
       font-size: 36px;
       letter-spacing: 0.15em;
       margin-top: 3em;
-      margin-bottom: 3em;
+      margin-bottom: 0.5em;
     }
   }
 
@@ -194,10 +194,30 @@
   line-height: 29px;
   padding-bottom: 3rem;
 
-  @include mobile {
-    font-size: 12px;
+  @include tablet {
+    font-size: 16px;
+    line-height: 27px;
     margin-left: 2em;
     margin-right: 2em;
+  }
+
+  @include mobile {
+    font-size: 16px;
+    line-height: 26px;
+    margin-left: 1.25em;
+    margin-right: 1.25em;
+
+    p {
+      text-indent: 1.5em;
+    }
+
+    ol {
+      padding-left: 1.25rem;
+
+      li {
+        margin-bottom: 0.5rem;
+      }
+    }
   }
 
   p {
@@ -419,5 +439,229 @@
 
   .hscroller .hscroller-track {
     padding-inline: 3.2rem 50%;
+  }
+}
+
+/* .devHacks 2027 About Us Section */
+.hackathon-about {
+  width: 100%;
+  margin-top: 3rem;
+  margin-bottom: 2rem;
+
+  &-card {
+    width: 90%;
+    max-width: 860px;
+    background: #272729;
+    color: #ffffff;
+    border-radius: 16px;
+    padding: 3rem 2.5rem;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.35);
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    box-sizing: border-box;
+
+    @include mobile {
+      padding: 2rem 1.25rem;
+    }
+  }
+
+  &-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    max-width: 760px;
+    margin: 0 auto;
+  }
+
+  &-item {
+    text-align: left;
+    padding-bottom: 2rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+
+    &:last-child {
+      border-bottom: none;
+      padding-bottom: 0;
+    }
+
+    h3 {
+      font-size: 1.25rem;
+      font-weight: 700;
+      color: #ffd700;
+      margin-top: 0;
+      margin-bottom: 0.75rem;
+      letter-spacing: 0.05em;
+    }
+
+    p {
+      font-size: 1.05rem;
+      line-height: 1.8;
+      color: rgba(255, 255, 255, 0.88);
+      margin: 0;
+      font-weight: 400;
+
+      strong {
+        color: #ffffff;
+        font-weight: 700;
+      }
+    }
+  }
+}
+
+.hackathon-stats-bar {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  margin-top: 2.5rem;
+  padding-top: 2rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.12);
+
+  .stat-box {
+    text-align: center;
+    min-width: 130px;
+  }
+
+  .stat-number {
+    display: block;
+    font-size: 2.2rem;
+    font-weight: 800;
+    color: #ffd700;
+    letter-spacing: 0.05em;
+    font-family: "IBM Plex Mono", monospace;
+  }
+
+  .stat-label {
+    font-size: 0.85rem;
+    color: rgba(255, 255, 255, 0.75);
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    font-weight: 500;
+  }
+
+  @include mobile {
+    gap: 1.25rem;
+
+    .stat-number {
+      font-size: 1.8rem;
+    }
+
+    .stat-label {
+      font-size: 0.75rem;
+    }
+  }
+}
+
+/* .devHacks 2027 Sponsors Section */
+.hackathon-sponsors-section {
+  width: 100%;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.sponsors-promo-card {
+  width: 90%;
+  max-width: 900px;
+  margin: 1.5rem auto 3rem;
+  background: #272729;
+  color: #ffffff;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 16px;
+  padding: 3rem 2rem;
+  text-align: center;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.35);
+  box-sizing: border-box;
+
+  @include mobile {
+    padding: 2rem 1.25rem;
+  }
+
+  .sponsors-status-pill {
+    display: inline-block;
+    background: rgba(212, 175, 55, 0.15);
+    color: #ffd700;
+    border: 1px solid rgba(212, 175, 55, 0.4);
+    padding: 6px 16px;
+    border-radius: 999px;
+    font-size: 0.85rem;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    margin-bottom: 1.25rem;
+  }
+
+  .sponsors-promo-title {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: #ffffff;
+    margin-top: 0;
+    margin-bottom: 1rem;
+    letter-spacing: 0.05em;
+
+    @include mobile {
+      font-size: 1.4rem;
+    }
+  }
+
+  .sponsors-promo-description {
+    max-width: 680px;
+    margin: 0 auto 2rem;
+    font-size: 1.05rem;
+    line-height: 1.65;
+    color: rgba(255, 255, 255, 0.85);
+
+    @include mobile {
+      font-size: 0.95rem;
+    }
+  }
+
+  .sponsors-btn-group {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+
+  .sponsors-quick-tiers {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-top: 2.5rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.12);
+
+    .tier-pill {
+      font-size: 0.95rem;
+      padding: 8px 18px;
+      border-radius: 8px;
+      font-weight: 600;
+      letter-spacing: 0.03em;
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+
+      &.bronze {
+        color: #e59866;
+        background: rgba(205, 127, 50, 0.16);
+        border: 1px solid rgba(205, 127, 50, 0.55);
+      }
+
+      &.silver {
+        color: #e2e8f0;
+        background: rgba(226, 232, 240, 0.14);
+        border: 1px solid rgba(226, 232, 240, 0.5);
+      }
+
+      &.gold {
+        color: #ffd700;
+        background: rgba(255, 215, 0, 0.16);
+        border: 1px solid rgba(255, 215, 0, 0.6);
+      }
+
+      &.platinum {
+        color: #a5f3fc;
+        background: rgba(165, 243, 252, 0.16);
+        border: 1px solid rgba(165, 243, 252, 0.6);
+        box-shadow: 0 0 12px rgba(165, 243, 252, 0.2);
+        font-weight: 700;
+      }
+    }
   }
 }
