@@ -8,38 +8,49 @@ import Box from "@mui/material/Box";
 const HackathonFaq = () => {
   const faqData = [
     {
+      question: "When and where is .devHacks 2027?",
+      answer:
+        ".devHacks 2027 will take place from Friday, February 19 to Sunday, February 21, 2027 at the Engineering, Information and Technology Complex (EITC), University of Manitoba in Winnipeg, MB.",
+    },
+    {
+      question: "Why is .devHacks expanding to 48 hours?",
+      answer:
+        "We are expanding from 24 hours to a full 48-hour hackathon to give participants the breathing room to build higher-quality projects, attend in-depth technical workshops, get meaningful rest, and connect with mentors and sponsors without feeling rushed.",
+    },
+    {
+      question: "Is .devHacks free to attend?",
+      answer:
+        "Yes, 100% free! All meals, midnight snacks, drinks, hacking space, Wi-Fi, mentorship, workshops, and swag are completely covered thanks to our generous sponsors.",
+    },
+    {
+      question: "Who is eligible to participate?",
+      answer:
+        ".devClub welcomes students of all backgrounds and experience levels—including high school, undergraduate, and graduate students. Whether you are an engineer, developer, UI/UX designer, business major, or just enthusiastic about technology, there is a place for you at .devHacks.",
+    },
+    {
       question: "How many people can be on a team?",
-      answer: "We have limited team size to 5 at most.",
+      answer:
+        "Teams can have up to 5 members. You can participate solo, but working in a team is strongly encouraged to promote collaborative problem-solving and shared learning.",
     },
     {
-      question: "Do I need to be on a team?",
+      question: "What if I don't have a team yet?",
       answer:
-        "You aren’t required to be on a team but strongly encouraged to promote group-work experience.",
+        "No problem! You can pre-register individually. Closer to the event, we will host dedicated team-formation channels on our Discord server and conduct an in-person Team Matching & Meet and Greet before hacking starts.",
     },
     {
-      question: "Does every member of the team need to be registered?",
+      question: "When will official registration open?",
       answer:
-        "Yes, every member of the team should first register individually with the .devHacks registration form. You will then have to register your team with DevPost which will be released sometime next week.",
+        "Official registration will open closer to the event date. Pre-register your email on this page to receive an immediate notification the moment registration and challenge tracks go live!",
     },
     {
-      question: "What is the listing on devPost about",
+      question: "What should I bring to .devHacks 2027?",
       answer:
-        "After you have registered individually, and if you have people to form the team with, we need one of the team members to fill the DevPost listing to keep track of all the teams. Anyone participating solo should fill the Devpost listing too. (The listing will be released sometime next week where you can easiy edit team-members!). It is an easy way for us to keep track of your repos aswell as the members in your team.",
+        "Bring your student ID, laptop, chargers, any hardware/peripherals you plan to hack on, comfortable clothes, and personal toiletries. We're still awaiting confirmation from the venue on arranging a potential overnight sleeping spot on campus.",
     },
     {
-      question: "What if I don’t have a team, Can I still participate?",
+      question: "How can our company get involved as a sponsor or mentor?",
       answer:
-        " If you haven't already, please join our .devHacks discord server to connect with other students looking to form a team. We will also help with team-matching during Meet and Greet.",
-    },
-    {
-      question: "What experience/skills do I need to participate?",
-      answer:
-        "There is no required set of skills or experience. .devClub welcomes people of all skill levels to our hackathon, including engineers, designers, developers or even people with good ideas.",
-    },
-    {
-      question: "Can I work on the project after the doors close on Day 1?",
-      answer:
-        "Yes, you are welcome to work even after the doors close on day 1. However, we encourage you to get some healthy sleep to re-fuel for the next day. Also, this is the latest when students should vacate the venue i.e., 10 pm.",
+        "We'd love to partner with you! Check out our Sponsorship Package above or reach out directly to umdevclub@gmail.com to explore booth opportunities, sponsored challenge tracks, workshops, and recruitment perks.",
     },
   ];
 
@@ -62,9 +73,19 @@ const HackathonFaq = () => {
       {faqData.map((faq, index) => (
         <Accordion
           key={index}
+          disableGutters
+          elevation={0}
           sx={{
             color: "white",
             background: "#5d5c5c",
+            margin: "0 !important",
+            "&:before": {
+              display: "none",
+            },
+            "&.Mui-expanded": {
+              margin: "0 !important",
+            },
+            borderBottom: "1px solid #272729",
           }}
         >
           <AccordionSummary
@@ -78,6 +99,16 @@ const HackathonFaq = () => {
             sx={{
               background: "#272729",
               color: "white",
+              minHeight: "52px",
+              "&.Mui-expanded": {
+                minHeight: "52px",
+              },
+              "& .MuiAccordionSummary-content": {
+                margin: "12px 0",
+              },
+              "& .MuiAccordionSummary-content.Mui-expanded": {
+                margin: "12px 0",
+              },
             }}
             aria-controls={`panel${index}-content`}
             id={`panel${index}-content`}
@@ -86,7 +117,12 @@ const HackathonFaq = () => {
               {faq.question}
             </Typography>
           </AccordionSummary>
-          <AccordionDetails>
+          <AccordionDetails
+            sx={{
+              background: "#4a4949",
+              padding: "18px 24px",
+            }}
+          >
             <Typography
               fontFamily='"IBM Plex Mono", monospace'
               fontWeight={500}

@@ -5,6 +5,7 @@ import lines from "@/resources/images/lines.svg";
 import discordLogo from "@/resources/images/discord-mark-white.svg";
 
 import { useState } from "react";
+import { Link as RouterLink } from "react-router-dom";
 
 import Link from "@mui/material/Button";
 
@@ -79,6 +80,21 @@ function Home() {
 
   return (
     <div className="home-container">
+      <div className="landing-banner-wrapper">
+        <RouterLink to="/devhacks" className="devhacks-golden-banner">
+          <div className="devhacks-golden-banner-content">
+            <span className="banner-badge">🚀 .devHacks 2027</span>
+            <span className="banner-text">
+              Manitoba's largest hackathon is going <strong>48 hours</strong>!
+              Feb 19–21, 2027 at U of M.
+            </span>
+            <span className="banner-cta">
+              Explore & Pre-Register <span className="arrow-icon">→</span>
+            </span>
+          </div>
+        </RouterLink>
+      </div>
+
       <h1 className="welcome-text">WELCOME TO .DEVCLUB</h1>
       <video
         className="wavy-background-video"
