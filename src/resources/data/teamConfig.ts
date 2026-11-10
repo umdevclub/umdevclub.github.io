@@ -2,6 +2,65 @@ import { ITeam } from "@/types/team";
 
 //Please limit social medias to 3 per exec
 const teamConfig: ITeam = {
+  "2026": [
+    {
+      firstName: "Peter",
+      lastName: "Vu",
+      role: "President",
+      image: "/assets/team/2026/president-peter.JPG",
+      linkedin: "https://www.linkedin.com/in/petervu298",
+      github: "https://github.com/pieberrykinnie",
+    },
+    {
+      firstName: "Parjanay",
+      lastName: "Dadwal",
+      role: "Vice-President",
+      image: "/assets/team/2026/vice-president-pj.JPG",
+      linkedin: "https://www.linkedin.com/in/parjanay-dadwal-6875a7298/",
+      github: "https://github.com/PJ19092006",
+      website: "https://pj19092006.github.io/",
+    },
+    {
+      firstName: "Shadman",
+      middleName: "Suham",
+      lastName: "Khan",
+      role: "Treasurer",
+      image: "/assets/team/2026/treasurer-shadman.JPG",
+      instagram: "https://www.instagram.com/s.h.a.d.m.a.n._",
+    },
+    {
+      firstName: "Nam",
+      lastName: "Le",
+      role: "Internal",
+      image: "/assets/team/2026/internal-nam.JPG",
+      linkedin: "https://www.linkedin.com/in/namhl/",
+      instagram: "https://www.instagram.com/lee_nam2006/",
+    },
+    {
+      firstName: "Armaan",
+      lastName: "Dhaliwal",
+      role: "External",
+      image: "/assets/team/2026/external-armaan.JPG",
+      linkedin: "http://www.linkedin.com/in/armaandhaliwal",
+    },
+    {
+      firstName: "Om",
+      lastName: "Patel",
+      role: "Events",
+      image: "/assets/team/2026/events-om.JPG",
+      linkedin: "https://www.linkedin.com/in/ompatel2007",
+      instagram: "https://www.instagram.com/ompatel8445/",
+    },
+    {
+      firstName: "Sasha",
+      lastName: "Morton-Salmon",
+      role: "Promotions",
+      image: "/assets/team/2026/promotions-sasha.JPG",
+      linkedin: "https://www.linkedin.com/in/sasha-morton-salmon/",
+      github: "https://github.com/clone-101",
+      website: "https://morton-salmon.ca",
+    },
+  ],
   "2025": [
     {
       firstName: "Arion",
