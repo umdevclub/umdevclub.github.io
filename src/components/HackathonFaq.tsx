@@ -20,7 +20,7 @@ const HackathonFaq = () => {
     {
       question: "Is .devHacks free to attend?",
       answer:
-        "Yes, 100% free! All meals, midnight snacks, drinks, hacking space, Wi-Fi, mentorship, workshops, and swag are completely covered thanks to our generous sponsors.",
+        "Yes, 100% free! meals, snacks, drinks, hacking space, Wi-Fi, mentorship, workshops, and swag are completely covered thanks to our generous sponsors.",
     },
     {
       question: "Who is eligible to participate?",

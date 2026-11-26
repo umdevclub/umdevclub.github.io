@@ -83,7 +83,7 @@ function Home() {
       <div className="landing-banner-wrapper">
         <RouterLink to="/devhacks" className="devhacks-golden-banner">
           <div className="devhacks-golden-banner-content">
-            <span className="banner-badge">🚀 .devHacks 2027</span>
+            <span className="banner-badge">.devHacks 2027</span>
             <span className="banner-text">
               Manitoba's largest hackathon is going <strong>48 hours</strong>!
               Feb 19–21, 2027 at U of M.

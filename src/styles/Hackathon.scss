@@ -133,7 +133,7 @@
       font-weight: 700;
       font-size: 36px;
       letter-spacing: 0.15em;
-      margin-top: 3em;
+      // margin-top: 3em;
       margin-bottom: 0.5em;
     }
   }
@@ -176,10 +176,6 @@
   align-items: center;
   flex-direction: column;
   padding-bottom: 50px;
-
-  &:nth-child(2) {
-    background: #f8f8f8;
-  }
 }
 
 .alpha-list {
@@ -187,8 +183,8 @@
 }
 
 .text-container {
-  margin-left: 3em;
-  margin-right: 3em;
+  margin-left: 5em;
+  margin-right: 5em;
   font-weight: 500;
   font-size: 18px;
   line-height: 29px;
@@ -207,10 +203,6 @@
     margin-left: 1.25em;
     margin-right: 1.25em;
 
-    p {
-      text-indent: 1.5em;
-    }
-
     ol {
       padding-left: 1.25rem;
 
@@ -218,10 +210,6 @@
         margin-bottom: 0.5rem;
       }
     }
-  }
-
-  p {
-    text-indent: 3em;
   }
 }
 
@@ -485,7 +473,7 @@
     h3 {
       font-size: 1.25rem;
       font-weight: 700;
-      color: #ffd700;
+      color: #ffffff;
       margin-top: 0;
       margin-bottom: 0.75rem;
       letter-spacing: 0.05em;
@@ -524,7 +512,7 @@
     display: block;
     font-size: 2.2rem;
     font-weight: 800;
-    color: #ffd700;
+    color: #ffffff;
     letter-spacing: 0.05em;
     font-family: "IBM Plex Mono", monospace;
   }
@@ -576,9 +564,9 @@
 
   .sponsors-status-pill {
     display: inline-block;
-    background: rgba(212, 175, 55, 0.15);
-    color: #ffd700;
-    border: 1px solid rgba(212, 175, 55, 0.4);
+    background: 1a1a1a;
+    color: #ffffff;
+    border: 1px solid #ffffff;
     padding: 6px 16px;
     border-radius: 999px;
     font-size: 0.85rem;
