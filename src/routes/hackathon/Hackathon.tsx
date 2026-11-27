@@ -67,14 +67,14 @@ function Hackathon() {
             sx={{
               fontSize: "1.1rem",
               fontFamily: "inherit",
-              backgroundColor: "#d4af37",
-              color: "#1a1a1a",
+              backgroundColor: "#1a1a1a",
+              color: "#ffffff",
               fontWeight: 700,
               textTransform: "none",
               padding: "10px 24px",
               borderRadius: "8px",
               "&:hover": {
-                backgroundColor: "#e5be47",
+                backgroundColor: "#3b3b3b",
               },
             }}
           >
@@ -181,20 +181,19 @@ function Hackathon() {
         <div className="hackathon-about-card">
           <div className="hackathon-about-grid">
             <div className="hackathon-about-item">
-              <h3>🚀 The 48-Hour Experience</h3>
+              <h3>The 48-Hour Experience</h3>
               <p>
-                .devHacks is our annual flagship hackathon hosted by .devClub at
-                the University of Manitoba. For .devHacks 2027, we are elevating
-                the event into a full <strong>48-hour hackathon</strong>
-                —bringing together 400+ students from across Western Canada. The
-                extended timeline gives hackers the space to turn ambitious
-                ideas into polished software, dive into cutting-edge APIs,
-                collaborate deeply, and learn from industry mentors without
-                sacrificing rest.
+                .devHacks is .devClub's annual flagship event. For .devHacks
+                2027, we are elevating the event into a full{" "}
+                <strong>48-hour hackathon</strong>, bringing together 400+
+                students from across Western Canada to participate. The extended
+                timeline give hackers the freedom be ambitious with projects,
+                learn from industry mentors, and submit a piece of software they
+                can be proud of.
               </p>
             </div>
             <div className="hackathon-about-item">
-              <h3>💡 Who We Are (.devClub)</h3>
+              <h3>Who We Are</h3>
               <p>
                 Founded in 2014, .devClub is the largest student-run software
                 development club in Manitoba. For over 11 years, our mission has
@@ -206,14 +205,13 @@ function Hackathon() {
               </p>
             </div>
             <div className="hackathon-about-item">
-              <h3>🌐 Open to All Skill Levels</h3>
+              <h3>Open to All Skill Levels</h3>
               <p>
                 Whether you are writing your first line of code or deploying
                 distributed systems, .devHacks has a place for you. We provide
-                beginner-friendly starter workshops, around-the-clock
-                mentorship, free meals, drinks, swag, and hardware/software
-                challenges. Best of all, participation is completely{" "}
-                <strong>100% free</strong>.
+                beginner-friendly starter workshops, on-site mentorship, free
+                meals, drinks, swag, and hardware/software challenges. Best of
+                all, entry is <strong>100% free</strong>!
               </p>
             </div>
           </div>
@@ -269,16 +267,16 @@ function Hackathon() {
                 fontFamily: '"IBM Plex Mono", monospace',
                 textTransform: "none",
                 fontWeight: 700,
-                backgroundColor: "#d4af37",
+                backgroundColor: "#ffffff",
                 color: "#1a1a1a",
                 padding: "12px 28px",
                 borderRadius: "8px",
                 "&:hover": {
-                  backgroundColor: "#e5be47",
+                  backgroundColor: "#e5e5e5",
                 },
               }}
             >
-              📄 View Sponsorship Package (PDF)
+              View Sponsorship Package (PDF)
             </Button>
 
             <Button

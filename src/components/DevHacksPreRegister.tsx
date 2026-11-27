@@ -123,9 +123,9 @@ const DevHacksPreRegister: React.FC = () => {
           display: "inline-flex",
           alignItems: "center",
           gap: "8px",
-          backgroundColor: "rgba(212, 175, 55, 0.15)",
-          color: "#ffd700",
-          border: "1px solid rgba(212, 175, 55, 0.35)",
+          backgroundColor: "rgba(255, 255, 255, 0.1)",
+          color: "#ffffff",
+          border: "1px solid rgba(255, 255, 255, 0.3)",
           padding: "6px 14px",
           borderRadius: "999px",
           fontSize: "0.85rem",
@@ -259,7 +259,7 @@ const DevHacksPreRegister: React.FC = () => {
                   borderColor: "rgba(0, 0, 0, 0.4)",
                 },
                 "&.Mui-focused fieldset": {
-                  borderColor: "#d4af37",
+                  borderColor: "#ffffff",
                   borderWidth: "2px",
                 },
               },
@@ -270,7 +270,7 @@ const DevHacksPreRegister: React.FC = () => {
             variant="contained"
             disabled={status === "loading"}
             sx={{
-              backgroundColor: "#d4af37",
+              backgroundColor: "#ffffff",
               color: "#1a1a1a",
               fontWeight: 700,
               fontSize: "1rem",
@@ -281,10 +281,10 @@ const DevHacksPreRegister: React.FC = () => {
               whiteSpace: "nowrap",
               minHeight: "54px",
               "&:hover": {
-                backgroundColor: "#e5be47",
+                backgroundColor: "#e5e5e5",
               },
               "&.Mui-disabled": {
-                backgroundColor: "#e5be47",
+                backgroundColor: "#ffffff",
                 color: "#1a1a1a",
                 opacity: 0.9,
               },
@@ -323,7 +323,7 @@ const DevHacksPreRegister: React.FC = () => {
             maxWidth: "580px",
             margin: "1rem auto 0",
             backgroundColor: "rgba(211, 47, 47, 0.2)",
-            color: "#ffcdd2",
+            color: "#ffffff",
             border: "1px solid #d32f2f",
             fontFamily: '"IBM Plex Mono", monospace',
           }}
